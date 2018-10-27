@@ -115,7 +115,7 @@ public:
         pchMessageStart[2] = 0xfd;
         pchMessageStart[3] = 0xe9;              
         vAlertPubKey = ParseHex("04d4094cbc41f6c02e050b4c5806ca0cdcda23d9f009932b7b4504b7cd90af9ab5446a95f0fa4f81337ff5b33704ab0514d3327f92c74f5977ea596145470743ed");
-        nDefaultPort = 51992;
+        nDefaultPort = 35801;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // CSTL starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 259000;
         nMaxReorganizationDepth = 100;
@@ -203,7 +203,7 @@ public:
         nPoolMaxTransactions = 3;
         strSporkKey = "04d64f1fbce0758ecb048572f6a25f457ef63e863cd74d7a46f0325764682fa9d131becffccdf332c7d451d8d352eb209a37211cf06b5d4becb14556fe212bd2c3";
         strSporkKeyOld = "04d64f1fbce0758ecb048572f6a25f457ef63e863cd74d7a46f0325764682fa9d131becffccdf332c7d451d8d352eb209a37211cf06b5d4becb14556fe212bd2c3";
-        strObfuscationPoolDummyAddress = "D87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
+        strObfuscationPoolDummyAddress = "PrhtGG3qrXRYexMJTYYn8f6Xmh699DFvSa";
         nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
 
         /** Zerocoin */

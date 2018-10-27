@@ -235,10 +235,10 @@ QT_TRANSLATE_NOOP("castle-core", ""
 QT_TRANSLATE_NOOP("castle-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("castle-core", "(51992 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("castle-core", "(35801 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("castle-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("castle-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("castle-core", "(must be 51992 for mainnet)"),
+QT_TRANSLATE_NOOP("castle-core", "(must be 35801 for mainnet)"),
 QT_TRANSLATE_NOOP("castle-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("castle-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("castle-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),
