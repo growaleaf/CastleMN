@@ -1,0 +1,26 @@
+# /etc/conf.d/castled: config file for /etc/init.d/castled
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/castle/castle.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/castled"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/castled.pid"
+
+# Where to write castled data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/castled"
+
+# User and group to own castled process
+#BITCOIND_USER="castle"
+#BITCOIND_GROUP="castle"
+
+# Path to castled executable
+#BITCOIND_BIN="/usr/bin/castled"
+
+# Nice value to run castled under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

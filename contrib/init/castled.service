@@ -1,0 +1,26 @@
+[Unit]
+Description=CSTL's distributed currency daemon
+After=network.target
+
+[Service]
+User=castle
+Group=castle
+
+Type=forking
+PIDFile=/var/lib/castled/castled.pid
+
+ExecStart=/usr/bin/castled -daemon -pid=/var/lib/castled/castled.pid \
+          -conf=/etc/castle/castle.conf -datadir=/var/lib/castled
+
+ExecStop=-/usr/bin/castle-cli -conf=/etc/castle/castle.conf \
+         -datadir=/var/lib/castled stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

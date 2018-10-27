@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=CSTL
+Comment=CSTL P2P Cryptocurrency
+Comment[fr]=CSTL, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=CSTL, eşten eşe kriptografik sanal para birimi
+Exec=castle-qt %u
+Terminal=false
+Type=Application
+Icon=castle128
+MimeType=x-scheme-handler/castle;
+Categories=Office;Finance;
