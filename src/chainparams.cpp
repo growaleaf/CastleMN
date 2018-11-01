@@ -141,7 +141,7 @@ public:
         nBlockFirstFraudulent = 1999999999; //First block that bad serials emerged
         nBlockLastGoodCheckpoint = 1348; //Last valid accumulator checkpoint
         nBlockEnforceInvalidUTXO = 1200; //Start enforcing the invalid UTXO's
-        nInvalidAmountFiltered = 268200*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
+        nInvalidAmountFiltered = 0*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
         nBlockZerocoinV2 = 1400; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
         nEnforceNewSporkKey = 1536963897; //!> Sporks signed after (GMT): Tuesday, May 1, 2018 7:00:00 AM GMT must use the new spork key
         nRejectOldSporkKey = 1536963896; //!> Fully reject old spork key after (GMT): Friday, June 1, 2018 12:00:00 AM
@@ -183,7 +183,7 @@ public:
         
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 56);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 50);
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 153);
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 184);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0x21)(0x31)(0x2B).convert_to_container<std::vector<unsigned char> >();
         // 	BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
