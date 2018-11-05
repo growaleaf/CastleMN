@@ -1,95 +1,46 @@
-Castle Core integration/staging tree
-===================================
+Castle Core integration/staging repository
+=====================================
 
-https://www.CSTL.io
+[![Build Status](https://travis-ci.org/castle/castle.svg?branch=master)](https://travis-ci.org/castle/castle) [![GitHub version](https://badge.fury.io/gh/castle%2Fcastle.svg)](https://badge.fury.io/gh/castle%2Fcastle) [![Snap Status](https://build.snapcraft.io/badge/castle/castle.svg)](https://build.snapcraft.io/user/castle/castle) [![GitHub issues](https://img.shields.io/github/issues/castle/castle.svg)](https://github.com/castle/castle/issues) [![GitHub forks](https://img.shields.io/github/forks/castle/castle.svg)](https://github.com/castle/castle/network) [![GitHub stars](https://img.shields.io/github/stars/castle/castle.svg)](https://github.com/castle/castle/stargazers) [![GitHub license](https://img.shields.io/github/license/castle/castle.svg)](https://github.com/castle/castle/blob/master/COPYING) [![Twitter](https://img.shields.io/twitter/url/http/github.com/castle/castle.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=http%3A%2F%2Fgithub.com%2Fcastle%2Fcastle)
 
-What is CSTL?
---------------
+Castle is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.
+- Anonymized transactions using the _Zerocoin Protocol_.
+- Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftX_.
+- Decentralized blockchain voting providing for consensus based advancement of the current Masternode
+  technology used to secure the network and provide the above features, each Masternode is secured
+  with a collateral of 40,000 CSTL.
 
-CSTL is an experimental new digital currency that enables instant payments to
-anyone, anywhere in the world. CSTL uses peer-to-peer technology to operate
-with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Castle Core is the name of open source
-software which enables the use of this currency.
+More information at [castle.com](http://www.castle.com/) Visit our ANN thread at [BitcoinTalk](https://bitcointalk.org/index.php?topic=1911583.0)
 
-For more information, as well as an immediately useable, binary version of
-the Castle Core software, see https://www.CSTL.io/.
+### Coin Specs
+<table>
+<tr><td>Algo</td><td>Quark</td></tr>
+<tr><td>Block Time</td><td>180 Seconds</td></tr>
+<tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
+<tr><td>Max Coin Supply (PoW Phase)</td><td>TBD CSTL</td></tr>
+<tr><td>Max Coin Supply (PoS Phase)</td><td>Infinite</td></tr>
+<tr><td>Premine in block 1</td><td>11,500,000*</td></tr>
+<tr><td>Full Premine</td><td>to handle snapshot*</td></tr>
+</table>
 
-License
--------
+### Reward Distribution
 
-Castle Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
-information or see http://opensource.org/licenses/MIT.
+<table>
+<th colspan=4>PoW Phase</th>
+<tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
+<tr><td>1</td><td>11,500,000 CSTL</td><td>Initial Premine to Former Chain</td></tr>
+<tr><td>2-5000</td><td>2 CSTL</td><td>Closed Mining</td></tr>
+<tr><th colspan=4>PoS Phase</th></tr>
+<tr><th>Block Height</th><th colspan=2>Reward Amount</th></tr>
+<tr><td>5,001-50,000</td><td>4 CSTL</td></tr>
+  <tr><td>50,001-120,000</td><td>12 CSTL</td></tr>
+  <tr><td>120,001-160,000</td><td>10 CSTL</td></tr>
+  <tr><td>160,001-*</td><td>8 CSTL</td></tr>
+</table>
 
-Development process
--------------------
+### PoS Rewards Breakdown
 
-Developers work in their own trees, then submit pull requests when they think
-their feature or bug fix is ready.
-
-If it is a simple/trivial/non-controversial change, then one of the CSTL
-development team members simply pulls it.
-
-
-The patch will be accepted if there is broad consensus that it is a good thing.
-Developers should expect to rework and resubmit patches if the code doesn't
-match the project's coding conventions (see [doc/coding.md](doc/coding.md)) or are
-controversial.
-
-The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/CSTL-Project/CSTL/tags) are created
-regularly to indicate new official, stable release versions of CSTL.
-
-Testing
--------
-
-Testing and code review is the bottleneck for development; we get more pull
-requests than we can review and test on short notice. Please be patient and help out by testing
-other people's pull requests, and remember this is a security-critical project where any mistake might cost people
-lots of money.
-
-### Automated Testing
-
-Developers are strongly encouraged to write unit tests for new code, and to
-submit new unit tests for old code. Unit tests can be compiled and run (assuming they weren't disabled in configure) with: `make check`
-
-
-### Manual Quality Assurance (QA) Testing
-
-Large changes should have a test plan, and should be tested by somebody other
-than the developer who wrote the code.
-
-Development tips and tricks
----------------------------
-
-**compiling for debugging**
-
-Run configure with the --enable-debug option, then make. Or run configure with
-CXXFLAGS="-g -ggdb -O0" or whatever debug flags you need.
-
-**debug.log**
-
-If the code is behaving strangely, take a look in the debug.log file in the data directory;
-error and debugging messages are written there.
-
-The -debug=... command-line option controls debugging; running with just -debug will turn
-on all categories (and give you a very large debug.log file).
-
-The Qt code routes qDebug() output to debug.log under category "qt": run with -debug=qt
-to see it.
-
-**testnet and regtest modes**
-
-Run with the -testnet option to run with "play CSTLs" on the test network, if you
-are testing multi-machine code that needs to operate across the internet.
-
-If you are testing something that can run on one machine, run with the -regtest option.
-In regression test mode, blocks can be created on-demand; see qa/rpc-tests/ for tests
-that run in -regtest mode.
-
-**DEBUG_LOCKORDER**
-
-Castle Core is a multithreaded application, and deadlocks or other multithreading bugs
-can be very difficult to track down. Compiling with -DDEBUG_LOCKORDER (configure
-CXXFLAGS="-DDEBUG_LOCKORDER -g") inserts run-time checks to keep track of which locks
-are held, and adds warnings to the debug.log file if inconsistencies are detected.
+<table>
+<th>Block Height</th><th>Masternodes & Stakers</th>
+<tr><td>2-*</td><td>70% ( CSTL) & 30% ( CSTL) respectively</td></tr>
+</table>
