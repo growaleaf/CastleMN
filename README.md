@@ -29,10 +29,10 @@ More information at [castle.com](http://www.castle.com/) Visit our ANN thread at
 <th colspan=4>PoW Phase</th>
 <tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
 <tr><td>1</td><td>11,500,000 CSTL</td><td>Initial Premine to Former Chain</td></tr>
-<tr><td>2-5000</td><td>2 CSTL</td><td>Closed Mining</td></tr>
+<tr><td>2-2000</td><td>2 CSTL</td><td>Closed Mining</td></tr>
 <tr><th colspan=4>PoS Phase</th></tr>
 <tr><th>Block Height</th><th colspan=2>Reward Amount</th></tr>
-<tr><td>5,001-50,000</td><td>4 CSTL</td></tr>
+<tr><td>2,001-50,000</td><td>4 CSTL</td></tr>
   <tr><td>50,001-120,000</td><td>12 CSTL</td></tr>
   <tr><td>120,001-160,000</td><td>10 CSTL</td></tr>
   <tr><td>160,001-*</td><td>8 CSTL</td></tr>
@@ -42,5 +42,5 @@ More information at [castle.com](http://www.castle.com/) Visit our ANN thread at
 
 <table>
 <th>Block Height</th><th>Masternodes & Stakers</th>
-<tr><td>5,001-*</td><td>70% ( CSTL) & 30% ( CSTL) respectively</td></tr>
+<tr><td>2,001-*</td><td>70% ( CSTL) & 30% ( CSTL) respectively</td></tr>
 </table>
