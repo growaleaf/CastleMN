@@ -42,5 +42,5 @@ More information at [castle.com](http://www.castle.com/) Visit our ANN thread at
 
 <table>
 <th>Block Height</th><th>Masternodes & Stakers</th>
-<tr><td>2-*</td><td>70% ( CSTL) & 30% ( CSTL) respectively</td></tr>
+<tr><td>5,001-*</td><td>70% ( CSTL) & 30% ( CSTL) respectively</td></tr>
 </table>
