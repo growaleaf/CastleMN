@@ -17,8 +17,7 @@ More information at [castle.com](http://www.castle.com/) Visit our ANN thread at
 <tr><td>Algo</td><td>Quark</td></tr>
 <tr><td>Block Time</td><td>180 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
-<tr><td>Max Coin Supply (PoW Phase)</td><td>TBD CSTL</td></tr>
-<tr><td>Max Coin Supply (PoS Phase)</td><td>Infinite</td></tr>
+<tr><td>Max Coin Supply</td><td>50,000,000</td></tr>
 <tr><td>Premine in block 1</td><td>11,500,000*</td></tr>
 <tr><td>Full Premine</td><td>to handle snapshot*</td></tr>
 </table>
