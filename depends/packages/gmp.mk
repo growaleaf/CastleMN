@@ -1,12 +1,12 @@
-package=libX11
-$(package)_version=1.6.2
-$(package)_download_path=http://xorg.freedesktop.org/releases/individual/lib/
+package=gmp
+$(package)_version=6.1.2
+$(package)_download_path=https://gmplib.org/download/gmp
 $(package)_file_name=$(package)-$($(package)_version).tar.bz2
-$(package)_sha256_hash=2aa027e837231d2eeea90f3a4afe19948a6eb4c8b2bec0241eba7dbc8106bd16
-$(package)_dependencies=libxcb xtrans xextproto xproto
+$(package)_sha256_hash=5275bb04f4863a13516b2f39392ac5e272f5e1bb8057b18aec1c9b79d73d8fb2
 
 define $(package)_set_vars
-$(package)_config_opts=--disable-xkb --disable-static
+$(package)_config_opts=--disable-shared
+$(package)_config_opts_mingw32=--enable-mingw
 $(package)_config_opts_linux=--with-pic
 endef
 
@@ -21,3 +21,4 @@ endef
 define $(package)_stage_cmds
   $(MAKE) DESTDIR=$($(package)_staging_dir) install
 endef
+
