@@ -23,12 +23,14 @@ env:
   matrix:
 # ARM
     - HOST=arm-linux-gnueabihf PACKAGES="g++-arm-linux-gnueabihf python3-pip" DEP_OPTS="NO_QT=1" CHECK_DOC=1 CHECK_LOGPRINT=1 GOAL="install" CASTLE_CONFIG="--enable-glibc-back-compat --enable-reduce-exports"
-# Win32
+# Win32 exe
     - HOST=i686-w64-mingw32 DPKG_ADD_ARCH="i386" PACKAGES="python3 nsis g++-mingw-w64-i686 wine1.6 bc" GOAL="deploy" BITCOIN_CONFIG="--enable-reduce-exports"
 # 32-bit Linux
     - HOST=i686-pc-linux-gnu PACKAGES="g++-multilib bc python3-zmq" GOAL="install" BITCOIN_CONFIG="--enable-zmq --enable-glibc-back-compat --enable-reduce-exports LDFLAGS=-static-libstdc++" USE_SHELL="/bin/dash" PYZMQ=true
+# Win64 exe
+    - HOST=x86_64-w64-mingw32 DPKG_ADD_ARCH="i386" PACKAGES="python3 nsis g++-mingw-w64-x86-64 wine1.6 bc" GOAL="deploy" BITCOIN_CONFIG="--enable-reduce-exports"
 # Win64
-    - HOST=x86_64-w64-mingw32 DPKG_ADD_ARCH="i386" PACKAGES="python3 nsis g++-mingw-w64-x86-64 wine1.6 bc" RUN_TESTS=false GOAL="install" BITCOIN_CONFIG="--enable-reduce-exports"
+    - HOST=x86_64-w64-mingw32-qt DPKG_ADD_ARCH="i386" PACKAGES="python3 nsis g++-mingw-w64-x86-64 wine1.6 bc" RUN_TESTS=false GOAL="install" BITCOIN_CONFIG="--enable-reduce-exports"
 #CASTLED
     - HOST=x86_64-unknown-linux-gnu PACKAGES="bc python3-zmq" DEP_OPTS="NO_QT=1 NO_UPNP=1 DEBUG=1" RUN_TESTS=false GOAL="install" BITCOIN_CONFIG="--enable-zmq --enable-glibc-back-compat --enable-reduce-exports CPPFLAGS=-DDEBUG_LOCKORDER" PYZMQ=true
 # No wallet
