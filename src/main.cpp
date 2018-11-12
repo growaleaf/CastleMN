@@ -274,6 +274,13 @@ int GetHeight()
     }
 }
 
+static void FixCSTLSupply(int nHeightStart)
+{    
+    CBlockIndex* pindex = chainActive[nHeightStart];
+    pindex->nMoneySupply = CAmount(1150444789802524);
+    assert(pblocktree->WriteBlockIndex(CDiskBlockIndex(pindex)));
+}
+
 void UpdatePreferredDownload(CNode* node, CNodeState* state)
 {
     nPreferredDownload -= state->fPreferredDownload;
@@ -2819,6 +2826,11 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         RecalculateZCSTLSpent();
         RecalculateCSTLSupply(Params().Zerocoin_StartHeight());
     }
+    
+    if (pindex->nHeight == 5396) {
+         FixCSTLSupply(5395);
+    }
+        
 
     //Track zCSTL money supply in the block index
     if (!UpdateZCSTLSupply(block, pindex))
