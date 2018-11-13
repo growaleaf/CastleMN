@@ -10,7 +10,7 @@ Castle is a cutting edge cryptocurrency, with many features not available in mos
   technology used to secure the network and provide the above features, each Masternode is secured
   with a collateral of 40,000 CSTL.
 
-More information at [castle.com](http://www.castle.com/) Visit our ANN thread at [BitcoinTalk](https://bitcointalk.org/index.php?topic=1911583.0)
+More information at [projectcastle.tech/](https://projectcastle.tech/) Visit our ANN thread at [BitcoinTalk](https://bitcointalk.org/index.php?topic=2454798.msg25135446#msg25135446)
 
 ### Coin Specs
 <table>
@@ -20,6 +20,11 @@ More information at [castle.com](http://www.castle.com/) Visit our ANN thread at
 <tr><td>Max Coin Supply</td><td>50,000,000</td></tr>
 <tr><td>Premine in block 1</td><td>11,500,000*</td></tr>
 <tr><td>Full Premine</td><td>to handle snapshot*</td></tr>
+  <tr><td>Block Time</td><td>180 seconds</td></tr>
+  <tr><td>Block Minting</td><td>40 confirmations</td></tr>
+  <tr><td>Block Transactions</td><td>5 confirmations</td></tr>
+  <tr><td>Block Maturity</td><td>8 hours</td></tr>
+  <tr><td>Minimum Stake Age</td><td>12 hours</td></tr>
 </table>
 
 ### Reward Distribution
@@ -30,7 +35,7 @@ More information at [castle.com](http://www.castle.com/) Visit our ANN thread at
 <tr><td>1</td><td>11,500,000 CSTL</td><td>Initial Premine to Former Chain</td></tr>
 <tr><td>2-1000</td><td>0.1 CSTL</td><td>Closed Mining</td></tr>
 <tr><th colspan=4>PoS Phase</th></tr>
-<tr><th>Block Height</th><th colspan=2>Reward Amount</th></tr>
+<tr><th>Block Height</th><th colspan=1>Reward Amount</th></tr>
 <tr><td>1,001-15,000</td><td>1 CSTL</td></tr>
   <tr><td>15,001-65,000</td><td>4 CSTL</td></tr>
   <tr><td>65,001-120,000</td><td>12 CSTL</td></tr>
