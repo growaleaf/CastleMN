@@ -26,6 +26,7 @@ More information at [projectcastle.tech/](https://projectcastle.tech/) Visit our
   <tr><td>Block Maturity</td><td>8 hours</td></tr>
   <tr><td>Minimum Stake Age</td><td>12 hours</td></tr>
 </table>
+*additional coins in premine not for snapshot distributed to promote the project (not to be retained by developers)
 
 ### Reward Distribution
 
