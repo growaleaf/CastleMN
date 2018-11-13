@@ -10,7 +10,27 @@ Castle is a cutting edge cryptocurrency, with many features not available in mos
   technology used to secure the network and provide the above features, each Masternode is secured
   with a collateral of 40,000 CSTL.
 
-More information at [projectcastle.tech/](https://projectcastle.tech/) Visit our ANN thread at [BitcoinTalk](https://bitcointalk.org/index.php?topic=2454798.msg25135446#msg25135446)
+<table>
+  <th colspan=2>Official links:</th>
+
+<tr><td>Website:</td><td> https://projectcastle.tech</td></tr>
+<tr><td>Explorer:</td><td> http://explorer.projectcastle.tech</td></tr>
+<tr><td>White Paper:</td><td> https://projectcastle.tech/White_Paper.pdf</td></tr>
+<tr><td>Twitter:</td><td> https://twitter.com/Castle_CSTL</td></tr>
+<tr><td>Facebook:</td><td> https://www.facebook.com/CastleCSTL</td></tr>
+<tr><td>Telegram:</td><td> https://t.me/castle_cstl</td></tr>
+<tr><td>Bitcointalk ANN:</td><td> https://bitcointalk.org/index.php?topic=2454798</td></tr>
+<tr><td>Github:</td><td> https://github.com/growaleaf/CastleMN</td></tr>
+<tr><td>CoinMarketCap</td><td>https://coinmarketcap.com/currencies/castle/</td></tr>
+</table>
+
+<table>
+  <th colspan=2>Exchanges</th>
+
+<tr><td>Crex24:</td><td> https://crex24.com/exchange/CSTL-BTC</td></tr>
+</table>
+
+
 
 ### Coin Specs
 <table>
