@@ -15,6 +15,7 @@ More information at [projectcastle.tech/](https://projectcastle.tech/) Visit our
 ### Coin Specs
 <table>
 <tr><td>Algo</td><td>Quark</td></tr>
+  <tr><td>Masternode Collateral</td><td>40,000 CSTL</td></tr>
 <tr><td>Block Time</td><td>180 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
 <tr><td>Max Coin Supply</td><td>50,000,000</td></tr>
