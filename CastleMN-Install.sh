@@ -6,7 +6,7 @@ CONFIGFOLDER='/root/.castle'
 COIN_DAEMON='/root/castled'
 COIN_CLI='/root/castle-cli'
 COIN_REPO='https://github.com/growaleaf/CastleMN/releases/download/v2.0.2/castle-2.0.2-ubuntu16.04-daemon.zip'
-COIN_NAME='Castle 2.0'
+COIN_NAME='Castle-MN'
 COIN_PORT=35801
 RPC_PORT=35801
 
@@ -242,7 +242,6 @@ function setup_node() {
   create_key
   update_config
   enable_firewall
-  install_sentinel
   important_information
   configure_systemd
 }
