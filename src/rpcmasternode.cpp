@@ -208,7 +208,8 @@ UniValue listmasternodes(const UniValue& params, bool fHelp)
             "    \"txhash\": \"hash\",    (string) Collateral transaction hash\n"
             "    \"outidx\": n,         (numeric) Collateral transaction output index\n"
             "    \"status\": s,         (string) Status (ENABLED/EXPIRED/REMOVE/etc)\n"
-            "    \"addr\": \"addr\",      (string) Masternode CSTL address\n"
+            "    \"addr\": \"addr\",      (string) Masternode CSTL collateral address\n"
+            "    \"ipaddr\": \"ipaddr\",  (string) Masternode HUZU IP address\n"
             "    \"version\": v,        (numeric) Masternode protocol version\n"
             "    \"lastseen\": ttt,     (numeric) The time in seconds since epoch (Jan 1 1970 GMT) of the last seen\n"
             "    \"activetime\": ttt,   (numeric) The time in seconds since epoch (Jan 1 1970 GMT) masternode has been active\n"
@@ -255,6 +256,7 @@ UniValue listmasternodes(const UniValue& params, bool fHelp)
             obj.push_back(Pair("outidx", (uint64_t)oIdx));
             obj.push_back(Pair("status", strStatus));
             obj.push_back(Pair("addr", CBitcoinAddress(mn->pubKeyCollateralAddress.GetID()).ToString()));
+            obj.push_back(Pair("ipaddr", mn->addr.ToString()));
             obj.push_back(Pair("version", mn->protocolVersion));
             obj.push_back(Pair("lastseen", (int64_t)mn->lastPing.sigTime));
             obj.push_back(Pair("activetime", (int64_t)(mn->lastPing.sigTime - mn->sigTime)));

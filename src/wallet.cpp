@@ -254,23 +254,13 @@ bool CWallet::LoadMultiSig(const CScript& dest)
 
 bool CWallet::Unlock(const SecureString& strWalletPassphrase, bool anonymizeOnly)
 {
-    SecureString strWalletPassphraseFinal;
-
-    if (!IsLocked()) {
-        fWalletUnlockAnonymizeOnly = anonymizeOnly;
-        return true;
-    }
-
-    strWalletPassphraseFinal = strWalletPassphrase;
-
-
     CCrypter crypter;
     CKeyingMaterial vMasterKey;
 
     {
         LOCK(cs_wallet);
         BOOST_FOREACH (const MasterKeyMap::value_type& pMasterKey, mapMasterKeys) {
-            if (!crypter.SetKeyFromPassphrase(strWalletPassphraseFinal, pMasterKey.second.vchSalt, pMasterKey.second.nDeriveIterations, pMasterKey.second.nDerivationMethod))
+            if (!crypter.SetKeyFromPassphrase(strWalletPassphrase, pMasterKey.second.vchSalt, pMasterKey.second.nDeriveIterations, pMasterKey.second.nDerivationMethod))
                 return false;
             if (!crypter.Decrypt(pMasterKey.second.vchCryptedKey, vMasterKey))
                 continue; // try another master key
@@ -1204,7 +1194,7 @@ CAmount CWalletTx::GetLockedCredit() const
         }
 
         // Add masternode collaterals which are handled likc locked coins
-        if (fMasterNode && vout[i].nValue == Params().MasternodeCollateral()) {
+        else if (fMasterNode && vout[i].nValue == Params().MasternodeCollateral()) {
             nCredit += pwallet->GetCredit(txout, ISMINE_SPENDABLE);
         }
 
@@ -1323,7 +1313,7 @@ CAmount CWalletTx::GetLockedWatchOnlyCredit() const
         }
 
         // Add masternode collaterals which are handled likc locked coins
-        if (fMasterNode && vout[i].nValue == Params().MasternodeCollateral()) {
+        else if (fMasterNode && vout[i].nValue == Params().MasternodeCollateral()) {
             nCredit += pwallet->GetCredit(txout, ISMINE_WATCH_ONLY);
         }
 

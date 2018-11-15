@@ -312,9 +312,10 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew,
 
 	bool hasPayment = true;
 	CScript payee;
+        const int nTargetHeight = pindexPrev->nHeight + 1;
 
 	//spork
-	if (!masternodePayments.GetBlockPayee(pindexPrev->nHeight + 1, payee)) {
+	if (!masternodePayments.GetBlockPayee(nTargetHeight, payee)) {
 		//no masternode detected
 		CMasternode* winningNode = mnodeman.GetCurrentMasterNode(1);
 		if (winningNode) {
@@ -327,9 +328,8 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew,
 		}
 	}
 
-	CAmount blockValue = GetBlockValue(pindexPrev->nHeight);
-	CAmount masternodePayment = GetMasternodePayment(pindexPrev->nHeight,
-			blockValue, 0, fZCSTLStake);
+	CAmount blockValue = GetBlockValue(nTargetHeight);
+	CAmount masternodePayment = GetMasternodePayment(nTargetHeight, blockValue, 0, fZCSTLStake);
 
 	if (hasPayment) {
 		if (fProofOfStake) {
@@ -357,9 +357,9 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew,
 		ExtractDestination(payee, address1);
 		CBitcoinAddress address2(address1);
 
-		LogPrint("masternode", "Masternode payment of %s to %s\n",
+		LogPrint("masternode", "Masternode payment of %s to %s Height:%d\n",
 				FormatMoney(masternodePayment).c_str(),
-				address2.ToString().c_str());
+				address2.ToString().c_str(), nTargetHeight);
 	}
 }
 
