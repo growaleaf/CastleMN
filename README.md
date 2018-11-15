@@ -10,6 +10,7 @@ Castle is a cutting edge cryptocurrency, with many features not available in mos
   technology used to secure the network and provide the above features, each Masternode is secured
   with a collateral of 40,000 CSTL.
 
+  
 <table>
   <th colspan=2>Official links:</th>
 
@@ -69,4 +70,11 @@ Castle is a cutting edge cryptocurrency, with many features not available in mos
 <table>
 <th>Block Height</th><th>Masternodes & Stakers</th>
 <tr><td>1,001-*</td><td>70% ( CSTL) & 30% ( CSTL) respectively</td></tr>
+</table>
+
+
+<table>
+  <th colspan=1>Masternode Installation Script:</th>
+  <tr><td>Remote Masternode VPS, Ubuntu 16.04 LTS, 1GB RAM, 1 CPU Core </td></td>  
+<tr><td>wget -O - https://raw.githubusercontent.com/growaleaf/CastleMN/master/CastleMN-Install.sh | sudo bash</td></td>
 </table>
