@@ -6,11 +6,13 @@ CONFIGFOLDER='/root/.castle'
 COIN_DAEMON='/root/castled'
 COIN_CLI='/root/castle-cli'
 COIN_REPO='https://github.com/growaleaf/CastleMN/releases/download/v2.0.2/castle-2.0.2-ubuntu16.04-daemon.zip'
-COIN_NAME='Castle-MN'
+COIN_NAME='Castle20'
 COIN_PORT=35801
 RPC_PORT=35801
 
+
 NODEIP=$(curl -s4 icanhazip.com)
+
 
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -25,17 +27,15 @@ function compile_node() {
   compile_error
   COIN_ZIP=$(echo $COIN_REPO | awk -F'/' '{print $NF}')
   unzip $COIN_ZIP -d /root >/dev/null 2>&1
-  chmod +x /root/castle*/*  >/dev/null 2>&1
-    cp /root/castle*/* /root  >/dev/null 2>&1
+  chmod +x /root/castle*/* >/dev/null 2>&1
+    cp /root/castle*/* /root >/dev/null 2>&1
   compile_error
-  cp /root/castle*/* /usr/local/bin  >/dev/null 2>&1
-  chmod +x /usr/local/bin/castle*  >/dev/null 2>&1
-  rm -rf /root/castle*
+  cp /root/castle*/* /usr/local/bin >/dev/null 2>&1
+  chmod +x /usr/local/bin/castle* >/dev/null 2>&1
   compile_error
   strip $COIN_DAEMON $COIN_CLI
   cd -
   rm -rf $TMP_FOLDER
-
 }
 
 function configure_systemd() {
@@ -61,7 +61,7 @@ WantedBy=multi-user.target
 EOF
 
   systemctl daemon-reload
-  sleep 3
+  sleep 5
   systemctl start $COIN_NAME.service >/dev/null 2>&1
   systemctl enable $COIN_NAME.service >/dev/null 2>&1
 
@@ -91,13 +91,14 @@ EOF
 }
 
 function create_key() {
-  echo -e "Enter your ${YELLOW}$COIN_NAME Masternode Private Key${NC}. In your local wallet console, run ${YELLOW}'masternode genkey'${NC} "
+  echo -e "Enter your Castle 2.0 Masternode Private Key${NC}. "
+  echo -e "In your local wallet console, run ${YELLOW}'masternode genkey'${NC} "
   read -e COINKEY
   if [[ -z "$COINKEY" ]]; then
   $COIN_DAEMON -daemon
   sleep 30
   if [ -z "$(ps axo cmd:100 | grep $COIN_DAEMON)" ]; then
-   echo -e "${RED}$COIN_NAME server couldn not start. Check /var/log/syslog for errors.{$NC}"
+   echo -e "${RED}$COIN_NAME server couldn not start. Check /var/log/syslog for errors.${NC}"
    exit 1
   fi
   COINKEY=$($COIN_CLI masternode genkey)
@@ -187,7 +188,7 @@ fi
 }
 
 function prepare_system() {
-echo -e "Prepare the system to install ${GREEN}$COIN_NAME${NC} master node."
+echo -e "Prepare the system to install ${YELLOW}$COIN_NAME${NC} master node."
 apt-get update >/dev/null 2>&1
 DEBIAN_FRONTEND=noninteractive apt-get update > /dev/null 2>&1
 DEBIAN_FRONTEND=noninteractive apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y -qq upgrade >/dev/null 2>&1
@@ -197,7 +198,6 @@ echo -e "${GREEN}Adding bitcoin PPA repository"
 apt-add-repository -y ppa:bitcoin/bitcoin >/dev/null 2>&1
 echo -e "Installing required packages, it may take some time to finish.${NC}"
 apt-get update >/dev/null 2>&1
-apt install unzip -y >/dev/null 2>&1
 apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" make software-properties-common \
 build-essential libtool autoconf libssl-dev libboost-dev libboost-chrono-dev libboost-filesystem-dev libboost-program-options-dev \
 libboost-system-dev libboost-test-dev libboost-thread-dev sudo automake git wget curl libdb4.8-dev bsdmainutils libdb4.8++-dev \
@@ -221,18 +221,16 @@ clear
 
 function important_information() {
  echo
- echo -e "================================================================================================================================"
- echo -e "$COIN_NAME Masternode is up and running listening on port ${YELLOW}$COIN_PORT${NC}."
+ echo -e "========================================================================================="
+ echo -e "Castle 2.0 Masternode is up and running listening on port ${YELLOW}$COIN_PORT${NC}."
  echo -e "Configuration file is: ${YELLOW}$CONFIGFOLDER/$CONFIG_FILE${NC}"
  echo -e "Start: ${YELLOW}systemctl start $COIN_NAME.service${NC}"
  echo -e "Stop: ${YELLOW}systemctl stop $COIN_NAME.service${NC}"
  echo -e "VPS_IP:PORT ${YELLOW}$NODEIP:$COIN_PORT${NC}"
  echo -e "MASTERNODE PRIVATEKEY is: ${YELLOW}$COINKEY${NC}"
- echo -e "You may check ${YELLOW}$COIN_NAME${NC} is running with the following command: ${GREEN}./castle-cli masternode status${NC}"
- echo -e
- echo -e "After the local wallet's Masternode Configuration File has been updated with this information AND the txid/output is obtained"
- echo -e " using ${YELLOW}'masternode outputs'${NC}, restart the local wallet."
- echo -e "In the local wallet's Masternode tab, you should be able to Start the new Masternode"
+ echo -e "Please check ${YELLOW}$COIN_NAME${NC} is running with the following commands:"
+ echo -e "${YELLOW}./castle-cli getinfo${NC}"
+ echo -e "${YELLOW}./castle-cli masternode status${NC}"
  echo -e "================================================================================================================================"
 }
 
@@ -245,6 +243,7 @@ function setup_node() {
   important_information
   configure_systemd
 }
+
 
 ##### Main #####
 clear
