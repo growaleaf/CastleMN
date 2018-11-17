@@ -51,9 +51,9 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 35
 
-#define QAPP_ORG_NAME "CSTL"
-#define QAPP_ORG_DOMAIN "castle.org"
-#define QAPP_APP_NAME_DEFAULT "CSTL-Qt"
-#define QAPP_APP_NAME_TESTNET "CSTL-Qt-testnet"
+#define QAPP_ORG_NAME "Castle"
+#define QAPP_ORG_DOMAIN "projectcastle.tech"
+#define QAPP_APP_NAME_DEFAULT "Castle-Qt"
+#define QAPP_APP_NAME_TESTNET "Castle-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

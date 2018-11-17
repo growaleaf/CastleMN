@@ -44,8 +44,8 @@ Instructions: Homebrew
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/CSTL-Project/CSTL.git
-        cd CSTL
+        git clone https://github.com/growaleaf/CastleMN.git
+        cd CastleMN
 
 2.  Make the Homebrew OpenSSL headers visible to the configure script  (do ```brew info openssl``` to find out why this is necessary, or if you use Homebrew with installation folders different from the default).
 
@@ -97,7 +97,7 @@ All dependencies should be compiled with these flags:
  -arch x86_64
  -isysroot $(xcode-select --print-path)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
 
-Once dependencies are compiled, see release-process.md for how the CSTL-Qt.app
+Once dependencies are compiled, see release-process.md for how the Castle-Qt.app
 bundle is packaged and signed to create the .dmg disk image that is distributed.
 
 Running
