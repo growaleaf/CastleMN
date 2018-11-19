@@ -91,7 +91,7 @@ EOF
 }
 
 function create_key() {
-  echo -e "Enter your Castle 2.0 Masternode Private Key${NC}. "
+  echo -e "Enter your ${YELLOW}Castle 2.0 Masternode Private Key${NC}. "
   echo -e "In your local wallet console, run ${YELLOW}'masternode genkey'${NC} "
   read -e COINKEY
   if [[ -z "$COINKEY" ]]; then
