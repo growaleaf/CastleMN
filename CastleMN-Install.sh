@@ -5,7 +5,7 @@ CONFIG_FILE='castle.conf'
 CONFIGFOLDER='/root/.castle'
 COIN_DAEMON='/root/castled'
 COIN_CLI='/root/castle-cli'
-COIN_REPO='https://github.com/growaleaf/CastleMN/releases/download/v2.0.2/castle-2.0.3-ubuntu16.04-daemon.zip'
+COIN_REPO='https://github.com/growaleaf/CastleMN/releases/download/v2.0.3/castle-2.0.3-ubunut16.04-linux-daemon.zip'
 COIN_NAME='Castle20'
 COIN_PORT=35801
 RPC_PORT=35801
@@ -91,7 +91,7 @@ EOF
 }
 
 function create_key() {
-  echo -e "Enter your Castle 2.0 Masternode Private Key${NC}. "
+  echo -e "Enter your ${YELLOW}Castle 2.0 Masternode Private Key${NC}. "
   echo -e "In your local wallet console, run ${YELLOW}'masternode genkey'${NC} "
   read -e COINKEY
   if [[ -z "$COINKEY" ]]; then
