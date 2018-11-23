@@ -5,7 +5,7 @@ CONFIG_FILE='castle.conf'
 CONFIGFOLDER='/root/.castle'
 COIN_DAEMON='/root/castled'
 COIN_CLI='/root/castle-cli'
-COIN_REPO='https://github.com/growaleaf/CastleMN/releases/download/v2.0.3/castle-2.0.3-ubunut16.04-linux-daemon.zip'
+COIN_REPO='https://github.com/growaleaf/CastleMN/releases/download/v2.0.3/castle-2.0.3-ubuntu18.04-linux-daemon.zip'
 COIN_NAME='Castle20'
 COIN_PORT=35801
 RPC_PORT=35801
@@ -171,8 +171,8 @@ fi
 
 
 function checks() {
-if [[ $(lsb_release -d) != *16.04* ]]; then
-  echo -e "${RED}You are not running Ubuntu 16.04. Installation is cancelled.${NC}"
+if [[ $(lsb_release -d) != *18.04* ]]; then
+  echo -e "${RED}You are not running Ubuntu 18.04 LTS. Installation is cancelled.${NC}"
   exit 1
 fi
 
