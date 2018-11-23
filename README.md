@@ -75,6 +75,6 @@ Castle is a cutting edge cryptocurrency, with many features not available in mos
 
 <table>
   <th colspan=1>Masternode Installation Script:</th>
-  <tr><td>Remote Masternode VPS, Ubuntu 16.04 LTS, 1GB RAM, 1 CPU Core </td></td>  
+  <tr><td>Remote Masternode VPS, Ubuntu 18.04 LTS, 1GB RAM, 1 CPU Core </td></td>  
 <tr><td>sudo curl -L https://raw.githubusercontent.com/growaleaf/CastleMN/master/CastleMN-Install.sh | bash</td></td>
 </table>
