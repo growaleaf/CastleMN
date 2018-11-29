@@ -29,6 +29,7 @@ Castle is a cutting edge cryptocurrency, with many features not available in mos
   <th colspan=2>Exchanges</th>
 
 <tr><td>Crex24:</td><td> https://crex24.com/exchange/CSTL-BTC</td></tr>
+<tr><td>Crypto-Bridge:</td><td> https://wallet.crypto-bridge.org/market/BRIDGE.CSTL_BRIDGE.BTC</td></tr>
 </table>
 
 
