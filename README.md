@@ -17,6 +17,7 @@ Castle is a cutting edge cryptocurrency, with many features not available in mos
 <tr><td>Website:</td><td> https://projectcastle.tech</td></tr>
 <tr><td>Explorer:</td><td> http://explorer.projectcastle.tech</td></tr>
 <tr><td>White Paper:</td><td> https://projectcastle.tech/White_Paper.pdf</td></tr>
+<tr><td>Discord:</td><td> https://discord.gg/pEj3fej</td></tr>
 <tr><td>Twitter:</td><td> https://twitter.com/Castle_CSTL</td></tr>
 <tr><td>Facebook:</td><td> https://www.facebook.com/CastleCSTL</td></tr>
 <tr><td>Telegram:</td><td> https://t.me/castle_cstl</td></tr>
@@ -29,6 +30,7 @@ Castle is a cutting edge cryptocurrency, with many features not available in mos
   <th colspan=2>Exchanges</th>
 
 <tr><td>Crex24:</td><td> https://crex24.com/exchange/CSTL-BTC</td></tr>
+<tr><td>CryptoBridge:</td><td> https://wallet.crypto-bridge.org/market/BRIDGE.CSTL_BRIDGE.BTC</td></tr>
 </table>
 
 
