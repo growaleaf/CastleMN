@@ -1,5 +1,3 @@
-![Castle](http://projectcastle.tech/images/logo-white.png "Castle")
-
 # Voting and Budget Proposals
 If you want to vote on one of the Budget Proposals, you must own at least one masternode.
 
