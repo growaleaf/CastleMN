@@ -3,7 +3,8 @@ If you want to vote on one of the Budget Proposals, you must own at least one ma
 
 ## Proposal 1:
 ### Creation of GROW community coin, using a Castle chain snapshot
-#### Proposal 1 voting hash   Voting ends at SuperBlock 43200
+#### Voting is during blocks 43200-86401
+##### Proposal 1 voting hash  
 ```
 2e9010186eeb4f7fc6fc21b747f03f02f4b32599060a4e987d54f65393e994fb
 ```
