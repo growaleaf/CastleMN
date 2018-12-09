@@ -50,21 +50,21 @@ Together we will grow!"
 <th colspan=4>PoW Phase</th>
 <tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
 <tr><td>1</td><td>17M GROW</td><td>Initial Premine</td></tr>
-<tr><td>2-5000</td><td>10 CSTL</td><td>Closed Mining</td></tr>
+<tr><td>2-5000</td><td>10 GROW</td><td>Closed Mining</td></tr>
 <tr><th colspan=4>PoS Phase</th></tr>
 <tr><th>Block Height</th><th colspan=1>Reward Amount</th></tr>
 <tr><td>5,001-10,000</td><td>100 GROW</td></tr>
   <tr><td>10,001-100,000</td><td>75 GROW</td></tr>
-  <tr><td>100,001-160,000</td><td>50 CSTL</td></tr>
-    <tr><td>160,001-500,000</td><td>25 CSTL</td></tr>
-  <tr><td>500,001-*</td><td>25 CSTL</td></tr>
+  <tr><td>100,001-160,000</td><td>50 GROW</td></tr>
+    <tr><td>160,001-500,000</td><td>25 GROW</td></tr>
+  <tr><td>500,001-*</td><td>25 GROW</td></tr>
 </table>
 
 ### PoS Rewards Breakdown
 
 <table>
 <th>Block Height</th><th>Masternodes & Stakers</th>
-<tr><td>1,001-*</td><td>70% ( CSTL) & 30% ( CSTL) respectively</td></tr>
+<tr><td>5,001-*</td><td>70% (GROW) & 30% (GROW0) respectively</td></tr>
 </table>
 
 
