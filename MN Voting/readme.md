@@ -104,7 +104,7 @@ mnbudgetvote "many" "enter proposal hash" "yes"
 ```
 To vote with a single masternode address:
 ```
-mnbudgetvote "alias" "wallet01" "enter proposal hash" "yes"
+mnbudgetvote "alias" "enter proposal hash" "yes" "wallet01"
 ```
 
 ## Voting using Castle CLI
@@ -114,5 +114,5 @@ castle-cli mnbudgetvote "many" "enter proposal hash" "yes"
 ```
 To vote with a single masternode address:
 ```
-castle-cli mnbudgetvote "alias" "wallet01" "enter proposal hash" "yes"
+castle-cli mnbudgetvote "alias" "enter proposal hash" "yes" "wallet01"
 ```
