@@ -26,14 +26,14 @@ Together we will grow!"
 <tr><td>Facebook:</td><td> https://www.facebook.com/groups/growproject/</td></tr>
 <tr><td>Telegram:</td><td> https://t.me/GROWcoinOfficial</td></tr>
 <tr><td>Bitcointalk ANN:</td><td> TBD </td></tr>
-<tr><td>Github:</td><td> TBD </td></tr>
+<tr><td>Github:</td><td> https://github.com/growaleaf/Grow </td></tr>
 <tr><td>CoinMarketCap</td><td>TBD </td></tr>
 </table>
 
 ### Coin Specs
 <table>
 <tr><td>Algo</td><td>Quark</td></tr>
-  <tr><td>Masternode Collateral</td><td>50,000 GROW</td></tr>
+  <tr><td>Masternode Collateral</td><td>30,000 GROW</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
 <tr><td>Max Coin Supply</td><td>170,000,000</td></tr>
 <tr><td>Premine</td><td>17,000,000</td></tr>
@@ -42,6 +42,29 @@ Together we will grow!"
 <tr><td>Block Transactions</td><td>5 confirmations</td></tr>
 <tr><td>Block Maturity</td><td>4 hours</td></tr>
 <tr><td>Minimum Stake Age</td><td>6 hours</td></tr>
+</table>
+
+### Reward Distribution
+
+<table>
+<th colspan=4>PoW Phase</th>
+<tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
+<tr><td>1</td><td>17M GROW</td><td>Initial Premine</td></tr>
+<tr><td>2-5000</td><td>10 CSTL</td><td>Closed Mining</td></tr>
+<tr><th colspan=4>PoS Phase</th></tr>
+<tr><th>Block Height</th><th colspan=1>Reward Amount</th></tr>
+<tr><td>5,001-10,000</td><td>100 GROW</td></tr>
+  <tr><td>10,001-100,000</td><td>75 GROW</td></tr>
+  <tr><td>100,001-160,000</td><td>50 CSTL</td></tr>
+    <tr><td>160,001-500,000</td><td>25 CSTL</td></tr>
+  <tr><td>500,001-*</td><td>25 CSTL</td></tr>
+</table>
+
+### PoS Rewards Breakdown
+
+<table>
+<th>Block Height</th><th>Masternodes & Stakers</th>
+<tr><td>1,001-*</td><td>70% ( CSTL) & 30% ( CSTL) respectively</td></tr>
 </table>
 
 
