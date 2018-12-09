@@ -64,7 +64,7 @@ Together we will grow!"
 
 <table>
 <th>Block Height</th><th>Masternodes & Stakers</th>
-<tr><td>5,001-*</td><td>70% (GROW) & 30% (GROW0) respectively</td></tr>
+<tr><td>5,001-*</td><td>70% (GROW) & 30% (GROW) respectively</td></tr>
 </table>
 
 
