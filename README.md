@@ -24,6 +24,7 @@ Castle is a cutting edge cryptocurrency, with many features not available in mos
 <tr><td>Bitcointalk ANN:</td><td> https://bitcointalk.org/index.php?topic=2454798</td></tr>
 <tr><td>Github:</td><td> https://github.com/growaleaf/CastleMN</td></tr>
 <tr><td>CoinMarketCap</td><td>https://coinmarketcap.com/currencies/castle/</td></tr>
+<tr><td>CSTL Wallets</td>https://github.com/growaleaf/CastleMN/releases</td></tr>
 </table>
 
 <table>
