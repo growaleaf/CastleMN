@@ -43,7 +43,7 @@ Castle is a cutting edge cryptocurrency, with many features not available in mos
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
 <tr><td>Max Coin Supply</td><td>50,000,000</td></tr>
 <tr><td>Premine in block 1</td><td>11,500,000*</td></tr>
-<tr><td>Full Premine</td><td>to handle snapshot*</td></tr>
+<tr><td>Full Premine</td><td>to handle snapshot to current chain*</td></tr>
   <tr><td>Block Time</td><td>60 seconds</td></tr>
   <tr><td>Block Minting</td><td>40 confirmations</td></tr>
   <tr><td>Block Transactions</td><td>5 confirmations</td></tr>
