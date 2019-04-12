@@ -32,6 +32,8 @@ Castle is a cutting edge cryptocurrency, with many features not available in mos
 
 <tr><td>Crex24:</td><td> https://crex24.com/exchange/CSTL-BTC</td></tr>
 <tr><td>CryptoBridge:</td><td> https://wallet.crypto-bridge.org/market/BRIDGE.CSTL_BRIDGE.BTC</td></tr>
+<tr><td>Labrotix:</td><td>https://www.labrotix.com/market/btc-cstl</td></tr>
+<tr><td>FiberCoin:</td><td>https://fibercoinstore.tk/market/FBC-CSTL</td></tr>
 </table>
 
 
