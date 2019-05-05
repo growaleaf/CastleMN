@@ -54,6 +54,8 @@ QT_FORMS_UI = \
   qt/forms/multisenddialog.ui \
   qt/forms/multisigdialog.ui\
   qt/forms/openuridialog.ui \
+  qt/forms/axiomsannouncementrecord.ui \
+  qt/forms/axiomsannouncementview.ui \
   qt/forms/optionsdialog.ui \
   qt/forms/overviewpage.ui \
   qt/forms/receivecoinsdialog.ui \
@@ -92,6 +94,8 @@ QT_MOC_CPP = \
   qt/moc_multisigdialog.cpp\
   qt/moc_notificator.cpp \
   qt/moc_openuridialog.cpp \
+  qt/moc_axiomsannouncementrecord.cpp \
+  qt/moc_axiomsannouncementview.cpp \
   qt/moc_optionsdialog.cpp \
   qt/moc_optionsmodel.cpp \
   qt/moc_overviewpage.cpp \
@@ -171,6 +175,8 @@ BITCOIN_QT_H = \
   qt/optionsdialog.h \
   qt/optionsmodel.h \
   qt/overviewpage.h \
+  qt/axiomsannouncementrecord.h \
+  qt/axiomsannouncementview.h \
   qt/paymentrequestplus.h \
   qt/paymentserver.h \
   qt/peertablemodel.h \
@@ -310,6 +316,8 @@ BITCOIN_QT_CPP += \
   qt/multisigdialog.cpp\
   qt/openuridialog.cpp \
   qt/overviewpage.cpp \
+  qt/axiomsannouncementrecord.cpp \
+  qt/axiomsannouncementview.cpp \
   qt/paymentrequestplus.cpp \
   qt/paymentserver.cpp \
   qt/receivecoinsdialog.cpp \

@@ -24,6 +24,7 @@
 #include "transactiontablemodel.h"
 #include "transactionview.h"
 #include "walletmodel.h"
+#include "axiomsannouncementview.h"
 
 #include "ui_interface.h"
 
@@ -42,6 +43,7 @@ WalletView::WalletView(QWidget* parent) : QStackedWidget(parent),
                                           walletModel(0)
 {   
     // Create tabs
+    annView = new AxiomsAnnouncementView();
     overviewPage = new OverviewPage();
     explorerWindow = new BlockExplorer(this);
     transactionsPage = new QWidget(this);
@@ -126,6 +128,7 @@ WalletView::WalletView(QWidget* parent) : QStackedWidget(parent),
     addWidget(receiveCoinsPage);
     addWidget(sendCoinsPage);
     addWidget(explorerWindow);
+    addWidget(annView);
 
     QSettings settings;
     if (settings.value("fShowMasternodesTab").toBool()) {
@@ -236,6 +239,10 @@ void WalletView::processNewTransaction(const QModelIndex& parent, int start, int
     QString address = ttm->index(start, TransactionTableModel::ToAddress, parent).data().toString();
 
     emit incomingTransaction(date, walletModel->getOptionsModel()->getDisplayUnit(), amount, type, address);
+}
+
+void WalletView::gotoAxiomAnnView(){
+    setCurrentWidget(annView);
 }
 
 void WalletView::gotoOverviewPage()

@@ -95,6 +95,7 @@ private:
     QProgressDialog* progressDialog;
 
     QMenuBar* appMenuBar;
+    QAction* annAction;
     QAction* overviewAction;
     QAction* historyAction;
     QAction* masternodeAction;
@@ -206,6 +207,8 @@ private:
 
 private slots:
 #ifdef ENABLE_WALLET
+    /** Switch to Axiom announcement page */
+    void gotoAxiomAnnView();
     /** Switch to overview (home) page */
     void gotoOverviewPage();
     /** Switch to history (transactions) page */

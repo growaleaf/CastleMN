@@ -128,6 +128,7 @@ public:
     int Block_Enforce_Invalid() const { return nBlockEnforceInvalidUTXO; }
     int Zerocoin_Block_V2_Start() const { return nBlockZerocoinV2; }
     CAmount InvalidAmountFiltered() const { return nInvalidAmountFiltered; };
+    int Zerocoin_Block_Disabled() const { return nBlockZerocoinDisabled; }
     
 
 protected:
@@ -194,6 +195,7 @@ protected:
     int nBlockLastGoodCheckpoint;
     int nBlockEnforceInvalidUTXO;
     int nBlockZerocoinV2;
+    int nBlockZerocoinDisabled;
 };
 
 /**

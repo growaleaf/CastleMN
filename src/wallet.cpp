@@ -2113,8 +2113,9 @@ bool CWallet::SelectStakeCoins(std::list<std::unique_ptr<CStakeInput> >& listInp
         }
     }
 
+    bool zdisabled = chainActive.Height() > Params().Zerocoin_Block_Disabled();
     //zCSTL
-    if (GetBoolArg("-zcastlestake", true) && chainActive.Height() > Params().Zerocoin_Block_V2_Start() && !IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
+    if (GetBoolArg("-zcastlestake", true) && chainActive.Height() > Params().Zerocoin_Block_V2_Start() && !IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE) && !zdisabled) {
         //Only update zCSTL set once per update interval
         bool fUpdate = false;
         static int64_t nTimeLastUpdate = 0;
@@ -3973,6 +3974,8 @@ void CWallet::AutoZeromint()
 {
     // Don't bother Autominting if Zerocoin Protocol isn't active
     if (GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) return;
+    
+    if (chainActive.Tip()->nHeight > Params().Zerocoin_Block_Disabled()) return;
 
     // Wait until blockchain + masternodes are fully synced and wallet is unlocked.
     if (!masternodeSync.IsSynced() || IsLocked()){

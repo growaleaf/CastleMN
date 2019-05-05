@@ -58,11 +58,12 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     (    2550, uint256("b65c8988dc018d10166e7fd55c697c6c42d1afccc0ffdc8d7188b921b6a987bb"))
     (    5470, uint256("360d899c16eec21505c58b3e95286d497f9c35e03b7740f178d8aaa7152a68fa"))
     (   10100, uint256("3da48d74cfd9953affce95636bd5586c670453cc2662f6f46d638f9c703f7588"))
+    (   251923, uint256("466fa8147b68fff8f64752854c3e0e056beb9e6de32a93a28471d34c3c03ba94"))
     ;
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1542323097, // * UNIX timestamp of last checkpoint block
-    19439,    // * total number of transactions between genesis and last checkpoint
+    1556927180, // * UNIX timestamp of last checkpoint block
+    512591,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -146,9 +147,9 @@ public:
         nBlockEnforceInvalidUTXO = 1200; //Start enforcing the invalid UTXO's
         nInvalidAmountFiltered = 0*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
         nBlockZerocoinV2 = 1400; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
-        nEnforceNewSporkKey = 1536963897; //!> Sporks signed after (GMT): Tuesday, May 1, 2018 7:00:00 AM GMT must use the new spork key
-        nRejectOldSporkKey = 1536963896; //!> Fully reject old spork key after (GMT): Friday, June 1, 2018 12:00:00 AM
-
+        nEnforceNewSporkKey = 1556925306; //!> Sporks signed after (GMT): Monday 13 May 2019 22:37:03 must use the new spork key
+        nRejectOldSporkKey = 1558823823; //!> Fully reject old spork key after (GMT): Saturday 25 May 2019 22:37:03
+        nBlockZerocoinDisabled = 260000;
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
          * be spent as it did not originally exist in the database.
@@ -204,7 +205,7 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04d64f1fbce0758ecb048572f6a25f457ef63e863cd74d7a46f0325764682fa9d131becffccdf332c7d451d8d352eb209a37211cf06b5d4becb14556fe212bd2c3";
+        strSporkKey = "04789d4539967e0b7dd1e47ef5f04c766d910482e9f5d626f890a0840fb1857127e0f4eac880758a330ed28024a23d002fa45326abcc2990056287c006dd321eed";
         strSporkKeyOld = "04d64f1fbce0758ecb048572f6a25f457ef63e863cd74d7a46f0325764682fa9d131becffccdf332c7d451d8d352eb209a37211cf06b5d4becb14556fe212bd2c3";
         strObfuscationPoolDummyAddress = "PrhtGG3qrXRYexMJTYYn8f6Xmh699DFvSa";
         nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
@@ -272,6 +273,7 @@ public:
         nBlockZerocoinV2 = 444020; //!> The block that zerocoin v2 becomes active
         nEnforceNewSporkKey = 1521604800; //!> Sporks signed after Wednesday, March 21, 2018 4:00:00 AM GMT must use the new spork key
         nRejectOldSporkKey = 1522454400; //!> Reject old spork key after Saturday, March 31, 2018 12:00:00 AM GMT
+        nBlockZerocoinDisabled = 255000;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1518696182;
