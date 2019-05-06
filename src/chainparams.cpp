@@ -149,7 +149,7 @@ public:
         nBlockZerocoinV2 = 1400; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
         nEnforceNewSporkKey = 1556925306; //!> Sporks signed after (GMT): Monday 13 May 2019 22:37:03 must use the new spork key
         nRejectOldSporkKey = 1558823823; //!> Fully reject old spork key after (GMT): Saturday 25 May 2019 22:37:03
-        nBlockZerocoinDisabled = 260000;
+        nBlockZerocoinDisabled = 265000;
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
          * be spent as it did not originally exist in the database.
