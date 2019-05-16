@@ -4399,28 +4399,27 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
              // Start at the block we're adding on to
             CBlockIndex *prev = pindexPrev;
             
-            int readBlock = 0;
-            vector<CBigNum> vBlockSerials;
             CBlock bl;
+            if (!ReadBlockFromDisk(bl, prev))
+                return error("%s: previous block %s not on disk", __func__, prev->GetBlockHash().GetHex());
             // Go backwards on the forked chain up to the split
-            do {
+            vector<CBigNum> vBlockSerials;
+            int readBlock = 0;
+            // Go backwards on the forked chain up to the split
+            while (!chainActive.Contains(prev)) {
+
+                // Increase amount of read blocks
+                readBlock++;
                 // Check if the forked chain is longer than the max reorg limit
                 if(readBlock == Params().MaxReorganizationDepth()){
                     // TODO: Remove this chain from disk.
                     return error("%s: forked chain longer than maximum reorg limit", __func__);
                 }
-                if(!ReadBlockFromDisk(bl, prev))
-                    // Previous block not on disk
-                    return error("%s: previous block %s not on disk", __func__, prev->GetBlockHash().GetHex());
-
-
-                // Increase amount of read blocks
-                readBlock++;
                  // Loop through every input from said block
-               for (const CTransaction& t : bl.vtx) {
-                    for (const CTxIn& in: t.vin) {
+               for (const CTransaction &t : bl.vtx) {
+                    for (const CTxIn &in: t.vin) {
                         // Loop through every input of the staking tx
-                        for (const CTxIn& stakeIn : cstlInputs) {
+                        for (const CTxIn &stakeIn : cstlInputs) {
                             // if it's already spent
                             // First regular staking check
                             if(hasCSTLInputs) {
@@ -4436,9 +4435,13 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
                     }
                 }
 
-                 prev = prev->pprev;
+               // Prev block
+               prev = prev->pprev;
+               // Previous block not on disk
+               if (!ReadBlockFromDisk(bl, prev))
+                    return error("%s: previous block %s not on disk", __func__, prev->GetBlockHash().GetHex());
 
-             } while (!chainActive.Contains(prev));
+            }
 
              // Split height
             splitHeight = prev->nHeight;
@@ -4499,12 +4502,20 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
                 if(coin && !coin->IsAvailable(in.prevout.n)){
                     // If this is not available get the height of the spent and validate it with the forked height
                     // Check if this occurred before the chain split
-                    if(!(isBlockFromFork && coin->nHeight > splitHeight)){
+                    if(!isBlockFromFork){
                         // Coins not available
                         return error("%s: coin stake inputs already spent in main chain", __func__);
                     }
                 }
             }
+        } else {
+            if(!isBlockFromFork)
+                for (const CTxIn&  zCstlInput : zCSTLInputs) {
+                        CoinSpend spend = TxInToZerocoinSpend(zCstlInput);
+                        if (!ContextualCheckZerocoinSpend(stakeTxIn, spend, pindex, 0))
+                            return state.DoS(100,error("%s: main chain ContextualCheckZerocoinSpend failed for tx %s", __func__,
+                                    stakeTxIn.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zcstl");
+                }
         }
 
      }
