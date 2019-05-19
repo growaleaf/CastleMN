@@ -7,6 +7,7 @@
 #define MULTISENDDIALOG_H
 
 #include <QDialog>
+
 #include <QStyle>
 
 namespace Ui
