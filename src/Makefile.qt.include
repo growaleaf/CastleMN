@@ -269,7 +269,8 @@ RES_ICONS = \
   qt/res/icons/unit_ucastle.png \
   qt/res/icons/unit_tcastle.png \
   qt/res/icons/unit_tmcastle.png \
-  qt/res/icons/unit_tucastle.png
+  qt/res/icons/unit_tucastle.png \
+  qt/res/icons/axiom.png
 
 BITCOIN_QT_CPP = \
   qt/bantablemodel.cpp \
