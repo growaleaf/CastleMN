@@ -5,8 +5,8 @@ CONFIG_FILE='castle.conf'
 CONFIGFOLDER='/root/.castle'
 COIN_DAEMON='/root/castled'
 COIN_CLI='/root/castle-cli'
-COIN_REPO='https://github.com/growaleaf/CastleMN/releases/download/v2.0.3/castle-2.0.3-ubuntu18.04-linux-daemon.zip'
-COIN_NAME='Castle20'
+COIN_REPO='https://github.com/growaleaf/CastleMN/releases/download/v2.2.2/castle-2.2.2-ubunt1804-daemon.zip'
+COIN_NAME='Castle22'
 COIN_PORT=35801
 RPC_PORT=35801
 
@@ -91,7 +91,7 @@ EOF
 }
 
 function create_key() {
-  echo -e "Enter your ${YELLOW}Castle 2.0 Masternode Private Key${NC}. "
+  echo -e "Enter your ${YELLOW}Castle 2.2 Masternode Private Key${NC}. "
   echo -e "In your local wallet console, run ${YELLOW}'masternode genkey'${NC} "
   read -e COINKEY
   if [[ -z "$COINKEY" ]]; then
@@ -222,10 +222,10 @@ clear
 function important_information() {
  echo
  echo -e "========================================================================================="
- echo -e "Castle 2.0 Masternode is up and running listening on port ${YELLOW}$COIN_PORT${NC}."
+ echo -e "Castle 2.2 Masternode is up and running listening on port ${YELLOW}$COIN_PORT${NC}."
  echo -e "Configuration file is: ${YELLOW}$CONFIGFOLDER/$CONFIG_FILE${NC}"
- echo -e "Start: ${YELLOW}service Castle20 start${NC}"
- echo -e "Stop: ${YELLOW}service Castle20 stop${NC}"
+ echo -e "Start: ${YELLOW}service Castle22 start${NC}"
+ echo -e "Stop: ${YELLOW}service Castle22 stop${NC}"
  echo -e "VPS_IP:PORT ${YELLOW}$NODEIP:$COIN_PORT${NC}"
  echo -e "MASTERNODE PRIVATEKEY is: ${YELLOW}$COINKEY${NC}"
  echo -e "Please check ${YELLOW}$COIN_NAME${NC} is running with the following commands:"
