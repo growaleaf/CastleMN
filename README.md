@@ -25,14 +25,15 @@ Castle is a cutting edge cryptocurrency, with many features not available in mos
 <tr><td>Github:</td><td> https://github.com/growaleaf/CastleMN</td></tr>
 <tr><td>CoinMarketCap</td><td>https://coinmarketcap.com/currencies/castle/</td></tr>
 <tr><td>CSTL Wallets</td><td>https://github.com/growaleaf/CastleMN/releases</td></tr>
+<tr><td>CSTL Wallet Bootstrap</td><td>https://drive.google.com/file/d/1HgfJ4kiEgVvZF9RFDrS6VuoR7ph_K68o/view?usp=sharing</td></tr>
 </table>
 
 <table>
   <th colspan=2>Exchanges</th>
 
-<tr><td>Crex24:</td><td> https://crex24.com/exchange/CSTL-BTC</td></tr>
+<tr><td>Crex24:</td><td>https://crex24.com/exchange/CSTL-BTC</td></tr>
+<tr><td>Crex24:</td><td>https://trade.birake.com/market/BIRAKE.CSTL_BIRAKE.BTC</td></tr>
 </table>
-
 
 
 ### Coin Specs
