@@ -1,9 +1,77 @@
 <TS language="fr_FR" version="2.1">
 <context>
+    <name>AddNewAddressDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialogue</translation>
+    </message>
+    <message>
+        <source>My Address</source>
+        <translation>Mon Adresse</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adresse</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Bouton poussoir</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ANNULER</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+</context>
+<context>
+    <name>AddNewContactDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialogue</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ANNULER</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Edit Contact</source>
+        <translation>Modifier le contact</translation>
+    </message>
+    <message>
+        <source>Set a label for the selected address</source>
+        <translation>Définir un libellé pour l'adresse sélectionnée</translation>
+    </message>
+    <message>
+        <source>Enter a name for the address (e.g Exchange)</source>
+        <translation>Entrez un nom pour cette adresse (par ex. Bourse)</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>SAUVEGARDER</translation>
+    </message>
+    <message>
+        <source>Edit label for the selected address:
+%1</source>
+        <translation>Modifier le libellé pour l'adresse sélectionnée:
+%1</translation>
+    </message>
+</context>
+<context>
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Cliquez droit pour modifier l'adresse ou le label</translation>
+        <translation>Cliquez droit pour modifier l'adresse ou le libellé</translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -62,12 +130,12 @@
         <translation>Adresses de réception</translation>
     </message>
     <message>
-        <source>These are your CSTL addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Voici vos adresses CSTL pour envoyer des paiements.  Assurez-vous de toujours vérifier le montant et l'adresse de réception avant d'envoyer les jetons</translation>
+        <source>These are your CASTLE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Voici vos adresses CASTLE pour envoyer des paiements.  Assurez-vous de toujours vérifier le montant et l'adresse de réception avant d'envoyer les jetons</translation>
     </message>
     <message>
-        <source>These are your CSTL addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Voici vos adresses CSTL pour les réceptions de vos paiments. Il est recommandé d'utiliser une nouvelle adresse de réception pour chaque transaction.</translation>
+        <source>These are your CASTLE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Voici vos adresses CASTLE pour les réceptions de vos paiments. Il est recommandé d'utiliser une nouvelle adresse de réception pour chaque transaction.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -75,7 +143,7 @@
     </message>
     <message>
         <source>Copy &amp;Label</source>
-        <translation>Copier le label</translation>
+        <translation>Copier &amp;Label</translation>
     </message>
     <message>
         <source>&amp;Edit</source>
@@ -99,6 +167,21 @@
     </message>
 </context>
 <context>
+    <name>AddressLabelRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>Bob Allen</source>
+        <translation>Bob Allen</translation>
+    </message>
+    <message>
+        <source>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</source>
+        <translation>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</translation>
+    </message>
+</context>
+<context>
     <name>AddressTableModel</name>
     <message>
         <source>Label</source>
@@ -109,8 +192,119 @@
         <translation>Adresse</translation>
     </message>
     <message>
+        <source>Date</source>
+        <translation>Date</translation>
+    </message>
+    <message>
         <source>(no label)</source>
         <translation>(pas de label)</translation>
+    </message>
+</context>
+<context>
+    <name>AddressesWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>Envoyer</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
+    <message>
+        <source>Contact name</source>
+        <translation>Nom du contact</translation>
+    </message>
+    <message>
+        <source>Enter address</source>
+        <translation>Entrez l'adresse</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Contacts</source>
+        <translation>Contacts</translation>
+    </message>
+    <message>
+        <source>You can add a new one in the options menu to the side.</source>
+        <translation>Vous pouvez en ajouter une nouvelle depuis le menu latéral des options</translation>
+    </message>
+    <message>
+        <source>No contacts yet</source>
+        <translation>Pas encore de contacts</translation>
+    </message>
+    <message>
+        <source>e.g. John Doe</source>
+        <translation>Par exemple: Pierre Dupont</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>SAUVEGARDER</translation>
+    </message>
+    <message>
+        <source>Invalid Contact Address</source>
+        <translation>Adresse du contact invalide</translation>
+    </message>
+    <message>
+        <source>Cannot store your own address as contact</source>
+        <translation>Vous ne pouvez pas stocker votre propre adresse comme contact</translation>
+    </message>
+    <message>
+        <source>Address already stored, label: %1</source>
+        <translation>Adresse déjà enregistrée, étiquette: %1</translation>
+    </message>
+    <message>
+        <source>New Contact Stored</source>
+        <translation>Nouveau contact enregistré</translation>
+    </message>
+    <message>
+        <source>Error Storing Contact</source>
+        <translation>Erreur lors de l'enregistrement du contact</translation>
+    </message>
+    <message>
+        <source>Contact edited</source>
+        <translation>Contact modifié</translation>
+    </message>
+    <message>
+        <source>Contact edit failed</source>
+        <translation>Erreur de modification du contact</translation>
+    </message>
+    <message>
+        <source>Delete Contact</source>
+        <translation>Supprimer le contact</translation>
+    </message>
+    <message>
+        <source>You are just about to remove the contact:
+
+%1
+
+Are you sure?</source>
+        <translation>Vous êtes sur le point de supprimer le contact :
+
+%1
+
+êtes-vous sûr ?</translation>
+    </message>
+    <message>
+        <source>Contact Deleted</source>
+        <translation>Contact supprimé</translation>
+    </message>
+    <message>
+        <source>Error deleting a contact</source>
+        <translation>Erreur lors de la suppression du contact</translation>
+    </message>
+    <message>
+        <source>Address copied</source>
+        <translation>Adresse copiée</translation>
     </message>
 </context>
 <context>
@@ -120,24 +314,12 @@
         <translation>Dialogue phrase secrète</translation>
     </message>
     <message>
-        <source>Enter passphrase</source>
-        <translation>Entrer la phrase secrète</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
-        <source>New passphrase</source>
-        <translation>Nouvelle phrase secrète</translation>
-    </message>
-    <message>
-        <source>Repeat new passphrase</source>
-        <translation>Confirmer la nouvelle phrase secrète</translation>
-    </message>
-    <message>
-        <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
-        <translation>Est utilisé pour désactiver l'envoi d'argent lorsque l'utilisateur OS est compromis. Ne fournit pas de vrai sécurité.</translation>
-    </message>
-    <message>
-        <source>For anonymization, automint, and staking only</source>
-        <translation>Pour l'anonymat, l'auto-monnayage et le staking seulement</translation>
+        <source>PushButton</source>
+        <translation>Bouton poussoir</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
@@ -150,6 +332,12 @@
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>Cette opération requiert votre phrase secrète pour déverrouiller votre portefeuille.</translation>
+    </message>
+    <message>
+        <source>Unlock wallet
+for staking</source>
+        <translation>Déverrouillez le portefeuille
+pour le staking</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
@@ -176,8 +364,16 @@
         <translation>Confirmer le cryptage du portefeuille</translation>
     </message>
     <message>
-        <source>CSTL will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CSTLs from being stolen by malware infecting your computer.</source>
-        <translation>CSTL va maintenant se fermer pour finir le processus de cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos CSTLs d'un vol par un malware ayant infecté votre ordinateur. </translation>
+        <source>ENCRYPT</source>
+        <translation>CHIFFRER</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ANNULER</translation>
+    </message>
+    <message>
+        <source>CASTLE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CSTLs from being stolen by malware infecting your computer.</source>
+        <translation>CASTLE va maintenant se fermer pour finir le processus de cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos CSTLs d'un vol par un malware ayant infecté votre ordinateur. </translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -198,6 +394,10 @@
     <message>
         <source>Wallet encryption failed</source>
         <translation>Le cryptage du portefeuille a échoué</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
@@ -240,616 +440,6 @@
     </message>
 </context>
 <context>
-    <name>Bip38ToolDialog</name>
-    <message>
-        <source>BIP 38 Tool</source>
-        <translation>Outils BIP 38</translation>
-    </message>
-    <message>
-        <source>&amp;BIP 38 Encrypt</source>
-        <translation>Encrypter avec BIP 38</translation>
-    </message>
-    <message>
-        <source>Address:</source>
-        <translation>Adresse :</translation>
-    </message>
-    <message>
-        <source>Enter a CSTL Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Entrez une adresse CSTL que vous voulez chiffrer en utilisant BIP 38. Entrez une phrase secrète dans le champ du milieu. Cliquez sur chiffrer pour calculer le chiffrage de la clé privée.</translation>
-    </message>
-    <message>
-        <source>The CSTL address to encrypt</source>
-        <translation>L'adresse CSTL à chiffrer</translation>
-    </message>
-    <message>
-        <source>Choose previously used address</source>
-        <translation>Choisir l'adresse précédemment utilisée</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>Copier l'adresse depuis le presse-papier</translation>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <source>Passphrase: </source>
-        <translation>Phrase secrète :</translation>
-    </message>
-    <message>
-        <source>Encrypted Key:</source>
-        <translation>Clé de cryptage :</translation>
-    </message>
-    <message>
-        <source>Copy the current signature to the system clipboard</source>
-        <translation>Copier la signature actuelle dans le presse-papier</translation>
-    </message>
-    <message>
-        <source>Encrypt the private key for this CSTL address</source>
-        <translation>Chiffrer la clef privée pour cette adresse CSTL</translation>
-    </message>
-    <message>
-        <source>Reset all fields</source>
-        <translation>Réinitialiser tous les champs</translation>
-    </message>
-    <message>
-        <source>The encrypted private key</source>
-        <translation>La clé privée chiffrée</translation>
-    </message>
-    <message>
-        <source>Decrypt the entered key using the passphrase</source>
-        <translation>Déchiffrer la clé entrée en utilisant votre phrase secrète</translation>
-    </message>
-    <message>
-        <source>Encrypt &amp;Key</source>
-        <translation>Clé de cryptage</translation>
-    </message>
-    <message>
-        <source>Clear &amp;All</source>
-        <translation>Tout effacer</translation>
-    </message>
-    <message>
-        <source>&amp;BIP 38 Decrypt</source>
-        <translation>BIP 38 Décrypter</translation>
-    </message>
-    <message>
-        <source>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
-        <translation>Entrez la clé privée BIP 38 chiffrée. Entrez la phrase secrète au milieu. Cliquez sur "Déchiffrer la clé" pour calculer la clé privée. Lorsque la clé est déchiffrée, vous pouvez l'ajouter au portefeuille en cliquant "importer l'adresse".</translation>
-    </message>
-    <message>
-        <source>Decrypt &amp;Key</source>
-        <translation>Décrypter la clé</translation>
-    </message>
-    <message>
-        <source>Decrypted Key:</source>
-        <translation>Clé de décryptage :</translation>
-    </message>
-    <message>
-        <source>Import Address</source>
-        <translation>Importer l'adresse</translation>
-    </message>
-    <message>
-        <source>Click "Decrypt Key" to compute key</source>
-        <translation>Cliquez sur "Décrypter la clé" pour calculer la clé</translation>
-    </message>
-    <message>
-        <source>The entered passphrase is invalid. </source>
-        <translation>La phrase secrète entrée est incorrect.</translation>
-    </message>
-    <message>
-        <source>Allowed: 0-9,a-z,A-Z,</source>
-        <translation>Autorisés : 0-9,a-z,A-Z,</translation>
-    </message>
-    <message>
-        <source>The entered address is invalid.</source>
-        <translation>L'adresse entrée est incorrecte.</translation>
-    </message>
-    <message>
-        <source>Please check the address and try again.</source>
-        <translation>Veuillez vérifier l'adresse et réessayer.</translation>
-    </message>
-    <message>
-        <source>The entered address does not refer to a key.</source>
-        <translation>L'adresse renseignée ne correspond à aucune à une clé.</translation>
-    </message>
-    <message>
-        <source>Wallet unlock was cancelled.</source>
-        <translation>Le déverrouillage du portefeuille a été annulé.</translation>
-    </message>
-    <message>
-        <source>Private key for the entered address is not available.</source>
-        <translation>La clé privé pour l'adresse entrée n'est pas valide.</translation>
-    </message>
-    <message>
-        <source>Failed to decrypt.</source>
-        <translation>Échec du décryptage.</translation>
-    </message>
-    <message>
-        <source>Please check the key and passphrase and try again.</source>
-        <translation>Veuillez vérifier la clé et la phrase secrète et réessayer.</translation>
-    </message>
-    <message>
-        <source>Data Not Valid.</source>
-        <translation>Les donnés ne sont pas valides.</translation>
-    </message>
-    <message>
-        <source>Please try again.</source>
-        <translation>Veuillez réessayer.</translation>
-    </message>
-    <message>
-        <source>Please wait while key is imported</source>
-        <translation>Veuillez patienter pendant que la clé est importée</translation>
-    </message>
-    <message>
-        <source>Key Already Held By Wallet</source>
-        <translation>Clé déjà présente dans le portefeuille</translation>
-    </message>
-    <message>
-        <source>Error Adding Key To Wallet</source>
-        <translation>Erreur dans l'ajout de la clé au portefeuille</translation>
-    </message>
-    <message>
-        <source>Successfully Added Private Key To Wallet</source>
-        <translation>La clé privée a été ajoutée avec succès au portefeuille</translation>
-    </message>
-</context>
-<context>
-    <name>BitcoinGUI</name>
-    <message>
-        <source>Wallet</source>
-        <translation>Portefeuille</translation>
-    </message>
-    <message>
-        <source>Node</source>
-        <translation>Nœud </translation>
-    </message>
-    <message>
-        <source>&amp;Overview</source>
-        <translation>&amp; Vue d'ensemble</translation>
-    </message>
-    <message>
-        <source>Show general overview of wallet</source>
-        <translation>Vue d'ensemble du portefeuille</translation>
-    </message>
-    <message>
-        <source>&amp;Send</source>
-        <translation>Envoyer</translation>
-    </message>
-    <message>
-        <source>&amp;Receive</source>
-        <translation>Recevoir</translation>
-    </message>
-    <message>
-        <source>&amp;Transactions</source>
-        <translation>Transactions</translation>
-    </message>
-    <message>
-        <source>Browse transaction history</source>
-        <translation>Afficher l'historique de transaction</translation>
-    </message>
-    <message>
-        <source>Privacy Actions for zCSTL</source>
-        <translation>Actions confidentielles pour zCSTL</translation>
-    </message>
-    <message>
-        <source>E&amp;xit</source>
-        <translation>Quitter</translation>
-    </message>
-    <message>
-        <source>Quit application</source>
-        <translation>Quitter l'application</translation>
-    </message>
-    <message>
-        <source>About &amp;Qt</source>
-        <translation>A propos de Qt</translation>
-    </message>
-    <message>
-        <source>Show information about Qt</source>
-        <translation>Afficher les information concernant Qt</translation>
-    </message>
-    <message>
-        <source>&amp;Options...</source>
-        <translation>Options...</translation>
-    </message>
-    <message>
-        <source>&amp;Show / Hide</source>
-        <translation>Afficher / Cacher</translation>
-    </message>
-    <message>
-        <source>Show or hide the main Window</source>
-        <translation>Afficher ou cacher la fenêtre principale</translation>
-    </message>
-    <message>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation>Crypter le portefeuille...</translation>
-    </message>
-    <message>
-        <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Crypter les clés privées appartenant à votre portefeuille</translation>
-    </message>
-    <message>
-        <source>&amp;Backup Wallet...</source>
-        <translation>Sauvegarde du portefeuille...</translation>
-    </message>
-    <message>
-        <source>Backup wallet to another location</source>
-        <translation>Sauvegarder ailleurs le portefeuille </translation>
-    </message>
-    <message>
-        <source>&amp;Change Passphrase...</source>
-        <translation>Changer la phrase de sécurité...</translation>
-    </message>
-    <message>
-        <source>Change the passphrase used for wallet encryption</source>
-        <translation>Changer la phrase secrète utilisée pour l'encryptage du portefeuille</translation>
-    </message>
-    <message>
-        <source>&amp;Unlock Wallet...</source>
-        <translation>Déverrouiller le portefeuille</translation>
-    </message>
-    <message>
-        <source>Unlock wallet</source>
-        <translation>Déverrouiller le portefeuille</translation>
-    </message>
-    <message>
-        <source>&amp;Lock Wallet</source>
-        <translation>Verrouiller le portefeuille</translation>
-    </message>
-    <message>
-        <source>Sign &amp;message...</source>
-        <translation>Signer le message...</translation>
-    </message>
-    <message>
-        <source>&amp;Verify message...</source>
-        <translation>Vérifier le message...</translation>
-    </message>
-    <message>
-        <source>&amp;Information</source>
-        <translation>&amp;Information</translation>
-    </message>
-    <message>
-        <source>Show diagnostic information</source>
-        <translation>Afficher les informations de dignostique</translation>
-    </message>
-    <message>
-        <source>&amp;Debug console</source>
-        <translation>Console de déboggage</translation>
-    </message>
-    <message>
-        <source>Open debugging console</source>
-        <translation>Ouvrir la console de déboggage</translation>
-    </message>
-    <message>
-        <source>&amp;Network Monitor</source>
-        <translation>&amp;Moniteur Réseau </translation>
-    </message>
-    <message>
-        <source>Show network monitor</source>
-        <translation>Voir le moniteur réseau </translation>
-    </message>
-    <message>
-        <source>&amp;Peers list</source>
-        <translation>Liste des pairs</translation>
-    </message>
-    <message>
-        <source>Show peers info</source>
-        <translation>Afficher les infos des pairs</translation>
-    </message>
-    <message>
-        <source>Wallet &amp;Repair</source>
-        <translation>Réparation du portefeuille</translation>
-    </message>
-    <message>
-        <source>Show wallet repair options</source>
-        <translation>Montrer les options de réparation du portefeuille </translation>
-    </message>
-    <message>
-        <source>Open configuration file</source>
-        <translation>Ouvrir le fichier de configuration</translation>
-    </message>
-    <message>
-        <source>Show Automatic &amp;Backups</source>
-        <translation>Montrer les sauvegardes automatiques</translation>
-    </message>
-    <message>
-        <source>Show automatically created wallet backups</source>
-        <translation>Montrer les sauvegardes de portefeuille créées automatiquements</translation>
-    </message>
-    <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>Adresses d'envoi</translation>
-    </message>
-    <message>
-        <source>Show the list of used sending addresses and labels</source>
-        <translation>Montrer la liste des adresses et libellés d'envoi utilisés</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>Adresses de réception</translation>
-    </message>
-    <message>
-        <source>Show the list of used receiving addresses and labels</source>
-        <translation>Montrer la liste des adresses et libellés de réception utilisés</translation>
-    </message>
-    <message>
-        <source>&amp;Multisignature creation...</source>
-        <translation>&amp; Création multi-signatures</translation>
-    </message>
-    <message>
-        <source>Create a new multisignature address and add it to this wallet</source>
-        <translation>Créer une nouvelle adresse multi-signatures et l'ajouter à ce portefeuille</translation>
-    </message>
-    <message>
-        <source>&amp;Multisignature spending...</source>
-        <translation>&amp; Dépenses multi-signatures</translation>
-    </message>
-    <message>
-        <source>Spend from a multisignature address</source>
-        <translation>Dépenses depuis des adresses multi-signatures</translation>
-    </message>
-    <message>
-        <source>&amp;Multisignature signing...</source>
-        <translation>&amp; multi-signatures</translation>
-    </message>
-    <message>
-        <source>Sign with a multisignature address</source>
-        <translation>Signer avec une adresse multi-signature</translation>
-    </message>
-    <message>
-        <source>Open &amp;URI...</source>
-        <translation>Ouvir URI...</translation>
-    </message>
-    <message>
-        <source>&amp;Command-line options</source>
-        <translation>&amp;Options en ligne de commande </translation>
-    </message>
-    <message numerus="yes">
-        <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>%n bloc de l'historique de transaction traité.</numerusform><numerusform>%n blocs de l'historique de transaction traités.</numerusform></translation>
-    </message>
-    <message>
-        <source>Synchronizing additional data: %p%</source>
-        <translation>Synchronisation des données additionnelles : %p%</translation>
-    </message>
-    <message>
-        <source>%1 behind. Scanning block %2</source>
-        <translation>%1 derrière. Analyse du bloc %2</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonymization and staking only</source>
-        <translation>Le portefeuille est &lt;b&gt;chiffré&lt;/b&gt; et pour l'instant &lt;b&gt;débloqué&lt;/b&gt;pour l'anonymat et le staking seulement</translation>
-    </message>
-    <message>
-        <source>&amp;File</source>
-        <translation>&amp;Fichier</translation>
-    </message>
-    <message>
-        <source>&amp;Settings</source>
-        <translation>&amp;Paramètres</translation>
-    </message>
-    <message>
-        <source>&amp;Tools</source>
-        <translation>&amp;Outils</translation>
-    </message>
-    <message>
-        <source>&amp;Help</source>
-        <translation>&amp;Aide</translation>
-    </message>
-    <message>
-        <source>Tabs toolbar</source>
-        <translation>Onglets de la barre d'outils</translation>
-    </message>
-    <message>
-        <source>Castle Core</source>
-        <translation>Castle Core</translation>
-    </message>
-    <message>
-        <source>Send coins to a CSTL address</source>
-        <translation>Envoyer des pièces à une adresse CSTL</translation>
-    </message>
-    <message>
-        <source>Request payments (generates QR codes and castle: URIs)</source>
-        <translation>Requêtes de paiements (Génère des QR codes et des URIs CSTL)</translation>
-    </message>
-    <message>
-        <source>&amp;Privacy</source>
-        <translation>&amp;Confidentialité</translation>
-    </message>
-    <message>
-        <source>&amp;Masternodes</source>
-        <translation>Masternodes</translation>
-    </message>
-    <message>
-        <source>Browse masternodes</source>
-        <translation>Afficher les masternodes</translation>
-    </message>
-    <message>
-        <source>&amp;About Castle Core</source>
-        <translation>A &amp;propos de Castle Core</translation>
-    </message>
-    <message>
-        <source>Show information about Castle Core</source>
-        <translation>Afficher les information concernant Castle Core</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for CSTL</source>
-        <translation>Modifier les options de configuration pour CSTL</translation>
-    </message>
-    <message>
-        <source>Sign messages with your CSTL addresses to prove you own them</source>
-        <translation>Signer les messages avec votre adresse CSTL pour prouver qu'elles sont bien à vous.</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified CSTL addresses</source>
-        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse CSTL spécifiée</translation>
-    </message>
-    <message>
-        <source>&amp;BIP38 tool</source>
-        <translation>Outil BIP38</translation>
-    </message>
-    <message>
-        <source>Encrypt and decrypt private keys using a passphrase</source>
-        <translation>Crypter et décrypter les clés privées en utilisant une phrase secrète</translation>
-    </message>
-    <message>
-        <source>&amp;MultiSend</source>
-        <translation>&amp;Envoi-multiple </translation>
-    </message>
-    <message>
-        <source>MultiSend Settings</source>
-        <translation>Paramètres des Envois-multiple </translation>
-    </message>
-    <message>
-        <source>Open Wallet &amp;Configuration File</source>
-        <translation>Ouvrir le ficher de configuration du portefeuille</translation>
-    </message>
-    <message>
-        <source>Open &amp;Masternode Configuration File</source>
-        <translation>Ouvrir le fichier de configuration de &amp;Masternode</translation>
-    </message>
-    <message>
-        <source>Open Masternode configuration file</source>
-        <translation>Ouvrir le fichier de configuration de Masternode</translation>
-    </message>
-    <message>
-        <source>Open a CSTL: URI or payment request</source>
-        <translation>Ouvrir un CSTL: URI ou requête de paiement</translation>
-    </message>
-    <message>
-        <source>&amp;Blockchain explorer</source>
-        <translation>&amp;Explorateur de la Blockchain </translation>
-    </message>
-    <message>
-        <source>Block explorer window</source>
-        <translation>Fenêtre de Explorateur de Bloc</translation>
-    </message>
-    <message>
-        <source>Show the Castle Core help message to get a list with possible CSTL command-line options</source>
-        <translation>Afficher les message d'aide de Castle Core pour avoir les options pour ligne de commande</translation>
-    </message>
-    <message>
-        <source>Castle Core client</source>
-        <translation>Castle Core client</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to CSTL network</source>
-        <translation><numerusform>connexion(s) active(s) au réseau CSTL</numerusform><numerusform>connexion(s) active(s) au réseau CSTL</numerusform></translation>
-    </message>
-    <message>
-        <source>Synchronizing with network...</source>
-        <translation>Synchronisation avec le réseau</translation>
-    </message>
-    <message>
-        <source>Importing blocks from disk...</source>
-        <translation>Importation des bloques depuis le disque</translation>
-    </message>
-    <message>
-        <source>Reindexing blocks on disk...</source>
-        <translation>Ré-indexation des bloques sur le disque</translation>
-    </message>
-    <message>
-        <source>No block source available...</source>
-        <translation>Aucun source de bloc disponible</translation>
-    </message>
-    <message>
-        <source>Up to date</source>
-        <translation>A jour</translation>
-    </message>
-    <message>
-        <source>%1 and %2</source>
-        <translation>%1 et %2</translation>
-    </message>
-    <message>
-        <source>Catching up...</source>
-        <translation>Rattraper...</translation>
-    </message>
-    <message>
-        <source>Last received block was generated %1 ago.</source>
-        <translation>Le dernier bloc reçu a été généré il y a %1</translation>
-    </message>
-    <message>
-        <source>Transactions after this will not yet be visible.</source>
-        <translation>Les transactions après cela ne seront pas encore visibles.</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Erreur</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Attention</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Information</translation>
-    </message>
-    <message>
-        <source>Sent transaction</source>
-        <translation>Transaction sortie</translation>
-    </message>
-    <message>
-        <source>Incoming transaction</source>
-        <translation>Transaction entrante</translation>
-    </message>
-    <message>
-        <source>Sent MultiSend transaction</source>
-        <translation>Envoi d'une transaction MultiSend</translation>
-    </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Date : %1
-Montant : %2
-Type : %3
-Adresse : %4
-</translation>
-    </message>
-    <message>
-        <source>Staking is active
- MultiSend: %1</source>
-        <translation>Staking est actif
- MultiSend: %1</translation>
-    </message>
-    <message>
-        <source>Active</source>
-        <translation>Actif</translation>
-    </message>
-    <message>
-        <source>Not Active</source>
-        <translation>Pas actif</translation>
-    </message>
-    <message>
-        <source>Staking is not active
- MultiSend: %1</source>
-        <translation>Staking n'est pas actif
- MultiSend: %1</translation>
-    </message>
-    <message>
-        <source>AutoMint is currently enabled and set to </source>
-        <translation>Auto-monnayage est actuellement activé et mis à</translation>
-    </message>
-    <message>
-        <source>AutoMint is disabled</source>
-        <translation>Auto-monnayage est désactivé</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Le portefeuille est &lt;b&gt;crypté&lt;/b&gt; et actuellement &lt;b&gt;déverrouillé&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Le portefeuille est &lt;b&gt;crypté&lt;/b&gt; et actuellement &lt;b&gt;verrouillé&lt;/b&gt;</translation>
-    </message>
-</context>
-<context>
     <name>BlockExplorer</name>
     <message>
         <source>Blockchain Explorer</source>
@@ -881,6 +471,33 @@ Adresse : %4
     </message>
 </context>
 <context>
+    <name>CSRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>Savings</source>
+        <translation>Épargne</translation>
+    </message>
+    <message>
+        <source>0,00 CSTL</source>
+        <translation>0,00 CSTL</translation>
+    </message>
+    <message>
+        <source>address</source>
+        <translation>adresse</translation>
+    </message>
+    <message>
+        <source>Not Staking</source>
+        <translation>Pas en staking</translation>
+    </message>
+    <message>
+        <source>Own delegation</source>
+        <translation>Propre délégation</translation>
+    </message>
+</context>
+<context>
     <name>ClientModel</name>
     <message>
         <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
@@ -902,40 +519,20 @@ Adresse : %4
         <translation>Octets:</translation>
     </message>
     <message>
-        <source>Amount:</source>
-        <translation>Montant :</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>Priorité :</translation>
-    </message>
-    <message>
         <source>Fee:</source>
         <translation>Commission :</translation>
     </message>
     <message>
         <source>Coin Selection</source>
-        <translation>Coin de sélection</translation>
+        <translation>Sélection des pièces</translation>
     </message>
     <message>
         <source>Dust:</source>
         <translation>Résidu:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Après commission</translation>
-    </message>
-    <message>
         <source>Change:</source>
         <translation>Monnaie rendue:</translation>
-    </message>
-    <message>
-        <source>(un)select all</source>
-        <translation>Tout (dé)sélectionner</translation>
-    </message>
-    <message>
-        <source>toggle lock state</source>
-        <translation>basculer état de verrouillage</translation>
     </message>
     <message>
         <source>Tree mode</source>
@@ -954,6 +551,30 @@ Adresse : %4
         <translation>Montant</translation>
     </message>
     <message>
+        <source>Transaction Details</source>
+        <translation>Détails de la transaction</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Bouton poussoir</translation>
+    </message>
+    <message>
+        <source>0.00 CSTL</source>
+        <translation>0.00 CSTL</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Select all</source>
+        <translation>Tout sélectionner</translation>
+    </message>
+    <message>
+        <source>Toggle lock state</source>
+        <translation>Basculer le mode vérouillage</translation>
+    </message>
+    <message>
         <source>Received with label</source>
         <translation>Reçu avec label</translation>
     </message>
@@ -962,8 +583,12 @@ Adresse : %4
         <translation>Reçu avec l'adresse</translation>
     </message>
     <message>
-        <source>Type</source>
-        <translation>Type</translation>
+        <source>After Fee: </source>
+        <translation>Après les frais:</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Date</source>
@@ -976,10 +601,6 @@ Adresse : %4
     <message>
         <source>Confirmed</source>
         <translation>Confirmé</translation>
-    </message>
-    <message>
-        <source>Priority</source>
-        <translation>Priorité</translation>
     </message>
     <message>
         <source>Copy address</source>
@@ -1031,7 +652,11 @@ Adresse : %4
     </message>
     <message>
         <source>Copy change</source>
-        <translation>Copier le changement</translation>
+        <translation>Copier la monnaie</translation>
+    </message>
+    <message>
+        <source>Unselect all</source>
+        <translation>Désélectionner tout</translation>
     </message>
     <message>
         <source>Please switch to "List mode" to use this function.</source>
@@ -1114,8 +739,8 @@ Adresse : %4
         <translation>Ce label devient rouge si l'un des destinataires reçoit un montant inférieur à %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Peut varier de +/- %1 upiv par entrée.</translation>
+        <source>Can vary +/- %1 ucstl per input.</source>
+        <translation>Peut varier de +/- %1 ucstl par entrée.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1128,6 +753,532 @@ Adresse : %4
     <message>
         <source>(change)</source>
         <translation>(changer)</translation>
+    </message>
+</context>
+<context>
+    <name>CoinControlCstlWidget</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialogue</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Détails de la transaction</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Bouton poussoir</translation>
+    </message>
+    <message>
+        <source>CSTL:</source>
+        <translation>CSTL:</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Quantité :</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Commission :</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Montant</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Label</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adresse</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Type</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Date</translation>
+    </message>
+    <message>
+        <source>Confirmations</source>
+        <translation>Confirmations</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>CheckBox</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Octets:</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>Résidu:</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Monnaie rendue:</translation>
+    </message>
+    <message>
+        <source>After Fee: </source>
+        <translation>Après les frais:</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ANNULER</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+</context>
+<context>
+    <name>ColdStakingWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation>Titre</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>List of delegated balance by address</source>
+        <translation>Liste des soldes en procuration par adresse.</translation>
+    </message>
+    <message>
+        <source>No balance delegated</source>
+        <translation>Pas de solde en procuration</translation>
+    </message>
+    <message>
+        <source>Cold Staking</source>
+        <translation>Staking à froid</translation>
+    </message>
+    <message>
+        <source>Staker</source>
+        <translation>Staker</translation>
+    </message>
+    <message>
+        <source>Delegation</source>
+        <translation>Procuration</translation>
+    </message>
+    <message>
+        <source>Delegate</source>
+        <translation>Déléguer</translation>
+    </message>
+    <message>
+        <source>Clear All</source>
+        <translation>Remettre à zéro</translation>
+    </message>
+    <message>
+        <source>Delegated balance history</source>
+        <translation>Historique du solde de procuration</translation>
+    </message>
+    <message>
+        <source>No delegations yet</source>
+        <translation>Pas encore de procurations</translation>
+    </message>
+    <message>
+        <source>Total Staking: %1</source>
+        <translation>Staking total: %1</translation>
+    </message>
+    <message>
+        <source>Error loading delegations: %1</source>
+        <translation>Erreur lors du chargement des procurations: %1</translation>
+    </message>
+    <message>
+        <source>No contacts available, you can go to the contacts screen and add some there!</source>
+        <translation>Aucun contact enregistré, vous pouvez aller dans l'écran des contacts et en ajouter!</translation>
+    </message>
+    <message>
+        <source>Cold staking is networkely disabled</source>
+        <translation>Le staking à froid est désactivé par le réseau</translation>
+    </message>
+    <message>
+        <source>Invalid entry</source>
+        <translation>Entrée invalide</translation>
+    </message>
+    <message>
+        <source>Owner address invalid</source>
+        <translation>Adresse propriétaire invalide</translation>
+    </message>
+    <message>
+        <source>ALERT!</source>
+        <translation>ALERTE !</translation>
+    </message>
+    <message>
+        <source>Delegating to an external owner address!
+
+The delegated coins will NOT be spendable by this wallet.
+Spending these coins will need to be done from the wallet or
+device containing the owner address.
+
+Do you wish to proceed?</source>
+        <translation>Procuration vers une adresse propriétaire externe !
+
+Les pièces en procuration ne pourront pas être dépensées par ce portefeuille.
+La dépense de ces pièces devrait être fait depuis le portefeuille ou l'appareil
+contenant cette adresse propriétaire.
+
+Souhaitez-vous continuer ?</translation>
+    </message>
+    <message>
+        <source>Staking address corresponds to this wallet, change it to an external node</source>
+        <translation>L'adresse de staking correspond à ce portefeuille, utilisez celle d'un noeud externe</translation>
+    </message>
+    <message>
+        <source>Cannot create transaction.</source>
+        <translation>Impossible de créer la transaction.</translation>
+    </message>
+    <message>
+        <source>Coins delegated</source>
+        <translation>Pièces en procuration</translation>
+    </message>
+    <message>
+        <source>You don't have any CSTL to select.</source>
+        <translation>Vous n'avez aucun CSTL à sélectionner</translation>
+    </message>
+    <message>
+        <source>URI copied to clipboard</source>
+        <translation>URI copiée vers le presse-papier</translation>
+    </message>
+    <message>
+        <source>Address copied to clipboard</source>
+        <translation>Adresse copiée vers le presse-papier</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Copier</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation>Modifier</translation>
+    </message>
+    <message>
+        <source>Stake</source>
+        <translation>Stake</translation>
+    </message>
+    <message>
+        <source>Blacklist</source>
+        <translation>Blacklist</translation>
+    </message>
+    <message>
+        <source>Edit Label</source>
+        <translation>Modifier l'étiquette</translation>
+    </message>
+    <message>
+        <source>Copy owner
+address</source>
+        <translation>Copier l'adresse
+propriétaire</translation>
+    </message>
+    <message>
+        <source>Address copied</source>
+        <translation>Adresse copiée</translation>
+    </message>
+    <message>
+        <source>Edit Cold Address Label</source>
+        <translation>Modifier l'étiquette d'une adresse à froid</translation>
+    </message>
+    <message>
+        <source>Whitelist failed, please check the logs</source>
+        <translation>Le whitelist n'a pas réussi, regardez les logs</translation>
+    </message>
+    <message>
+        <source> staking!</source>
+        <translation>staking !</translation>
+    </message>
+    <message>
+        <source>Blacklist failed, please check the logs</source>
+        <translation>Le blacklist a échoué, vérifiez les logs</translation>
+    </message>
+    <message>
+        <source> blacklisted from staking</source>
+        <translation>Empêché de faire du staking</translation>
+    </message>
+    <message>
+        <source>Owner address copied</source>
+        <translation>Adresse propriétaire copiée</translation>
+    </message>
+    <message>
+        <source>Edit Owner Address Label</source>
+        <translation>Modifier l'étiquette de l'adresse propriétaire</translation>
+    </message>
+    <message>
+        <source>Address label saved</source>
+        <translation>Libellé de l'adresse sauvegardé</translation>
+    </message>
+    <message>
+        <source>Error storing address label</source>
+        <translation>Erreur lors de l'enregistrement du libellé</translation>
+    </message>
+</context>
+<context>
+    <name>ContactDropdownRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>Bob Allen</source>
+        <translation>Bob Allen</translation>
+    </message>
+    <message>
+        <source>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</source>
+        <translation>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</translation>
+    </message>
+</context>
+<context>
+    <name>DashboardWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>Transactions</source>
+        <translation>Transactions</translation>
+    </message>
+    <message>
+        <source>You can see here the history of your account</source>
+        <translation>Vous pouvez voir ici l'historique de votre compte</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Attention</translation>
+    </message>
+    <message>
+        <source>No transactions</source>
+        <translation>Pas de transaction</translation>
+    </message>
+    <message>
+        <source>Staking Rewards</source>
+        <translation>Récompenses de staking</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Staking statistics</source>
+        <translation>Statistiques de staking</translation>
+    </message>
+    <message>
+        <source>CSTL</source>
+        <translation>CSTL</translation>
+    </message>
+    <message>
+        <source>zCSTL</source>
+        <translation>zCSTL</translation>
+    </message>
+    <message>
+        <source>Sort by</source>
+        <translation>Trier par</translation>
+    </message>
+    <message>
+        <source>Days</source>
+        <translation>Jours</translation>
+    </message>
+    <message>
+        <source>Months</source>
+        <translation>Mois</translation>
+    </message>
+    <message>
+        <source>Years</source>
+        <translation>Années</translation>
+    </message>
+    <message>
+        <source>Filter by</source>
+        <translation>Filtrer par</translation>
+    </message>
+    <message>
+        <source>LabelText</source>
+        <translation>Texte</translation>
+    </message>
+    <message>
+        <source>You can view your account's history</source>
+        <translation>Vous pouvez voir l'historique de votre compte</translation>
+    </message>
+    <message>
+        <source>Amount of CSTL and zCSTL staked.</source>
+        <translation>Le montant de CSTL et de zCSTL en staking</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Tous</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Reçu</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>Envoyé</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>Miné</translation>
+    </message>
+    <message>
+        <source>Minted</source>
+        <translation>Récompense Stake</translation>
+    </message>
+    <message>
+        <source>MN reward</source>
+        <translation>Récompense de masternode</translation>
+    </message>
+    <message>
+        <source>To yourself</source>
+        <translation>A vous-même</translation>
+    </message>
+    <message>
+        <source>Cold stakes</source>
+        <translation>Stakes à froid</translation>
+    </message>
+    <message>
+        <source>Hot stakes</source>
+        <translation>Stakes à chaud</translation>
+    </message>
+    <message>
+        <source>Delegated</source>
+        <translation>Délégué</translation>
+    </message>
+    <message>
+        <source>Delegations</source>
+        <translation>Procurations</translation>
+    </message>
+    <message>
+        <source>Please wait until the wallet is fully synced to see your correct balance</source>
+        <translation>Attendez que votre portefeuille soit complètement synchronisé pour voir le solde correct</translation>
+    </message>
+    <message>
+        <source>No transactions yet</source>
+        <translation>Pas encore de transaction</translation>
+    </message>
+    <message>
+        <source>How to get CSTL or zCSTL</source>
+        <translation>Comment obtenir des CSTL ou zCSTL</translation>
+    </message>
+    <message>
+        <source>You can verify the staking activity in the status bar at the top right of the wallet.
+It will start automatically as soon as the wallet has enough confirmations on any unspent balances, and the wallet has synced.</source>
+        <translation>Vous pouvez vérifier l'activité de staking via la barre de statut au dessus du portefeuille.
+Il commencera automatiquement dès que le portefeuille aura assez de confirmations sur les transactions et qu'il sera complètement synchronisé.</translation>
+    </message>
+    <message>
+        <source>You have no staking rewards</source>
+        <translation>Vous n'avez pas de récompenses de staking</translation>
+    </message>
+    <message>
+        <source>No charts library</source>
+        <translation>Pas de librairie de graphiques</translation>
+    </message>
+    <message>
+        <source>Loading chart..</source>
+        <translation>Chargement du graphe..</translation>
+    </message>
+    <message>
+        <source>Error loading chart, invalid show option</source>
+        <translation>Erreur de chargement du graphe, options non valides</translation>
+    </message>
+    <message>
+        <source>Error loading chart, invalid data</source>
+        <translation>Erreur lors du chargement du graphique, données invalides</translation>
+    </message>
+    <message>
+        <source>Error loading chart: %1</source>
+        <translation>Erreur chargement du graphique: %1</translation>
+    </message>
+</context>
+<context>
+    <name>DefaultDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Détails de la transaction</translation>
+    </message>
+    <message>
+        <source>Text Label</source>
+        <translation>Libellé</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ANNULER</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>SAUVEGARDER</translation>
+    </message>
+</context>
+<context>
+    <name>DenomGenerationDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Détails de la transaction</translation>
+    </message>
+    <message>
+        <source>This will unlock your wallet fully, so that anyone with access to it can spend until the wallet is closed or locked again.</source>
+        <translation>Cela va déverrouiller votre portefeuille totalement et tout ceux qui y ont accès peuvent dépenser jusqu'à ce que le portefeuille soit fermé ou verrouillé.</translation>
+    </message>
+    <message>
+        <source>5000</source>
+        <translation>5000</translation>
+    </message>
+    <message>
+        <source>100</source>
+        <translation>100</translation>
+    </message>
+    <message>
+        <source>10</source>
+        <translation>10</translation>
+    </message>
+    <message>
+        <source>1000</source>
+        <translation>1000</translation>
+    </message>
+    <message>
+        <source>50</source>
+        <translation>50</translation>
+    </message>
+    <message>
+        <source>500</source>
+        <translation>500</translation>
+    </message>
+    <message>
+        <source>5</source>
+        <translation>5</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation>Tout sélectionner</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ANNULER</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>SAUVEGARDER</translation>
     </message>
 </context>
 <context>
@@ -1149,6 +1300,10 @@ Adresse : %4
         <translation>Adresse</translation>
     </message>
     <message>
+        <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
+        <translation>L'adresse associée à cette entrée de liste d'adresses. Ceci ne peut être modifié que pour les adresses d'envoi.</translation>
+    </message>
+    <message>
         <source>New receiving address</source>
         <translation>Nouvelle adresse de reception</translation>
     </message>
@@ -1165,8 +1320,8 @@ Adresse : %4
         <translation>Modifier l'adresse d'envoi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid CSTL address.</source>
-        <translation>L'adresse entrée "%1" n'est pas une adresse CSTL valide</translation>
+        <source>The entered address "%1" is not a valid CASTLE address.</source>
+        <translation>L'adresse entrée "%1" n'est pas une adresse CASTLE valide</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1179,6 +1334,13 @@ Adresse : %4
     <message>
         <source>New key generation failed.</source>
         <translation>La création de la nouvelle clé à échoué</translation>
+    </message>
+</context>
+<context>
+    <name>ExpandableButton</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
     </message>
 </context>
 <context>
@@ -1205,22 +1367,65 @@ Adresse : %4
     </message>
 </context>
 <context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>GOVERNANCE</source>
+        <translation>GOUVERNANCE</translation>
+    </message>
+    <message>
+        <source>Update Proposals</source>
+        <translation>Mettre à jour les propositions</translation>
+    </message>
+    <message>
+        <source>Next super block:</source>
+        <translation>Super bloc suivant:</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Blocks to next super block:</source>
+        <translation>Blocs restants jusqu'au Super block suivant:</translation>
+    </message>
+    <message>
+        <source>Days to budget payout (estimate):</source>
+        <translation>Jours avant le paiement du budget (estimation) :</translation>
+    </message>
+    <message>
+        <source>Allotted budget:</source>
+        <translation>Budget alloué:</translation>
+    </message>
+    <message>
+        <source>Budget left:</source>
+        <translation>Budget restant:</translation>
+    </message>
+    <message>
+        <source>Masternodes count:</source>
+        <translation>Nombre de masternodes:</translation>
+    </message>
+</context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
         <translation>version</translation>
     </message>
     <message>
-        <source>Castle Core</source>
-        <translation>Castle Core</translation>
+        <source>CASTLE Core</source>
+        <translation>CASTLE Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Castle Core</source>
-        <translation>A propos de Castle Core</translation>
+        <source>About CASTLE Core</source>
+        <translation>A propos de CASTLE Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1243,6 +1448,10 @@ Adresse : %4
         <translation>Choisir le répertoire de données au démarrage (par défaut: %u)</translation>
     </message>
     <message>
+        <source>Show splash screen on startup (default: %u)</source>
+        <translation>Afficher l'écran de démarrage au démarrage (par défaut: %u)</translation>
+    </message>
+    <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
         <translation>Définir la langue, par exemple "de_DE" (par défaut: paramètres régionaux du système)</translation>
     </message>
@@ -1254,6 +1463,10 @@ Adresse : %4
         <source>Set SSL root certificates for payment request (default: -system-)</source>
         <translation>Définir les certificats racine SSL pour les demandes de paiement (par défaut: -system-)</translation>
     </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
 </context>
 <context>
     <name>Intro</name>
@@ -1262,24 +1475,36 @@ Adresse : %4
         <translation>Bienvenu</translation>
     </message>
     <message>
-        <source>Welcome to Castle Core.</source>
-        <translation>Bienvenue à Castle Core</translation>
+        <source>Welcome to CASTLE Core.</source>
+        <translation>Bienvenue à CASTLE Core</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Castle Core will store its data.</source>
-        <translation>Comme c'est la première fois que le programme est lancé, vous pouvez choisir où Castle Core va stocker ses données.</translation>
+        <source>As this is the first time the program is launched, you can choose where CASTLE Core will store its data.</source>
+        <translation>Comme c'est la première fois que le programme est lancé, vous pouvez choisir où CASTLE Core va stocker ses données.</translation>
+    </message>
+    <message>
+        <source>CASTLE Core will download and store a copy of the CASTLE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>CASTLE Core téléchargera et stockera une copie de la chaîne de blocs CASTLE. Au moins %1 Go de données sera stocké dans ce répertoire, et il va augmenter au fil du temps. Le portefeuille sera également stocké dans ce répertoire.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Utiliser le répertoire de données par défaut </translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Utiliser un répertoire spécifique de données </translation>
+        <source>Use a custom data directory</source>
+        <translation>Utiliser un répertoire personnalisé pour les données</translation>
     </message>
     <message>
-        <source>Castle Core</source>
-        <translation>Castle Core</translation>
+        <source>CANCEL</source>
+        <translation>ANNULER</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>CASTLE Core</source>
+        <translation>CASTLE Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1299,476 +1524,354 @@ Adresse : %4
     </message>
 </context>
 <context>
-    <name>MasternodeList</name>
+    <name>LoadingDialog</name>
     <message>
         <source>Form</source>
         <translation>Formulaire</translation>
     </message>
     <message>
-        <source>MASTERNODES</source>
-        <translation>MASTERNODES</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your node should be running but you still see "MISSING" in "Status" field.</source>
-        <translation>Note: L'état de vos Masternodes dans le portefeuille local peut être légèrement incorrect.&lt;br /&gt; Attendez toujours que le portefeuille synchronise les données supplémentaires, puis revérifiez à partir d'un autre noeud &lt;br /&gt; si votre nœud devrait fonctionner mais qu'il affiche toujours "MANQUANT" dans le champ "Statut".</translation>
+        <source>Loading</source>
+        <translation>Chargement</translation>
     </message>
     <message>
-        <source>Alias</source>
-        <translation>Pseudonyme</translation>
+        <source>.</source>
+        <translation>.</translation>
+    </message>
+</context>
+<context>
+    <name>LockUnlock</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>Unlock Wallet</source>
+        <translation>Déverrouiller le portefeuille</translation>
+    </message>
+    <message>
+        <source>Lock Wallet</source>
+        <translation>Verrouiller le portefeuille</translation>
+    </message>
+    <message>
+        <source>Staking Only</source>
+        <translation>Staking seulement</translation>
+    </message>
+</context>
+<context>
+    <name>MNRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>user_masternode</source>
+        <translation>utilisateur de masternode</translation>
+    </message>
+    <message>
+        <source>Address: 88.26.164.88:51474</source>
+        <translation>Adresse: 88.26.164.88:51474</translation>
+    </message>
+    <message>
+        <source>Jan. 19, 2019</source>
+        <translation>19 janvier 2019</translation>
+    </message>
+</context>
+<context>
+    <name>MasterNodeWizardDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialogue</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>2</source>
+        <translation>2</translation>
+    </message>
+    <message>
+        <source>3</source>
+        <translation>3</translation>
+    </message>
+    <message>
+        <source>Intro</source>
+        <translation>intro</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nom</translation>
     </message>
     <message>
         <source>Address</source>
         <translation>Adresse</translation>
     </message>
     <message>
-        <source>Protocol</source>
-        <translation>Protocole</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a CASTLE Masternode you must dedicate 10.000 CSTL (the unit of CASTLE) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pour créer un Masternode CASTLE vous devez dédier 10.000 CSTL (l'unité de CASTLE) au réseau (notez que ces monnaies restent les votres et ne quitteront jamais votre portefeuille)&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt; Vous pouvez désactiver votre noeud et libérer vos monnaies en tous temps. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>Status</source>
-        <translation>Statuts</translation>
+        <source>Make sure you have this amount of coins.</source>
+        <translation>Assurez-vous d'avoir ce montant de pièces.</translation>
     </message>
     <message>
-        <source>Active</source>
-        <translation>Actif</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 CSTL will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Une transaction de 10 000 CSTL sera effectuée &lt;/p&gt;&lt;p&gt; vers une nouvelle adresse de votre partefeuille.&lt;/p&gt;&lt;p&gt; L'adresse est étiquettée avec le nom de masternode. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>Last Seen (UTC)</source>
-        <translation>Dernière vue (UTC)</translation>
+        <source>Address of the node that must always be online running the actual master node.</source>
+        <translation>L'adresse du noeud doit toujours demeurer en ligne et exécuter le masternode.</translation>
     </message>
     <message>
-        <source>Pubkey</source>
-        <translation>Clé publique </translation>
+        <source>Enter IP address</source>
+        <translation>Entrer l'adresse IP</translation>
     </message>
     <message>
-        <source>S&amp;tart alias</source>
-        <translation>Dé&amp;marrer pseudonyme</translation>
+        <source>CANCEL</source>
+        <translation>ANNULER</translation>
     </message>
     <message>
-        <source>Start &amp;all</source>
-        <translation>Démarrer &amp;tout</translation>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
     <message>
-        <source>Start &amp;MISSING</source>
-        <translation>Démarrer &amp;MANQUANT</translation>
+        <source>e.g user_masternode</source>
+        <translation>ex. user_masternode</translation>
     </message>
     <message>
-        <source>&amp;Update status</source>
-        <translation>État de &amp;mise à jour</translation>
+        <source>NEXT</source>
+        <translation>SUIVANT</translation>
     </message>
     <message>
-        <source>Status will be updated automatically in (sec):</source>
-        <translation>Le statut sera mis à jour automatiquement dans (sec):</translation>
+        <source>BACK</source>
+        <translation>PRÉCÉDENT</translation>
     </message>
     <message>
-        <source>0</source>
-        <translation>0</translation>
+        <source>address label cannot be empty</source>
+        <translation>L'étiquette de l'adresse ne peut rester vide</translation>
     </message>
     <message>
-        <source>Start alias</source>
-        <translation>Démarrer pseudonyme</translation>
+        <source>IP or port cannot be empty</source>
+        <translation>L'adresse IP ou le port ne peuvent rester vide</translation>
     </message>
     <message>
-        <source>Confirm masternode start</source>
-        <translation>Confirmer le lancement du masternode</translation>
+        <source>Invalid port number</source>
+        <translation>Numéro de port invalide</translation>
     </message>
     <message>
-        <source>Are you sure you want to start masternode %1?</source>
-        <translation>Êtes-vous sûr de vouloir lancer le masternode %1?</translation>
+        <source>Invalid masternode.conf file</source>
+        <translation>Fichier masternode.conf invalide</translation>
     </message>
     <message>
-        <source>Confirm all masternodes start</source>
-        <translation>Confirmez le lancement de tous les masternodes</translation>
+        <source>Error parsing masternode.conf file</source>
+        <translation>Erreur lors de l'analyse du fichier masternode.conf</translation>
     </message>
     <message>
-        <source>Are you sure you want to start ALL masternodes?</source>
-        <translation>Êtes-vous sûr de vouloir lancer TOUS les masternodes?</translation>
+        <source>Master node created!</source>
+        <translation>Masternode créé!</translation>
     </message>
     <message>
-        <source>Command is not available right now</source>
-        <translation>La commande n'est pas disponible actuellement</translation>
-    </message>
-    <message>
-        <source>You can't use this command until masternode list is synced</source>
-        <translation>Vous ne pouvez pas utiliser cette commande tant que la liste de masternodes n'est pas synchronisée</translation>
-    </message>
-    <message>
-        <source>Confirm missing masternodes start</source>
-        <translation>Confirmer le lancement de la masternode manquant</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to start MISSING masternodes?</source>
-        <translation>Êtes-vous sûr de vouloir lancer MISSING masternodes?</translation>
+        <source>masternode.conf file doesn't exists</source>
+        <translation>Le fichier masternode.conf est absent</translation>
     </message>
 </context>
 <context>
-    <name>MultiSendDialog</name>
+    <name>MasterNodesWidget</name>
     <message>
-        <source>MultiSend</source>
-        <translation>Envoi-multiple </translation>
+        <source>Form</source>
+        <translation>Formulaire</translation>
     </message>
     <message>
-        <source>Enter whole numbers 1 - 100</source>
-        <translation>Entrer un nombre entier 1 - 100</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Enter Address to Send to</source>
-        <translation>Saisir l'adresse à laquelle envoyer</translation>
+        <source>N/A</source>
+        <translation>N/A</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other CSTL addresses after it matures.
-To Add: enter percentage to give and CSTL address to add to the MultiSend vector.
-To Delete: Enter address to delete and press delete.
-MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>L'Envoi-multiple vous perment d'envoyer automatiquement jusqu'à 100% de vos récompenses Stake ou Masternode à une liste d'adresses CSTL  après leur maturité.
-Pour ajouter: entrez le pourcentage à donner et l'adresse CSTL à ajouter au vecteur d'Envoi-multiple.
-Pour supprimer: Entrez l'adresse à effacer et appuyez sur Supprimer.
-L'Envoi-multiple ne sera activé que si vous avez cliqué sur Activer</translation>
+        <source>Masternodes</source>
+        <translation>Masternodes</translation>
     </message>
     <message>
-        <source>Add to MultiSend Vector</source>
-        <translation>Ajouter au vecteur d'Envoi-multiple</translation>
+        <source>Full nodes that incentivize node operators to perform the core consensus functions
+and vote on the treasury system receiving a periodic reward.</source>
+        <translation>Noeuds complets qui incite les opérateurs à exécuter les fonctions de consensus essentielles et votent sur le système de financement en recevant des récompenses périodiquement.</translation>
     </message>
     <message>
-        <source>Add</source>
-        <translation>Ajouter</translation>
+        <source>Create Masternode Controller</source>
+        <translation>Créer un contrôleur masternode</translation>
     </message>
     <message>
-        <source>Deactivate MultiSend</source>
-        <translation>Désactiver l'Envoi-multiple</translation>
+        <source>No active Masternode yet</source>
+        <translation>Aucun masternode actif</translation>
     </message>
     <message>
-        <source>Deactivate</source>
-        <translation>Désactiver</translation>
-    </message>
-    <message>
-        <source>Choose an address from the address book</source>
-        <translation>Choisir une adresse depuis la liste des adresses</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Percentage of stake to send</source>
-        <translation>Pourcentage du stake à envoyer</translation>
-    </message>
-    <message>
-        <source>Percentage:</source>
-        <translation>Pourcentage :</translation>
-    </message>
-    <message>
-        <source>Address to send portion of stake to</source>
-        <translation>Adresse à laquelle envoyer la part du stake</translation>
-    </message>
-    <message>
-        <source>Address:</source>
-        <translation>Adresse :</translation>
-    </message>
-    <message>
-        <source>Label:</source>
-        <translation>Label:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>Saisissez un label pour cette adresse afin de l'ajouter à votre carnet d'adresses</translation>
-    </message>
-    <message>
-        <source>Delete Address From MultiSend Vector</source>
-        <translation>Supprimer cette adresse du vecteur d'Envoi-multiple</translation>
+        <source>Start</source>
+        <translation>Démarrer</translation>
     </message>
     <message>
         <source>Delete</source>
         <translation>Supprimer</translation>
     </message>
     <message>
-        <source>Activate MultiSend</source>
-        <translation>Activer Envoi-multiple </translation>
+        <source>Info</source>
+        <translation>Info</translation>
     </message>
     <message>
-        <source>Activate</source>
-        <translation>Activer</translation>
+        <source>Start Masternode</source>
+        <translation>Démarrer le masternode</translation>
     </message>
     <message>
-        <source>View MultiSend Vector</source>
-        <translation>Voir le vecteur d'Envoi-multiple</translation>
-    </message>
-    <message>
-        <source>View MultiSend</source>
-        <translation>Voir Envoi-multiple</translation>
-    </message>
-    <message>
-        <source>Send For Stakes</source>
-        <translation>Envoyer pour le Stake</translation>
-    </message>
-    <message>
-        <source>Send For Masternode Rewards</source>
-        <translation>Envoyer pour les récompenses Masternode</translation>
-    </message>
-    <message>
-        <source>(no label)</source>
-        <translation>(pas de label)</translation>
-    </message>
-    <message>
-        <source>The entered address:
+        <source>Are you sure you want to start masternode %1?
 </source>
-        <translation>L'adresse entrée:
+        <translation>Êtes-vous certain de vouloir démarrer le masternode %1?
 </translation>
     </message>
     <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>est invalide.
-Veuillez vérifier l'adresse et réessayer.</translation>
+        <source>Cannot start masternode, the collateral transaction has not been accepted by the network.
+Please wait few more minutes.</source>
+        <translation>Impossible de démarrer le masternode, la transaction du dépôt de garantie n'a pas encore été acceptée par le réseau.
+S'il vous plaît attendez quelques minutes de plus.</translation>
     </message>
     <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
+        <source>Remote Masternode Data</source>
+        <translation>Données masternode distant</translation>
+    </message>
+    <message>
+        <source>You are just about to export the required data to run a Masternode
+on a remote server to your clipboard.
+
+
+You will only have to paste the data in the castle.conf file
+of your remote server and start it, then start the Masternode using
+this controller wallet (select the Masternode in the list and press "start").
 </source>
-        <translation>Le montant total de votre vecteur Multisend est supérieur à 100% de votre récompense Stake
-</translation>
+        <translation>Vous êtes sur le point d'exporter les données requises pour exécuter un Masternode
+sur un serveur distant vers votre presse-papiers.
+
+
+Il vous suffira de coller les données dans le fichier castle.conf
+de votre serveur distant, le démarrer, puis de lancer le masternode en utilisant
+ce portefeuille (sélectionnez le masternode dans la liste et appuyez sur "Démarrer").</translation>
     </message>
     <message>
-        <source>Please Enter 1 - 100 for percent.</source>
-        <translation>Veuillez entrer un pourcentage entre 1 et 100.</translation>
+        <source>Masternode exported!, check your clipboard</source>
+        <translation>Masternode exporté!, vérifier votre presse-papier</translation>
     </message>
     <message>
-        <source>Saved the MultiSend to memory, but failed saving properties to the database.
-</source>
-        <translation>L'Envoi-multiple est sauvegardé en mémoire, néanmoins la sauvegarde des propriétés de celui-ci en base a échoué.
-</translation>
+        <source>Delete Masternode</source>
+        <translation>Supprimer le masternode</translation>
     </message>
     <message>
-        <source>MultiSend Vector
-</source>
-        <translation>Vecteur des Envoi-multiples
-</translation>
+        <source>You are just about to delete Masternode:
+%1
+
+Are you sure?</source>
+        <translation>Vous vous apprêtez à supprimer le masternode:
+%1
+Confirmez-vous?</translation>
     </message>
     <message>
-        <source>Removed </source>
-        <translation>Supprimé</translation>
+        <source>Invalid masternode.conf file</source>
+        <translation>Fichier masternode.conf invalide</translation>
     </message>
     <message>
-        <source>Could not locate address
-</source>
-        <translation>Impossible de localiser l'adresse</translation>
+        <source>Error parsing masternode.conf file</source>
+        <translation>Erreur lors de l'analyse du fichier masternode.conf</translation>
+    </message>
+    <message>
+        <source>masternode.conf file doesn't exists</source>
+        <translation>Le fichier masternode.conf est absent</translation>
+    </message>
+    <message>
+        <source>Not enough balance to create a masternode, 10,000 CSTL required.</source>
+        <translation>Fonds insuffisant pour créer un masternode, 10 000 CSTL sont requis.</translation>
+    </message>
+    <message>
+        <source>Error creating masternode</source>
+        <translation>Erreur lors de la création du masternode</translation>
     </message>
 </context>
 <context>
-    <name>MultisigDialog</name>
+    <name>MnInfoDialog</name>
     <message>
-        <source>Create MultiSignature &amp;Address</source>
-        <translation>Créer une nouvelle &amp;adresse MultiSignature</translation>
+        <source>Form</source>
+        <translation>Formulaire</translation>
     </message>
     <message>
-        <source>How many people must sign to verify a transaction</source>
-        <translation>Combien de personnes doivent signer pour vérifier une transaction</translation>
+        <source>Public Key:</source>
+        <translation>Clé publique:</translation>
     </message>
     <message>
-        <source>Enter the minimum number of signatures required to sign transactions</source>
-        <translation>Entrerz le minimum de signatures requises pour signer les transactions</translation>
+        <source>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</source>
+        <translation>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</translation>
     </message>
     <message>
-        <source>Address Label:</source>
-        <translation>Label adresse:</translation>
+        <source>Address: </source>
+        <translation>Adresse:</translation>
     </message>
     <message>
-        <source>Add another address that could sign to verify a transaction from the multisig address.</source>
-        <translation>Ajoutez une autre adresse qui peut valider une transaction depuis l'adresse multisig.</translation>
+        <source>127.0.0.2:43223</source>
+        <translation>127.0.0.2:43223</translation>
     </message>
     <message>
-        <source>&amp;Add Address / Key</source>
-        <translation>Ajouter Adresse/Clé</translation>
+        <source>Collaterall tx id:</source>
+        <translation>Collatéral tx id:</translation>
     </message>
     <message>
-        <source>Local addresses or public keys that can sign:</source>
-        <translation>Adresses locales ou clés publiques qui peuvent signer:</translation>
+        <source>Output index:</source>
+        <translation>Index de sortie:</translation>
     </message>
     <message>
-        <source>Create a new multisig address</source>
-        <translation>Créer une nouvelle adresse multisignature</translation>
-    </message>
-    <message>
-        <source>C&amp;reate</source>
-        <translation>Créer</translation>
+        <source>1 Inputs</source>
+        <translation>1 Entrées</translation>
     </message>
     <message>
         <source>Status:</source>
         <translation>Statut :</translation>
     </message>
     <message>
-        <source>Use below to quickly import an address by its redeem. Don't forget to add a label before clicking import!
-Keep in mind, the wallet will rescan the blockchain to find transactions containing the new address.
-Please be patient after clicking import.</source>
-        <translation>Utilisez ci-dessous pour importer rapidement une adresse par son échange. N'oubliez pas d'ajouter un label avant de cliquer sur Importer!
-Garder en tete que le portefeuille effectuera une nouvelle analyse de la blockchain pour trouver les transactions contenant la nouvelle adresse.
-S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translation>
+        <source>MISSING</source>
+        <translation>MANQUANT</translation>
+    </message>
+    </context>
+<context>
+    <name>MyAddressRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
     </message>
     <message>
-        <source>&amp;Create MultiSignature Tx</source>
-        <translation>Créer une transaction Multi-Signature</translation>
+        <source>Savings</source>
+        <translation>Épargne</translation>
     </message>
     <message>
-        <source>Inputs:</source>
-        <translation>Entrées:</translation>
+        <source>Jan. 19, 2019</source>
+        <translation>19 janvier 2019</translation>
     </message>
     <message>
-        <source>Coin Control</source>
-        <translation>Contrôle de pièce de monnaie</translation>
-    </message>
-    <message>
-        <source>Quantity Selected:</source>
-        <translation>Quantité sélectionnée:</translation>
-    </message>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Montant :</translation>
-    </message>
-    <message>
-        <source>Add an input to fund the outputs</source>
-        <translation>Ajouter une entrée pour financer les envois</translation>
-    </message>
-    <message>
-        <source>Add a Raw Input</source>
-        <translation>Ajouter une entrée brute</translation>
-    </message>
-    <message>
-        <source>Address / Amount:</source>
-        <translation>Adresse / Montant:</translation>
-    </message>
-    <message>
-        <source>Add destinations to send CSTL to</source>
-        <translation>Ajouter des destinations pour envoyer CSTL</translation>
-    </message>
-    <message>
-        <source>Add &amp;Destination</source>
-        <translation>Ajouter la destination</translation>
-    </message>
-    <message>
-        <source>Cr&amp;eate</source>
-        <translation>Cré&amp;er</translation>
-    </message>
-    <message>
-        <source>&amp;Sign MultiSignature Tx</source>
-        <translation>Signer la transaction Multi-Signature</translation>
-    </message>
-    <message>
-        <source>Transaction Hex:</source>
-        <translation>Transaction Hex:</translation>
-    </message>
-    <message>
-        <source>Sign the transaction from this wallet or from provided private keys</source>
-        <translation>Signer la transaction avec le portefeuille ou avec la clé privée fournie</translation>
-    </message>
-    <message>
-        <source>S&amp;ign</source>
-        <translation>S&amp;igne</translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;DISABLED until transaction has been signed enough times.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;DÉSACTIVÉ jusqu'à ce que la transaction est recueillie suffisament de signatures.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; </translation>
-    </message>
-    <message>
-        <source>Co&amp;mmit</source>
-        <translation>Co&amp;mmettre</translation>
-    </message>
-    <message>
-        <source>Add private keys to sign the transaction with</source>
-        <translation>Ajouter les clés privées pour signer la transaction avec</translation>
-    </message>
-    <message>
-        <source>Add Private &amp;Key</source>
-        <translation>Ajouter une clé privée</translation>
-    </message>
-    <message>
-        <source>Sign with only private keys (Not Recommened)</source>
-        <translation>Signer uniquement avec des clés privées (non recommandé)</translation>
-    </message>
-    <message>
-        <source>Invalid Tx Hash.</source>
-        <translation>Le Hash de la transaction est invalide.</translation>
-    </message>
-    <message>
-        <source>Maximum possible addresses reached. (15)</source>
-        <translation>Nombre maximum d'adresses atteint. (15)</translation>
-    </message>
-    <message>
-        <source>Amount: </source>
-        <translation>Montant :</translation>
-    </message>
-    <message>
-        <source>Maximum (15)</source>
-        <translation>Maximum (15)</translation>
+        <source>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</source>
+        <translation>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</translation>
     </message>
 </context>
 <context>
-    <name>ObfuscationConfig</name>
+    <name>NavMenuWidget</name>
     <message>
-        <source>Configure Obfuscation</source>
-        <translation>Configurer Obfuscation</translation>
+        <source>Form</source>
+        <translation>Formulaire</translation>
     </message>
     <message>
-        <source>Basic Privacy</source>
-        <translation>Confidentialité de base</translation>
+        <source>V 1.0.0</source>
+        <translation>V 1.0.0</translation>
     </message>
     <message>
-        <source>High Privacy</source>
-        <translation>Haute confidentialité</translation>
-    </message>
-    <message>
-        <source>Maximum Privacy</source>
-        <translation>Confidentialité maximum</translation>
-    </message>
-    <message>
-        <source>Please select a privacy level.</source>
-        <translation>Veuillez sélectionner un niveau de confidentialité.</translation>
-    </message>
-    <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 CSTL</source>
-        <translation>Utiliser 2 masternodes différentes pour mélanger les fonds jusqu'a 10000 CSTL</translation>
-    </message>
-    <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 CSTL</source>
-        <translation>Utiliser 8 masternodes différentes pour mélanger les fonds jusqu'a 10000 CSTL</translation>
-    </message>
-    <message>
-        <source>Use 16 separate masternodes</source>
-        <translation>Utiliser 16 masternodes différents</translation>
-    </message>
-    <message>
-        <source>This option is the quickest and will cost about ~0.025 CSTL to anonymize 10000 CSTL</source>
-        <translation>Cette option est la plus rapide, et coutera ~0.025 CSTL pour anonymiser 10000 CSTL</translation>
-    </message>
-    <message>
-        <source>This option is moderately fast and will cost about 0.05 CSTL to anonymize 10000 CSTL</source>
-        <translation>Cette option est moyennement rapide, et coutera 0.05 CSTL pour anonymiser 10000 CSTL</translation>
-    </message>
-    <message>
-        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Il s'agit de l'option la plus lente est la plus sécurisé. Utiliser l'anonymat maximum coutera</translation>
-    </message>
-    <message>
-        <source>0.1 CSTL per 10000 CSTL you anonymize.</source>
-        <translation>0.1 CSTL par 10000 CSTL vous anonymisez.</translation>
-    </message>
-    <message>
-        <source>Obfuscation Configuration</source>
-        <translation>Configuration de l'Obfuscation</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening CSTL's configuration screen.</source>
-        <translation>L'Obfuscation a été réglé avec succès à base (%1 et 2 tours). Vous pouvez changer ce paramètre à tout moment depuis l'écran de configuration CSTL.</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening CSTL's configuration screen.</source>
-        <translation>L'Obfuscation a été réglé avec succès à élevé (%1 et 8 tours). Vous pouvez changer ce paramètre à tout moment depuis l'écran de configuration CSTL.</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening CSTL's configuration screen.</source>
-        <translation>L'Obfuscation a été réglé avec succès à maximum (%1 et 16 tours). Vous pouvez changer ce paramètre à tout moment depuis l'écran de configuration CSTL.</translation>
+        <source>v%1</source>
+        <translation>v%1</translation>
     </message>
 </context>
 <context>
@@ -1782,8 +1885,16 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>Ouvrir une demande de paiement depuis URI ou un fichier</translation>
     </message>
     <message>
-        <source>URI:</source>
-        <translation>URI :</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ANNULER</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Select payment request file</source>
@@ -1792,6 +1903,29 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
     <message>
         <source>Select payment request file to open</source>
         <translation>Choisir le fichier de demande de paiement à ouvrir</translation>
+    </message>
+    <message>
+        <source>File not found</source>
+        <translation>Fichier non trouvé</translation>
+    </message>
+    <message>
+        <source>Parsed data too large</source>
+        <translation>Données traitées trop grandes</translation>
+    </message>
+    <message>
+        <source>Invalid URI, not starting with "castle" prefix</source>
+        <translation>URI invalide, ne commence pas par "castle"</translation>
+    </message>
+</context>
+<context>
+    <name>OptionButton</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
 </context>
 <context>
@@ -1809,8 +1943,16 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>Taille du cache de base de données</translation>
     </message>
     <message>
+        <source>MB</source>
+        <translation>MB</translation>
+    </message>
+    <message>
         <source>Number of script &amp;verification threads</source>
         <translation>Nombre de fil pour les scripts de vérification</translation>
+    </message>
+    <message>
+        <source>(0 = auto, &lt;0 = leave that many cores free)</source>
+        <translation>(0 = auto, &lt;0 = laisser autant de cœurs libres)</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
@@ -1821,8 +1963,8 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>SI vous désactivez la dépense de la monnaire non confirmée, la monnaie rendue sur une transaction &lt;br/&gt;ne peut pas être utilisée tant que celle-ci n'a pas reçue au moins une confirmation &lt;br/&gt;Ceci implique également la manière dont votre solde est calculé.</translation>
     </message>
     <message>
-        <source>Automatically open the CSTL client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir automatiquement le port du client CSTL sur le routeur. Ceci fonctionne uniquement si votre routeur prend en charge UPnP et que celui-ci est activé.</translation>
+        <source>Automatically open the CASTLE client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir automatiquement le port du client CASTLE sur le routeur. Ceci fonctionne uniquement si votre routeur prend en charge UPnP et que celui-ci est activé.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1841,12 +1983,12 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start CSTL after logging in to the system.</source>
-        <translation>Démarrez CSTL automatiquement après vous être connecté au système.</translation>
+        <source>Automatically start CASTLE after logging in to the system.</source>
+        <translation>Démarrez CASTLE automatiquement après vous être connecté au système.</translation>
     </message>
     <message>
-        <source>&amp;Start CSTL on system login</source>
-        <translation>Démarrer CSTL au démarrage système</translation>
+        <source>&amp;Start CASTLE on system login</source>
+        <translation>Démarrer CASTLE au démarrage système</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1873,8 +2015,8 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>Réseau</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting CSTL.</source>
-        <translation>La langue de l'interface utilisateur peut être définie ici. Ce paramètre prendra effet après le redémarrage de CSTL.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting CASTLE.</source>
+        <translation>La langue de l'interface utilisateur peut être définie ici. Ce paramètre prendra effet après le redémarrage de CASTLE.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1892,7 +2034,15 @@ https://www.transifex.com/castle-project/castle-project-translations</translatio
     </message>
     <message>
         <source>Enable zCSTL Automint</source>
-        <translation>Activé ZCSTL Auto-monnayage</translation>
+        <translation>Activer l'Auto-monnayage zCSTL </translation>
+    </message>
+    <message>
+        <source>Enable automatic zCSTL minting from specific addresses</source>
+        <translation>Activer la frappe zCSTL automatique à partir d'adresses spécifiques</translation>
+    </message>
+    <message>
+        <source>Enable Automint Addresses</source>
+        <translation>Activer les Adresses Automint</translation>
     </message>
     <message>
         <source>Percentage of incoming CSTL which get automatically converted to zCSTL via Zerocoin Protocol (min: 10%)</source>
@@ -1903,16 +2053,20 @@ https://www.transifex.com/castle-project/castle-project-translations</translatio
         <translation>Pourcentage de zCSTL auto-monnayé</translation>
     </message>
     <message>
+        <source>Wait with automatic conversion to Zerocoin until enough CSTL for this denomination is available</source>
+        <translation>Met en attente la conversion automatique Zerocoin jusqu'à ce qu'il y ai suffisament de CSTL disponibles pour la dénomination demandée</translation>
+    </message>
+    <message>
         <source>Preferred Automint zCSTL Denomination</source>
-        <translation>Dénomination préférée d'auto-monnayage zCSTL</translation>
+        <translation>Dénomination préférée pour l'auto-monnayage zCSTL</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Seuil de partage du Stake</translation>
     </message>
     <message>
-        <source>Connect to the CSTL network through a SOCKS5 proxy.</source>
-        <translation>Se connetcer au réseau CSTL via un proxy SOCKS5.</translation>
+        <source>Connect to the CASTLE network through a SOCKS5 proxy.</source>
+        <translation>Se connetcer au réseau CASTLE via un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1963,8 +2117,8 @@ https://www.transifex.com/castle-project/castle-project-translations</translatio
         <translation>Thème de l'interface utilisateur:</translation>
     </message>
     <message>
-        <source>&amp;Unit to show amounts in:</source>
-        <translation>Unité pour afficher les montants:</translation>
+        <source>Unit to show amounts in:</source>
+        <translation>Unité d'affichage des montants:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1977,6 +2131,14 @@ https://www.transifex.com/castle-project/castle-project-translations</translatio
     <message>
         <source>Hide empty balances</source>
         <translation>Masquer les soldes vides</translation>
+    </message>
+    <message>
+        <source>Hide orphan stakes in transaction lists</source>
+        <translation>Masquer les récompenses Stake orphelines dans la liste des transactions</translation>
+    </message>
+    <message>
+        <source>Hide orphan stakes</source>
+        <translation>Masquer les récompenses Stake orphelines</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -2048,155 +2210,89 @@ https://www.transifex.com/castle-project/castle-project-translations</translatio
     </message>
 </context>
 <context>
-    <name>OverviewPage</name>
+    <name>CASTLEGUI</name>
     <message>
-        <source>Form</source>
-        <translation>Formulaire</translation>
+        <source>CASTLE Core</source>
+        <translation>CASTLE Core</translation>
     </message>
     <message>
-        <source>Available:</source>
-        <translation>Disponible:</translation>
+        <source>Wallet</source>
+        <translation>Portefeuille</translation>
     </message>
     <message>
-        <source>Your current spendable balance</source>
-        <translation>Votre solde actuel utilisable</translation>
+        <source>Node</source>
+        <translation>Nœud </translation>
     </message>
     <message>
-        <source>Total Balance, including all unavailable coins.</source>
-        <translation>Solde total, incluant les pièces indisponibles.</translation>
+        <source>&amp;Show / Hide</source>
+        <translation>Afficher / Cacher</translation>
     </message>
     <message>
-        <source>CSTL Balance</source>
-        <translation>Solde de CSTL</translation>
+        <source>Show or hide the main Window</source>
+        <translation>Afficher ou cacher la fenêtre principale</translation>
     </message>
     <message>
-        <source>Pending:</source>
-        <translation>En attente:</translation>
+        <source>E&amp;xit</source>
+        <translation>Quitter</translation>
     </message>
     <message>
-        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
-        <translation>Total des transactions qui n'ont pas encore été confirmées et qui ne sont pas encore comptabilisées dans le solde disponible</translation>
+        <source>Quit application</source>
+        <translation>Quitter l'application</translation>
     </message>
     <message>
-        <source>Immature:</source>
-        <translation>Immature:</translation>
+        <source>CASTLE Core client</source>
+        <translation>CASTLE Core client</translation>
     </message>
     <message>
-        <source>Staked or masternode rewards that has not yet matured</source>
-        <translation>Récompenses de Stake ou de Matsrenodes qui ne sont pas encore matures</translation>
+        <source>Error</source>
+        <translation>Erreur</translation>
     </message>
     <message>
-        <source>Current locked balance in watch-only addresses</source>
-        <translation>Solde courant bloqué dans des adresses témoin</translation>
+        <source>Warning</source>
+        <translation>Attention</translation>
     </message>
     <message>
-        <source>Your current CSTL balance, unconfirmed and immature transactions included</source>
-        <translation>Votre solde CSTL actuel, incluant les transactions non confirmées et immatures</translation>
+        <source>Information</source>
+        <translation>Information</translation>
     </message>
     <message>
-        <source>zCSTL Balance</source>
-        <translation>Solde de zCSTL</translation>
+        <source>System Message</source>
+        <translation>Message système</translation>
     </message>
     <message>
-        <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zCSTL are spendable.</source>
-        <translation>Maturité: plus de 20 confirmations et plus de 1 monnayer de la même dénomination après sa frappe.
-Ces zCSTL sont dépensables.</translation>
+        <source>Sent MultiSend transaction</source>
+        <translation>Envoi d'une transaction MultiSend</translation>
     </message>
     <message>
-        <source>Unconfirmed: less than 20 confirmations
-Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
-        <translation>Non confirmé: moins de 20 confirmations
-Immature: confirmé, mais moins de 1 monnayer de la même dénomination après sa frappe</translation>
+        <source>Sent transaction</source>
+        <translation>Transaction sortie</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CSTL network after a connection is established, but this process has not completed yet.</source>
-        <translation>Les informations affichées pourraient être périmées. Votre portefeuille se synchronise automatiquement avec le réseau CSTL après l'établissement d'une connexion, mais ce processus n'est pas encore terminé.</translation>
+        <source>Incoming transaction</source>
+        <translation>Transaction entrante</translation>
     </message>
     <message>
-        <source>OVERVIEW</source>
-        <translation>APERÇU</translation>
-    </message>
-    <message>
-        <source>Combined Balance (including unconfirmed and immature coins)</source>
-        <translation>Solde combiné (incluant les pièces immatures et non confirmées)</translation>
-    </message>
-    <message>
-        <source>Combined Balance</source>
-        <translation>Solde combiné</translation>
-    </message>
-    <message>
-        <source>Unconfirmed transactions to watch-only addresses</source>
-        <translation>Transactions non confirmées vers des adresses témoins</translation>
-    </message>
-    <message>
-        <source>Staked or masternode rewards in watch-only addresses that has not yet matured</source>
-        <translation>Récompenses Stake ou Masternode dans des adresses témoins qui n'ont pas encore atteint leur maturité</translation>
-    </message>
-    <message>
-        <source>Total:</source>
-        <translation>Total:</translation>
-    </message>
-    <message>
-        <source>Current total balance in watch-only addresses</source>
-        <translation>Solde courant total dans les adresses témoins</translation>
-    </message>
-    <message>
-        <source>Watch-only:</source>
-        <translation>Témoin:</translation>
-    </message>
-    <message>
-        <source>Your current balance in watch-only addresses</source>
-        <translation>Votre solde courant in les adresses témoins</translation>
-    </message>
-    <message>
-        <source>Spendable:</source>
-        <translation>Dépensable:</translation>
-    </message>
-    <message>
-        <source>Locked CSTL or Masternode collaterals. These are excluded from zCSTL minting.</source>
-        <translation>CSTL Verrouillé ou Masternode collatéraux. Ceux-ci sont exclus de la monnayage zCSTL.</translation>
-    </message>
-    <message>
-        <source>Locked:</source>
-        <translation>Vérrouillé:</translation>
-    </message>
-    <message>
-        <source>Unconfirmed:</source>
-        <translation>Non confirmé:</translation>
-    </message>
-    <message>
-        <source>Your current zCSTL balance, unconfirmed and immature zCSTL included.</source>
-        <translation>Votre solde courant zCSTL, incluant les zCSTL non confirmés et immatures.</translation>
-    </message>
-    <message>
-        <source>Recent transactions</source>
-        <translation>Dernières transactions</translation>
-    </message>
-    <message>
-        <source>out of sync</source>
-        <translation>désynchronisé</translation>
-    </message>
-    <message>
-        <source>Current percentage of zCSTL.
-If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
+        <source>Date: %1
+Amount: %2
+Type: %3
+Address: %4
 </source>
-        <translation>Le pourcentage actuel de zCSTL.
-Si Auto-monnayage est activé, ce pourcentage sera réglé autour du pourcentage Auto-monnayage configuré (par défaut = 10%).</translation>
+        <translation>Date : %1
+Montant : %2
+Type : %3
+Adresse : %4
+</translation>
     </message>
     <message>
-        <source>AutoMint is currently enabled and set to </source>
-        <translation>Auto-monnayage est actuellement activé et mis à</translation>
+        <source>A fatal error occurred. CASTLE can no longer continue safely and will quit.</source>
+        <translation>Une erreur fatale s'est produite. CASTLE Core ne peut plus poursuivre en toute sécurité et va quitter.</translation>
     </message>
+</context>
+<context>
+    <name>PWidget</name>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in castle.conf.</source>
-        <translation>Pour désactiver Auto-monnayage, ajoutez 'enablezeromint = 0' dans castle.conf.</translation>
-    </message>
-    <message>
-        <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in castle.conf</source>
-        <translation>Auto-monnayage est actuellement désactivé.
-Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1' dans le fichier castle.conf</translation>
+        <source>Wallet locked, you need to unlock it to perform this action</source>
+        <translation>Portefeuille vérouillé, vous devez le dévérrouiller pour réaliser cette opération</translation>
     </message>
 </context>
 <context>
@@ -2226,8 +2322,8 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>Impossible de démarrer castle: gestionnaire click-to-pay</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid CSTL address or malformed URI parameters.</source>
-        <translation>L'URI ne peut pas être analysée! Cela peut être dû à une adresse CSTL invalide ou à des paramètres URI incorrectes.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid CASTLE address or malformed URI parameters.</source>
+        <translation>L'URI ne peut pas être analysée! Cela peut être dû à une adresse CASTLE invalide ou à des paramètres URI incorrectes.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2306,649 +2402,189 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
     </message>
 </context>
 <context>
-    <name>PrivacyDialog</name>
+    <name>PrivacyWidget</name>
     <message>
-        <source>Zerocoin Actions:</source>
-        <translation>Actions Zerocoin:</translation>
+        <source>Form</source>
+        <translation>Formulaire</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CSTL network after a connection is established, but this process has not completed yet.</source>
-        <translation>Les informations affichées pourraient être périmées. Votre portefeuille se synchronise automatiquement avec le réseau CSTL après l'établissement d'une connexion, mais ce processus n'est pas encore terminé.</translation>
-    </message>
-    <message>
-        <source>Mint Zerocoin</source>
-        <translation>Monnayer Zerocoin</translation>
-    </message>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>zCSTL</source>
-        <translation>zCSTL</translation>
-    </message>
-    <message>
-        <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
-        <translation>Disponible pour monnayage sont des pièces qui sont confirmées et non verrouillées ou collatéraux Masternode.</translation>
-    </message>
-    <message>
-        <source>Available for Minting:</source>
-        <translation>Disponible pour Monnayage:</translation>
-    </message>
-    <message>
-        <source>0.000 000 00 CSTL</source>
-        <translation>0.000 000 00 CSTL</translation>
-    </message>
-    <message>
-        <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
-        <translation>Réinitialiser la base de données du portefeuille Zerocoin.  Supprime les transactions qui ne sont pas entrées dans la blockchain.</translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation>Réinitialiser</translation>
-    </message>
-    <message>
-        <source>Coin Control...</source>
-        <translation>Contrôle des pièces...</translation>
-    </message>
-    <message>
-        <source>Quantity:</source>
-        <translation>Quantité :</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Montant :</translation>
-    </message>
-    <message>
-        <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
-        <translation>Rebalayage la blockchain complète pour les Zerocoin Monnayer et leurs méta-données.</translation>
-    </message>
-    <message>
-        <source>ReScan</source>
-        <translation>ReScan</translation>
-    </message>
-    <message>
-        <source>Status and/or Mesages from the last Mint Action.</source>
-        <translation>Statut et / ou messages de dernière action Monnayage.</translation>
-    </message>
-    <message>
-        <source>PRIVACY</source>
-        <translation>CONFIDENTIALITÉ</translation>
-    </message>
-    <message>
-        <source>Enter an amount of Castle to convert to zCSTL</source>
-        <translation>Entrez un montant de CSTL à convertir en zCSTL</translation>
-    </message>
-    <message>
-        <source>zCSTL Control</source>
-        <translation>Contrôle zCSTL</translation>
-    </message>
-    <message>
-        <source>zCSTL Selected:</source>
-        <translation>zCSTL sélectionné:</translation>
-    </message>
-    <message>
-        <source>Quantity Selected:</source>
-        <translation>Quantité sélectionnée:</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin. Without 'Pay To:' address creates payments to yourself.</source>
-        <translation>Dépenser Zerocoin. En l'absence du paramètre 'Payer à:' l'adresse envoie le paiement à vous même</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin</source>
-        <translation>Dépenser Zerocoin</translation>
-    </message>
-    <message>
-        <source>Available (mature and spendable) zCSTL for spending</source>
-        <translation>zCSTL disponibles (matures et dépensables) pour dépenser</translation>
-    </message>
-    <message>
-        <source>Available Balance:</source>
-        <translation>Solde disponible:</translation>
-    </message>
-    <message>
-        <source>Available (mature and spendable) zCSTL for spending
-
-zCSTL are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>ZCSTL disponible (mature et utilisable) pour les dépenses
-
-Les zCSTL sont matures lorsqu'elles ont plus de 20 confirmations ET plus de 2 monnayent de même dénomination après ils était monnayer</translation>
-    </message>
-    <message>
-        <source>0 zCSTL</source>
-        <translation>0 zCSTL</translation>
-    </message>
-    <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>Niveau de sécurité pour les transactions Zerocoin. Le plus élevé est préférable, mais cela requiert plus de temps et de ressource.</translation>
-    </message>
-    <message>
-        <source>Security Level:</source>
-        <translation>Niveau de sécurité:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>Niveau de sécurité 1 - 100 (par défaut: 42)</translation>
-    </message>
-    <message>
-        <source>Pay &amp;To:</source>
-        <translation>Payer à :</translation>
-    </message>
-    <message>
-        <source>The CSTL address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>L'adresse CSTL à laquelle nevoyer le paiement. Créé un paiement à vous même lorsque ce champs est vide.</translation>
-    </message>
-    <message>
-        <source>Choose previously used address</source>
-        <translation>Choisir l'adresse précédemment utilisée</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>Copier l'adresse depuis le presse-papier</translation>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Label:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Saisissez un label pour cette adresse pour l'ajouter à votre carnet d'adresses</translation>
-    </message>
-    <message>
-        <source>A&amp;mount:</source>
-        <translation>Montant:</translation>
-    </message>
-    <message>
-        <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>Convertir la monnaie rendue en Zerocoin (peut augmenter les frais de transaction)</translation>
-    </message>
-    <message>
-        <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
-        <translation>Si coché, le portefeuille tente de mininiser la monnaie rendue au lieu de minimiser le nombre de dénominations dépensées.</translation>
-    </message>
-    <message>
-        <source>Minimize Change</source>
-        <translation>Mininiser la monnaie rendue</translation>
-    </message>
-    <message>
-        <source>Information about the available Zerocoin funds.</source>
-        <translation>Information à propos des fonds disponibles Zerocoin.</translation>
-    </message>
-    <message>
-        <source>Zerocoin Stats:</source>
-        <translation>Statistiques Zerocoin:</translation>
-    </message>
-    <message>
-        <source>Total Balance including unconfirmed and immature zCSTL</source>
-        <translation>Solde total incluant les zCSTL non confirmés et immatures</translation>
-    </message>
-    <message>
-        <source>Total Zerocoin  Balance:</source>
-        <translation>Solde total Zerocoin:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 1:</source>
-        <translation>Dénominations avec une valeur 1:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 1:</source>
-        <translation>Dénom. avec une valeur 1:</translation>
-    </message>
-    <message>
-        <source>Unconfirmed: less than 20 confirmations
-Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
-        <translation>Non confirmé: moins de 20 confirmations
-Immature: confirmé, mais moins de 1 monnayer de la même dénomination après sa frappe</translation>
-    </message>
-    <message>
-        <source>Show the current status of automatic zCSTL minting.
-
-To change the status (restart required):
-- enable: add 'enablezeromint=1' to castle.conf
-- disable: add 'enablezeromint=0' to castle.conf
-
-To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zCSTL
-
-</source>
-        <translation>Afficher l'état actuel de monnayage automatique zCSTL.
-
-Pour changer le statut (redémarrage requis):
-- enable: ajoute 'enablezeromint = 1' au fichier castle.conf
-- disable: ajoute 'enablezeromint = 0' au fichier castle.conf
-
-Pour changer le pourcentage (pas de redémarrage requis):
-- menu Paramètres-&gt; Options-&gt; Pourcentage de zCSTL auto-monnayé
-
-</translation>
-    </message>
-    <message>
-        <source>AutoMint Status</source>
-        <translation>Statut Auto-monnayage</translation>
-    </message>
-    <message>
-        <source>Global Supply:</source>
-        <translation>Approvisionnement total:</translation>
-    </message>
-    <message>
-        <source>Denom. 1:</source>
-        <translation>Dénom. 1:</translation>
-    </message>
-    <message>
-        <source>Denom. 5:</source>
-        <translation>Dénom. 5:</translation>
-    </message>
-    <message>
-        <source>Denom. 10:</source>
-        <translation>Dénom. 10:</translation>
-    </message>
-    <message>
-        <source>Denom. 50:</source>
-        <translation>Dénom. 50:</translation>
-    </message>
-    <message>
-        <source>Denom. 100:</source>
-        <translation>Dénom. 100:</translation>
-    </message>
-    <message>
-        <source>Denom. 500:</source>
-        <translation>Dénom. 500:</translation>
-    </message>
-    <message>
-        <source>Denom. 1000:</source>
-        <translation>Dénom. 1000:</translation>
-    </message>
-    <message>
-        <source>Denom. 5000:</source>
-        <translation>Dénom. 5000:</translation>
-    </message>
-    <message>
-        <source>0 x</source>
-        <translation>0 x</translation>
-    </message>
-    <message>
-        <source>Denominations with value 5:</source>
-        <translation>Dénominations avec une valeur 5:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 5:</source>
-        <translation>Dénom. avec une valeur 5:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 10:</source>
-        <translation>Dénominations avec une valeur 10:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 10:</source>
-        <translation>Dénom. avec une valeur 10:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 50:</source>
-        <translation>Dénominations avec une valeur 50:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 50:</source>
-        <translation>Dénom. avec une valeur 50:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 100:</source>
-        <translation>Dénominations avec une valeur 100:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 100:</source>
-        <translation>Dénom. avec une valeur 100:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 500:</source>
-        <translation>Dénominations avec une valeur 500:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 500:</source>
-        <translation>Dénom. avec une valeur 500:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 1000:</source>
-        <translation>Dénominations avec une valeur 1000:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 1000:</source>
-        <translation>Dénom. avec une valeur 1000:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 5000:</source>
-        <translation>Dénominations avec une valeur 5000:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 5000:</source>
-        <translation>Dénom. avec une valeur 5000:</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>Priorité :</translation>
+        <source>Title</source>
+        <translation>Titre</translation>
     </message>
     <message>
         <source>TextLabel</source>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Fee:</source>
-        <translation>Commission :</translation>
+        <source>PushButton</source>
+        <translation>Bouton poussoir</translation>
     </message>
     <message>
-        <source>Dust:</source>
-        <translation>Résidu:</translation>
+        <source>N/A</source>
+        <translation>N/A</translation>
     </message>
     <message>
-        <source>no</source>
-        <translation>non</translation>
+        <source>Privacy</source>
+        <translation>Confidentialité</translation>
     </message>
     <message>
-        <source>Bytes:</source>
-        <translation>Octets:</translation>
+        <source>Convert</source>
+        <translation>Convertir</translation>
     </message>
     <message>
-        <source>Insufficient funds!</source>
-        <translation>Fonds insuffisants !</translation>
-    </message>
-    <message>
-        <source>Coins automatically selected</source>
-        <translation>Pièces automatiquement sélectionnées</translation>
-    </message>
-    <message>
-        <source>medium</source>
-        <translation>moyen</translation>
-    </message>
-    <message>
-        <source>Coin Control Features</source>
-        <translation>Fonctionnalités de contrôle des pièces</translation>
-    </message>
-    <message>
-        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Si cette option est activée, mais que l'adresse de monnaie est vide ou non valide, la monnaie sera envoyée à une nouvelle adresse générée.</translation>
-    </message>
-    <message>
-        <source>Custom change address</source>
-        <translation>Adresse de changement personnalisée</translation>
-    </message>
-    <message>
-        <source>Amount After Fee:</source>
-        <translation>Montant après les frais:</translation>
-    </message>
-    <message>
-        <source>Change:</source>
-        <translation>Monnaie rendue:</translation>
-    </message>
-    <message>
-        <source>out of sync</source>
-        <translation>désynchronisé</translation>
-    </message>
-    <message>
-        <source>Mint Status: Okay</source>
-        <translation>Auto-monnayage Statut: OK</translation>
-    </message>
-    <message>
-        <source>Copy quantity</source>
-        <translation>Copier la quantité</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Copier le montant</translation>
-    </message>
-    <message>
-        <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware.
-Please be patient...</source>
-        <translation>Démarrage de ResetMonnayerZerocoin: réanalyser blockchain complète, cela prendra jusqu'à 30 minutes selon votre matériel.
-S'il vous plaît soyez patient ...</translation>
-    </message>
-    <message>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware.
-Please be patient...</source>
-        <translation>En cours de dépense Zerocoin.
-Opération coûteuse en ressources, peut nécessiter plusieurs minutes selon le niveau de sécurité choisi et la performance de votre matériel.
-SVP, soyez patient...</translation>
-    </message>
-    <message>
-        <source>) needed.
-Maximum allowed: </source>
-        <translation>) demandées.
-Maximum autorisé:</translation>
-    </message>
-    <message>
-        <source>zCSTL Spend #: </source>
-        <translation>Dépense zCSTL #:</translation>
-    </message>
-    <message>
-        <source>zCSTL Mint</source>
-        <translation>Monnayer zCSTL</translation>
-    </message>
-    <message>
-        <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
-        <translation>&lt;b&gt;activé&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source> &lt;b&gt;disabled&lt;/b&gt;.</source>
-        <translation>&lt;b&gt;désactivé&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source> Configured target percentage: &lt;b&gt;</source>
-        <translation>Pourcentage cible configuré: &lt;b&gt;</translation>
-    </message>
-    <message>
-        <source>zCSTL is currently disabled due to maintenance.</source>
-        <translation>zCSTL est actuellement désactivé pour cause de maintenance.</translation>
-    </message>
-    <message>
-        <source>zCSTL is currently undergoing maintenance.</source>
-        <translation>zCSTL est actuellement en cours de maintenance.</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
-        <translation>Dénom. avec valeur &lt;b&gt;1&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;5&lt;/b&gt;:</source>
-        <translation>Dénom. avec valeur &lt;b&gt;5&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;10&lt;/b&gt;:</source>
-        <translation>Dénom. avec valeur &lt;b&gt;10&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;50&lt;/b&gt;:</source>
-        <translation>Dénom. avec valeur &lt;b&gt;50&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;100&lt;/b&gt;:</source>
-        <translation>Dénom. avec valeur &lt;b&gt;100&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;500&lt;/b&gt;:</source>
-        <translation>Dénom. avec valeur &lt;b&gt;500&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;1000&lt;/b&gt;:</source>
-        <translation>Dénom. avec valeur &lt;b&gt;1000&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;5000&lt;/b&gt;:</source>
-        <translation>Dénom. avec valeur&lt;b&gt;5000&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>AutoMint Status:</source>
-        <translation>Statut Auto-monnayage:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;1&lt;/b&gt;:</source>
-        <translation>Dénom. &lt;b&gt;1&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;5&lt;/b&gt;:</source>
-        <translation>Dénom. &lt;b&gt;5&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;10&lt;/b&gt;:</source>
-        <translation>Dénom. &lt;b&gt;10&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;50&lt;/b&gt;:</source>
-        <translation>Dénom. &lt;b&gt;50&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;100&lt;/b&gt;:</source>
-        <translation>Dénom. &lt;b&gt;100&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;500&lt;/b&gt;:</source>
-        <translation>Dénom. &lt;b&gt;500&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;1000&lt;/b&gt;:</source>
-        <translation>Dénom. &lt;b&gt;1000&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;5000&lt;/b&gt;:</source>
-        <translation>Dénom. &lt;b&gt;5000&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
-        <translation>Erreur: Votre portefeuille est verrouillé. Veuillez d'abord entrer la phrase secrète du portefeuille.</translation>
-    </message>
-    <message>
-        <source>Message: Enter an amount &gt; 0.</source>
-        <translation>Message: Entrez un montant &gt;0.</translation>
-    </message>
-    <message>
-        <source>Minting </source>
+        <source>Mint</source>
         <translation>Monnayage</translation>
     </message>
     <message>
-        <source>Successfully minted </source>
-        <translation>Monnayez réussi</translation>
+        <source>Minting zCSTL anonymizes your CSTL by removing any
+transaction history, making transactions untraceable </source>
+        <translation>Frapper des zCSTL anonymise vos CSTL en supprimant tout
+l'historique de transaction, rendant les transactions intraçables</translation>
     </message>
     <message>
-        <source> zCSTL in </source>
-        <translation>zCSTL dans</translation>
+        <source>Mint new zCSTL or convert back to CSTL</source>
+        <translation>Frapper de nouveaux zCSTL ou reconvertir en CSTL</translation>
     </message>
     <message>
-        <source> sec. Used denominations:
+        <source>No transactions yet</source>
+        <translation>Pas encore de transaction</translation>
+    </message>
+    <message>
+        <source>Mint zCSTL</source>
+        <translation>Frapper des zCSTL</translation>
+    </message>
+    <message>
+        <source>Enter amount of CSTL to mint into zCSTL</source>
+        <translation>Entrer le montant de CSTL à monnayer en zCSTL</translation>
+    </message>
+    <message>
+        <source>Convert back to CSTL</source>
+        <translation>Reconvertir en CSTL</translation>
+    </message>
+    <message>
+        <source>Enter amount of zCSTL to convert back into CSTL</source>
+        <translation>Entrer le montant de zCSTL à reconvertir en CSTL</translation>
+    </message>
+    <message>
+        <source>Zerocoin</source>
+        <translation>Zerocoin</translation>
+    </message>
+    <message>
+        <source>zCSTL is currently undergoing maintenance</source>
+        <translation>zCSTL est actuellement en maintenance</translation>
+    </message>
+    <message>
+        <source>You need to unlock the wallet to be able to %1 zCSTL</source>
+        <translation>Vous devez dévérouiller le portefeuille pour pouvoir %1 zCSTL</translation>
+    </message>
+    <message>
+        <source>convert</source>
+        <translation>convertir</translation>
+    </message>
+    <message>
+        <source>mint</source>
+        <translation>Frapper</translation>
+    </message>
+    <message>
+        <source>Invalid value</source>
+        <translation>Valeur incorrecte</translation>
+    </message>
+    <message>
+        <source>zCSTL minted successfully</source>
+        <translation>zCSTL frappées avec succès</translation>
+    </message>
+    <message>
+        <source>zCSTL converted back to CSTL</source>
+        <translation>zCSTL reconverti en CSTL</translation>
+    </message>
+    <message>
+        <source>You don't have any CSTL to select.</source>
+        <translation>Vous n'avez aucun CSTL à sélectionner</translation>
+    </message>
+    <message>
+        <source>Rescan Mints</source>
+        <translation>Rescanner les frappes</translation>
+    </message>
+    <message>
+        <source>Your zerocoin mints are going to be scanned from the blockchain from scratch</source>
+        <translation>Votre monnayage Zerocoin va être retracer à partir de la blockchain</translation>
+    </message>
+    <message>
+        <source>Your zerocoin spends are going to be scanned from the blockchain from scratch</source>
+        <translation>Vos dépenses Zerocoin vont être recalculées à partir de la blockchain</translation>
+    </message>
+    <message>
+        <source>Total %1</source>
+        <translation>Total %1</translation>
+    </message>
+</context>
+<context>
+    <name>ProposalFrame</name>
+    <message>
+        <source>Open proposal page in browser</source>
+        <translation>Ouvrir la page des propositions dans le navigateur</translation>
+    </message>
+    <message>
+        <source> remaining payment(s).</source>
+        <translation>paiement(s) restant.</translation>
+    </message>
+    <message>
+        <source>Yes:</source>
+        <translation>Pour:</translation>
+    </message>
+    <message>
+        <source>Abstain:</source>
+        <translation>Abstention:</translation>
+    </message>
+    <message>
+        <source>No:</source>
+        <translation>Contre:</translation>
+    </message>
+    <message>
+        <source>A proposal URL can be used for phishing, scams and computer viruses. Open this link only if you trust the following URL.
 </source>
-        <translation>sec. Dénominations utilisées:
+        <translation>Une page de proposition peut être utilisée pour le phishing, des escroqueries ou des virus informatiques. Ouvrez ce lien uniquement si vous faites confiance à l'URL suivante.
 </translation>
     </message>
     <message>
-        <source>Duration: </source>
-        <translation>Durée</translation>
+        <source>Open link</source>
+        <translation>Ouvrir le lien</translation>
     </message>
     <message>
-        <source> sec.
-</source>
-        <translation>sec.
-</translation>
+        <source>Copy link</source>
+        <translation>Copier le lien</translation>
     </message>
     <message>
-        <source>No 'Pay To' address provided, creating local payment</source>
-        <translation>Aucune adresse 'Payer à' de fournie, création d'un paiement local</translation>
+        <source>Wallet Locked</source>
+        <translation>Portefeuille vérouillé</translation>
     </message>
     <message>
-        <source>Invalid Castle Address</source>
-        <translation>Adresse Castle incorrecte</translation>
+        <source>You must unlock your wallet to vote.</source>
+        <translation>Vous devez déverrouiller votre portefeuille pour voter</translation>
     </message>
     <message>
-        <source>Invalid Send Amount</source>
-        <translation>Montant envoyé incorrecte</translation>
+        <source>Do you want to vote %1 on</source>
+        <translation>Voulez-vous voter %1 pour</translation>
     </message>
     <message>
-        <source>Confirm additional Fees</source>
-        <translation>Confirmer les frais supplémentaires</translation>
+        <source>using all your masternodes?</source>
+        <translation>en utilisant tous vos masternodes?</translation>
     </message>
     <message>
-        <source>Are you sure you want to send?&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Êtes-vous certain de vouloir envoyer? &lt;br /&gt; &lt;br /&gt;</translation>
+        <source>Proposal Hash:</source>
+        <translation>Hash de la proposition:</translation>
     </message>
     <message>
-        <source> to address </source>
-        <translation>vers adresse</translation>
+        <source>Proposal URL:</source>
+        <translation>URL de la proposition:</translation>
     </message>
     <message>
-        <source> to a newly generated (unused and therefore anonymous) local address &lt;br /&gt;</source>
-        <translation>vers une adresse locale nouvellement générée (inutilisée et donc anonyme)</translation>
+        <source>Confirm Vote</source>
+        <translation>Confirmer le vote</translation>
     </message>
     <message>
-        <source>with Security Level </source>
-        <translation>avec le niveau de sécurité</translation>
-    </message>
-    <message>
-        <source>Confirm send coins</source>
-        <translation>Confirmer l'envoi des pièces</translation>
-    </message>
-    <message>
-        <source>Version 1 zCSTL require a security level of 100 to successfully spend.</source>
-        <translation>La version 1 de zCSTL requiert un niveau de sécurité de 100 pour les dépenser.
-</translation>
-    </message>
-    <message>
-        <source>Failed to spend zCSTL</source>
-        <translation>Échec de la dépense de zCSTL</translation>
-    </message>
-    <message>
-        <source>Failed to fetch mint associated with serial hash</source>
-        <translation>Impossible d'extraire la monnayer associée au hachage série</translation>
-    </message>
-    <message>
-        <source>Too much inputs (</source>
-        <translation>Trop d'entrées (</translation>
-    </message>
-    <message>
-        <source>
-Either mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
-        <translation>
-Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessaires), soit une réduction du montant à dépenser.</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin failed with status = </source>
-        <translation>La dépense Zerocoin a échoué avec le statut =</translation>
-    </message>
-    <message>
-        <source>denomination: </source>
-        <translation>dénomination:</translation>
-    </message>
-    <message>
-        <source>serial: </source>
-        <translation>série:</translation>
-    </message>
-    <message>
-        <source>Spend is 1 of : </source>
-        <translation>La dépense est 1 de:</translation>
-    </message>
-    <message>
-        <source>value out: </source>
-        <translation>valeur en sortie:</translation>
-    </message>
-    <message>
-        <source>address: </source>
-        <translation>adresse:</translation>
-    </message>
-    <message>
-        <source>Sending successful, return code: </source>
-        <translation>Envoi réussi, code retourné:</translation>
-    </message>
-    <message>
-        <source>txid: </source>
-        <translation>Identifiant de transaction:</translation>
-    </message>
-    <message>
-        <source>fee: </source>
-        <translation>frais:</translation>
+        <source>Vote Results</source>
+        <translation>Résultats du vote</translation>
     </message>
 </context>
 <context>
@@ -2956,10 +2592,6 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     <message>
         <source>Amount</source>
         <translation>Montant</translation>
-    </message>
-    <message>
-        <source>Enter a CSTL address (e.g. %1)</source>
-        <translation>Entrez uen adresse CSTL (par ex. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2986,6 +2618,10 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>ÉCLOSION</translation>
     </message>
     <message>
+        <source>ZK_BLOOM</source>
+        <translation>ZK_BLOOM</translation>
+    </message>
+    <message>
         <source>UNKNOWN</source>
         <translation>INCONNU</translation>
     </message>
@@ -3001,24 +2637,29 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
-<context>
-    <name>QRImageWidget</name>
     <message>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Enregistrer l'image...</translation>
+        <source>CASTLE Core</source>
+        <translation>CASTLE Core</translation>
     </message>
     <message>
-        <source>&amp;Copy Image</source>
-        <translation>Copier image</translation>
+        <source>Error: Specified data directory "%1" does not exist.</source>
+        <translation>Erreur: le répertoire de données spécifié "%1" n'existe pas.</translation>
     </message>
     <message>
-        <source>Save QR Code</source>
-        <translation>Enregistrer le QR code</translation>
+        <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
+        <translation>Erreur: impossible d'analyser le fichier de configuration: %1. Utilisez uniquement la syntaxe clé=valeur.</translation>
     </message>
     <message>
-        <source>PNG Image (*.png)</source>
-        <translation>Image PNG (*.png)</translation>
+        <source>Error: Invalid combination of -regtest and -testnet.</source>
+        <translation>Erreur: Combinaison non valide de -regtest et -testnet.</translation>
+    </message>
+    <message>
+        <source>Error reading masternode configuration file: %1</source>
+        <translation>Erreur de lecture du fichier de configuration Masternode: %1</translation>
+    </message>
+    <message>
+        <source>CASTLE Core didn't yet exit safely...</source>
+        <translation>CASTLE Core n'a pas encore quitté en toute sécurité ...</translation>
     </message>
 </context>
 <context>
@@ -3072,10 +2713,6 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Fichier journal de débogage</translation>
     </message>
     <message>
-        <source>Using OpenSSL version</source>
-        <translation>Utilisation de la version OpenSSL</translation>
-    </message>
-    <message>
         <source>Build date</source>
         <translation>Date de construction</translation>
     </message>
@@ -3096,12 +2733,20 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Chaîne de bloc</translation>
     </message>
     <message>
-        <source>Open the CSTL debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the CASTLE debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Ouvrir le fichier journal de déboguage depuis le répertoire de données courant. Cela peut prendre quelques minutes pour les fichier journaux volumineux.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
         <translation>Nombre de masternodes</translation>
+    </message>
+    <message>
+        <source>Data Directory</source>
+        <translation>Dossier des données</translation>
+    </message>
+    <message>
+        <source>Last block hash</source>
+        <translation>Hash du dernier block</translation>
     </message>
     <message>
         <source>&amp;Console</source>
@@ -3312,8 +2957,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Sortie:</translation>
     </message>
     <message>
-        <source>Welcome to the CSTL RPC console.</source>
-        <translation>Bienvenue sur la console CSTL RPC.</translation>
+        <source>Welcome to the CASTLE RPC console.</source>
+        <translation>Bienvenue sur la console CASTLE RPC.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3364,12 +3009,16 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Cornfirmer la resynchronisation Blockchain</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Utilisez les flèches bas et haut pour naviguer dans l'historique, et &lt;b&gt; Ctrl-L &lt;/b&gt; pour effacer l'écran.</translation>
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation>Utilisez la flèches haut et bas pour naviguer dans l'historique, et %1 pour purger l'écran.</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Entrez &lt;b&gt; aide &lt;/b&gt; pour un aperçu des commandes disponibles</translation>
+    </message>
+    <message>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+        <translation>ATTENTION: Des escrocs sévisent, demandant aux utilisateurs de taper certaines commandes dans la console, volant le contenu de leur portefeuille. N'utilisez pas cette console sans une parfaite compréhension des conséquences des commandes que vous y tapez.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -3421,149 +3070,105 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     </message>
 </context>
 <context>
-    <name>ReceiveCoinsDialog</name>
+    <name>ReceiveDialog</name>
     <message>
-        <source>Reuse one of the previously used receiving addresses.&lt;br&gt;Reusing addresses has security and privacy issues.&lt;br&gt;Do not use this unless re-generating a payment request made before.</source>
-        <translation>Réutilise une des adresses de réception précédement utilisées.&lt;br /&gt; Réutiliser des adresses posent des problèmes de sécurité etd e confidentialité. &lt;br /&gt; Ne réuilisez pas une adresse à moins que vous souhaitiez regénérer une demande de paiement antérieure.</translation>
+        <source>Dialog</source>
+        <translation>Dialogue</translation>
     </message>
     <message>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>Réutiliser une adresse de réception existante (non recommandé)</translation>
+        <source>Transaction Details</source>
+        <translation>Détails de la transaction</translation>
     </message>
     <message>
-        <source>&amp;Message:</source>
-        <translation>Message:</translation>
+        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </translation>
     </message>
     <message>
-        <source>An optional label to associate with the new receiving address.</source>
-        <translation>Un label Un optionnel à associer à la nouvelle adresse de réception.</translation>
+        <source>CANCEL</source>
+        <translation>ANNULER</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the CSTL network.</source>
-        <translation>Un message optionnel à ajouter à la demande de paiement, lequel sera affiché lorsque la demande sera ouverte. Note: Le message ne sera pas renvoyé avec le paiement sur le réseaux CSTL.</translation>
-    </message>
-    <message>
-        <source>RECEIVE</source>
-        <translation>RECEVOIR</translation>
-    </message>
-    <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the CSTL network.</source>
-        <translation>Un message optionnel à ajouter à la demande de paiement, lequel sera affiché lorsque la demande sera ouverte. &lt;br /&gt; Note: Le message ne sera pas renvoyé avec le paiement sur le réseaux CSTL.</translation>
-    </message>
-    <message>
-        <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
-        <translation>Utiliser ce formulaire pour demander des paiements. Tous les champs sont &lt;b&gt; optionnels &lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Label:</translation>
-    </message>
-    <message>
-        <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
-        <translation>Montant demandé. Optionnel, laissez vide ou  zéro pour ne pas demander de montant spécifique.</translation>
-    </message>
-    <message>
-        <source>&amp;Amount:</source>
-        <translation>Montant :</translation>
-    </message>
-    <message>
-        <source>&amp;Request payment</source>
-        <translation>Demande le paiement</translation>
-    </message>
-    <message>
-        <source>Clear all fields of the form.</source>
-        <translation>Effacer tous les champs du formulaire </translation>
-    </message>
-    <message>
-        <source>Clear</source>
-        <translation>Effacer</translation>
-    </message>
-    <message>
-        <source>Requested payments history</source>
-        <translation>Historique des requêtes de paiement </translation>
-    </message>
-    <message>
-        <source>Show the selected request (does the same as double clicking an entry)</source>
-        <translation>Montrer la demande sélectionnée (fait la même chose que le doublic clic sur une entrée)</translation>
-    </message>
-    <message>
-        <source>Show</source>
-        <translation>Montrer</translation>
-    </message>
-    <message>
-        <source>Remove the selected entries from the list</source>
-        <translation>Retirer les entrées sélectionnées de la liste</translation>
-    </message>
-    <message>
-        <source>Remove</source>
-        <translation>Supprimer</translation>
-    </message>
-    <message>
-        <source>Copy label</source>
-        <translation>Copier le montant</translation>
-    </message>
-    <message>
-        <source>Copy message</source>
-        <translation>Copier le message</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Copier le montant</translation>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
-    <name>ReceiveRequestDialog</name>
+    <name>ReceiveWidget</name>
     <message>
-        <source>QR Code</source>
-        <translation>QR Code</translation>
+        <source>Form</source>
+        <translation>Formulaire</translation>
     </message>
     <message>
-        <source>Copy &amp;URI</source>
-        <translation>Copier L'URI</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Copy &amp;Address</source>
-        <translation>Copier l'adresse</translation>
+        <source>No address</source>
+        <translation>Aucune adresse</translation>
     </message>
     <message>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Enregistrer l'image...</translation>
+        <source>Add Label</source>
+        <translation>Ajouter un libellé</translation>
     </message>
     <message>
-        <source>Request payment to %1</source>
-        <translation>Demander un paiement à %1</translation>
+        <source>Generate Address</source>
+        <translation>Générer une adresse</translation>
     </message>
     <message>
-        <source>Payment information</source>
-        <translation>Information de paiement</translation>
+        <source>Copy</source>
+        <translation>Copier</translation>
     </message>
     <message>
-        <source>URI</source>
-        <translation>URI</translation>
+        <source>Receive</source>
+        <translation>Recevoir</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Adresse</translation>
+        <source>Scan the QR code or copy the address to receive CSTL.</source>
+        <translation>Balayez le QR code ou copiez l'adresse pour recevoir les CSTL.</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>Montant</translation>
+        <source>No address </source>
+        <translation>Aucune adresse</translation>
     </message>
     <message>
-        <source>Label</source>
-        <translation>Label</translation>
+        <source>No available address, try unlocking the wallet</source>
+        <translation>Aucune adresse disponible, essayez de dévérouiller le portefeuille</translation>
     </message>
     <message>
-        <source>Message</source>
-        <translation>Message</translation>
+        <source>Error generating address</source>
+        <translation>Erreur lors de la génération de l'adresse</translation>
     </message>
     <message>
-        <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>URI résultant trop long, essayez de réduire le texte pour le label / message.</translation>
+        <source>Edit Label</source>
+        <translation>Modifier l'étiquette</translation>
     </message>
     <message>
-        <source>Error encoding URI into QR Code.</source>
-        <translation>Erreur d'encodage URI dans le QR Code.</translation>
+        <source>Edit Address Label</source>
+        <translation>Éditer le libellé de l'adresse</translation>
+    </message>
+    <message>
+        <source>Address label saved</source>
+        <translation>Libellé de l'adresse sauvegardé</translation>
+    </message>
+    <message>
+        <source>Error storing address label</source>
+        <translation>Erreur lors de l'enregistrement du libellé</translation>
+    </message>
+    <message>
+        <source>New address created</source>
+        <translation>Nouvelle adresse créée</translation>
+    </message>
+    <message>
+        <source>Address copied</source>
+        <translation>Adresse copiée</translation>
+    </message>
+    <message>
+        <source>URI copied to clipboard</source>
+        <translation>URI copiée vers le presse-papier</translation>
+    </message>
+    <message>
+        <source>Address copied to clipboard</source>
+        <translation>Adresse copiée vers le presse-papier</translation>
     </message>
 </context>
 <context>
@@ -3579,6 +3184,10 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     <message>
         <source>Message</source>
         <translation>Message</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adresse</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3598,447 +3207,1423 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     </message>
 </context>
 <context>
-    <name>SendCoinsDialog</name>
+    <name>RequestDialog</name>
     <message>
-        <source>Send Coins</source>
-        <translation>Envoyer des pièces</translation>
+        <source>Dialog</source>
+        <translation>Dialogue</translation>
     </message>
     <message>
-        <source>SEND</source>
-        <translation>ENVOYER</translation>
+        <source>New Request Payment</source>
+        <translation>Nouvelle demande de paiement</translation>
     </message>
     <message>
-        <source>Coin Control Features</source>
-        <translation>Fonctionnalités de contrôle des pièces</translation>
+        <source>Lorem ipsum dolor sit amet, consectur cling elit, sed do </source>
+        <translation>Lorem ipsum dolor sit amet, consectur cling elit, sed do</translation>
     </message>
     <message>
-        <source>Insufficient funds!</source>
-        <translation>Fonds insuffisants !</translation>
+        <source>Amount</source>
+        <translation>Montant</translation>
     </message>
     <message>
-        <source>Quantity:</source>
-        <translation>Quantité :</translation>
+        <source>CSTL</source>
+        <translation>CSTL</translation>
     </message>
     <message>
-        <source>Bytes:</source>
-        <translation>Octets:</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Amount:</source>
-        <translation>Montant :</translation>
+        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </translation>
     </message>
     <message>
-        <source>Priority:</source>
-        <translation>Priorité :</translation>
+        <source>COPY ADDRESS</source>
+        <translation>COPIER ADRESSE</translation>
     </message>
     <message>
-        <source>medium</source>
-        <translation>moyen</translation>
+        <source>COPY URL</source>
+        <translation>COPIER URL</translation>
     </message>
     <message>
-        <source>Fee:</source>
-        <translation>Commission :</translation>
+        <source>CANCEL</source>
+        <translation>ANNULER</translation>
     </message>
     <message>
-        <source>Dust:</source>
-        <translation>Résidu:</translation>
+        <source>REQUEST</source>
+        <translation>DEMANDER</translation>
     </message>
     <message>
-        <source>no</source>
-        <translation>non</translation>
+        <source>Label</source>
+        <translation>Label</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Après commission</translation>
+        <source>Description (optional)</source>
+        <translation>Description (optionel)</translation>
     </message>
     <message>
-        <source>Change:</source>
-        <translation>Monnaie rendue:</translation>
+        <source>Error</source>
+        <translation>Erreur</translation>
     </message>
     <message>
-        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Si cette option est activée, mais que l'adresse de monnaie est vide ou non valide, la monnaie sera envoyée à une nouvelle adresse générée.</translation>
+        <source>GENERATE</source>
+        <translation>GÉNÉRER</translation>
     </message>
     <message>
-        <source>Custom change address</source>
+        <source>Creates an address to receive coin delegations and be able to stake them.</source>
+        <translation>Créer une adresse pour pouvoir recevoir les pièces en procuration et effectuer le staking.</translation>
+    </message>
+    <message>
+        <source>New Cold Staking Address</source>
+        <translation>Nouvelle adresse de staking à froid</translation>
+    </message>
+    </context>
+<context>
+    <name>SendChangeAddressDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialogue</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Détails de la transaction</translation>
+    </message>
+    <message>
+        <source>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</source>
+        <translation>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ANNULER</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Custom Change Address</source>
         <translation>Adresse de changement personnalisée</translation>
     </message>
     <message>
-        <source>Split UTXO</source>
-        <translation>Séparer UTXO</translation>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" CASTLE address</source>
+        <translation>Le reste de la valeur résultante des entrées moins la valeur des sorties est envoyé à l'adresse "change" CASTLE </translation>
+    </message>
+</context>
+<context>
+    <name>SendCustomFeeDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
     </message>
     <message>
-        <source># of outputs</source>
-        <translation># des sorties</translation>
+        <source>Transaction Details</source>
+        <translation>Détails de la transaction</translation>
     </message>
     <message>
-        <source>UTXO Size:</source>
-        <translation>Taille UTXO:</translation>
+        <source>Customize the transaction fee at your to your liking, depending on the fee value your transaction will be included or not in the blockchain.</source>
+        <translation>Personnalisez les frais de transaction à votre guise, en fonction de la valeur des frais, votre transaction sera incluse ou non dans la blockchain.</translation>
     </message>
     <message>
-        <source>0 CSTL</source>
-        <translation>0 CSTL</translation>
+        <source>Recomended</source>
+        <translation>Recommandé</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
-        <translation>Commission de transaction</translation>
+        <source>0.00 KB</source>
+        <translation>0.00 KO</translation>
     </message>
     <message>
-        <source>Choose...</source>
-        <translation>Choisir...</translation>
+        <source>Custom</source>
+        <translation>Personnaliser</translation>
     </message>
     <message>
-        <source>collapse fee-settings</source>
-        <translation>Réduire les frais</translation>
+        <source>Per kilobyte</source>
+        <translation>Par kilooctet</translation>
     </message>
     <message>
-        <source>Minimize</source>
-        <translation>Minimiser</translation>
+        <source>CANCEL</source>
+        <translation>ANNULER</translation>
     </message>
     <message>
-        <source>per kilobyte</source>
-        <translation>par kilo-octet</translation>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
     <message>
-        <source>total at least</source>
-        <translation>total au minimum</translation>
+        <source>Customize Fee</source>
+        <translation>Personnaliser les frais</translation>
     </message>
     <message>
-        <source>(read the tooltip)</source>
-        <translation>(lisez l'info-bulle)</translation>
+        <source>Customize the transaction fee, depending on the fee value your transaction will be included or not in the blockchain.</source>
+        <translation>Personnalisez les frais de transactions, en fonction de la valeur des frais votre transaction sera ajoutée ou pas à la blockchain.</translation>
     </message>
     <message>
-        <source>Custom:</source>
-        <translation>Personnalisé:</translation>
+        <source>Normal</source>
+        <translation>Normal</translation>
     </message>
     <message>
-        <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
-        <translation>(Smart fee non encore initialisé, cela prend généralement quelques blocs ...)</translation>
+        <source>Slow</source>
+        <translation>Lent</translation>
     </message>
     <message>
-        <source>SwiftX</source>
-        <translation>SwiftX</translation>
+        <source>Fast</source>
+        <translation>Rapide</translation>
     </message>
     <message>
-        <source>Open Coin Control...</source>
-        <translation>Ouvrir le contrôle des pièces ...</translation>
+        <source>SAVE</source>
+        <translation>SAUVEGARDER</translation>
+    </message>
+</context>
+<context>
+    <name>SendMultiRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
     </message>
     <message>
-        <source>Coins automatically selected</source>
-        <translation>Pièces automatiquement sélectionnées</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for CSTL transactions than the network can process.</source>
-        <translation>Payer les frais minimum est convenable tant qu'il y a moins de volume de transactions que d'espace dans les blocs. &lt;br /&gt; Mais sachez que cela peut aboutir à une transaction qui ne se confirmera jamais lorsqu'il y aura plus de transactions CSTL que le réseau ne peut en traiter.</translation>
+        <source>Enter address</source>
+        <translation>Entrez l'adresse</translation>
     </message>
+    </context>
+<context>
+    <name>SendWidget</name>
     <message>
-        <source>normal</source>
-        <translation>normal</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>rapide</translation>
-    </message>
-    <message>
-        <source>Recommended</source>
-        <translation>Recommandé </translation>
-    </message>
-    <message>
-        <source>Send as zero-fee transaction if possible</source>
-        <translation>Envoyer sans frais si possible </translation>
-    </message>
-    <message>
-        <source>(confirmation may take longer)</source>
-        <translation>(la confirmation peut prendre un certain temps) </translation>
-    </message>
-    <message>
-        <source>Confirm the send action</source>
-        <translation>Confirmer l'envoi</translation>
-    </message>
-    <message>
-        <source>S&amp;end</source>
+        <source>Send</source>
         <translation>Envoyer</translation>
     </message>
     <message>
-        <source>Clear all fields of the form.</source>
-        <translation>Effacer tous les champs du formulaire </translation>
+        <source>You can transfer public coins (CSTL) or private coins (zCSTL)</source>
+        <translation>Vous pouvez transférer des pièces publiques (CSTL) ou des pièces privées (zCSTL)</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
+        <source>Select coin type to spend</source>
+        <translation>Choisir le type de pièce à dépenser</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Montant</translation>
+    </message>
+    <message>
+        <source>Customize fee</source>
+        <translation>Personnaliser les frais</translation>
+    </message>
+    <message>
+        <source>Clear all</source>
         <translation>Tout effacer</translation>
     </message>
     <message>
-        <source>Send to multiple recipients at once</source>
-        <translation>Envoyer à plusieurs destinataires à la fois</translation>
-    </message>
-    <message>
-        <source>Add &amp;Recipient</source>
+        <source>Add recipient</source>
         <translation>Ajouter un destinataire</translation>
     </message>
     <message>
-        <source>Anonymized CSTL</source>
-        <translation>CSTL anonymisé</translation>
+        <source>Reset to default</source>
+        <translation>Réinitialiser les valeurs par défaut</translation>
     </message>
     <message>
-        <source>Balance:</source>
-        <translation>Solde :</translation>
+        <source>Total to send</source>
+        <translation>Total à envoyer</translation>
     </message>
     <message>
-        <source>Copy quantity</source>
-        <translation>Copier la quantité</translation>
+        <source>Send CSTL</source>
+        <translation>Envoyer CSTL</translation>
     </message>
     <message>
-        <source>Copy amount</source>
-        <translation>Copier le montant</translation>
+        <source>Send zCSTL</source>
+        <translation>Envoyer zCSTL</translation>
     </message>
     <message>
-        <source>Copy fee</source>
-        <translation>Copier la commission</translation>
+        <source>Total remaining from the selected UTXO</source>
+        <translation>Total restant dans l'UTXO sélectionné</translation>
     </message>
     <message>
-        <source>Copy after fee</source>
-        <translation>Copier après la commission</translation>
+        <source>Total remaining</source>
+        <translation>Total restant</translation>
     </message>
     <message>
-        <source>Copy bytes</source>
-        <translation>Copier les octets</translation>
+        <source>Customize Fee</source>
+        <translation>Personnaliser les frais</translation>
     </message>
     <message>
-        <source>Copy priority</source>
-        <translation>Copier la priorité</translation>
+        <source>Maximum amount of outputs reached</source>
+        <translation>Quantité maximale de données de sortie atteinte</translation>
     </message>
     <message>
-        <source>Copy dust</source>
-        <translation>Copier les résidus</translation>
+        <source>Invalid entry, previous entries must be valid before add a new one</source>
+        <translation>Entrée invalide, les entrées précédentes doivent être validées avant d'en créer de nouvelles</translation>
     </message>
     <message>
-        <source>Copy change</source>
-        <translation>Copier la monnaie</translation>
+        <source>Invalid entry</source>
+        <translation>Entrée invalide</translation>
     </message>
     <message>
-        <source>The split block tool does not work when sending to outside addresses. Try again.</source>
-        <translation>L'outil de séparation de bloc ne fonctionne pas lors de l'envoi à des adresses externes. Réessayez.</translation>
+        <source>No set recipients</source>
+        <translation>Pas de destinataires définis</translation>
     </message>
     <message>
-        <source>The split block tool does not work with multiple addresses. Try again.</source>
-        <translation>L'outil de séparation de bloc ne fonctionne pas avec les adresses multiples. Réessayez.</translation>
+        <source>Cannot send, wallet locked</source>
+        <translation>Envoi impossible, portefeuille vérouillé</translation>
     </message>
     <message>
-        <source>Warning: Invalid CSTL address</source>
-        <translation>Attention: adresse CSTL invalide</translation>
+        <source>Cannot create transaction.</source>
+        <translation>Impossible de créer la transaction.</translation>
     </message>
     <message>
-        <source>%1 to %2</source>
-        <translation>%1 vers %2</translation>
+        <source>WARNING:
+Transaction spends a cold-stake delegation, voiding it.
+These coins will no longer be cold-staked.</source>
+        <translation>ATTENTION:
+La transaction dépense des pièces en procuration, ce qui va l'annuler.
+Ces pièces ne pourront plus être utilisées pour le staking à froid.</translation>
     </message>
     <message>
-        <source>Are you sure you want to send?</source>
-        <translation>Êtes vous sûr de vouloir envoyer ?</translation>
+        <source>Transaction sent</source>
+        <translation>Transaction envoyée</translation>
     </message>
     <message>
-        <source>are added as transaction fee</source>
-        <translation>setont ajouté pour les frais de transaction</translation>
+        <source>Spend Zerocoin</source>
+        <translation>Dépenser les Zerocoin</translation>
     </message>
     <message>
-        <source>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</source>
-        <translation>Montant total = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt; = %2</translation>
+        <source>zCSTL is currently undergoing maintenance.</source>
+        <translation>zCSTL est actuellement en cours de maintenance.</translation>
     </message>
     <message>
-        <source>Confirm send coins</source>
-        <translation>Confirmer l'envoi des pièces</translation>
+        <source>Coin control mint not found</source>
+        <translation>Pièce de monnaie monnayée introuvable</translation>
     </message>
     <message>
-        <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
-        <translation>Des frais %1 fois supérieurs à %2 par kilooctet sont considérés comme extrêmement élevés.</translation>
+        <source>Sending %1 to address %2
+</source>
+        <translation>Envoi %1 vers l'adresse %2
+</translation>
     </message>
     <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>L'adresse du destinataire n'est pas valide, revérifiez SVP.</translation>
+        <source>Sending %1 to addresses:
+%2</source>
+        <translation>Envoi %1 vers l'adresse:
+ %2</translation>
     </message>
     <message>
-        <source>using SwiftX</source>
-        <translation>utilisation de SwiftX</translation>
+        <source>zCSTL transaction sent!</source>
+        <translation>Transaction zCSTL envoyée!</translation>
     </message>
     <message>
-        <source> split into %1 outputs using the UTXO splitter.</source>
-        <translation>séparer en %1 sorties en utilisant le séparateur UTXO.</translation>
+        <source>Version 1 zCSTL require a security level of 100 to successfully spend.</source>
+        <translation>La version 1 de zCSTL requiert un niveau de sécurité de 100 pour les dépenser.
+</translation>
     </message>
     <message>
-        <source>&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</source>
-        <translation>&lt;b&gt;(%1 de %2 entrées affichées)&lt;/b&gt;</translation>
+        <source>Too much inputs (</source>
+        <translation>Trop d'entrées (</translation>
     </message>
     <message>
-        <source>The amount to pay must be larger than 0.</source>
-        <translation>Le montant à payer doit être supérieur à 0.</translation>
+        <source>) needed.
+Maximum allowed: </source>
+        <translation>) demandées.
+Maximum autorisé:</translation>
     </message>
     <message>
-        <source>The amount exceeds your balance.</source>
-        <translation>Le montant dépasse votre solde.</translation>
+        <source>
+Either mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
+        <translation>
+Monnayez des dénominations plus élevées (moins d'intrants sont nécessaires), ou réduisez le montant à dépenser.</translation>
     </message>
     <message>
-        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>Le montant dépasse votre solde lorsque les frais de transaction %1 sont ajoutés.</translation>
+        <source>Address label update failed for address: %1</source>
+        <translation>La mise à jour du libellé a échoué pour l'adresse: %1</translation>
     </message>
     <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Adresse doublon trouvée, on ne peut envoyer à une même adresse qu'une fois par opération.</translation>
+        <source>Invalid change address</source>
+        <translation>Adresse de change invalide</translation>
     </message>
     <message>
-        <source>Transaction creation failed!</source>
-        <translation>La création de la transaction a échoué</translation>
+        <source>Invalid URI</source>
+        <translation>URI invalide</translation>
     </message>
     <message>
-        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>La transaction a été refusée! Cela peut arriver lorsque certaines pièces de votre portefeuille ont déjà été dépensées, par exemple lorsque vous utilisez une copie de votre wallet.dat et que les pièces ont été marquées comme dépensées dans la copie, mais pas dans ce portefeuille.</translation>
+        <source>Invalid address in URI</source>
+        <translation>Adresse invalide dans l'URI</translation>
     </message>
     <message>
-        <source>Error: The wallet was unlocked only to anonymize coins.</source>
-        <translation>Erreur : Le portefeuille n'a été déverrouillé que pour anonymiser les pièces.</translation>
+        <source>Custom Fee %1</source>
+        <translation>Frais personnalisé %1</translation>
     </message>
     <message>
-        <source>Error: The wallet was unlocked only to anonymize coins. Unlock canceled.</source>
-        <translation>Erreur: Le portefeuille a été dévérouillé uniquement pour anonymiser les pièces. Déverouillage annulé.</translation>
+        <source>You don't have any CSTL to select.</source>
+        <translation>Vous n'avez aucun CSTL à sélectionner</translation>
     </message>
     <message>
-        <source>Pay only the minimum fee of %1</source>
-        <translation>Payer uniquement les frais minimum de %1</translation>
+        <source>You don't have any zCSTL in your balance to select.</source>
+        <translation>Vous n'avez aucun zCSTL à sélectionner.</translation>
     </message>
     <message>
-        <source>(no label)</source>
-        <translation>(pas de label)</translation>
-    </message>
-</context>
-<context>
-    <name>SendCoinsEntry</name>
-    <message>
-        <source>This is a normal payment.</source>
-        <translation>Ceci est un paiement standard.</translation>
+        <source>No contacts available, you can go to the contacts screen and add some there!</source>
+        <translation>Aucun contact enregistré, vous pouvez aller dans l'écran des contacts et en ajouter!</translation>
     </message>
     <message>
-        <source>Pay &amp;To:</source>
-        <translation>Payer à :</translation>
+        <source>Save contact</source>
+        <translation>Sauvegarder le contact</translation>
     </message>
     <message>
-        <source>The CSTL address to send the payment to</source>
-        <translation>L'adresse CSTL à laquelle envoyer le paiement</translation>
+        <source>Address field is empty</source>
+        <translation>Le chanp adresse est vide</translation>
     </message>
     <message>
-        <source>Choose previously used address</source>
-        <translation>Choisir l'adresse précédemment utilisée</translation>
+        <source>Invalid address</source>
+        <translation>Adresse invalide</translation>
     </message>
     <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
+        <source>Cannot store your own address as contact</source>
+        <translation>Vous ne pouvez pas stocker votre propre adresse comme contact</translation>
     </message>
     <message>
-        <source>Paste address from clipboard</source>
-        <translation>Copier l'adresse depuis le presse-papier</translation>
+        <source>Update Contact</source>
+        <translation>Mettre à jour le contact</translation>
     </message>
     <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
+        <source>Create New Contact</source>
+        <translation>Créer un nouveau contact</translation>
     </message>
     <message>
-        <source>Remove this entry</source>
-        <translation>Supprimer cette entré</translation>
+        <source>New Contact Stored</source>
+        <translation>Nouveau contact enregistré</translation>
     </message>
     <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Label:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Saisissez un label pour cette adresse pour l'ajouter à votre carnet d'adresses</translation>
-    </message>
-    <message>
-        <source>A&amp;mount:</source>
-        <translation>Montant:</translation>
-    </message>
-    <message>
-        <source>Message:</source>
-        <translation>Message :</translation>
-    </message>
-    <message>
-        <source>Pay To:</source>
-        <translation>Payer à :</translation>
-    </message>
-    <message>
-        <source>This is a verified payment request.</source>
-        <translation>Ceci est une requête de paiement vérifiée.</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>Saisissez un label pour cette adresse afin de l'ajouter à votre carnet d'adresses</translation>
+        <source>Error Storing Contact</source>
+        <translation>Erreur lors de l'enregistrement du contact</translation>
     </message>
 </context>
 <context>
-    <name>ShutdownWindow</name>
-    </context>
+    <name>SettingsBackupWallet</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Backup Wallet </source>
+        <translation>Sauvegarder le Portefeuille </translation>
+    </message>
+    <message>
+        <source>Change Wallet Passphrase</source>
+        <translation>Changer la phrase secrète du portefeuille</translation>
+    </message>
+    <message>
+        <source>This will decrypt the whole wallet data and encrypt it back with the new passphrase.
+Remember to write it down and store it safely, otherwise you might lose access to your funds.</source>
+        <translation>Cela va déchiffrer toutes les données du portefeuille et les chiffrer avec la nouvelle phrase de passe.
+Souvenez vous de l'écrire et de la stocker en sécurité, autrement vous pourriez perdre accès à vos fonds.</translation>
+    </message>
+    <message>
+        <source>Where</source>
+        <translation>Où</translation>
+    </message>
+    <message>
+        <source>Backup</source>
+        <translation>Sauvegarde</translation>
+    </message>
+    <message>
+        <source>Change Passphrase</source>
+        <translation>Modifier la phrase de passe</translation>
+    </message>
+    <message>
+        <source>Backup Wallet</source>
+        <translation>Sauvegarder le Portefeuille </translation>
+    </message>
+    <message>
+        <source>Wallet Data (*.dat)</source>
+        <translation>Wallet Data (*.dat)</translation>
+    </message>
+    <message>
+        <source>Backup created</source>
+        <translation>Sauvegarde créée</translation>
+    </message>
+    <message>
+        <source>Backup creation failed</source>
+        <translation>Création de la sauvegarde échouée</translation>
+    </message>
+    <message>
+        <source>Please select a folder to export the backup first.</source>
+        <translation>SVP, sélectionnez d'abord le répertoire vers lequel la sauvegarde est exportée</translation>
+    </message>
+</context>
 <context>
-    <name>SignVerifyMessageDialog</name>
+    <name>SettingsBitToolWidget</name>
     <message>
-        <source>&amp;Sign Message</source>
-        <translation>Signer le message</translation>
+        <source>Form</source>
+        <translation>Formulaire</translation>
     </message>
     <message>
-        <source>The CSTL address to sign the message with</source>
-        <translation>L'adresse CSTL avec laquelle signer le message</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Choose previously used address</source>
-        <translation>Choisir l'adresse précédemment utilisée</translation>
+        <source>PushButton</source>
+        <translation>Bouton poussoir</translation>
     </message>
     <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
+        <source>Decrypt Address Result</source>
+        <translation>Déchiffrer le résultat de l'adresse</translation>
     </message>
     <message>
-        <source>Paste address from clipboard</source>
-        <translation>Copier l'adresse depuis le presse-papier</translation>
+        <source>Import Address</source>
+        <translation>Importer l'adresse</translation>
     </message>
     <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
+        <source>Clear</source>
+        <translation>Effacer</translation>
+    </message>
+    <message>
+        <source>BIP38 Tool</source>
+        <translation>Outil BIP38</translation>
+    </message>
+    <message>
+        <source>Encrypt</source>
+        <translation>Chiffrer</translation>
+    </message>
+    <message>
+        <source>Decrypt</source>
+        <translation>Déchiffrer</translation>
+    </message>
+    <message>
+        <source>Encrypted key</source>
+        <translation>Clé de chiffrement</translation>
+    </message>
+    <message>
+        <source>Enter a encrypted key</source>
+        <translation>Entrez une clé de chiffrement</translation>
+    </message>
+    <message>
+        <source>Passphrase</source>
+        <translation>Phrase de passe</translation>
+    </message>
+    <message>
+        <source>Enter a passphrase </source>
+        <translation>Entrez une phrase de passe</translation>
+    </message>
+    <message>
+        <source>Decrypted address result</source>
+        <translation>Résultat d'adresse déchiffré</translation>
+    </message>
+    <message>
+        <source>Decrypted Address</source>
+        <translation>Adresse déchiffrée</translation>
+    </message>
+    <message>
+        <source>DECRYPT KEY</source>
+        <translation>CLÉ DÉCHIFFRÉE</translation>
+    </message>
+    <message>
+        <source>Enter address</source>
+        <translation>Entrez l'adresse</translation>
+    </message>
+    <message>
+        <source>Enter passphrase</source>
+        <translation>Entrer la phrase secrète</translation>
+    </message>
+    <message>
+        <source>Encrypted Key</source>
+        <translation>Clé de chiffrement</translation>
+    </message>
+    <message>
+        <source>ENCRYPT</source>
+        <translation>CHIFFRER</translation>
+    </message>
+    <message>
+        <source>CLEAR ALL</source>
+        <translation>TOUT EFFACER</translation>
+    </message>
+    <message>
+        <source>CLEAR</source>
+        <translation>EFFACER</translation>
+    </message>
+    <message>
+        <source>The entered passphrase is invalid. </source>
+        <translation>La phrase secrète entrée est incorrect.</translation>
+    </message>
+    <message>
+        <source>Allowed: 0-9,a-z,A-Z,</source>
+        <translation>Autorisés : 0-9,a-z,A-Z,</translation>
+    </message>
+    <message>
+        <source>The entered address is invalid.</source>
+        <translation>L'adresse entrée est incorrecte.</translation>
+    </message>
+    <message>
+        <source>Please check the address and try again.</source>
+        <translation>Veuillez vérifier l'adresse et réessayer.</translation>
+    </message>
+    <message>
+        <source>The entered address does not refer to a key.</source>
+        <translation>L'adresse renseignée ne correspond pas à une clé.</translation>
+    </message>
+    <message>
+        <source>Wallet unlock was cancelled.</source>
+        <translation>Le déverrouillage du portefeuille a été annulé.</translation>
+    </message>
+    <message>
+        <source>Private key for the entered address is not available.</source>
+        <translation>La clé privée pour l'adresse entrée n'est pas valide.</translation>
+    </message>
+    <message>
+        <source>Address encrypted.</source>
+        <translation>Adresse chiffrée.</translation>
+    </message>
+    <message>
+        <source>No addresses available, you can go to the receive screen and add some there!</source>
+        <translation>Aucune adresse enregistrée, vous pouvez aller dans l'écran de réception et en ajouter!</translation>
+    </message>
+    <message>
+        <source>Failed to decrypt.</source>
+        <translation>Échec du décryptage.</translation>
+    </message>
+    <message>
+        <source>Please check the key and passphrase and try again.</source>
+        <translation>Veuillez vérifier la clé et la phrase secrète et réessayer.</translation>
+    </message>
+    <message>
+        <source>Data Not Valid.</source>
+        <translation>Les donnés ne sont pas valides.</translation>
+    </message>
+    <message>
+        <source>Please try again.</source>
+        <translation>Veuillez réessayer.</translation>
+    </message>
+    <message>
+        <source>Please wait while key is imported</source>
+        <translation>Veuillez patienter pendant que la clé est importée</translation>
+    </message>
+    <message>
+        <source>Cannot import address, key already held by the wallet</source>
+        <translation>Impossible d'importer l'adresse, la clé est déjà existante dans le portefeuille</translation>
+    </message>
+    <message>
+        <source>Error adding key to the wallet</source>
+        <translation>Erreur d'ajout de clé dans le portefeuille</translation>
+    </message>
+    <message>
+        <source>Successfully added cstlate key to the wallet</source>
+        <translation>Clé privée ajoutée avec succès dans le portefeuille</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsConsoleWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Console</source>
+        <translation>Console</translation>
+    </message>
+    <message>
+        <source>Console input</source>
+        <translation>Entrée de console</translation>
+    </message>
+    <message>
+        <source>Command Line Options </source>
+        <translation>Options de la ligen de commande</translation>
+    </message>
+    <message>
+        <source>Open Debug File</source>
+        <translation>Ouvrir le fichier debug</translation>
+    </message>
+    <message>
+        <source>Cannot open debug file.
+Verify that you have installed a predetermined text editor.</source>
+        <translation>Imposible d'ouvrir le fichier debug.
+Vérifiez que vous avez installé un logiciel éditeur de texte.</translation>
+    </message>
+    <message>
+        <source>Welcome to the CASTLE RPC console.</source>
+        <translation>Bienvenue sur la console CASTLE RPC.</translation>
+    </message>
+    <message>
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation>Utilisez la flèches haut et bas pour naviguer dans l'historique, et %1 pour purger l'écran.</translation>
+    </message>
+    <message>
+        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation>Entrez &lt;b&gt; aide &lt;/b&gt; pour un aperçu des commandes disponibles</translation>
+    </message>
+    <message>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+        <translation>ATTENTION: Des escrocs sévisent, demandant aux utilisateurs de taper certaines commandes dans la console, volant le contenu de leur portefeuille. N'utilisez pas cette console sans une parfaite compréhension des conséquences des commandes que vous y tapez.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsDisplayOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Reset to default</source>
+        <translation>Réinitialiser les valeurs par défaut</translation>
+    </message>
+    <message>
+        <source>Discard changes</source>
+        <translation>Annuler les modifications</translation>
+    </message>
+    <message>
+        <source>Display</source>
+        <translation>Afficher</translation>
+    </message>
+    <message>
+        <source>Customize the display view options</source>
+        <translation>Personnaliser les options d'affichage</translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation>Langue</translation>
+    </message>
+    <message>
+        <source>Unit to show amount</source>
+        <translation>Unité d'affichage des montants</translation>
+    </message>
+    <message>
+        <source>Decimal digits</source>
+        <translation>Chiffres décimaux</translation>
+    </message>
+    <message>
+        <source>Third party transactions URLs</source>
+        <translation>URL de transactions tierces</translation>
+    </message>
+    <message>
+        <source>Hide empty balances</source>
+        <translation>Masquer les soldes vides</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>SAUVEGARDER</translation>
+    </message>
+    <message>
+        <source>default</source>
+        <translation>défaut</translation>
+    </message>
+    <message>
+        <source>Options reset succeed</source>
+        <translation>Réinitialisation des optiosn réussie</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsFaqWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Bouton poussoir</translation>
+    </message>
+    <message>
+        <source>1) What is CASTLE?</source>
+        <translation>1) Qu'est ce que CASTLE?</translation>
+    </message>
+    <message>
+        <source>2) Why are my CSTL unspendable?</source>
+        <translation>2) Pourquoi mes CSTL ne peuvent pas être dépensés?</translation>
+    </message>
+    <message>
+        <source>3) CASTLE privacy? What is Zerocoin (zCSTL)?</source>
+        <translation>3) Confidentialité et CASTLE? Qu'est ce que Zerocoin (zCSTL)?</translation>
+    </message>
+    <message>
+        <source>4) Why are my zCSTL unspendable?</source>
+        <translation>4) Pourquoi mes zCSTL ne peuvent pas être dépensés?</translation>
+    </message>
+    <message>
+        <source>5) Why did my wallet convert the balance
+    into zCSTL automatically?</source>
+        <translation>5) Pourquoi mon portefeuille convertit-il automatiquement
+mon solde en zCSTL?</translation>
+    </message>
+    <message>
+        <source>6) How do I receive CSTL/zCSTL?</source>
+        <translation>6) Comment recevoir des CSTL/zCSTL?</translation>
+    </message>
+    <message>
+        <source>7) How do I stake CSTL/zCSTL?</source>
+        <translation>7) Comment staker des CSTL/zCSTL?</translation>
+    </message>
+    <message>
+        <source>8) Where I should go if I need support?</source>
+        <translation>8) Où dois-je aller pour obtenir de l'aide?</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>What is CASTLE?</source>
+        <translation>Qu'est ce que CASTLE ?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           CASTLE is a form of digital online money using blockchain technology
+                           that can be easily transferred globally, instantly, and with near
+                           zero fees.  CASTLE incorporates market leading security &amp;
+                           privacy and is also the first PoS (Proof of Stake) Cryptocurrency
+                           to implement ZeroCoin(zCSTL) and Zerocoin staking.
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           CASTLE utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of CASTLE to participate in earning block rewards
+                           while securing the network with full node wallets, as well as to
+                           run Masternodes to create and vote on proposals.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+CASTLE est une forme de monnaie digitale en ligne qui utilise la technologie de la blockchain
+et qui peut être facilement transférée globalement, instantanément, avec des frais
+quasi nuls. CASTLE intègre les meilleures solutions de sécurité et de confidentialité
+du marché et elle est également la première cryptomonnaie avec un consensus PoS (Proof of Stake ou Preuve d'Enjeu) à implémenter Zerocoin(zCSTL) ainsi que le staking de Zerocoin.
+&lt;/p&gt;&lt;p align="justify"&gt;
+CASTLE utilise un système de consensus de type Proof of Stake (PoS),
+permettant à tous les détenteurs de CASTLE de participer au réseau et de gagner des récompenses
+lorsqu'ils sécurisent le réseau au moyen de leur portefeuille full node, ainsi qu'en
+éxécutant des masternodes pour créer et voter des propositions.
+&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>2</source>
+        <translation>2</translation>
+    </message>
+    <message>
+        <source>Why are my CSTL unspendable?</source>
+        <translation>Pourquoi mes CSTL ne peuvent pas être dépensés?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           Newly received CASTLE requires 6 confirmations on the network
+                           to become eligible for spending which can take ~6 minutes.
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           Your CASTLE wallet also needs to be completely synchronized
+                           to see and spend balances on the network.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+Les nouveaux CASTLE reçus nécessitent 6 confirmations sur le réseau
+pour être disponible à la dépense ce qui peut prendre ~6 minutes.
+&lt;/p&gt;&lt;p align="justify"&gt;
+Votre portefeuille CASTLE a besoin également d'être totalement synchronisé
+pour voir votre solde de monnaie dépensable sur le réseau.
+&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
+    </message>
+    <message>
+        <source>3</source>
+        <translation>3</translation>
+    </message>
+    <message>
+        <source>CASTLE privacy? What is Zerocoin (zCSTL)?</source>
+        <translation>Confidentialité et CASTLE? Qu'est ce que Zerocoin (zCSTL)?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           zCSTL is an optional privacy-centric method of coin mixing on the
+                           CASTLE blockchain. Basically all your transactions cannot be tracked
+                           on to any block explorer. You can read more about the technicals in the
+                           &lt;a style='color: #b088ff' href='https://CASTLE.org/zcstl/'&gt;
+                           "CASTLE Zerocoin (zCSTL) Technical Paper"&lt;/a&gt;.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+zCSTL est une méthode optionnelle de fongibilité des pièces sur la blockchain CASTLE, axée sur la confidentialité. Basiquement, cela permet rendre vos transactions intraçables par les explorateurs de blocs. Vous pouvez en savoir plus sur les aspects techniques en consultant le document
+&lt;a style='color: #b088ff' href='https://CASTLE.org/zcstl/'&gt;
+ "CASTLE Zerocoin (zCSTL) Technical Paper".&lt;/a&gt;
+&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
+    </message>
+    <message>
+        <source>4</source>
+        <translation>4</translation>
+    </message>
+    <message>
+        <source>Why are my zCSTL unspendable?</source>
+        <translation>Pourquoi mes zCSTL ne peuvent pas être dépensés?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           After minting, zCSTL will require 20 confirmations as well as 1
+                           additional mint of the same denomination on the network to
+                           become eligible for spending.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+Après le monnayage, zCSTL va nécessiter 20 confirmations ainsi que 1
+monnayage supplémentaire sur le réseau de la même dénomination
+afin d'être dépensable.
+&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
+    </message>
+    <message>
+        <source>5</source>
+        <translation>5</translation>
+    </message>
+    <message>
+        <source>Why did my wallet convert the balance into zCSTL automatically?</source>
+        <translation>Pourquoi mon portefeuille convertit-il automatiquement
+mon solde en zCSTL?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           By default the CASTLE wallet will convert 10% of your entire CSTL
+                           balance to zCSTL to assist the network. If you do not wish to
+                           stake zCSTL or take advantage of the privacy benefit it brings,
+                           you can disable the automatic minting in your CASTLE wallet by
+                           going to Settings-&gt;Options and deselecting “Enable zCSTL Automint”.
+                           If you are not making use of the CASTLE-QT or GUI you can simply open
+                           your castle.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           marks and restart your wallet to disable automint.&lt;/p&gt;
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           You can read more about zCSTL in the
+                           &lt;a style='color: #b088ff' href='https://CASTLE.org/zcstl/'&gt; "CASTLE Zerocoin (zCSTL) Technical Paper"&lt;/a&gt;.
+                           If you would like to keep and stake your zCSTL, please read the "How do I stake"
+                           section of the FAQ below.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+Par défaut le portefeuille CASTLE convertit % de voter total de CSTL
+en zCSTL afin de soutenir le réseau. Si vous ne souhaitez pas
+conserver des zCSTL ou profiter de ses propriétés en matière de confidentialité,
+vous pouvez désactiver cette fonctionnalité dans votre portefeuille CASTLE en
+allant dans Paramètres-&gt;Options et décocher “Activer l'atuto-monnayage zCSTL”.
+Si vous n'utilisez pas CASTLE-QT ou le GUI vous pouvez simplement ouvrir
+votre fichier castle.conf et ajouter &lt;i&gt; enablezeromint=0&lt;/i&gt; sans guillements
+et redémarrer votre portefeuille.&lt;/p&gt;
+&lt;/p&gt;&lt;p align="justify"&gt;
+Vous pouvez en savoir plus sur zCSTL dans
+&lt;a style='color: #b088ff' href='https://CASTLE.org/zcstl/'&gt; le document "CASTLE Zerocoin (zCSTL) Technical Paper"&lt;/a&gt;.
+Si vous voulez conserver et mettre en jeu vos zCSTL, veuillez lire la section "Comment staker"
+de la FAQ ci-dessous.
+&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
+    </message>
+    <message>
+        <source>6</source>
+        <translation>6</translation>
+    </message>
+    <message>
+        <source>How do I receive CSTL/zCSTL?</source>
+        <translation>Comment recevoir des CSTL/zCSTL?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           zCSTL can be spent and sent to any CASTLE address. The receiver will
+                           receive standard CASTLE but the origin of the CASTLE is anonymized by the zCSTL Protocol.
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           If you want more zCSTL you will need to mint your balance in the “Privacy” tab.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+zCSTL peut être dépensé et envoyé à n'importe quelle adresse CASTLE. Le destinataire va recevoir des CASTLE standards mais l'origine de ceux-ci sera anonymisé par le protocol zCSTL.
+&lt;/p&gt;&lt;p align="justify"&gt;
+Si vous désirez obtenir plus de zCSTL vous devez créer cette monnaie à partir de l'onglet "Confidentialité".
+&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
+    </message>
+    <message>
+        <source>7</source>
+        <translation>7</translation>
+    </message>
+    <message>
+        <source>How do I stake CSTL/zCSTL?</source>
+        <translation>Comment staker des CSTL/zCSTL?</translation>
+    </message>
+    <message>
+        <source>What is a Masternode?</source>
+        <translation>Qu'est-ce qu'un masternode?</translation>
+    </message>
+    <message>
+        <source>8</source>
+        <translation>8</translation>
+    </message>
+    <message>
+        <source>9</source>
+        <translation>9</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           A masternode is a computer running a full node CASTLE core wallet with a
+                           requirement of 10,000 CSTL secured collateral to provide extra services
+                           to the network and in return, receive a portion of the block reward
+                           regularly.  These services include:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+
+                           &lt;ul&gt;
+                           &lt;li&gt;Instant transactions (SwiftX)&lt;/li&gt;
+                           &lt;li&gt;A decentralized governance (Proposal Voting)&lt;/li&gt;
+                           &lt;li&gt;A decentralized budgeting system (Treasury)&lt;/li&gt;
+                           &lt;li&gt;Validation of transactions within each block&lt;/li&gt;
+                           &lt;li&gt;Act as an additional full node in the network&lt;/li&gt;
+                           &lt;/ul&gt;
+
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           For providing such services, masternodes are also paid a certain portion
+                           of reward for each block. This can serve as a passive income to the
+                           masternode owners minus their running cost.
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+
+                           Masternode Perks:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           &lt;ul&gt;
+                           &lt;li&gt;Participate in CASTLE Governance&lt;/li&gt;
+                           &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
+                           &lt;li&gt;Commodity option for future sale&lt;/li&gt;
+                           &lt;li&gt;Help secure the CASTLE network&lt;/li&gt;
+                           &lt;/ul&gt;
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+
+                           Requirements:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           &lt;ul&gt;
+                           &lt;li&gt;10,000 CSTL per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
+                           &lt;li&gt;Need dedicated IP address&lt;/li&gt;
+                           &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
+                           &lt;/ul&gt;
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+Un masternode est un ordinateur qui exécute un noeud complet du portefeuille CASTLE core avec une
+exigence de 10 000 CSTL déposé en garantie pour fournir au réseau des services aditionnels et recevoir, en retour et régulièrement, une partie des récompense de blocs.
+Ces services comprennent:
+&lt;/p&gt;&lt;p align="justify"&gt;
+&lt;ul&gt;
+&lt;li&gt;des transactions instantanées (SwiftX)&lt;/li&gt;
+&lt;li&gt;une gouvernance décentralisée (vote des motions)&lt;/li&gt;
+&lt;li&gt;un système de budget décentralisé (financement)&lt;/li&gt;
+&lt;li&gt;validation des transactions dans chaque bloc&lt;/li&gt;
+&lt;li&gt;Agit comme un noeud supplémentaire pour sécuriser le réseau&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;&lt;p align="justify"&gt;
+Pour fournir ces services, les masternodes sont payés avec une certaine portion des récompenses de chaque bloc. Cela permet de distribuer des revenus passifs aux propriétaires de masternodes déduction faite de leur frais d'opérations.
+&lt;/p&gt;&lt;p align="justify"&gt;
+Avantages du Masternode:
+&lt;/p&gt;&lt;p align="justify"&gt;
+&lt;ul&gt;
+&lt;li&gt;Participer à la gouvernance de CASTLE&lt;/li&gt;
+&lt;li&gt;Gagner les récompences prévues pour les masternodes&lt;/li&gt;
+&lt;li&gt;Option de marchandise pour vente future&lt;/li&gt;
+&lt;li&gt;Aider à sécuriser le réseau CASTLE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;&lt;p align="justify"&gt;
+
+Exigences:
+&lt;/p&gt;&lt;p align="justify"&gt;
+&lt;ul&gt;
+&lt;li&gt;10 000 CSTL pour chaque instance de masternode&lt;/li&gt;
+&lt;li&gt;Montant conservé dans un portefeuille core&lt;/li&gt;
+&lt;li&gt;Nécessite une IP fixe dédiée&lt;/li&gt;
+&lt;li&gt;Le portefeuille masternode doit rester en ligne&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
+    </message>
+    <message>
+        <source>10</source>
+        <translation>10</translation>
+    </message>
+    <message>
+        <source>Frequently Asked Questions</source>
+        <translation>Foire Aux Questions</translation>
+    </message>
+    <message>
+        <source>You can read more here</source>
+        <translation>Vous pouvez en lire plus ici</translation>
+    </message>
+    <message>
+        <source>Exit</source>
+        <translation>Quitter</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsInformationWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Network Monitor</source>
+        <translation>Moniteur réseau</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Information</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Général</translation>
+    </message>
+    <message>
+        <source>Client Version: </source>
+        <translation>Version du Client:</translation>
+    </message>
+    <message>
+        <source>User Agent:</source>
+        <translation>Agent Utilisateur:</translation>
+    </message>
+    <message>
+        <source>Datadir: </source>
+        <translation>Datadir:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Réseau</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Nom:</translation>
+    </message>
+    <message>
+        <source>Blockchain</source>
+        <translation>Blockchain</translation>
+    </message>
+    <message>
+        <source>Memory Pool</source>
+        <translation>Memory Pool</translation>
+    </message>
+    <message>
+        <source>Main</source>
+        <translation>Principal</translation>
+    </message>
+    <message>
+        <source>Wallet Conf</source>
+        <translation>Conf portefeuille</translation>
+    </message>
+    <message>
+        <source>Backups</source>
+        <translation>Sauvegardes</translation>
+    </message>
+    <message>
+        <source>No information</source>
+        <translation>Aucune information</translation>
+    </message>
+    <message>
+        <source>Unable to open backups folder</source>
+        <translation>Impossible d'ouvrir le répertoire de backups</translation>
+    </message>
+    <message>
+        <source>Unable to open castle.conf with default application</source>
+        <translation>Impossible d'ouvrir castle.conf avec l'application par défaut</translation>
+    </message>
+    <message>
+        <source>In:</source>
+        <translation>Entrée:</translation>
+    </message>
+    <message>
+        <source>Out:</source>
+        <translation>Sortie:</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMainOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Window</source>
+        <translation>Fenêtre</translation>
+    </message>
+    <message>
+        <source>Customize the application window options</source>
+        <translation>Personnaliser les options de la fenêtre de l'application</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>CheckBox</translation>
+    </message>
+    <message>
+        <source>Reset to default</source>
+        <translation>Réinitialiser les valeurs par défaut</translation>
+    </message>
+    <message>
+        <source>Discard changes</source>
+        <translation>Annuler les modifications</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>SAUVEGARDER</translation>
+    </message>
+    <message>
+        <source>Main</source>
+        <translation>Principal</translation>
+    </message>
+    <message>
+        <source>Size of database cache</source>
+        <translation>Taille du cache de base de données</translation>
+    </message>
+    <message>
+        <source>Number of script verification threads</source>
+        <translation>Nombre de threads de vérification de script</translation>
+    </message>
+    <message>
+        <source>Start CASTLE on system login</source>
+        <translation>Lancer CASTLE à l'ouverture de la session</translation>
+    </message>
+    <message>
+        <source>Minimize to the tray instead of the taskbar</source>
+        <translation>Réduire dans la barre d'état au lieu de la barre des tâches</translation>
+    </message>
+    <message>
+        <source>Minimize on close</source>
+        <translation>Réduire sur fermeture</translation>
+    </message>
+    <message>
+        <source>Reset Options</source>
+        <translation>Réinitialiser les options</translation>
+    </message>
+    <message>
+        <source>You are just about to reset the app's options to the default values.
+
+Are you sure?
+</source>
+        <translation>Vous êtes sur le point de réinitialiser les options à leur valeur par défaut.
+
+Confirmez-vous?
+</translation>
+    </message>
+    <message>
+        <source>Options reset succeed</source>
+        <translation>Réinitialisation des options réussie</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMultisendDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Détails de la transaction</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ANNULER</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>SAUVEGARDER</translation>
+    </message>
+    <message>
+        <source>New recipient for multisend</source>
+        <translation>Nouveau destinataire pour multisend</translation>
+    </message>
+    <message>
+        <source>Percentage</source>
+        <translation>Pourcentage</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMultisendWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>CheckBox</translation>
+    </message>
+    <message>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other CASTLE addresses after it matures.</source>
+        <translation>MultiSend vous pernet d'envoyer automatiquement jusqu'à 100% des récompenses de stake et masternode matures vers une liste d'adresses CASTLE de votre choix.</translation>
+    </message>
+    <message>
+        <source>Active</source>
+        <translation>Actif</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Désactiver</translation>
+    </message>
+    <message>
+        <source>No active recipient yet</source>
+        <translation>Aucun destinataire actif</translation>
+    </message>
+    <message>
+        <source>Send stakes</source>
+        <translation>Envoyer les récompenses stakes</translation>
+    </message>
+    <message>
+        <source>Send masternode rewards</source>
+        <translation>Envoyer les récompenses masternode</translation>
+    </message>
+    <message>
+        <source>ADD RECIPIENT</source>
+        <translation>AJOUTER DESTINATAIRE</translation>
+    </message>
+    <message>
+        <source>CLEAR ALL</source>
+        <translation>TOUT EFFACER</translation>
+    </message>
+    <message>
+        <source>Clear succeed</source>
+        <translation>Effacement réussi</translation>
+    </message>
+    <message>
+        <source>Clear all failed, could not locate address in wallet file</source>
+        <translation>Effacement total a échoué, impossible de localiser l'adresse dans le fichier du portefeuille</translation>
+    </message>
+    <message>
+        <source>The entered address: %1 is invalid.
+Please check the address and try again.</source>
+        <translation>L'adresse %1 entrée est invalide.
+SVP vérifiez l'adresse et essayez à nouveau.</translation>
+    </message>
+    <message>
+        <source>Invalid percentage, please enter values from 1 to 100.</source>
+        <translation>Pourcentage incorrect, entrez une valeur entre 1 et 100.</translation>
+    </message>
+    <message>
+        <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
+        <translation>Le montant total de votre vecteur d'envoi multiple est supérieur à 100% de votre récompense Stake</translation>
+    </message>
+    <message>
+        <source>Error saving  MultiSend, failed saving properties to the database.</source>
+        <translation>Erreur de sauvegarde MultiSend, échec de la sauvegarde des propriétés dans la base de données.</translation>
+    </message>
+    <message>
+        <source>Unable to activate MultiSend, no available recipients</source>
+        <translation>Impossible d'activer MultiSend, aucun destinataire disponible</translation>
+    </message>
+    <message>
+        <source>Unable to activate MultiSend
+Check one or both of the check boxes to send on stake and/or masternode rewards</source>
+        <translation>Impossible d'activer MultiSend
+Cochez l'une ou l'autre des cases à cocher pour envoyer les récompenses stake et/ou masternode</translation>
+    </message>
+    <message>
+        <source>MultiSend activated but writing settings to DB failed</source>
+        <translation>Envoi multiple activé mais les paramètres d'écriture en base de données ont échoué</translation>
+    </message>
+    <message>
+        <source>MultiSend activated</source>
+        <translation>Envoi multiple activé</translation>
+    </message>
+    <message>
+        <source>First multiSend address invalid</source>
+        <translation>Première adresse MultiSend invalide</translation>
+    </message>
+    <message>
+        <source>MultiSend deactivated but writing settings to DB failed</source>
+        <translation>Envoi multiple désactivé mais les paramètres d'écriture en base de données ont échoué</translation>
+    </message>
+    <message>
+        <source>MultiSend deactivated</source>
+        <translation>Envoi multiple désactivé</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsSignMessageWidgets</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Effacer</translation>
+    </message>
+    <message>
+        <source>Sign/Verify Message</source>
+        <translation>Signer/Vérifier un message</translation>
+    </message>
+    <message>
+        <source>Sign</source>
+        <translation>Signer</translation>
+    </message>
+    <message>
+        <source>Verify</source>
+        <translation>Vérifier</translation>
+    </message>
+    <message>
+        <source>Select mode</source>
+        <translation>Sélectionnez le mode</translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation>Message</translation>
+    </message>
+    <message>
+        <source>Enter address</source>
+        <translation>Entrez l'adresse</translation>
     </message>
     <message>
         <source>Signature</source>
         <translation>Signature</translation>
     </message>
     <message>
-        <source>Copy the current signature to the system clipboard</source>
-        <translation>Copier la signature actuelle dans le presse-papier</translation>
+        <source>SIGN</source>
+        <translation>SIGNER</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this CSTL address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse CSTL</translation>
+        <source>CLEAR ALL</source>
+        <translation>TOUT EFFACER</translation>
     </message>
     <message>
-        <source>The CSTL address the message was signed with</source>
-        <translation>L'adresse CSTL avec laquelle le message a été signé</translation>
+        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Vous pouvez signer des messages avec vos adresses pour prouver que vous les possédez. Veillez à ne rien signer d'imprécis, car des attaques de type phishing pourraient vous inciter à divulger votre identité. Ne signez que des déclarations détaillées que vous avez approuvé.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified CSTL address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse CSTL renseignée</translation>
+        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
+        <translation>Entrez l'adresse de signature, le message (veillez à copier précisément les sauts de ligne, les espaces, les onglets, etc...) et la signature ci-dessous pour vérifier le message. Verifiez que vous ne lisez pas plus d'informations dans la signature que ce qui se trouve dans le message signé lui-même, afin d'éviter de se faire piéger par une attaque de type intermédiaire (tel que l'ajout d'informations à votre insu lors d'un copié/collé).</translation>
     </message>
     <message>
-        <source>Sign &amp;Message</source>
-        <translation>Signer le message</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>Réinitialiser tous les champs de messages signés</translation>
-    </message>
-    <message>
-        <source>Clear &amp;All</source>
-        <translation>Tout effacer</translation>
-    </message>
-    <message>
-        <source>&amp;Verify Message</source>
-        <translation>Vérifier le message</translation>
-    </message>
-    <message>
-        <source>Verify &amp;Message</source>
-        <translation>Vérifier le message</translation>
+        <source>VERIFY</source>
+        <translation>VÉRIFIER</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -4076,26 +4661,626 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <source>Please check the signature and try again.</source>
         <translation>Merci de vérifier la signature et de ré-essayer. </translation>
     </message>
-    </context>
+    <message>
+        <source>The signature did not match the message digest.</source>
+        <translation>La signature ne correspond pas au résumé du message.</translation>
+    </message>
+    <message>
+        <source>Message verification failed.</source>
+        <translation>La vérification du message a échoué.</translation>
+    </message>
+    <message>
+        <source>Message verified.</source>
+        <translation>Message vérifié.</translation>
+    </message>
+    <message>
+        <source>No addresses available, you can go to the receive screen and add some there!</source>
+        <translation>Aucune adresse enregistrée, vous pouvez aller dans l'écran de réception et en ajouter!</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsWalletOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>CheckBox</translation>
+    </message>
+    <message>
+        <source>RadioButton</source>
+        <translation>RadioBouton</translation>
+    </message>
+    <message>
+        <source>Reset to default</source>
+        <translation>Réinitialiser les valeurs par défaut</translation>
+    </message>
+    <message>
+        <source>Discard changes</source>
+        <translation>Annuler les modifications</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Portefeuille</translation>
+    </message>
+    <message>
+        <source>Customize the internal wallet options</source>
+        <translation>Personnaliser les options du portefeuille interne</translation>
+    </message>
+    <message>
+        <source>Stake split threshold:</source>
+        <translation>Seuil de partage du Stake</translation>
+    </message>
+    <message>
+        <source>Spend unconfirmed change</source>
+        <translation>Dépenser le change non confirmé</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Réseau</translation>
+    </message>
+    <message>
+        <source>Customize the node network options</source>
+        <translation>Personnaliser les options réseau du nœud</translation>
+    </message>
+    <message>
+        <source>Proxy IP:</source>
+        <translation>Proxy IP:</translation>
+    </message>
+    <message>
+        <source>Enter proxy IP</source>
+        <translation>Entrez l'IP du proxy</translation>
+    </message>
+    <message>
+        <source>Port:</source>
+        <translation>Port:</translation>
+    </message>
+    <message>
+        <source>Map port using UPnP</source>
+        <translation>Mapper le port avec UPnP</translation>
+    </message>
+    <message>
+        <source>Allow incoming connections</source>
+        <translation>Autoriser les connections entrantes</translation>
+    </message>
+    <message>
+        <source>Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>Connexion via proxy SOCKS5 (proxy par défaut):</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>SAUVEGARDER</translation>
+    </message>
+    <message>
+        <source>Options reset succeed</source>
+        <translation>Réinitialisation des optiosn réussie</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsWalletRepairWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Wallet Repair</source>
+        <translation>Réparation du portefeuille</translation>
+    </message>
+    <message>
+        <source>The buttons below will restart the wallet with command-line options to repair this wallet, fix issues with corrupt blockchain files or missing/obsolete transactions.</source>
+        <translation>Les boutons ci-dessous relancent le portefeuille avec des options de ligne de commande pour réparer ce dernier, résoudre les problèmes de fichiers blockchain corrompus ou de transactions manquantes / obsolètes.</translation>
+    </message>
+    <message>
+        <source>Attempt to recover private keys from a corrupt wallet.dat.</source>
+        <translation>Tentative de récupération des clés privées à partir d'un wallet.dat corrompu.</translation>
+    </message>
+    <message>
+        <source>Rescan the blockchain for missing wallet transactions.</source>
+        <translation>Réanalyser la blockchain pour détecter les transactions de portefeuille manquantes.</translation>
+    </message>
+    <message>
+        <source>Recover transactions from blockchain (keep-meta-data, e.g. account owner).</source>
+        <translation>Récupère les transactions depuis la blockchain (conserve les méta-données, par exemple le propriétaire du compte).</translation>
+    </message>
+    <message>
+        <source>Recover transactions from blockchain (drop meta-data).</source>
+        <translation>Récupère les transactions depuis la blockchain (sans les méta-données)</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself)</source>
+        <translation>Mettre à jour le portefeuille au format le plus récent lors du démarrage. (Note: ce n'est pas une mise à jour du portefeuille lui-même!)</translation>
+    </message>
+    <message>
+        <source>Rebuild blockchain index from current blk000???.dat files.</source>
+        <translation>Reconstruire l'index de la chaîne de blocs à partir des fichiers courants blk000 ??.</translation>
+    </message>
+    <message>
+        <source>Deletes all local blockchain folders so the wallet synchronizes from scratch.</source>
+        <translation>Supprime tous les dossiers blockchain locaux afin que le portefeuille se synchronise à partir de zéro.</translation>
+    </message>
+    <message>
+        <source>Salvage wallet</source>
+        <translation>Portefeuille de récupération</translation>
+    </message>
+    <message>
+        <source>Rescan blockchain file</source>
+        <translation>Réanalysez les fichiers blockchain</translation>
+    </message>
+    <message>
+        <source>Recover transactions 1</source>
+        <translation>Récupère les transactions 1</translation>
+    </message>
+    <message>
+        <source>Recover transactions 2</source>
+        <translation>récupérer transactions</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet format</source>
+        <translation>Mettre à jour le format du portefeuille</translation>
+    </message>
+    <message>
+        <source>Rebuild index</source>
+        <translation>Reconstruire l'index</translation>
+    </message>
+    <message>
+        <source>Delete local blockchain </source>
+        <translation>Supprime le dossier local Blockchain</translation>
+    </message>
+    <message>
+        <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Cela supprimera vos dossiers de blockchain locaux et le portefeuille synchronisera la Blockchain complète à partir de zéro. &lt;br /&gt; &lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Cela nécessite beaucoup de temps et télécharge beaucoup de données. &lt;br /&gt; &lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Vos transactions et vos fonds seront à nouveau visibles après que le téléchargement soit complet. &lt;br /&gt; &lt;br/&gt;</translation>
+    </message>
+    <message>
+        <source>Do you want to continue?.&lt;br /&gt;</source>
+        <translation>Voulez-vous continuer?.&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Confirm resync Blockchain</source>
+        <translation>Cornfirmer la resynchronisation Blockchain</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Wallet Data</source>
+        <translation>Données portefeuille</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Portefeuille</translation>
+    </message>
+    <message>
+        <source>Multisend</source>
+        <translation>MultiSend</translation>
+    </message>
+    <message>
+        <source>Tools</source>
+        <translation>Outils</translation>
+    </message>
+    <message>
+        <source>Sign/Verify Message</source>
+        <translation>Signer/Vérifier un message</translation>
+    </message>
+    <message>
+        <source>BIP38 Tool</source>
+        <translation>Outil BIP38</translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation>Options</translation>
+    </message>
+    <message>
+        <source>Main</source>
+        <translation>Principal</translation>
+    </message>
+    <message>
+        <source>Display</source>
+        <translation>Afficher</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>Debug</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Information</translation>
+    </message>
+    <message>
+        <source>Console</source>
+        <translation>Console</translation>
+    </message>
+    <message>
+        <source>Wallet Repair</source>
+        <translation>Réparation du portefeuille</translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation>Aide</translation>
+    </message>
+    <message>
+        <source>FAQ</source>
+        <translation>FAQ</translation>
+    </message>
+    <message>
+        <source>About CASTLE</source>
+        <translation>A propos de CASTLE</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation>Paramètres</translation>
+    </message>
+    <message>
+        <source>Confirm options reset</source>
+        <translation>Confirmer la réinitialisation des options</translation>
+    </message>
+    <message>
+        <source>Client restart required to activate changes.</source>
+        <translation>Un redémarrage du client est requis pour activer les changements.</translation>
+    </message>
+    <message>
+        <source>Client will be shutdown, do you want to proceed?</source>
+        <translation>Le client va être éteint, voulez-vous procéder ?</translation>
+    </message>
+    <message>
+        <source>Restart required</source>
+        <translation>Redémarrage requis</translation>
+    </message>
+    <message>
+        <source>Your wallet needs to be restarted to apply the changes
+</source>
+        <translation>Votre portefeuille doit être redémarré pour appliquer les changements
+</translation>
+    </message>
+    <message>
+        <source>Restart Now</source>
+        <translation>Redémarrer maintenant</translation>
+    </message>
+    <message>
+        <source>Restart Later</source>
+        <translation>Redémarrer plus tard</translation>
+    </message>
+    <message>
+        <source>Options will be applied on next wallet restart</source>
+        <translation>Les options seront appliquées au prochain démarrage du portefeuille</translation>
+    </message>
+    <message>
+        <source>Options stored</source>
+        <translation>Options enregistrées</translation>
+    </message>
+    <message>
+        <source>Options store failed</source>
+        <translation>La banque d'options a échoué</translation>
+    </message>
+    <message>
+        <source>Discard Unsaved Changes</source>
+        <translation>Annuler les modifications non sauvegardées</translation>
+    </message>
+    <message>
+        <source>You are just about to discard all of your unsaved options.
+
+Are you sure?
+</source>
+        <translation>Vous êtes sur le point de supprimer toutes les options non sauvegardées.
+
+Confirmez-vous ?
+</translation>
+    </message>
+</context>
+<context>
+    <name>ShutdownWindow</name>
+    <message>
+        <source>CASTLE Core is shutting down...</source>
+        <translation>CASTLE Core est en cours de fermeture...</translation>
+    </message>
+    <message>
+        <source>Do not shut down the computer until this window disappears.</source>
+        <translation>N'arrêtez pas l'ordinateur tant que cette fenêtre n'a pas disparu.</translation>
+    </message>
+</context>
+<context>
+    <name>SnackBar</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>Contact Stored</source>
+        <translation>Contacts enregistrés</translation>
+    </message>
+</context>
+<context>
+    <name>Splash</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>Loading…</source>
+        <translation>Chargement...</translation>
+    </message>
+    <message>
+        <source>CASTLE Core</source>
+        <translation>CASTLE Core</translation>
+    </message>
+</context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Castle Core</source>
-        <translation>Castle Core</translation>
+        <source>CASTLE Core</source>
+        <translation>CASTLE Core</translation>
+    </message>
+    <message>
+        <source>Version %1</source>
+        <translation>Version %1</translation>
+    </message>
+    <message>
+        <source>The Bitcoin Core developers</source>
+        <translation>Les développeurs Bitcoin Core</translation>
+    </message>
+    <message>
+        <source>The Dash Core developers</source>
+        <translation>Les développeurs Dash Core</translation>
+    </message>
+    <message>
+        <source>The CASTLE Core developers</source>
+        <translation>Les développeurs CASTLE Core</translation>
+    </message>
+    <message>
+        <source>[testnet]</source>
+        <translation>[testnet]</translation>
+    </message>
+</context>
+<context>
+    <name>TooltipMenu</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Copier</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation>Modifier</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>Supprimer</translation>
+    </message>
+    <message>
+        <source>Last</source>
+        <translation>Dernier</translation>
+    </message>
+</context>
+<context>
+    <name>TopBar</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>480.0685 CSTL</source>
+        <translation>480.0685CSTL</translation>
+    </message>
+    <message>
+        <source>1,000 zCSTL</source>
+        <translation>1 000 zCSTL</translation>
+    </message>
+    <message>
+        <source>Available</source>
+        <translation>Disponible</translation>
+    </message>
+    <message>
+        <source>Pending</source>
+        <translation>En attente</translation>
+    </message>
+    <message>
+        <source>6.943 CSTL</source>
+        <translation>6.943 CSTL</translation>
+    </message>
+    <message>
+        <source>Immature</source>
+        <translation>Immature</translation>
+    </message>
+    <message>
+        <source>10 CSTL</source>
+        <translation>10 CSTL</translation>
+    </message>
+    <message>
+        <source>60 zCSTL</source>
+        <translation>60 zCSTL</translation>
+    </message>
+    <message>
+        <source>10 zCSTL</source>
+        <translation>10 zCSTL</translation>
+    </message>
+    <message>
+        <source>Wallet Unlocked for staking</source>
+        <translation>Portefeuille déverrouillé pour le staking</translation>
+    </message>
+    <message>
+        <source>Error generating address</source>
+        <translation>Erreur lors de la génération de l'adresse</translation>
+    </message>
+    <message>
+        <source>Address Copied</source>
+        <translation>Adresse copiée</translation>
+    </message>
+    <message>
+        <source>Automint enabled</source>
+        <translation>Auto-monnayage activé</translation>
+    </message>
+    <message>
+        <source>Automint disabled</source>
+        <translation>Auto-monnayage désactivé</translation>
+    </message>
+    <message>
+        <source>Staking active</source>
+        <translation>Staking actif</translation>
+    </message>
+    <message>
+        <source>Staking not active</source>
+        <translation>Staking inactif</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n active connection(s)</source>
+        <translation><numerusform>%n connexion active</numerusform><numerusform>%n connexions actives</numerusform></translation>
+    </message>
+    <message>
+        <source>Synchronized</source>
+        <translation>Synchronisé</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n hour(s)</source>
+        <translation><numerusform>%n heure</numerusform><numerusform>%n heures</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation><numerusform>%n jour</numerusform><numerusform>%n jours</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n week(s)</source>
+        <translation><numerusform>%n semaine</numerusform><numerusform>%n semaines</numerusform></translation>
+    </message>
+    <message>
+        <source>%1 and %2</source>
+        <translation>%1 et %2</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n year(s)</source>
+        <translation><numerusform>%n année</numerusform><numerusform>%n années</numerusform></translation>
     </message>
     </context>
 <context>
     <name>TrafficGraphWidget</name>
-    </context>
+    <message>
+        <source>KB/s</source>
+        <translation>Ko/s</translation>
+    </message>
+</context>
 <context>
     <name>TransactionDesc</name>
+    <message numerus="yes">
+        <source>Open for %n more block(s)</source>
+        <translation><numerusform>Ouvert pour %n bloc supplémentaire</numerusform><numerusform>Ouvert pour %n blocs supplémentaires</numerusform></translation>
+    </message>
+    <message>
+        <source>Open until %1</source>
+        <translation>Ouvrir jusqu'à %1</translation>
+    </message>
+    <message>
+        <source>conflicted</source>
+        <translation>en conflit</translation>
+    </message>
+    <message>
+        <source>%1/offline</source>
+        <translation>%1/hors ligne</translation>
+    </message>
+    <message>
+        <source>%1/unconfirmed</source>
+        <translation>%1/non confirmé</translation>
+    </message>
+    <message>
+        <source>%1 confirmations</source>
+        <translation>%1 confirmations</translation>
+    </message>
+    <message>
+        <source>%1/offline (verified via SwiftX)</source>
+        <translation>%1/hors ligne (vérifié via SwiftX)</translation>
+    </message>
+    <message>
+        <source>%1/confirmed (verified via SwiftX)</source>
+        <translation>%1/confirmé (vérifié via SwiftX)</translation>
+    </message>
+    <message>
+        <source>%1 confirmations (verified via SwiftX)</source>
+        <translation>%1 confirmations (vérifié via SwiftX)</translation>
+    </message>
+    <message>
+        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1/hors ligne (Vérification SwiftX en cours - %2 de %3 signatures)</translation>
+    </message>
+    <message>
+        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
+        <translation>%1/confirmé (vérification SwiftX en cours - %2 sur %3 signatures)</translation>
+    </message>
+    <message>
+        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1 confirmations (Vérification SwiftX en cours - %2 de %3 signatures)</translation>
+    </message>
+    <message>
+        <source>%1/offline (SwiftX verification failed)</source>
+        <translation>%1/hors ligne (Vérification SwiftX échouée)</translation>
+    </message>
+    <message>
+        <source>%1/confirmed (SwiftX verification failed)</source>
+        <translation>%1/confirmé (vérification SwiftX a échoué)</translation>
+    </message>
     <message>
         <source>Status</source>
         <translation>Statuts</translation>
     </message>
     <message>
+        <source>, has not been successfully broadcast yet</source>
+        <translation>, n'a pas encore été diffusé avec succès</translation>
+    </message>
+    <message numerus="yes">
+        <source>, broadcast through %n node(s)</source>
+        <translation><numerusform>, transmission à travers %n noeud</numerusform><numerusform>, transmission à travers %n noeuds</numerusform></translation>
+    </message>
+    <message>
         <source>Date</source>
         <translation>Date</translation>
+    </message>
+    <message>
+        <source>Source</source>
+        <translation>Source</translation>
+    </message>
+    <message>
+        <source>Generated</source>
+        <translation>Généré</translation>
+    </message>
+    <message>
+        <source>From</source>
+        <translation>De</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>inconnu</translation>
+    </message>
+    <message>
+        <source>To</source>
+        <translation>À</translation>
+    </message>
+    <message>
+        <source>own address</source>
+        <translation>Adresse personnelle</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -4106,21 +5291,82 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>label</translation>
     </message>
     <message>
+        <source>Credit</source>
+        <translation>Crédit</translation>
+    </message>
+    <message numerus="yes">
+        <source>matures in %n more block(s)</source>
+        <translation><numerusform>mature dans %n bloc supplémentaire</numerusform><numerusform>mature dans %n blocs supplémentaires</numerusform></translation>
+    </message>
+    <message>
+        <source>not accepted</source>
+        <translation>pas accepté</translation>
+    </message>
+    <message>
+        <source>Debit</source>
+        <translation>Débit</translation>
+    </message>
+    <message>
+        <source>Total debit</source>
+        <translation>Total débit</translation>
+    </message>
+    <message>
+        <source>Total credit</source>
+        <translation>Total crédit</translation>
+    </message>
+    <message>
+        <source>Transaction fee</source>
+        <translation>Frais de transaction</translation>
+    </message>
+    <message>
+        <source>Net amount</source>
+        <translation>Montant net</translation>
+    </message>
+    <message>
         <source>Message</source>
         <translation>Message</translation>
     </message>
     <message>
-        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Les pièces créées doit murir %1 blocs avant qu'elles ne puissent être dépensées. Lorsque vous générez ce bloc, il est diffusé sur le réseau afin d'être ajouté à la chaîne de blocs. Si cet ajout échoue, son statut sera modifié à "non accepté" et il ne sera pas dépensable. Ceci peut arriver occasionnellement lorsqu'un autre noeud du réseau génère un bloc quelques secondes avant le votre.</translation>
+        <source>Comment</source>
+        <translation>Commentaire</translation>
+    </message>
+    <message>
+        <source>Transaction ID</source>
+        <translation>ID de transaction</translation>
+    </message>
+    <message>
+        <source>Output index</source>
+        <translation>Index de sortie</translation>
+    </message>
+    <message>
+        <source>Merchant</source>
+        <translation>Marchand</translation>
+    </message>
+    <message>
+        <source>Debug information</source>
+        <translation>Information de débug</translation>
+    </message>
+    <message>
+        <source>Transaction</source>
+        <translation>Transaction</translation>
+    </message>
+    <message>
+        <source>Inputs</source>
+        <translation>Entrées</translation>
     </message>
     <message>
         <source>Amount</source>
         <translation>Montant</translation>
     </message>
-    </context>
-<context>
-    <name>TransactionDescDialog</name>
-    </context>
+    <message>
+        <source>true</source>
+        <translation>vrai</translation>
+    </message>
+    <message>
+        <source>false</source>
+        <translation>faux</translation>
+    </message>
+</context>
 <context>
     <name>TransactionTableModel</name>
     <message>
@@ -4134,6 +5380,42 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     <message>
         <source>Address</source>
         <translation>Adresse</translation>
+    </message>
+    <message numerus="yes">
+        <source>Open for %n more block(s)</source>
+        <translation><numerusform>Ouvert pour %n bloc supplémentaire</numerusform><numerusform>Ouvert pour %n blocs supplémentaires</numerusform></translation>
+    </message>
+    <message>
+        <source>Open until %1</source>
+        <translation>Ouvrir jusqu'à %1</translation>
+    </message>
+    <message>
+        <source>Offline</source>
+        <translation>Hors ligne</translation>
+    </message>
+    <message>
+        <source>Unconfirmed</source>
+        <translation>Non confirmé</translation>
+    </message>
+    <message>
+        <source>Confirming (%1 of %2 recommended confirmations)</source>
+        <translation>Confirmation en cours (%1 de %2 confirmations requises)</translation>
+    </message>
+    <message>
+        <source>Confirmed (%1 confirmations)</source>
+        <translation>Confirmé (%1 confirmations)</translation>
+    </message>
+    <message>
+        <source>Conflicted</source>
+        <translation>En conflit</translation>
+    </message>
+    <message>
+        <source>Immature (%1 confirmations, will be available after %2)</source>
+        <translation>Immature (%1 confirmations, sera disponible après %2)</translation>
+    </message>
+    <message>
+        <source>This block was not received by any other nodes and will probably not be accepted!</source>
+        <translation>Ce bloc n'a été reçu par aucun autre noeud du réseau et sera probablement refusé!</translation>
     </message>
     <message>
         <source>Received with</source>
@@ -4160,6 +5442,30 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>zCSTL Stake</translation>
     </message>
     <message>
+        <source>CSTL Cold Stake</source>
+        <translation>Stake à froid CASTLE</translation>
+    </message>
+    <message>
+        <source>Stake delegation</source>
+        <translation>Procuration staking</translation>
+    </message>
+    <message>
+        <source>Obfuscation Denominate</source>
+        <translation>Unités cryptées</translation>
+    </message>
+    <message>
+        <source>Obfuscation Collateral Payment</source>
+        <translation>Paiement collatéral crypté</translation>
+    </message>
+    <message>
+        <source>Obfuscation Make Collateral Inputs</source>
+        <translation>Le cryptage a généré des entrées collatérales</translation>
+    </message>
+    <message>
+        <source>Obfuscation Create Denominations</source>
+        <translation>Le cryptage créé des unités</translation>
+    </message>
+    <message>
         <source>Converted CSTL to zCSTL</source>
         <translation>CSTL converti en zCSTL</translation>
     </message>
@@ -4180,16 +5486,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>zCSTL converti en CSTL</translation>
     </message>
     <message>
-        <source>Anonymous (zCSTL Transaction)</source>
-        <translation>Anonyme (transaction zCSTL)</translation>
-    </message>
-    <message>
-        <source>Anonymous (zCSTL Stake)</source>
-        <translation>Anonyme (zCSTL Stake)</translation>
-    </message>
-    <message>
         <source>Sent to</source>
-        <translation>Envoyer à</translation>
+        <translation>Envoyé à</translation>
     </message>
     <message>
         <source>Orphan Block - Generated but not accepted. This does not impact your holdings.</source>
@@ -4210,6 +5508,22 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     <message>
         <source>watch-only</source>
         <translation>témoin seulement</translation>
+    </message>
+    <message>
+        <source>Anonymous</source>
+        <translation>Anonyme</translation>
+    </message>
+    <message>
+        <source>No information</source>
+        <translation>Aucune information</translation>
+    </message>
+    <message>
+        <source>(n/a)</source>
+        <translation>(n/a)</translation>
+    </message>
+    <message>
+        <source>Transaction status. Hover over this field to show number of confirmations.</source>
+        <translation>État de la transaction. Survolez le champ pour voir le nombre de transactions.</translation>
     </message>
     <message>
         <source>Date and time that the transaction was received.</source>
@@ -4233,177 +5547,363 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     </message>
 </context>
 <context>
-    <name>TransactionView</name>
+    <name>TxDetailDialog</name>
     <message>
-        <source>All</source>
-        <translation>Tous</translation>
+        <source>Form</source>
+        <translation>Formulaire</translation>
     </message>
     <message>
-        <source>Today</source>
-        <translation>Aujourd'hui</translation>
+        <source>Transaction Details</source>
+        <translation>Détails de la transaction</translation>
     </message>
     <message>
-        <source>This week</source>
-        <translation>Cette semaine</translation>
+        <source>ID:</source>
+        <translation>ID:</translation>
     </message>
     <message>
-        <source>This month</source>
-        <translation>Ce mois</translation>
+        <source>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</source>
+        <translation>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</translation>
     </message>
     <message>
-        <source>Last month</source>
-        <translation>Le mois dernier</translation>
+        <source>Sending to: </source>
+        <translation>Envoyer à:</translation>
     </message>
     <message>
-        <source>This year</source>
-        <translation>Cette année</translation>
+        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </translation>
     </message>
     <message>
-        <source>Received with</source>
-        <translation>Reçu avec</translation>
+        <source>Total amount</source>
+        <translation>Montant total</translation>
     </message>
     <message>
-        <source>Sent to</source>
-        <translation>Envoyer à</translation>
+        <source>2 CSTL</source>
+        <translation>2 CSTL</translation>
     </message>
     <message>
-        <source>Mined</source>
-        <translation>Miné</translation>
+        <source>Coin inputs:</source>
+        <translation>Entrées:</translation>
     </message>
     <message>
-        <source>Minted</source>
-        <translation>Monnayez</translation>
+        <source>1 Inputs</source>
+        <translation>1 Entrées</translation>
     </message>
     <message>
-        <source>Masternode Reward</source>
-        <translation>Récompense Matsernode</translation>
+        <source>Previous Transaction</source>
+        <translation>Transaction précédente</translation>
     </message>
     <message>
-        <source>Zerocoin Mint</source>
-        <translation>Zerocoin Monnayez</translation>
+        <source>Output Index</source>
+        <translation>Index de sortie</translation>
     </message>
     <message>
-        <source>Enter address or label to search</source>
-        <translation>Entrez l'adresse ou label à rechercher</translation>
+        <source>Fee:</source>
+        <translation>Commission :</translation>
     </message>
     <message>
-        <source>Copy address</source>
-        <translation>Copier l'adresse</translation>
+        <source>0.0001 CSTL</source>
+        <translation>0.0001 CSTL</translation>
     </message>
     <message>
-        <source>Copy label</source>
-        <translation>Copier le montant</translation>
+        <source>Change address:</source>
+        <translation>Changer adresse:</translation>
     </message>
     <message>
-        <source>Copy amount</source>
-        <translation>Copier le montant</translation>
+        <source>D7VFR83SQbie…BhjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbie…BhjcWJtcfip5krte2Z </translation>
     </message>
     <message>
-        <source>Copy transaction ID</source>
-        <translation>Copier l'ID de la transaction</translation>
+        <source>Confirmations:</source>
+        <translation>Confirmations:</translation>
     </message>
     <message>
-        <source>Edit label</source>
-        <translation>Modifier label</translation>
+        <source>12</source>
+        <translation>12</translation>
     </message>
     <message>
-        <source>Comma separated file (*.csv)</source>
-        <translation>Fichier avec séparation par des virgules (*.csv)</translation>
+        <source>Size:</source>
+        <translation>Taille:</translation>
     </message>
     <message>
-        <source>Confirmed</source>
-        <translation>Confirmé</translation>
+        <source>2 kB</source>
+        <translation>2 kO</translation>
     </message>
     <message>
-        <source>Watch-only</source>
-        <translation>Témoin</translation>
+        <source>Date:</source>
+        <translation>Date:</translation>
     </message>
     <message>
-        <source>Date</source>
-        <translation>Date</translation>
+        <source>May 25, 2017</source>
+        <translation>25 mai 2017</translation>
     </message>
     <message>
-        <source>Type</source>
-        <translation>Type</translation>
+        <source>Status:</source>
+        <translation>Statut :</translation>
     </message>
     <message>
-        <source>Label</source>
-        <translation>Label</translation>
+        <source>Spendable</source>
+        <translation>Dépensable</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Adresse</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Exporting Failed</source>
-        <translation>Exportation échouée</translation>
+        <source>CANCEL</source>
+        <translation>ANNULER</translation>
     </message>
     <message>
-        <source>There was an error trying to save the transaction history to %1.</source>
-        <translation>Une erreur est survenue lors de la tentative de sauvegarde de l'historique de transaction vers %1.</translation>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
     <message>
-        <source>Received CSTL from zCSTL</source>
-        <translation>CSTL reçu depuis zCSTL</translation>
+        <source>Confirm Your Transaction</source>
+        <translation>Confirmer votre transaction</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zCSTL</source>
-        <translation>Dépense Zerocoin, monnaie rendue en zCSTL</translation>
+        <source>SEND</source>
+        <translation>ENVOYER</translation>
     </message>
-    </context>
+    <message>
+        <source>ID copied</source>
+        <translation>ID copié</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Inconnu</translation>
+    </message>
+</context>
 <context>
-    <name>UnitDisplayStatusBarControl</name>
-    </context>
-<context>
-    <name>WalletFrame</name>
-    </context>
+    <name>TxRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>Received from Bob</source>
+        <translation>Reçu de Bob</translation>
+    </message>
+    <message>
+        <source>18/05/18</source>
+        <translation>18/05/2018</translation>
+    </message>
+    <message>
+        <source>+0.000585 CSTL</source>
+        <translation>+0.000585 CSTL</translation>
+    </message>
+</context>
 <context>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
         <translation>Envoyer des pièces</translation>
     </message>
-    </context>
+    <message>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CSTL.</source>
+        <translation>SwiftX ne supporte pas l'envoi de montants aussi élevés. Les transactions sont actuellement lmitées à %1 CSTL.</translation>
+    </message>
+</context>
 <context>
-    <name>WalletView</name>
+    <name>WalletPasswordDialog</name>
     <message>
-        <source>&amp;Export</source>
-        <translation>&amp;Exporter</translation>
+        <source>Dialog</source>
+        <translation>Dialogue</translation>
     </message>
     <message>
-        <source>Export the data in the current tab to a file</source>
-        <translation>Exporter les informations de l'onglet actuel vers un fichier</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Selected amount:</source>
-        <translation>Montant sélectionné :</translation>
+        <source>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</source>
+        <translation>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</translation>
     </message>
     <message>
-        <source>Backup Wallet</source>
-        <translation>Sauvegarder le Portefeuille </translation>
+        <source>CANCEL</source>
+        <translation>ANNULER</translation>
     </message>
     <message>
-        <source>Wallet Data (*.dat)</source>
-        <translation>Wallet Data (*.dat)</translation>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+</context>
+<context>
+    <name>WelcomeContentWidget</name>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>2</source>
+        <translation>2</translation>
+    </message>
+    <message>
+        <source>3</source>
+        <translation>3</translation>
+    </message>
+    <message>
+        <source>4</source>
+        <translation>4</translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation>Langue</translation>
+    </message>
+    <message>
+        <source>Welcome</source>
+        <translation>Bienvenu</translation>
+    </message>
+    <message>
+        <source>Privacy</source>
+        <translation>Confidentialité</translation>
+    </message>
+    <message>
+        <source>Masternodes</source>
+        <translation>Masternodes</translation>
+    </message>
+    <message>
+        <source>Select your language</source>
+        <translation>Choisir votre langue</translation>
+    </message>
+    <message>
+        <source>Welcome to
+CASTLE Core Wallet</source>
+        <translation>Bienvenu au
+Portefeuille CASTLE Core</translation>
+    </message>
+    <message>
+        <source>CASTLE is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>CASTLE est la technologie la plus innovante au monde de preuve d'enjeu basée sur une blockchain. Développé par une équipe de développeurs et cryptographes très expérimentés.</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - CASTLE believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt; Comme notre manifeste l'indique: la vie privée est un droit de base non-négociable de l'être humain; il permet aux utilisateurs la liberté de partager leurs donnée quand et avec qui ils le souhaitent - CASTLE croit en l'auto gestion. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt; </translation>
+    </message>
+    <message>
+        <source>The masternode network is CASTLE's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>Le réseau masternode est une seconde couche réseau de CASTLE au dessus de la blockchain qui permet à notre organisation une gouvernance décentralisée et une trésorerie.</translation>
+    </message>
+    <message>
+        <source>How CASTLE respects your privacy?</source>
+        <translation>Comment CASTLE respecte votre vie privée?</translation>
+    </message>
+    <message>
+        <source>What is a Masternode?</source>
+        <translation>Qu'est-ce qu'un masternode?</translation>
+    </message>
+    <message>
+        <source>default</source>
+        <translation>défaut</translation>
     </message>
 </context>
 <context>
     <name>ZCstlControlDialog</name>
     <message>
-        <source>Quantity</source>
-        <translation>Quantité </translation>
+        <source>Select zCSTL to Spend</source>
+        <translation>Choisir les zCSTL à dépenser</translation>
+    </message>
+    <message>
+        <source>Coin Control</source>
+        <translation>Contrôle des pièces</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Bouton poussoir</translation>
+    </message>
+    <message>
+        <source>zCstl</source>
+        <translation>zCSTL</translation>
+    </message>
+    <message>
+        <source>0.00 </source>
+        <translation>0.00</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Quantité :</translation>
+    </message>
+    <message>
+        <source>Is Spendable</source>
+        <translation>est dépensable</translation>
     </message>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zCSTL</source>
-        <translation>zCSTL</translation>
+        <source>Select/Deselect All</source>
+        <translation>Tout Sélectionner/Désélectionner</translation>
     </message>
-    </context>
+    <message>
+        <source>Select zCSTL Denominations to Spend</source>
+        <translation>Sélectionnez les dénominations zCSTL à dépenser</translation>
+    </message>
+</context>
 <context>
     <name>castle-core</name>
+    <message>
+        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
+        <translation>(1 = conserve les métadonnées de transaction, par exemple le propriétaire du compte et les informations de demande de paiement, 2 = supprime les métadonnées)</translation>
+    </message>
+    <message>
+        <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
+        <translation>Autoriser les connections JSON-RPC à partir de la source spécifiée. Valable pour &lt;ip&gt; comme une seule adresse IP (par exemple, 1.2.3.4), un réseau / masque de sous-réseau (par exemple, 1.2.3.4/255.255.255.0) ou un réseau / CIDR (par exemple, 1.2.3.4/24). Cette option peut être spécifiée plusieurs fois.</translation>
+    </message>
+    <message>
+        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
+        <translation>Relier à des adresses spécifiques et toujours écouter dessus. Utilisez [host]:port pour IPv6</translation>
+    </message>
+    <message>
+        <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
+        <translation>Relier à des adresses spécifiques et ajouter à la liste blanche les pairs qui s'y connectent. Utilisez la notation [host]:port pour IPv6</translation>
+    </message>
+    <message>
+        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
+        <translation>Relier à une adresse spécifique pour écouter les connections JSON-RPC. Utilisez la notation [host]:port pour IPv6. Cette option peut être spécifiée plusieurs fois (par défaut: liaison à toutes les interfaces)</translation>
+    </message>
+    <message>
+        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
+        <translation>Le point de contrôle de l'accumulateur qui a été calculé ne correspond pas à ce qui est enregistré par l'index de bloc</translation>
+    </message>
+    <message>
+        <source>Cannot obtain a lock on data directory %s. CASTLE Core is probably already running.</source>
+        <translation>Impossible de vérouiller le répertoire de données %s. CASTLE Core est probablement déjà en cours d'exécution.</translation>
+    </message>
+    <message>
+        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
+        <translation>Modifier le comportement du vote budgétaire automatique. mode = auto: ne votez que pour une correspondance exacte avec votre budget généré. (chaîne, par défaut: auto)</translation>
+    </message>
+    <message>
+        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
+        <translation>Limiter continuellement les transactions gratuites à &lt;n&gt;* 1000 octets par minute (par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
+        <translation>Créer les nouveaux fichiers avec les autorisations système par défaut, au lieu de umask 077 (efficace uniquement avec la fonctionnalité de portefeuille désactivée)</translation>
+    </message>
+    <message>
+        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
+        <translation>Supprimer toutes les transactions de portefeuille et ne récupérer ces parties de la blockchain que via -rescan au démarrage</translation>
+    </message>
+    <message>
+        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
+        <translation>Supprimez toutes les dépenses de zerocoin et monnayez qui ont été enregistrées dans la base de données blockchain et réindexez-les (0-1, par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
+        <translation>Distribué sous la licence du logiciel MIT, consultez le fichier d'accompagnement COPYING ou &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
+    </message>
+    <message>
+        <source>Enable automatic Zerocoin minting from specific addresses (0-1, default: %u)</source>
+        <translation>Activer la frappe automatique de monnaie à partir d’adresses spécifiques (0-1, par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Enable automatic wallet backups triggered after each zCSTL minting (0-1, default: %u)</source>
+        <translation>Activer les sauvegardes automatiques de portefeuille déclenchées après chaque frappe zCSTL (0-1, par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
+        <translation>Active la fonctionnalité de cold staking (0-1, par défaut: %u). Désactivé si staking=0</translation>
+    </message>
     <message>
         <source>Enable or disable staking functionality for CSTL inputs (0-1, default: %u)</source>
         <translation>Active ou désactive la fonctionnalité de staking pour les entrées CSTL (0-1, par défaut: %u)</translation>
@@ -4413,8 +5913,16 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Active ou désactive la fonctionnalité de staking pour les entrées zCSTL (0-1, par défaut: %u)</translation>
     </message>
     <message>
+        <source>Enable spork administration functionality with the appropriate private key.</source>
+        <translation>Activer la fonctionnalité d'administration de spork avec la clé privée appropriée.</translation>
+    </message>
+    <message>
+        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
+        <translation>Entrer dans le mode de test de régression, qui utilise une chaîne spéciale dans laquelle les blocs peuvent être résolus instantanément.</translation>
+    </message>
+    <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
-        <translation>Erreur: L'écoute des connexions entrantes a échoué (listen a renvoyé l'erreur %s)</translation>
+        <translation>Erreur: L'écoute des connections entrantes a échoué (listen a renvoyé l'erreur %s)</translation>
     </message>
     <message>
         <source>Error: The transaction is larger than the maximum allowed transaction size!</source>
@@ -4425,6 +5933,10 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Erreur: Argument -socks non pris en charge. Le paramétrage de SOCKS n'est plus possible, seul les proxies SOCKS5 sont supportés.</translation>
     </message>
     <message>
+        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
+        <translation>Execute la commande quand une alerte pertinente est reçue ou que nous constatons un long fork dans la chaine (%s dans cmd est remplacé par un message)</translation>
+    </message>
+    <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
         <translation>Exécuter la commande quand une transaction de portefeuille change (%s dans cmd est remplacé par l'identifiant de transaction)</translation>
     </message>
@@ -4433,12 +5945,356 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Exécuter la commande lorsque le meilleur bloc change  (%s dans cmd est remplacé par le hash du bloc)</translation>
     </message>
     <message>
+        <source>Fees (in CSTL/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Les frais (en CSTL / Kb) inférieurs à ceux-ci sont considérés comme des frais nuls pour le relais (par défaut: %s)</translation>
+    </message>
+    <message>
+        <source>Fees (in CSTL/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Les frais (en CSTL / Kb) inférieurs à cette valeur sont considérés comme des frais nuls pour la création de transaction (par défaut: %s)</translation>
+    </message>
+    <message>
+        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
+        <translation>Vider l'activité de la base de données du pool de mémoire vers le journal du disque tous les &lt;n&gt;mégaoctets (par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
+        <translation>Si paytxfee n'est pas défini, incluez suffisamment de frais pour que les transactions commencent la confirmation en moyenne dans les n blocs (par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
+        <translation>Dans ce mode, -genproclimit contrôle le nombre de blocs générés immédiatement.</translation>
+    </message>
+    <message>
+        <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
+        <translation>Vos fonds confirmés sont insuffisants, attendez quelques minutes et essayez à nouveau.</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
+        <translation>Montant incorrect pour -maxtxfee=&lt;amount&gt;: '%s' (doit être au minimum de %s afin d'éviter que la transaction reste bloquée)</translation>
+    </message>
+    <message>
+        <source>Keep the specified amount available for spending at all times (default: 0)</source>
+        <translation>Garder le montant spécifié disponible pour la dépense en tous temps (défaut: 0)</translation>
+    </message>
+    <message>
+        <source>Log transaction priority and fee per kB when mining blocks (default: %u)</source>
+        <translation>Journaliser la priorité des transactions et les frais par Ko lors de l'extraction de blocs (par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
+        <translation>Maintenir un index de transaction complet, utilisé par l'appel rpc de getrawtransaction (par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum average size of an index occurrence in the block spam filter (default: %u)</source>
+        <translation>L'index a atteint sa taille maximale dans le filtre de bloc spammé (défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
+        <translation>Taille maximale des données dans les transactions de support de données que nous transmettons et minons (par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum size of the list of indexes in the block spam filter (default: %u)</source>
+        <translation>Taille maximale de la liste des index dans le filtre de bloc spammé (défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</source>
+        <translation>Total des frais maximum à utiliser dans une même transaction, paramétrer une valeur trop basse peut empêcher des transactions importantes (défaut: %s)</translation>
+    </message>
+    <message>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
+        <translation>Nombre de secondes pendant lesquelles les pairs se conduisant mal ne peuvent pas se reconnecter (par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
+        <translation>L'Obfuscation utilise des montants libellés précis pour envoyer des fonds, vous devriez peut-être simplement anonymiser des pièces supplémentaires.</translation>
+    </message>
+    <message>
+        <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
+        <translation>Informations de débogage en sortie (par défaut: %u, fournir &lt;category&gt; est facultatif)</translation>
+    </message>
+    <message>
+        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
+        <translation>Requêter les adresses des pairs via la recherche DNS, si faible sur les adresses (par défaut: 1 sauf si -connect)</translation>
+    </message>
+    <message>
+        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
+        <translation>Définir aléatoirement les informations d'identification pour chaque connection proxy. Cela permet d'isoler le flux Tor (par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Require high priority for relaying free or low-fee transactions (default:%u)</source>
+        <translation>Exiger une priorité éleveée pour relayer des transactions gratuites ou à faible coût (par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Send trace/debug info to console instead of debug.log file (default: %u)</source>
+        <translation>Envoyer des informations de trace/débogage à la console au lieu du fichier debug.log (par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
+        <translation>Définir la taille maximale des transactions à priorité élevée / faible tarif en octets (par défaut: %d)</translation>
+    </message>
+    <message>
+        <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
+        <translation>Définir le nombre de threads de vérification de script (%u à %d, 0 = auto, &lt;0 = laisse autant de cœurs libres, par défaut: %d)</translation>
+    </message>
+    <message>
+        <source>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</source>
+        <translation>Définir le nombre de threads pour la génération des pièces, si activé (-1 = tous les cœurs, par défaut: %d)</translation>
+    </message>
+    <message>
+        <source>Show N confirmations for a successfully locked transaction (0-9999, default: %u)</source>
+        <translation>Affiche N confirmations pour une transaction correctement verrouillée (0-9999, par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
+        <translation>Supporter le filtrage des blocs et des transactions avec des filtres de Bloom (par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
+        <translation>La base de donnée des blocs contient un bloc qui semble être venu du futur. C'est peut être à cause de la date et de l'heure qui ne sont pas configurés correctement sur votre ordinateur. Rechargez la base de donnée des blocs seulement si vous êtes certain que la date et l'heure de votre ordinateur est correcte.</translation>
+    </message>
+    <message>
+        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
+        <translation>Ce produit inclut un logiciel développé par OpenSSL Project pour être utilisé dans OpenSSL Toolkit &lt;https://www.openssl.org/&gt; et le logiciel de cryptographie écrit par Eric Young ainsi que le logiciel UPnP écrit par Thomas Bernard.</translation>
+    </message>
+    <message>
+        <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
+        <translation>La longueur totale de la chaîne dans la version réseau (%i) dépasse la longueur maximale (%i). Réduisez le nombre ou la taille des commentaires de l'Agent Utilisateur</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer. CASTLE Core is probably already running.</source>
+        <translation>Impossible de se lier à %s depuis cet ordinateur. CASTLE Core est probablement déjà en cours d'exécution.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
+        <translation>Incapable de localiser suffisamment de fonds non-dénommés pour l'Obfuscation de cette transaction.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CSTL.</source>
+        <translation>Incapable de localiser suffisamment de fonds non-dénommés pour l'Obfuscation de cette transaction qui ne sont pas égaux à 10000 CSTL.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 CSTL.</source>
+        <translation>Impossible de grouper assez de fonds pour cette transaction qui n'est pas égale à 10000 CSTL.</translation>
+    </message>
+    <message>
+        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
+        <translation>Utilisez un proxy SOCKS5 séparé pour rejoindre les pairs via les services cachés Tor (par défaut: %s)</translation>
+    </message>
+    <message>
+        <source>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
+        <translation>Attention: -maxtxfee est très élevé! Ces frais importants pourraient être payés lors d'une seule transaction.</translation>
+    </message>
+    <message>
+        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
+        <translation>Attention: -paytxfee est réglé très haut! Ce sont les frais de transaction que vous paierez si vous envoyez une transaction.</translation>
+    </message>
+    <message>
+        <source>Warning: Peers are being disconnected due time differences. Please check that your computer's date and time are correct! If your clock is wrong CASTLE Core will not work properly.</source>
+        <translation>Attention: les paires seront déconnectées à cause des différences de temps. Vérifiez que la date et l'heure de votre ordinateur sont corrects ! Si votre horloge n'est pas synchrone, CASTLE core ne fonctionnera pas correctement.</translation>
+    </message>
+    <message>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong CASTLE Core will not work properly.</source>
+        <translation>Avertissement: Veuillez vérifier que la date et l'heure de votre ordinateur sont correctes! Si votre horloge est incorrecte, CASTLE Core ne fonctionnera pas correctement.</translation>
+    </message>
+    <message>
+        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
+        <translation>Attention: le réseau ne semble pas totalement d'accord! Certains mineurs semblent avoir des problèmes.</translation>
+    </message>
+    <message>
+        <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <translation>Attention: Il semble que nous soyons en désaccord avec nos pairs sur le réseau! Cela signifie que vous pourriez avoir besoin de mettre à jour votre CASTLE Core, ou que les autres noeuds aient besoin de se mettre à jour de leur côté.</translation>
+    </message>
+    <message>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>Attention: erreur de lecture du fichier wallet.dat! Toutes les clés sont lues correctement, mais les données de transaction ou les entrées du carnet d'adresse pourraient être manquantes ou incorrectes.</translation>
     </message>
     <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Erreur de connection au Masternode.</translation>
+        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
+        <translation>Attention: wallet.dat corrompu, données récupérées! Le wallet.dat original est enregistré en tant que wallet.{timestamp}.bak in %s; Si votre solde ou vos transactions sont incorrects, vous devez restaurer à partir de votre sauvegarde.</translation>
+    </message>
+    <message>
+        <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
+        <translation>Mettre en liste blanche les pairs se connectant à partir du masque de réseau ou de l'adresse IP donnés. Peut être spécifié plusieurs fois.</translation>
+    </message>
+    <message>
+        <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
+        <translation>Les pairs inscrits sur la liste blanche ne peuvent pas être interdits par le DoS et leurs transactions sont toujours relayées, même si elles sont déjà dans le mempool, utile par exemple pour une passerelle</translation>
+    </message>
+    <message>
+        <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
+        <translation>Vous devez spécifier une masternodeprivkey dans la configuration. Veuillez consulter la documentation pour obtenir de l'aide.</translation>
+    </message>
+    <message>
+        <source>(35801 could be used only on mainnet)</source>
+        <translation>(35801 ne peut être utilisé que pour le mainnet)</translation>
+    </message>
+    <message>
+        <source>(default: %s)</source>
+        <translation>(défaut: %s)</translation>
+    </message>
+    <message>
+        <source>(default: 1)</source>
+        <translation>(default: 1)</translation>
+    </message>
+    <message>
+        <source>(must be 35801 for mainnet)</source>
+        <translation>(doit être 35801 pour le mainnet)</translation>
+    </message>
+    <message>
+        <source>Accept command line and JSON-RPC commands</source>
+        <translation>Accepter les lignes de commandes et les commandes JSON-RPC</translation>
+    </message>
+    <message>
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation>Accepter les connections depuis l'extérieur (défaut: 1 si pas de -proxy ou -connect)</translation>
+    </message>
+    <message>
+        <source>Accept public REST requests (default: %u)</source>
+        <translation>Accepter les requêtes REST publiques (défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Add a node to connect to and attempt to keep the connection open</source>
+        <translation>Ajouter un noeud pour se connecter avec et essayer de garder la connection ouverte.</translation>
+    </message>
+    <message>
+        <source>Adding Wrapped Serials supply...</source>
+        <translation>Ajout de numéros de série enveloppés ...</translation>
+    </message>
+    <message>
+        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
+        <translation>Autoriser les recherches DNS pour -addnode, -seednode et -connect</translation>
+    </message>
+    <message>
+        <source>Always query for peer addresses via DNS lookup (default: %u)</source>
+        <translation>Toujours rechercher les adresses des pairs via une recherche DNS (par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Append comment to the user agent string</source>
+        <translation>Ajouter un commentaire à la chaîne de l'Agent Utilisateur</translation>
+    </message>
+    <message>
+        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
+        <translation>Essaye de restaurer les clés privées depuis un fichier wallet.dat corrompu</translation>
+    </message>
+    <message>
+        <source>Automatically create Tor hidden service (default: %d)</source>
+        <translation>Créer automatiquement un service Tor caché (défaut: %d)</translation>
+    </message>
+    <message>
+        <source>Block creation options:</source>
+        <translation>Options de création de bloc:</translation>
+    </message>
+    <message>
+        <source>Calculating missing accumulators...</source>
+        <translation>Calcul des accumulateurs manquants...</translation>
+    </message>
+    <message>
+        <source>Cannot downgrade wallet</source>
+        <translation>Ne peut pas rétrograder le portefeuille</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -bind address: '%s'</source>
+        <translation>Impossible de résoudre l'adresse -bind: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -externalip address: '%s'</source>
+        <translation>Impossible de résoudre l'adresse -externalip: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -whitebind address: '%s'</source>
+        <translation>Impossible de résoudre l'adresse -whitebind: '%s'</translation>
+    </message>
+    <message>
+        <source>CoinSpend: failed check</source>
+        <translation>Dépense de coin: vérification échouée</translation>
+    </message>
+    <message>
+        <source>Connect only to the specified node(s)</source>
+        <translation>Se connecter uniquement au(x) noeud(s) spécifié(s)</translation>
+    </message>
+    <message>
+        <source>Connect through SOCKS5 proxy</source>
+        <translation>Connecter à travers un proxy SOCKS5</translation>
+    </message>
+    <message>
+        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
+        <translation>Se connecter à un noeud pour retrouver les adresses des pairs et se déconnecter ensuite</translation>
+    </message>
+    <message>
+        <source>Connection options:</source>
+        <translation>Options de connection:</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
+        <translation>Copyright (C) 2009-%i Les développeurs de Bitcoin Core</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
+        <translation>Copyright (C) 2014-%i Les développeurs de DASH Core</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
+        <translation>Copyright (C) 2015-%i Les développeurs de PIVX Core</translation>
+    </message>
+    <message>
+        <source>Corrupted block database detected</source>
+        <translation>Corruption des base de données de blocs détectée</translation>
+    </message>
+    <message>
+        <source>Could not parse masternode.conf</source>
+        <translation>Impossible d'analyser masternode.conf</translation>
+    </message>
+    <message>
+        <source>Couldn't generate the accumulator witness</source>
+        <translation>Impossible de générer le témoin accumulateur</translation>
+    </message>
+    <message>
+        <source>Debugging/Testing options:</source>
+        <translation>Options de déboguage/test:</translation>
+    </message>
+    <message>
+        <source>Delete blockchain folders and resync from scratch</source>
+        <translation>Supprimer les dossiers blockchain et resynchroniser à partir de zéro</translation>
+    </message>
+    <message>
+        <source>Disable OS notifications for incoming transactions (default: %u)</source>
+        <translation>Désactiver les notifications de l'OS pour les transcation entrantes (défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Disable safemode, override a real safe mode event (default: %u)</source>
+        <translation>Désactiver le mode sans échec , remplacer un événement en mode sans échec réel (par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
+        <translation>Découvrir sa propre adresse IP (par défaut: 1 lorsqu'en écoute et sans -externalip)</translation>
+    </message>
+    <message>
+        <source>Do not load the wallet and disable wallet RPC calls</source>
+        <translation>Ne pas charger le portefeuille et désactiver les appels RPC</translation>
+    </message>
+    <message>
+        <source>Do you want to rebuild the block database now?</source>
+        <translation>Voulez-vous reconstruire la base de données des blocs maintenant ?</translation>
+    </message>
+    <message>
+        <source>Done loading</source>
+        <translation>Chargement effectué</translation>
+    </message>
+    <message>
+        <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
+        <translation>Activer la frappe automatique Zerocoin (0-1, par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Activer la publication du hash des transactions (vérouillées via SwiftX) dans &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Activer la publication des transactions brut (vérouillées via SwiftX) dans &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable the client to act as a masternode (0-1, default: %u)</source>
+        <translation>Activer le client pour agir en tant que Masternode (0-1, défaut: %u)</translation>
     </message>
     <message>
         <source>Error initializing block database</source>
@@ -4461,8 +6317,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Erreur de chargement du fichier wallet.dat: Portefeuille corrompu</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Castle Core</source>
-        <translation>Erreur de chargement du fichier wallet.dat: Le portefeuille nécessite une version plus récente du CSTL core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of CASTLE Core</source>
+        <translation>Erreur de chargement du fichier wallet.dat: Le portefeuille nécessite une version plus récente du CASTLE core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4473,8 +6329,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Erreur de lecture de la base de données, fermeture du programme.</translation>
     </message>
     <message>
-        <source>Error recovering public key.</source>
-        <translation>Erreur de récupération de la clé publique.</translation>
+        <source>Error writing zerocoinDB to disk</source>
+        <translation>Erreur lors de l'écriture de zerocoinDB sur le disque</translation>
     </message>
     <message>
         <source>Error</source>
@@ -4483,10 +6339,6 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
         <translation>Erreur: Une erreur interne fatale est survenue, voir debug.log pour plus de détails</translation>
-    </message>
-    <message>
-        <source>Error: Can't select current denominated inputs</source>
-        <translation>Erreur: Impossible de sélectionner les entrées spécifiées</translation>
     </message>
     <message>
         <source>Error: Disk space is low!</source>
@@ -4501,16 +6353,156 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Erreur: Portefeuille vérouillé, impossible de créer une transaction!</translation>
     </message>
     <message>
-        <source>Error: You already have pending entries in the Obfuscation pool</source>
-        <translation>Erreur: Vous avez déjà des enregistrements en attente de la pool d'obfuscation</translation>
+        <source>Failed to calculate accumulator checkpoint</source>
+        <translation>Échec du calcul du point de contrôle de l'accumulateur</translation>
+    </message>
+    <message>
+        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
+        <translation>Écoute impossible quelque soit le port. Utilisez -listen=0 si c'est cela que vous souhaitez.</translation>
+    </message>
+    <message>
+        <source>Failed to parse host:port string</source>
+        <translation>Impossible d'interprêter la chaine host:port</translation>
+    </message>
+    <message>
+        <source>Failed to read block</source>
+        <translation>Impossible de lire le bloc</translation>
+    </message>
+    <message>
+        <source>Fee (in CSTL/kB) to add to transactions you send (default: %s)</source>
+        <translation>Frais (en CSTL/kB) à ajouter aux transactions envoyées (défaut: %s)</translation>
+    </message>
+    <message>
+        <source>Force safe mode (default: %u)</source>
+        <translation>Forcer le mode sans échec (défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Generate coins (default: %u)</source>
+        <translation>Générer des pièces (par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>How many blocks to check at startup (default: %u, 0 = all)</source>
+        <translation>Nombre de blocs à vérifier au démarrage (défaut: %u, 0 = tous)</translation>
+    </message>
+    <message>
+        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
+        <translation>Si &lt;category&gt; n'est pas fourni, afficher toutes les informations de débogage.</translation>
+    </message>
+    <message>
+        <source>Importing...</source>
+        <translation>Importation...</translation>
+    </message>
+    <message>
+        <source>Imports blocks from external blk000??.dat file</source>
+        <translation>Importe les blocs à partir du fichier externe blk000??.dat</translation>
+    </message>
+    <message>
+        <source>Include IP addresses in debug output (default: %u)</source>
+        <translation>Inclure les adresses IP dans les informations de déboguage (par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
+        <translation>Bloc de genèse incorrect ou non trouvé. Peut-être un mauvais datadir pour le réseau ?</translation>
     </message>
     <message>
         <source>Information</source>
         <translation>Information</translation>
     </message>
     <message>
+        <source>Initialization sanity check failed. CASTLE Core is shutting down.</source>
+        <translation>Échec de la vérification de l'initialisation. CASTLE Core va fermer.</translation>
+    </message>
+    <message>
+        <source>Insufficient funds</source>
+        <translation>Fonds insuffisants</translation>
+    </message>
+    <message>
+        <source>Insufficient funds.</source>
+        <translation>Fonds insuffisants.</translation>
+    </message>
+    <message>
+        <source>Invalid -onion address or hostname: '%s'</source>
+        <translation>Adresse -onion ou hostname incorrect: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Montant incorrect pour -maxtxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Montant incorrect pour -minrelaytxfee=:&lt;amount&gt; '%s'</translation>
+    </message>
+    <message>
         <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</translation>
+        <translation>Montant incorrect pour -mintxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
+        <translation>Montant incorrect pour -paytxfee=&lt;amount&gt;: '%s' (doit être au mininum %s)</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Montant incorrect pour -paytxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
+        <translation>Montant incorrect pour -reservebalance=&lt;amount&gt;</translation>
+    </message>
+    <message>
+        <source>Invalid amount</source>
+        <translation>Montant incorrect</translation>
+    </message>
+    <message>
+        <source>Invalid masternodeprivkey. Please see documenation.</source>
+        <translation>Masternodeprivkey incorrecte. Regardez la documentation SVP.</translation>
+    </message>
+    <message>
+        <source>Invalid netmask specified in -whitelist: '%s'</source>
+        <translation>Masque réseau incorrect spécifié dans -whitelist: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid port detected in masternode.conf</source>
+        <translation>Port invalide détecté dans masternode.conf</translation>
+    </message>
+    <message>
+        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
+        <translation>Pourcentage de Zerocoin Auto-monnayé (1-100, par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Recalculating CSTL supply...</source>
+        <translation>Recalcule de CSTL émis</translation>
+    </message>
+    <message>
+        <source>Recalculating minted ZCSTL...</source>
+        <translation>Recalcule des ZCSTL générés</translation>
+    </message>
+    <message>
+        <source>Recalculating spent ZCSTL...</source>
+        <translation>Recalcule des ZCSTL dépensés</translation>
+    </message>
+    <message>
+        <source>Reindex the CSTL and zCSTL money supply statistics</source>
+        <translation>Recalculer les statistiques sur l'approvisionnement en CSTL et zCSTL</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin database...</source>
+        <translation>Réindexation de la base de données zerocoin...</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin failed</source>
+        <translation>La réindexation zerocoin a échoué</translation>
+    </message>
+    <message>
+        <source>Selected coins value is less than payment target</source>
+        <translation>La valeur des monnaies choisies est inférieure au montant projeté</translation>
+    </message>
+    <message>
+        <source>Support the zerocoin light node protocol (default: %u)</source>
+        <translation>Supporte les nœuds légers en protocole zerocoin (défaut: %u)</translation>
+    </message>
+    <message>
+        <source>SwiftX options:</source>
+        <translation>Options SwiftX:</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
@@ -4526,6 +6518,20 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <source> mints updated, </source>
         <translation>Monnayes actualisé
 , </translation>
+    </message>
+    <message>
+        <source> unconfirmed transactions removed
+</source>
+        <translation>Transactions non confirmées supprimées
+</translation>
+    </message>
+    <message>
+        <source>Disable all CASTLE specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Désactiver toutes les fonctionnalités spécifiques à CASTLE (Masternodes, Zerocoin, SwiftX, Budgétisation) (0-1, défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>Activer SwiftX, montrer les confirmations pour les transactions vérouillées (booléen, défaut : %s)</translation>
     </message>
     <message>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
@@ -4544,6 +6550,70 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Exécute la commande lorsque le meilleur bloc change et que sa taille est finalisée (%s dans cmd est remplacé par le hash du bloc, %d avec la taille du bloc)</translation>
     </message>
     <message>
+        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
+        <translation>Impossible de trouver des pièces parmi celles détenues avec moins de maxNumber de dépenses</translation>
+    </message>
+    <message>
+        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
+        <translation>Dans quelques rares cas, une dépense de 7 monnaies dépasse la taille maximale autorisée pour une transation, SVP réessayez en choisissant 6 monnaies ou moins</translation>
+    </message>
+    <message>
+        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
+        <translation>Dénomination préférée pour les Zerocoin Auto-monnayés (1/5/10/50/100/500/1000/5000), 0 pour aucune préférence. par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any automatic zCSTL backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Spécifier un chemin de sauvegarde personnalisé pour y ajouter les sauvegardes automatiques zCSTL. S'il est paramétré comme un dossier, chaque sauvegarde génère un fichier horodaté. S'il est paramétré comme fichier, chaque sauvegarde écrasera la précédente. Si le chemin de la sauvegarde est défini, il y aura 4 versions de sauvegardes</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
+        <translation>Spécifier un chemin de sauvegarde personnalisé pour y ajouter les sauvegardes automatiques zCSTL. S'il est paramétré comme un dossier, chaque sauvegarde génère un fichier horodaté. S'il est paramétré comme fichier, chaque sauvegarde écrasera la précédente.</translation>
+    </message>
+    <message>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftX requiert des entrées avec un minimum de 6 confirmations, attendez quelques minutes et réessayez.</translation>
+    </message>
+    <message>
+        <source>&lt;category&gt; can be:</source>
+        <translation>&lt;category&gt; peut être:</translation>
+    </message>
+    <message>
+        <source>Attempt to force blockchain corruption recovery</source>
+        <translation>Tenter de forcer la restauration d'une chaine de bloc corrompue</translation>
+    </message>
+    <message>
+        <source>Cannot create public spend input</source>
+        <translation>Impossible de créer une entrée de dépense publique</translation>
+    </message>
+    <message>
+        <source>CoinSpend: Accumulator witness does not verify</source>
+        <translation>CoinSpend: le témoin d'accumulateur ne vérifie pas</translation>
+    </message>
+    <message>
+        <source>Display the stake modifier calculations in the debug.log file.</source>
+        <translation>Afficher les calculs du modificateur de mise dans le fichier debug.log.</translation>
+    </message>
+    <message>
+        <source>Display verbose coin stake messages in the debug.log file.</source>
+        <translation>Afficher des messages détaillés dans le fichier debug.log.</translation>
+    </message>
+    <message>
+        <source>Enable publish hash block in &lt;address&gt;</source>
+        <translation>Activer la publication du bloc de hachage dans &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish hash transaction in &lt;address&gt;</source>
+        <translation>Activer la publication d'une transaction de hachage dans &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw block in &lt;address&gt;</source>
+        <translation>Activer la publication du bloc brut dans &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction in &lt;address&gt;</source>
+        <translation>Activer la publication des transactions brutes dans &lt;address&gt;</translation>
+    </message>
+    <message>
         <source>Enable staking functionality (0-1, default: %u)</source>
         <translation>Activer la fonctionnalité de staking (0-1, par défaut: %u)</translation>
     </message>
@@ -4560,6 +6630,30 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Impossible de créer la monnayer</translation>
     </message>
     <message>
+        <source>Failed to find Zerocoins in wallet.dat</source>
+        <translation>Impossible de trouver un Zerocoin dans le portefeuille wallet.dat</translation>
+    </message>
+    <message>
+        <source>Failed to parse public spend</source>
+        <translation>Impossible d'analyser les dépenses publiques</translation>
+    </message>
+    <message>
+        <source>Failed to select a zerocoin</source>
+        <translation>Impossible de sélectionner un zerocoin</translation>
+    </message>
+    <message>
+        <source>Failed to wipe zerocoinDB</source>
+        <translation>Impossible de nettoyer zerocoinDB</translation>
+    </message>
+    <message>
+        <source>Failed to write coin serial number into wallet</source>
+        <translation>Impossible d'écrire le numéro de série de la monnaie dans le portefeuille</translation>
+    </message>
+    <message>
+        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
+        <translation>Conserver au maximum &lt;n&gt; transactions non connectables en mémoire (par défaut: %u)</translation>
+    </message>
+    <message>
         <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
         <translation>Limiter la taille du cache de signature à &lt;n&gt; entrées (par défaut: %u)</translation>
     </message>
@@ -4569,11 +6663,11 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     </message>
     <message>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Écouter les connexions JSON-PORT sur &lt;port&gt; (par défaut: %u ou testnet: %u)</translation>
+        <translation>Écouter les connections JSON-PORT sur &lt;port&gt; (par défaut: %u ou testnet: %u)</translation>
     </message>
     <message>
         <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Écouter les connexions sur &lt;port&gt; (par défaut: %u ou testnet: %u)</translation>
+        <translation>Écouter les connections sur &lt;port&gt; (par défaut: %u ou testnet: %u)</translation>
     </message>
     <message>
         <source>Loading addresses...</source>
@@ -4612,72 +6706,44 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Emplacement du cookie d'authentification (par défaut: répertoire de données)</translation>
     </message>
     <message>
+        <source>Lock masternodes from masternode configuration file (default: %u)</source>
+        <translation>Verrouiller les masternodes à partir du fichier de configuration masternode (par défaut: %u)</translation>
+    </message>
+    <message>
         <source>Lookup(): Invalid -proxy address or hostname: '%s'</source>
         <translation>Lookup(): adresse-proxy ou nom d'hôte non valide: '%s'</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
-        <translation>Conserver au maximum &lt;n&gt; connexions avec des pairs (par défaut: %u)</translation>
+        <translation>Conserver au maximum &lt;n&gt; connections avec des pairs (par défaut: %u)</translation>
     </message>
     <message>
         <source>Masternode options:</source>
         <translation>Options Masternode:</translation>
     </message>
     <message>
-        <source>Masternode queue is full.</source>
-        <translation>La file d'attente Masternode est pleine.</translation>
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
+        <translation>Tampon de réception maximum par connection, * 1000 octets (par défaut: %u)</translation>
     </message>
     <message>
-        <source>Masternode:</source>
-        <translation>Masternode:</translation>
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
+        <translation>Tampon d'envoi maximum par connection, &lt;n&gt;* 1000 octets (par défaut: %u)</translation>
     </message>
     <message>
         <source>Mint did not make it into blockchain</source>
         <translation>Monnayés ne pas fait entre dans la blockchain</translation>
     </message>
     <message>
-        <source>Missing input transaction information.</source>
-        <translation>Informations manquantes pour la transaction entrante</translation>
-    </message>
-    <message>
-        <source>Mixing in progress...</source>
-        <translation>Mélange en cours...</translation>
-    </message>
-    <message>
-        <source>Need address because change is not exact</source>
-        <translation>Nécessite une adresse pour rendre la monnaie</translation>
-    </message>
-    <message>
-        <source>No Masternodes detected.</source>
-        <translation>Aucun Masternode détecté.</translation>
-    </message>
-    <message>
-        <source>No compatible Masternode found.</source>
-        <translation>Aucun Masternode compatible trouvé.</translation>
-    </message>
-    <message>
-        <source>No matching denominations found for mixing.</source>
-        <translation>Aucune dénomination adéquate trouvée pour le mélange.</translation>
+        <source>Need to specify a port with -whitebind: '%s'</source>
+        <translation>Nécessite de vérifier un port avec -whitebind: '%s'</translation>
     </message>
     <message>
         <source>Node relay options:</source>
         <translation>Options de relais de noeud:</translation>
     </message>
     <message>
-        <source>Non-standard public key detected.</source>
-        <translation>Clé publique non standard détectée.</translation>
-    </message>
-    <message>
-        <source>Not compatible with existing transactions.</source>
-        <translation>Incompatible avec les transactions existantes.</translation>
-    </message>
-    <message>
         <source>Not enough file descriptors available.</source>
         <translation>Pas assez de descripteurs de fichiers disponibles.</translation>
-    </message>
-    <message>
-        <source>Not in the Masternode list.</source>
-        <translation>Absent de la liste Masternodes.</translation>
     </message>
     <message>
         <source>Number of automatic wallet backups (default: 10)</source>
@@ -4686,18 +6752,6 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     <message>
         <source>Number of custom location backups to retain (default: %d)</source>
         <translation>Nombre de sauvegardes à conserver (par défaut: %d)</translation>
-    </message>
-    <message>
-        <source>Obfuscation is idle.</source>
-        <translation>L'Obfuscation est inactive.</translation>
-    </message>
-    <message>
-        <source>Obfuscation request complete:</source>
-        <translation>Demande d'obfuscation complète:</translation>
-    </message>
-    <message>
-        <source>Obfuscation request incomplete:</source>
-        <translation>Demande d'obfuscation incomplète:</translation>
     </message>
     <message>
         <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
@@ -4713,19 +6767,55 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     </message>
     <message>
         <source>Password for JSON-RPC connections</source>
-        <translation>Mot de passe pour les connexions JSON-RPC</translation>
+        <translation>Mot de passe pour les connections JSON-RPC</translation>
+    </message>
+    <message>
+        <source>Unable to find transaction containing mint %s</source>
+        <translation>Impossible de trouver une transaction contenant le monnayage %s</translation>
+    </message>
+    <message>
+        <source>Unable to find transaction containing mint, txHash: %s</source>
+        <translation>Impossible de trouver une transaction contenant le monnayage, txHash: %s</translation>
+    </message>
+    <message>
+        <source>Use block spam filter (default: %u)</source>
+        <translation>Utilise le filtre de bloc spammé (défaut: %u)</translation>
+    </message>
+    <message>
+        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>isValid(): adresses -proxy ou hostname invalides: '%s'</translation>
     </message>
     <message>
         <source>Preparing for resync...</source>
         <translation>Préparation à la resynchronistaion...</translation>
     </message>
     <message>
+        <source>Need destination or change address because change is not exact</source>
+        <translation>Nécessite une adresse de destination ou pour la monnaie car la monnaie n'est pas exacte.</translation>
+    </message>
+    <message>
+        <source>Prepend debug output with timestamp (default: %u)</source>
+        <translation>Ajouter une sortie de débogage avec l'horodatage (par défaut: %u)</translation>
+    </message>
+    <message>
         <source>Print version and exit</source>
         <translation>Imprimer la version est quitter</translation>
     </message>
     <message>
+        <source>Pubcoin not found in mint tx</source>
+        <translation>Pubcoin introuvable dans la transaction</translation>
+    </message>
+    <message>
         <source>RPC server options:</source>
         <translation>Options serveur RPC:</translation>
+    </message>
+    <message>
+        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
+        <translation>Déposer aléatoirement 1 message tous les &lt;n&gt; messages du réseau</translation>
+    </message>
+    <message>
+        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
+        <translation>Couvrir aléatoirement 1 message tous les &lt;n&gt; messages du réseau</translation>
     </message>
     <message>
         <source>Rebuild block chain index from current blk000??.dat files</source>
@@ -4740,6 +6830,14 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Réindexer la base de données des accumulateurs</translation>
     </message>
     <message>
+        <source>Relay and mine data carrier transactions (default: %u)</source>
+        <translation>Relayer et miner les transactions de support de données (par défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Relay non-P2SH multisig (default: %u)</source>
+        <translation>Relayer les multisignatures non-P2SH (par défaut: %u)</translation>
+    </message>
+    <message>
         <source>Rescan the block chain for missing wallet transactions</source>
         <translation>Rescanner la chaîne de blocs pour retrouver les transactions manquantes dans le portefeuille</translation>
     </message>
@@ -4749,7 +6847,11 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     </message>
     <message>
         <source>ResetMintZerocoin finished: </source>
-        <translation>ResetMonnayerZerocoin terminé:</translation>
+        <translation>ResetMintZerocoin terminé:</translation>
+    </message>
+    <message>
+        <source>ResetSpentZerocoin finished: </source>
+        <translation>ResetSpentZerocoin terminé:</translation>
     </message>
     <message>
         <source>Run a thread to flush wallet periodically (default: %u)</source>
@@ -4762,10 +6864,6 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
         <translation>Envoyer des transaction sans frais si possible (défaut: %u)</translation>
-    </message>
-    <message>
-        <source>Session not complete!</source>
-        <translation>Session incomplète!</translation>
     </message>
     <message>
         <source>Session timed out.</source>
@@ -4800,8 +6898,20 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Définir la clé privée masternode</translation>
     </message>
     <message>
-        <source>Signing failed.</source>
-        <translation>La signature a échoué.</translation>
+        <source>Set the number of threads to service RPC calls (default: %d)</source>
+        <translation>Définir le nombre de threads pour traiter les appels RPC (par défaut: %d)</translation>
+    </message>
+    <message>
+        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</source>
+        <translation>Définit l'indicateur DB_PRIVATE dans l'environnement db du portefeuille (défaut: %u)</translation>
+    </message>
+    <message>
+        <source>Show all debugging options (usage: --help -help-debug)</source>
+        <translation>Afficher toutes les options de déboguage (utilisation: -help -help-debug)</translation>
+    </message>
+    <message>
+        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
+        <translation>Réduire le fichier debug.log au démarrage du client (défaut: 1 quand pas de  -debug)</translation>
     </message>
     <message>
         <source>Signing timed out.</source>
@@ -4817,7 +6927,7 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     </message>
     <message>
         <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
-        <translation>Spécifiez le délai d'attente de connexion en millisecondes (minimum: 1, par défaut: %d)</translation>
+        <translation>Spécifiez le délai d'attente de connection en millisecondes (minimum: 1, par défaut: %d)</translation>
     </message>
     <message>
         <source>Specify data directory</source>
@@ -4840,6 +6950,10 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Indiquez votre propre adresse publique</translation>
     </message>
     <message>
+        <source>Spend Valid</source>
+        <translation>Dépenser Valide</translation>
+    </message>
+    <message>
         <source>Spend unconfirmed change when sending transactions (default: %u)</source>
         <translation>Dépenser la monnaie non confirmée lors de l'envoi de transactions (par défaut: %u)</translation>
     </message>
@@ -4848,12 +6962,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Options de staking:</translation>
     </message>
     <message>
-        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
-        <translation>Soumis au masternode, en attente d'entrées supplémentaires ( %u / %d ) %s</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting in queue %s</source>
-        <translation>Soumis au masternode, en file d'attente %s</translation>
+        <source>Stop running after importing blocks from disk (default: %u)</source>
+        <translation>Arrêter l'exécution après l'importation des blocs du disque (défaut: %u)</translation>
     </message>
     <message>
         <source>Synchronization failed</source>
@@ -4866,6 +6976,10 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     <message>
         <source>Synchronization pending...</source>
         <translation>Synchronisation en attente...</translation>
+    </message>
+    <message>
+        <source>Synchronizing budgets...</source>
+        <translation>Synchronisation des budgets...</translation>
     </message>
     <message>
         <source>Synchronizing masternode winners...</source>
@@ -4888,14 +7002,6 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>La dépense en pièces a été utilisée</translation>
     </message>
     <message>
-        <source>The new spend coin transaction did not verify</source>
-        <translation>La nouvelle transaction de pièces n'a pas été vérifiée</translation>
-    </message>
-    <message>
-        <source>The selected mint coin is an invalid coin</source>
-        <translation>La pièce de monnaie sélectionnée est une pièce invalide</translation>
-    </message>
-    <message>
         <source>The transaction did not verify</source>
         <translation>La transaction n'a pas été vérifiée</translation>
     </message>
@@ -4910,10 +7016,6 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     <message>
         <source>This is intended for regression testing tools and app development.</source>
         <translation>Ceci est destiné aux outils de test de régression et au développement d'applications.</translation>
-    </message>
-    <message>
-        <source>This is not a Masternode.</source>
-        <translation>Ceci n'est pas un Masternode.</translation>
     </message>
     <message>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
@@ -4945,19 +7047,7 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     </message>
     <message>
         <source>Transaction amounts must be positive</source>
-        <translation>Le montant de la transaction doit être posiftif</translation>
-    </message>
-    <message>
-        <source>Transaction created successfully.</source>
-        <translation>Transaction créée avec succès.</translation>
-    </message>
-    <message>
-        <source>Transaction fees are too high.</source>
-        <translation>Les frais de transaction sont trop élevés.</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>Transaction non valide.</translation>
+        <translation>Le montant de la transaction doit être positif</translation>
     </message>
     <message>
         <source>Transaction too large for fee policy</source>
@@ -4968,14 +7058,6 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Transaction trop importante</translation>
     </message>
     <message>
-        <source>Transmitting final transaction.</source>
-        <translation>Transmission de la transaction finale.</translation>
-    </message>
-    <message>
-        <source>Try to spend with a higher security level to include more coins</source>
-        <translation>Essayez de dépenser avec un niveau de sécurité plus élevé pour inclure plus de pièces</translation>
-    </message>
-    <message>
         <source>Trying to spend an already spent serial #, try again.</source>
         <translation>Le portefeuille essaye de dépenser un numéro de série déjà dépensé, réessayez.</translation>
     </message>
@@ -4984,8 +7066,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Impossible de joindre %s sur cet ordinateur (la liaison a retourné l'erreur %s)</translation>
     </message>
     <message>
-        <source>Unable to find transaction containing mint</source>
-        <translation>Impossible de trouver la transaction contenant de la monnayez</translation>
+        <source>Unable to generate initial key</source>
+        <translation>Impossible de générer la clé initiale</translation>
     </message>
     <message>
         <source>Unable to sign spork message, wrong key?</source>
@@ -4998,10 +7080,6 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Le réseau spécifié dans -onlynet: '%s' est inconnu</translation>
-    </message>
-    <message>
-        <source>Unknown state: id = %u</source>
-        <translation>État inconnu: id = %u</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format</source>
@@ -5024,16 +7102,16 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Utiliser le réseau test</translation>
     </message>
     <message>
+        <source>User Agent comment (%s) contains unsafe characters.</source>
+        <translation>Le commentaire de l'Agent Utilisateur (%s) contient des caractères non sécurisés.</translation>
+    </message>
+    <message>
         <source>Username for JSON-RPC connections</source>
         <translation>Nom d'utilisateur pour les connections JSON-RPC</translation>
     </message>
     <message>
         <source>Value is below the smallest available denomination (= 1) of zCSTL</source>
         <translation>La valeur est inférieure à la plus petite dénomination disponible (= 1) de zCSTL</translation>
-    </message>
-    <message>
-        <source>Value more than Obfuscation pool maximum allows.</source>
-        <translation>Valeur supérieure au maximum permis par le pool d'Obfuscation.</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -5044,17 +7122,12 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Vérification du portefeuille...</translation>
     </message>
     <message>
-        <source>Version 1 zCSTL require a security level of 100 to successfully spend.</source>
-        <translation>La version 1 de zCSTL requiert un niveau de sécurité de 100 pour les dépenser.
-</translation>
+        <source>Wallet %s resides outside data directory %s</source>
+        <translation>Le portefeuille %s se situe en dehors du répertoire de données %s</translation>
     </message>
     <message>
-        <source>Wallet is locked.</source>
-        <translation>Le portefeuille est vérouillé.</translation>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart Castle Core to complete</source>
-        <translation>Le portefeuille doit être réécrit: redémarrez Castle Core pour terminer</translation>
+        <source>Wallet needed to be rewritten: restart CASTLE Core to complete</source>
+        <translation>Le portefeuille doit être réécrit: redémarrez CASTLE Core pour terminer</translation>
     </message>
     <message>
         <source>Wallet options:</source>
@@ -5081,24 +7154,12 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Avertissement: argument non pris en charge -debugnet ignoré, utilisez -debug=net.</translation>
     </message>
     <message>
-        <source>Will retry...</source>
-        <translation>Va réessayer ...</translation>
-    </message>
-    <message>
         <source>You don't have enough Zerocoins in your wallet</source>
         <translation>Vous n'avez pas assez de Zerocoins dans votre portefeuille</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>Vous devez reconstruire la base de données en utilisant -reindex pour modifier -txindex</translation>
-    </message>
-    <message>
-        <source>Your entries added successfully.</source>
-        <translation>Vos entrées ajoutées avec succès.</translation>
-    </message>
-    <message>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation>Votre transaction a été acceptée dans la pool!</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>
@@ -5110,7 +7171,7 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     </message>
     <message>
         <source>Zerocoin options:</source>
-        <translation>Options de Zerocoin:</translation>
+        <translation>Options Zerocoin:</translation>
     </message>
     <message>
         <source>on startup</source>
@@ -5119,6 +7180,25 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat corrompu, le sauvetage a échoué</translation>
+    </message>
+</context>
+<context>
+    <name>send</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>Envoyer</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Bouton poussoir</translation>
     </message>
 </context>
 </TS>

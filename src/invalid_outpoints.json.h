@@ -1,10 +1,9 @@
-// Copyright (c) 2018 The CSTLX developers
-// Copyright (c) 2018 The CSTL developers
+// Copyright (c) 2018 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef CSTL_INVALID_OUTPOINTS_JSON_H
-#define CSTL_INVALID_OUTPOINTS_JSON_H
+#ifndef CASTLE_INVALID_OUTPOINTS_JSON_H
+#define CASTLE_INVALID_OUTPOINTS_JSON_H
 #include <string>
 
 std::string LoadInvalidOutPoints()
@@ -6794,4 +6793,4 @@ std::string LoadInvalidOutPoints()
     return str;
 }
 
-#endif //CSTL_INVALID_OUTPOINTS_JSON_H
+#endif //CASTLE_INVALID_OUTPOINTS_JSON_H

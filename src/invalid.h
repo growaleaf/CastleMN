@@ -1,12 +1,11 @@
 // Copyright (c) 2018 The PIVX developers
-// Copyright (c) 2018 The CSTL developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef CSTL_INVALID_H
-#define CSTL_INVALID_H
+#ifndef CASTLE_INVALID_H
+#define CASTLE_INVALID_H
 
-#endif //CSTL_INVALID_H
+#endif //CASTLE_INVALID_H
 
 #include <libzerocoin/bignum.h>
 #include <univalue/include/univalue.h>

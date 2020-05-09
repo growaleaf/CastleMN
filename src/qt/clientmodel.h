@@ -1,13 +1,13 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018 The CSTL developers
+// Copyright (c) 2015-2019 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_QT_CLIENTMODEL_H
 #define BITCOIN_QT_CLIENTMODEL_H
 
+#include "uint256.h"
 #include <QObject>
 #include <QDateTime>
 
@@ -38,7 +38,7 @@ enum NumConnections {
     CONNECTIONS_ALL = (CONNECTIONS_IN | CONNECTIONS_OUT),
 };
 
-/** Model for CSTL network client. */
+/** Model for CASTLE network client. */
 class ClientModel : public QObject
 {
     Q_OBJECT
@@ -63,6 +63,8 @@ public:
     double getVerificationProgress() const;
     QDateTime getLastBlockDate() const;
 
+    QString getLastBlockHash() const;
+
     //! Return true if core is doing initial block download
     bool inInitialBlockDownload() const;
     //! Return true if core is importing blocks
@@ -75,6 +77,7 @@ public:
     bool isReleaseVersion() const;
     QString clientName() const;
     QString formatClientStartupTime() const;
+    QString dataDir() const;
 
     bool getTorInfo(std::string& ip_port) const;
 

@@ -1,1 +1,2 @@
 contrib/castled.bash-completion	castled
+contrib/castle-cli.bash-completion castle-cli

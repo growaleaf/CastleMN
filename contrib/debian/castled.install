@@ -1,2 +1,3 @@
 usr/local/bin/castled usr/bin
 usr/local/bin/castle-cli usr/bin
+debian/examples/castle.conf etc/castle

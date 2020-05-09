@@ -13,6 +13,7 @@ QT_TS = \
   qt/locale/castle_da.ts \
   qt/locale/castle_de.ts \
   qt/locale/castle_en.ts \
+  qt/locale/castle_en_GB.ts \
   qt/locale/castle_en_US.ts \
   qt/locale/castle_eo.ts \
   qt/locale/castle_es.ts \
@@ -43,86 +44,164 @@ QT_TS = \
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
   qt/forms/askpassphrasedialog.ui \
-  qt/forms/bip38tooldialog.ui \
   qt/forms/coincontroldialog.ui \
   qt/forms/blockexplorer.ui \
-  qt/forms/obfuscationconfig.ui \
   qt/forms/editaddressdialog.ui \
+  qt/forms/governancepage.ui \
   qt/forms/helpmessagedialog.ui \
   qt/forms/intro.ui \
-  qt/forms/masternodelist.ui \
-  qt/forms/multisenddialog.ui \
-  qt/forms/multisigdialog.ui\
   qt/forms/openuridialog.ui \
-  qt/forms/axiomsannouncementrecord.ui \
-  qt/forms/axiomsannouncementview.ui \
   qt/forms/optionsdialog.ui \
-  qt/forms/overviewpage.ui \
-  qt/forms/receivecoinsdialog.ui \
-  qt/forms/privacydialog.ui \
-  qt/forms/receiverequestdialog.ui \
   qt/forms/rpcconsole.ui \
-  qt/forms/sendcoinsdialog.ui \
-  qt/forms/sendcoinsentry.ui \
-  qt/forms/signverifymessagedialog.ui \
-  qt/forms/transactiondescdialog.ui \
-  qt/forms/zpivcontroldialog.ui
+  qt/castle/forms/loadingdialog.ui \
+  qt/forms/zcstlcontroldialog.ui \
+  qt/castle/forms/snackbar.ui \
+  qt/castle/forms/navmenuwidget.ui \
+  qt/castle/forms/lockunlock.ui \
+  qt/castle/forms/expandablebutton.ui \
+  qt/castle/forms/receivedialog.ui \
+  qt/castle/forms/walletpassworddialog.ui \
+  qt/castle/forms/topbar.ui \
+  qt/castle/forms/txrow.ui \
+  qt/castle/forms/dashboardwidget.ui \
+  qt/castle/forms/coincontrolcstlwidget.ui \
+  qt/castle/forms/addresslabelrow.ui \
+  qt/castle/forms/contactdropdownrow.ui \
+  qt/castle/forms/mninfodialog.ui \
+  qt/castle/forms/optionbutton.ui \
+  qt/castle/forms/masternodewizarddialog.ui \
+  qt/castle/forms/mnrow.ui \
+  qt/castle/forms/masternodeswidget.ui \
+  qt/castle/forms/myaddressrow.ui \
+  qt/castle/forms/csrow.ui \
+  qt/castle/forms/sendchangeaddressdialog.ui \
+  qt/castle/forms/sendconfirmdialog.ui \
+  qt/castle/forms/sendcustomfeedialog.ui \
+  qt/castle/forms/sendchangeaddressdialog.ui \
+  qt/castle/forms/sendmultirow.ui \
+  qt/castle/forms/send.ui \
+  qt/castle/forms/addnewaddressdialog.ui \
+  qt/castle/forms/addnewcontactdialog.ui \
+  qt/castle/forms/requestdialog.ui \
+  qt/castle/forms/receivewidget.ui \
+  qt/castle/forms/tooltipmenu.ui \
+  qt/castle/forms/addresseswidget.ui \
+  qt/castle/forms/defaultdialog.ui \
+  qt/castle/forms/denomgenerationdialog.ui \
+  qt/castle/forms/privacywidget.ui \
+  qt/castle/forms/coldstakingwidget.ui \
+  qt/castle/settings/forms/settingsbackupwallet.ui \
+  qt/castle/settings/forms/settingsbittoolwidget.ui \
+  qt/castle/settings/forms/settingsconsolewidget.ui \
+  qt/castle/settings/forms/settingsdisplayoptionswidget.ui \
+  qt/castle/settings/forms/settingsfaqwidget.ui \
+  qt/castle/settings/forms/settingsinformationwidget.ui \
+  qt/castle/settings/forms/settingsmainoptionswidget.ui \
+  qt/castle/settings/forms/settingsmultisenddialog.ui \
+  qt/castle/settings/forms/settingsmultisendwidget.ui \
+  qt/castle/settings/forms/settingssignmessagewidgets.ui \
+  qt/castle/settings/forms/settingswalletoptionswidget.ui \
+  qt/castle/settings/forms/settingswalletrepairwidget.ui \
+  qt/castle/settings/forms/settingswidget.ui \
+  qt/castle/forms/welcomecontentwidget.ui \
+  qt/castle/forms/splash.ui
 
 QT_MOC_CPP = \
   qt/moc_addressbookpage.cpp \
   qt/moc_addresstablemodel.cpp \
   qt/moc_askpassphrasedialog.cpp \
   qt/moc_bantablemodel.cpp \
-  qt/moc_bip38tooldialog.cpp \
   qt/moc_bitcoinaddressvalidator.cpp \
   qt/moc_bitcoinamountfield.cpp \
-  qt/moc_bitcoingui.cpp \
+  qt/castle/moc_castlegui.cpp \
   qt/moc_bitcoinunits.cpp \
   qt/moc_blockexplorer.cpp \
   qt/moc_clientmodel.cpp \
   qt/moc_coincontroldialog.cpp \
   qt/moc_coincontroltreewidget.cpp \
   qt/moc_csvmodelwriter.cpp \
-  qt/moc_obfuscationconfig.cpp \
   qt/moc_editaddressdialog.cpp \
+  qt/moc_governancepage.cpp \
   qt/moc_guiutil.cpp \
   qt/moc_intro.cpp \
   qt/moc_macdockiconhandler.cpp \
   qt/moc_macnotificationhandler.cpp \
-  qt/moc_masternodelist.cpp \
-  qt/moc_multisenddialog.cpp \
-  qt/moc_multisigdialog.cpp\
   qt/moc_notificator.cpp \
   qt/moc_openuridialog.cpp \
-  qt/moc_axiomsannouncementrecord.cpp \
-  qt/moc_axiomsannouncementview.cpp \
   qt/moc_optionsdialog.cpp \
   qt/moc_optionsmodel.cpp \
-  qt/moc_overviewpage.cpp \
   qt/moc_peertablemodel.cpp \
   qt/moc_paymentserver.cpp \
   qt/moc_qvalidatedlineedit.cpp \
   qt/moc_qvaluecombobox.cpp \
-  qt/moc_receivecoinsdialog.cpp \
-  qt/moc_privacydialog.cpp \
-  qt/moc_receiverequestdialog.cpp \
+  qt/moc_proposalframe.cpp \
   qt/moc_recentrequeststablemodel.cpp \
   qt/moc_rpcconsole.cpp \
-  qt/moc_sendcoinsdialog.cpp \
-  qt/moc_sendcoinsentry.cpp \
-  qt/moc_signverifymessagedialog.cpp \
   qt/moc_splashscreen.cpp \
   qt/moc_trafficgraphwidget.cpp \
   qt/moc_transactiondesc.cpp \
-  qt/moc_transactiondescdialog.cpp \
   qt/moc_transactionfilterproxy.cpp \
   qt/moc_transactiontablemodel.cpp \
-  qt/moc_transactionview.cpp \
   qt/moc_utilitydialog.cpp \
-  qt/moc_walletframe.cpp \
   qt/moc_walletmodel.cpp \
-  qt/moc_walletview.cpp \
-  qt/moc_zpivcontroldialog.cpp
+  qt/castle/moc_loadingdialog.cpp \
+  qt/moc_zcstlcontroldialog.cpp \
+  qt/castle/moc_pwidget.cpp \
+  qt/castle/moc_snackbar.cpp \
+  qt/castle/moc_navmenuwidget.cpp \
+  qt/castle/moc_lockunlock.cpp \
+  qt/castle/moc_expandablebutton.cpp \
+  qt/castle/moc_furabstractlistitemdelegate.cpp \
+  qt/castle/moc_receivedialog.cpp \
+  qt/castle/moc_walletpassworddialog.cpp \
+  qt/castle/moc_pfborderimage.cpp \
+  qt/castle/moc_topbar.cpp \
+  qt/castle/moc_txrow.cpp \
+  qt/castle/moc_dashboardwidget.cpp \
+  qt/castle/moc_coincontrolcstlwidget.cpp \
+  qt/castle/moc_addresslabelrow.cpp \
+  qt/castle/moc_contactdropdownrow.cpp \
+  qt/castle/moc_mninfodialog.cpp \
+  qt/castle/moc_optionbutton.cpp \
+  qt/castle/moc_coldstakingmodel.cpp \
+  qt/castle/moc_mnmodel.cpp \
+  qt/castle/moc_masternodewizarddialog.cpp \
+  qt/castle/moc_mnrow.cpp \
+  qt/castle/moc_masternodeswidget.cpp \
+  qt/castle/moc_myaddressrow.cpp \
+  qt/castle/moc_csrow.cpp \
+  qt/castle/moc_contactsdropdown.cpp \
+  qt/castle/moc_sendchangeaddressdialog.cpp \
+  qt/castle/moc_sendconfirmdialog.cpp \
+  qt/castle/moc_sendcustomfeedialog.cpp \
+  qt/castle/moc_sendchangeaddressdialog.cpp \
+  qt/castle/moc_sendmultirow.cpp \
+  qt/castle/moc_send.cpp \
+  qt/castle/moc_addnewaddressdialog.cpp \
+  qt/castle/moc_addnewcontactdialog.cpp \
+  qt/castle/moc_requestdialog.cpp \
+  qt/castle/moc_receivewidget.cpp \
+  qt/castle/moc_tooltipmenu.cpp \
+  qt/castle/moc_addresseswidget.cpp \
+  qt/castle/moc_defaultdialog.cpp \
+  qt/castle/moc_denomgenerationdialog.cpp \
+  qt/castle/moc_privacywidget.cpp \
+  qt/castle/moc_coldstakingwidget.cpp \
+  qt/castle/settings/moc_settingsbackupwallet.cpp \
+  qt/castle/settings/moc_settingsbittoolwidget.cpp \
+  qt/castle/settings/moc_settingsconsolewidget.cpp \
+  qt/castle/settings/moc_settingsdisplayoptionswidget.cpp \
+  qt/castle/settings/moc_settingsfaqwidget.cpp \
+  qt/castle/settings/moc_settingsinformationwidget.cpp \
+  qt/castle/settings/moc_settingsmainoptionswidget.cpp \
+  qt/castle/settings/moc_settingsmultisenddialog.cpp \
+  qt/castle/settings/moc_settingsmultisendwidget.cpp \
+  qt/castle/settings/moc_settingssignmessagewidgets.cpp \
+  qt/castle/settings/moc_settingswalletoptionswidget.cpp \
+  qt/castle/settings/moc_settingswalletrepairwidget.cpp \
+  qt/castle/settings/moc_settingswidget.cpp \
+  qt/castle/moc_welcomecontentwidget.cpp \
+  qt/castle/moc_splash.cpp
 
 BITCOIN_MM = \
   qt/macdockiconhandler.mm \
@@ -132,8 +211,8 @@ QT_MOC = \
   qt/castle.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
-  qt/overviewpage.moc \
-  qt/rpcconsole.moc
+  qt/rpcconsole.moc \
+  qt/castle/settings/moc_settingsconsolewidget.cpp
 
 QT_QRC_CPP = qt/qrc_castle.cpp
 QT_QRC = qt/castle.qrc
@@ -149,63 +228,111 @@ BITCOIN_QT_H = \
   qt/addresstablemodel.h \
   qt/askpassphrasedialog.h \
   qt/bantablemodel.h \
-  qt/bip38tooldialog.h \
   qt/bitcoinaddressvalidator.h \
   qt/bitcoinamountfield.h \
-  qt/bitcoingui.h \
+  qt/castle/castlegui.h \
   qt/bitcoinunits.h \
   qt/blockexplorer.h \
   qt/clientmodel.h \
   qt/coincontroldialog.h \
   qt/coincontroltreewidget.h \
   qt/csvmodelwriter.h \
-  qt/obfuscationconfig.h \
   qt/editaddressdialog.h \
+  qt/governancepage.h \
   qt/guiconstants.h \
   qt/guiutil.h \
   qt/intro.h \
   qt/macdockiconhandler.h \
   qt/macnotificationhandler.h \
-  qt/masternodelist.h \
-  qt/multisenddialog.h \
-  qt/multisigdialog.h\
   qt/networkstyle.h \
   qt/notificator.h \
   qt/openuridialog.h \
   qt/optionsdialog.h \
   qt/optionsmodel.h \
-  qt/overviewpage.h \
-  qt/axiomsannouncementrecord.h \
-  qt/axiomsannouncementview.h \
   qt/paymentrequestplus.h \
   qt/paymentserver.h \
   qt/peertablemodel.h \
   qt/platformstyle.h \
+  qt/proposalframe.h \
   qt/qvalidatedlineedit.h \
   qt/qvaluecombobox.h \
-  qt/receivecoinsdialog.h \
-  qt/privacydialog.h \
-  qt/receiverequestdialog.h \
   qt/recentrequeststablemodel.h \
   qt/rpcconsole.h \
-  qt/sendcoinsdialog.h \
-  qt/sendcoinsentry.h \
-  qt/signverifymessagedialog.h \
   qt/splashscreen.h \
   qt/trafficgraphwidget.h \
   qt/transactiondesc.h \
-  qt/transactiondescdialog.h \
   qt/transactionfilterproxy.h \
   qt/transactionrecord.h \
   qt/transactiontablemodel.h \
-  qt/transactionview.h \
   qt/utilitydialog.h \
-  qt/walletframe.h \
   qt/walletmodel.h \
   qt/walletmodeltransaction.h \
-  qt/walletview.h \
+  qt/castle/prunnable.h \
+  qt/castle/pfborderimage.h \
+  qt/castle/loadingdialog.h \
   qt/winshutdownmonitor.h \
-  qt/zpivcontroldialog.h
+  qt/zcstlcontroldialog.h \
+  qt/castle/pwidget.h \
+  qt/castle/guitransactionsutils.h \
+  qt/castle/snackbar.h \
+  qt/castle/navmenuwidget.h \
+  qt/castle/lockunlock.h \
+  qt/castle/receivedialog.h \
+  qt/castle/furlistrow.h \
+  qt/castle/furabstractlistitemdelegate.h \
+  qt/castle/txviewholder.h \
+  qt/castle/qtutils.h \
+  qt/castle/expandablebutton.h \
+  qt/castle/walletpassworddialog.h \
+  qt/castle/topbar.h \
+  qt/castle/txrow.h \
+  qt/castle/addressholder.h \
+  qt/castle/addressfilterproxymodel.h \
+  qt/castle/dashboardwidget.h \
+  qt/castle/coincontrolcstlwidget.h \
+  qt/castle/addresslabelrow.h \
+  qt/castle/contactdropdownrow.h \
+  qt/castle/mninfodialog.h \
+  qt/castle/optionbutton.h \
+  qt/castle/coldstakingmodel.h \
+  qt/castle/mnmodel.h \
+  qt/castle/masternodewizarddialog.h \
+  qt/castle/mnrow.h \
+  qt/castle/masternodeswidget.h \
+  qt/castle/myaddressrow.h \
+  qt/castle/csrow.h \
+  qt/castle/contactsdropdown.h \
+  qt/castle/sendchangeaddressdialog.h \
+  qt/castle/sendconfirmdialog.h \
+  qt/castle/sendcustomfeedialog.h \
+  qt/castle/sendchangeaddressdialog.h \
+  qt/castle/sendmultirow.h \
+  qt/castle/send.h \
+  qt/castle/addnewaddressdialog.h \
+  qt/castle/addnewcontactdialog.h \
+  qt/castle/requestdialog.h \
+  qt/castle/receivewidget.h \
+  qt/castle/tooltipmenu.h \
+  qt/castle/addresseswidget.h \
+  qt/castle/defaultdialog.h \
+  qt/castle/denomgenerationdialog.h \
+  qt/castle/privacywidget.h \
+  qt/castle/coldstakingwidget.h \
+  qt/castle/settings/settingsbackupwallet.h \
+  qt/castle/settings/settingsbittoolwidget.h \
+  qt/castle/settings/settingsconsolewidget.h \
+  qt/castle/settings/settingsdisplayoptionswidget.h \
+  qt/castle/settings/settingsfaqwidget.h \
+  qt/castle/settings/settingsinformationwidget.h \
+  qt/castle/settings/settingsmainoptionswidget.h \
+  qt/castle/settings/settingsmultisenddialog.h \
+  qt/castle/settings/settingsmultisendwidget.h \
+  qt/castle/settings/settingssignmessagewidgets.h \
+  qt/castle/settings/settingswalletoptionswidget.h \
+  qt/castle/settings/settingswalletrepairwidget.h \
+  qt/castle/settings/settingswidget.h \
+  qt/castle/welcomecontentwidget.h \
+  qt/castle/splash.h
 
 RES_ICONS = \
   qt/res/icons/add.png \
@@ -216,6 +343,7 @@ RES_ICONS = \
   qt/res/icons/bitcoin.png \
   qt/res/icons/bitcoin_testnet.ico \
   qt/res/icons/bitcoin_testnet.png \
+  qt/res/icons/bitcoin_regtest.png \
   qt/res/icons/browse.png \
   qt/res/icons/clock1.png \
   qt/res/icons/clock2.png \
@@ -253,6 +381,8 @@ RES_ICONS = \
   qt/res/icons/remove.png \
   qt/res/icons/send.png \
   qt/res/icons/send_dark.png \
+  qt/res/icons/governance.png \
+  qt/res/icons/governance_dark.png \
   qt/res/icons/staking_active.png \
   qt/res/icons/staking_inactive.png \
   qt/res/icons/synced.png \
@@ -264,26 +394,236 @@ RES_ICONS = \
   qt/res/icons/tx_input.png \
   qt/res/icons/tx_output.png \
   qt/res/icons/tx_mined.png \
+  qt/res/icons/ic-transaction-received.svg \
+  qt/res/icons/ic-transaction-mint.svg \
+  qt/res/icons/ic-transaction-sent.svg \
+  qt/res/icons/ic-transaction-staked.svg \
   qt/res/icons/unit_castle.png \
   qt/res/icons/unit_mcastle.png \
   qt/res/icons/unit_ucastle.png \
   qt/res/icons/unit_tcastle.png \
   qt/res/icons/unit_tmcastle.png \
   qt/res/icons/unit_tucastle.png \
-  qt/res/icons/axiom.png
+  qt/res/icons/yesvote.png \
+  qt/res/icons/novote.png \
+  qt/res/icons/abstainvote.png \
+  qt/castle/res/img/bg-dashboard-banner.png \
+  qt/castle/res/img/bg-multi-number-dark.svg \
+  qt/castle/res/img/ic-check-locked.svg \
+  qt/castle/res/img/ic-nav-address.svg \
+  qt/castle/res/img/ic-update.svg \
+  qt/castle/res/img/bg-multi-number.svg \
+  qt/castle/res/img/ic-check-mint-off.svg \
+  qt/castle/res/img/ic-nav-cold-staking.svg \
+  qt/castle/res/img/ic-nav-cold-staking-active.svg \
+  qt/castle/res/img/ic-nav-dashboard-active.svg \
+  qt/castle/res/img/ic-wallet-status-locked.svg \
+  qt/castle/res/img/bg-splash.svg \
+  qt/castle/res/img/bg-splash.png \
+  qt/castle/res/img/ic-check-mint.svg \
+  qt/castle/res/img/ic-nav-dashboard-hover.svg \
+  qt/castle/res/img/ic-wallet-status-staking.svg \
+  qt/castle/res/img/ic-check-peers-off.svg \
+  qt/castle/res/img/ic-nav-dashboard.svg \
+  qt/castle/res/img/ic-wallet-status-unlocked.svg \
+  qt/castle/res/img/ic-check-peers.svg \
+  qt/castle/res/img/ic-nav-master-active.svg \
+  qt/castle/res/img/ic-watch-password-white.svg \
+  qt/castle/res/img/bg-welcome-container.jpg \
+  qt/castle/res/img/bg-welcome-container.png \
+  qt/castle/res/img/bg-welcome-container.svg \
+  qt/castle/res/img/bg-welcome-container@2x.png \
+  qt/castle/res/img/bg-welcome-container@3x.png \
+  qt/castle/res/img/ic-check-staking-off.svg \
+  qt/castle/res/img/ic-nav-master-hover.svg \
+  qt/castle/res/img/ic-watch-password.svg \
+  qt/castle/res/img/bg-welcome.jpg \
+  qt/castle/res/img/bg-welcome.svg \
+  qt/castle/res/img/bg-welcome@2x.jpg \
+  qt/castle/res/img/bg-welcome@3x.jpg \
+  qt/castle/res/img/bg-welcome.png \
+  qt/castle/res/img/ic-check-staking.svg \
+  qt/castle/res/img/ic-nav-master.svg \
+  qt/castle/res/img/img-dashboard-banner.jpg \
+  qt/castle/res/img/btn-radio-active.svg \
+  qt/castle/res/img/ic-check-sync-off.svg \
+  qt/castle/res/img/ic-nav-privacy-active.svg \
+  qt/castle/res/img/img-empty-contacts.svg \
+  qt/castle/res/img/btn-radio-off.svg \
+  qt/castle/res/img/ic-check-sync.png \
+  qt/castle/res/img/ic-nav-privacy-hover.svg \
+  qt/castle/res/img/img-empty-dark-contacts.svg \
+  qt/castle/res/img/ic-contact-arrow-down.svg \
+  qt/castle/res/img/ic-contact-arrow-down-white.svg \
+  qt/castle/res/img/ic-check-sync.svg \
+  qt/castle/res/img/ic-check-faq.svg \
+  qt/castle/res/img/ic-nav-privacy.svg \
+  qt/castle/res/img/img-empty-dark-error.svg \
+  qt/castle/res/img/ic-add-label.svg \
+  qt/castle/res/img/ic-pending.svg \
+  qt/castle/res/img/ic-check-theme-dark.svg \
+  qt/castle/res/img/ic-nav-receive-active.svg \
+  qt/castle/res/img/img-empty-dark-masternode.svg \
+  qt/castle/res/img/ic-add-liliac.svg \
+  qt/castle/res/img/ic-check-theme-light.svg \
+  qt/castle/res/img/ic-nav-receive-hover.svg \
+  qt/castle/res/img/img-empty-dark-multisend.svg \
+  qt/castle/res/img/ic-add-purple.svg \
+  qt/castle/res/img/ic-check-white.svg \
+  qt/castle/res/img/ic-nav-receive.svg \
+  qt/castle/res/img/img-empty-dark-peers.svg \
+  qt/castle/res/img/ic-add.svg \
+  qt/castle/res/img/ic-check.svg \
+  qt/castle/res/img/ic-nav-send-active.svg \
+  qt/castle/res/img/img-empty-dark-staking-off.svg \
+  qt/castle/res/img/img-empty-dark-staking-on.svg \
+  qt/castle/res/img/ic-address-book-grey.svg \
+  qt/castle/res/img/ic-chevron-left.svg \
+  qt/castle/res/img/ic-nav-send-hover.svg \
+  qt/castle/res/img/img-empty-dark-transactions.svg \
+  qt/castle/res/img/ic-address-book-white.svg \
+  qt/castle/res/img/ic-chevron-right.svg \
+  qt/castle/res/img/ic-nav-send.svg \
+  qt/castle/res/img/img-empty-error.svg \
+  qt/castle/res/img/ic-address-book.svg \
+  qt/castle/res/img/ic-clear-liliac.svg \
+  qt/castle/res/img/ic-nav-settings-active.svg \
+  qt/castle/res/img/img-empty-masternode.svg \
+  qt/castle/res/img/ic-address-send-white.svg \
+  qt/castle/res/img/ic-clear-purple.svg \
+  qt/castle/res/img/ic-nav-settings-hover.svg \
+  qt/castle/res/img/img-empty-multisend.svg \
+  qt/castle/res/img/ic-address-send.svg \
+  qt/castle/res/img/ic-close-white.svg \
+  qt/castle/res/img/ic-nav-settings.svg \
+  qt/castle/res/img/img-empty-peers.svg \
+  qt/castle/res/img/img-empty-privacy.svg \
+  qt/castle/res/img/img-empty-privacy-dark.svg \
+  qt/castle/res/img/ic-arrow-drop-down-white.svg \
+  qt/castle/res/img/ic-close.svg \
+  qt/castle/res/img/ic-radio-liliac-on.svg \
+  qt/castle/res/img/img-empty-staking-off.svg \
+  qt/castle/res/img/ic-arrow-drop-down.svg \
+  qt/castle/res/img/ic-coin-cstl.svg \
+  qt/castle/res/img/ic-receive-off.svg \
+  qt/castle/res/img/img-empty-staking-on.svg \
+  qt/castle/res/img/ic-arrow-drop-up-white.svg \
+  qt/castle/res/img/ic-coin-zcstl.png \
+  qt/castle/res/img/ic-receive-on.svg \
+  qt/castle/res/img/img-empty-transactions.svg \
+  qt/castle/res/img/ic-arrow-drop-up.svg \
+  qt/castle/res/img/ic-coin-zcstl.svg \
+  qt/castle/res/img/ic-received.svg \
+  qt/castle/res/img/img-logo-castle.png \
+  qt/castle/res/img/ic-arrow-drop-white-down.svg \
+  qt/castle/res/img/ic-combo-box.svg \
+  qt/castle/res/img/ic-send.svg \
+  qt/castle/res/img/img-logo-castle@2x.png \
+  qt/castle/res/img/ic-arrow-purple-down.svg \
+  qt/castle/res/img/ic-connect.svg \
+  qt/castle/res/img/ic-submenu-lock.svg \
+  qt/castle/res/img/img-logo-castle@3x.png \
+  qt/castle/res/img/img-logo-castle.svg \
+  qt/castle/res/img/ic-arrow-right-white.svg \
+  qt/castle/res/img/ic-arrow-left-white.svg \
+  qt/castle/res/img/ic-arrow-left.svg \
+  qt/castle/res/img/ic-copy-liliac.svg \
+  qt/castle/res/img/ic-submenu-staking.svg \
+  qt/castle/res/img/img-nav-logo-castle.png \
+  qt/castle/res/img/ic-arrow-right.svg \
+  qt/castle/res/img/ic-copy.svg \
+  qt/castle/res/img/ic-copy-big.svg \
+  qt/castle/res/img/ic-copy-big-white.svg \
+  qt/castle/res/img/ic-submenu-unlock.svg \
+  qt/castle/res/img/img-nav-logo.png \
+  qt/castle/res/img/ic-arrow-white-left.svg \
+  qt/castle/res/img/ic-exit.svg \
+  qt/castle/res/img/ic-switch-liliac-on.svg \
+  qt/castle/res/img/img-nav-logo.svg \
+  qt/castle/res/img/ic-arrow-white-right.svg \
+  qt/castle/res/img/ic-expand.svg \
+  qt/castle/res/img/ic-switch-off.svg \
+  qt/castle/res/img/img-qr-test-big.png \
+  qt/castle/res/img/ic-check-active.svg \
+  qt/castle/res/img/ic-folder.svg \
+  qt/castle/res/img/ic-switch-on.svg \
+  qt/castle/res/img/img-qr-test.png \
+  qt/castle/res/img/ic-check-box.svg \
+  qt/castle/res/img/ic-check-box-dark-active.svg \
+  qt/castle/res/img/ic-check-box-indeterminate.svg \
+  qt/castle/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/castle/res/img/ic-label-liliac.svg \
+  qt/castle/res/img/ic-transaction-warning.svg \
+  qt/castle/res/img/ic-transaction-mint.svg \
+  qt/castle/res/img/ic-transaction-mint-inactive.svg \
+  qt/castle/res/img/ic-check-cold-staking.svg \
+  qt/castle/res/img/ic-check-cold-staking-off.svg \
+  qt/castle/res/img/ic-check-cold-staking-enabled.svg \
+  qt/castle/res/img/dark/ic-transaction-cs-contract.svg \
+  qt/castle/res/img/dark/ic-transaction-cs-contract-inactive.svg \
+  qt/castle/res/img/img-qr.svg \
+  qt/castle/res/img/ic-check-connect-off.svg \
+  qt/castle/res/img/ic-label.svg \
+  qt/castle/res/img/ic-transaction-received.svg \
+  qt/castle/res/img/dark/ic-transaction-received.svg \
+  qt/castle/res/img/dark/ic-transaction-warning.svg \
+  qt/castle/res/img/dark/ic-transaction-mint.svg \
+  qt/castle/res/img/dark/ic-transaction-mint-inactive.svg \
+  qt/castle/res/img/ic-transaction-received-inactive.svg \
+  qt/castle/res/img/dark/ic-transaction-received-inactive.svg \
+  qt/castle/res/img/img-welcome-step1.png \
+  qt/castle/res/img/ic-check-connect.svg \
+  qt/castle/res/img/ic-menu-hover.svg \
+  qt/castle/res/img/ic-transaction-sent.svg \
+  qt/castle/res/img/ic-transaction-sent-inactive.svg \
+  qt/castle/res/img/dark/ic-transaction-sent.svg \
+  qt/castle/res/img/dark/ic-transaction-sent-inactive.svg \
+  qt/castle/res/img/img-welcome-step2.png \
+  qt/castle/res/img/ic-check-dark.svg \
+  qt/castle/res/img/ic-mint.svg \
+  qt/castle/res/img/ic-transaction-staked.svg \
+  qt/castle/res/img/ic-transaction-staked-inactive.svg \
+  qt/castle/res/img/dark/ic-transaction-staked.svg \
+  qt/castle/res/img/dark/ic-transaction-staked-inactive.svg \
+  qt/castle/res/img/img-welcome-step3.png \
+  qt/castle/res/img/ic-check-liliac-on.svg \
+  qt/castle/res/img/ic-nav-address-active.svg \
+  qt/castle/res/img/ic-unlock-staking.svg \
+  qt/castle/res/img/img-welcome-step4.png \
+  qt/castle/res/img/ic-check-locked-off.svg \
+  qt/castle/res/img/ic-nav-address-hover.svg \
+  qt/castle/res/img/ic-update-liliac.svg \
+  qt/castle/res/img/ic-arrow-drop-down-purple.svg \
+  qt/castle/res/img/ic-arrow-drop-up-purple.svg \
+  qt/castle/res/img/ic-check-liliac-indeterminate.svg \
+  qt/castle/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/castle/res/img/ic-transaction-stake-delegated.svg \
+  qt/castle/res/img/ic-transaction-stake-delegated-inactive.svg \
+  qt/castle/res/img/ic-transaction-stake-hot.svg \
+  qt/castle/res/img/ic-transaction-stake-hot-inactive.svg \
+  qt/castle/res/img/dark/ic-transaction-stake-hot.svg \
+  qt/castle/res/img/dark/ic-transaction-stake-hot-inactive.svg \
+  qt/castle/res/img/dark/ic-transaction-stake-delegated.svg \
+  qt/castle/res/img/dark/ic-transaction-stake-delegated-inactive.svg \
+  qt/castle/res/img/ic-transaction-cs-contract.svg \
+  qt/castle/res/img/ic-transaction-cs-contract-inactive.svg \
+  qt/castle/res/img/ic-check-box-indeterminate.svg \
+  qt/castle/res/img/ani-loading-dark.gif \
+  qt/castle/res/img/ani-loading.gif
 
-BITCOIN_QT_CPP = \
+
+
+BITCOIN_QT_BASE_CPP = \
   qt/bantablemodel.cpp \
   qt/bitcoinaddressvalidator.cpp \
   qt/bitcoinamountfield.cpp \
-  qt/bitcoingui.cpp \
+  qt/castle/castlegui.cpp \
   qt/bitcoinunits.cpp \
   qt/blockexplorer.cpp \
   qt/clientmodel.cpp \
   qt/csvmodelwriter.cpp \
   qt/guiutil.cpp \
   qt/intro.cpp \
-  qt/masternodelist.cpp \
   qt/networkstyle.cpp \
   qt/notificator.cpp \
   qt/optionsdialog.cpp \
@@ -297,55 +637,105 @@ BITCOIN_QT_CPP = \
   qt/trafficgraphwidget.cpp \
   qt/utilitydialog.cpp
 
-if TARGET_WINDOWS
-BITCOIN_QT_CPP += qt/winshutdownmonitor.cpp
-endif
+BITCOIN_QT_WINDOWS_CPP = qt/winshutdownmonitor.cpp
 
-if ENABLE_WALLET
-BITCOIN_QT_CPP += \
+BITCOIN_QT_WALLET_CPP = \
   qt/addressbookpage.cpp \
   qt/addresstablemodel.cpp \
   qt/askpassphrasedialog.cpp \
-  qt/bip38tooldialog.cpp \
   qt/blockexplorer.cpp \
   qt/coincontroldialog.cpp \
   qt/coincontroltreewidget.cpp \
-  qt/obfuscationconfig.cpp \
   qt/editaddressdialog.cpp \
-  qt/masternodelist.cpp \
-  qt/multisenddialog.cpp \
-  qt/multisigdialog.cpp\
+  qt/governancepage.cpp \
   qt/openuridialog.cpp \
-  qt/overviewpage.cpp \
-  qt/axiomsannouncementrecord.cpp \
-  qt/axiomsannouncementview.cpp \
   qt/paymentrequestplus.cpp \
   qt/paymentserver.cpp \
-  qt/receivecoinsdialog.cpp \
-  qt/privacydialog.cpp \
-  qt/receiverequestdialog.cpp \
+  qt/proposalframe.cpp \
   qt/recentrequeststablemodel.cpp \
-  qt/sendcoinsdialog.cpp \
-  qt/sendcoinsentry.cpp \
-  qt/signverifymessagedialog.cpp \
   qt/transactiondesc.cpp \
-  qt/transactiondescdialog.cpp \
   qt/transactionfilterproxy.cpp \
   qt/transactionrecord.cpp \
   qt/transactiontablemodel.cpp \
-  qt/transactionview.cpp \
-  qt/walletframe.cpp \
   qt/walletmodel.cpp \
   qt/walletmodeltransaction.cpp \
-  qt/walletview.cpp \
-  qt/zpivcontroldialog.cpp
+  qt/castle/loadingdialog.cpp \
+  qt/zcstlcontroldialog.cpp \
+  qt/castle/pwidget.cpp \
+  qt/castle/guitransactionsutils.cpp \
+  qt/castle/snackbar.cpp \
+  qt/castle/navmenuwidget.cpp \
+  qt/castle/lockunlock.cpp \
+  qt/castle/receivedialog.cpp \
+  qt/castle/furabstractlistitemdelegate.cpp \
+  qt/castle/txviewholder.cpp \
+  qt/castle/qtutils.cpp \
+  qt/castle/expandablebutton.cpp \
+  qt/castle/walletpassworddialog.cpp \
+  qt/castle/topbar.cpp \
+  qt/castle/txrow.cpp \
+  qt/castle/addressholder.cpp \
+  qt/castle/addressfilterproxymodel.cpp \
+  qt/castle/dashboardwidget.cpp \
+  qt/castle/coincontrolcstlwidget.cpp \
+  qt/castle/addresslabelrow.cpp \
+  qt/castle/contactdropdownrow.cpp \
+  qt/castle/contactsdropdown.cpp \
+  qt/castle/optionbutton.cpp \
+  qt/castle/mninfodialog.cpp \
+  qt/castle/coldstakingmodel.cpp \
+  qt/castle/mnmodel.cpp \
+  qt/castle/masternodewizarddialog.cpp \
+  qt/castle/mnrow.cpp \
+  qt/castle/masternodeswidget.cpp \
+  qt/castle/myaddressrow.cpp \
+  qt/castle/csrow.cpp \
+  qt/castle/sendchangeaddressdialog.cpp \
+  qt/castle/sendconfirmdialog.cpp \
+  qt/castle/sendcustomfeedialog.cpp \
+  qt/castle/sendchangeaddressdialog.cpp \
+  qt/castle/sendmultirow.cpp \
+  qt/castle/send.cpp \
+  qt/castle/addnewaddressdialog.cpp \
+  qt/castle/addnewcontactdialog.cpp \
+  qt/castle/requestdialog.cpp \
+  qt/castle/receivewidget.cpp \
+  qt/castle/tooltipmenu.cpp \
+  qt/castle/addresseswidget.cpp \
+  qt/castle/defaultdialog.cpp \
+  qt/castle/denomgenerationdialog.cpp \
+  qt/castle/privacywidget.cpp \
+  qt/castle/coldstakingwidget.cpp \
+  qt/castle/settings/settingsbackupwallet.cpp \
+  qt/castle/settings/settingsbittoolwidget.cpp \
+  qt/castle/settings/settingsconsolewidget.cpp \
+  qt/castle/settings/settingsdisplayoptionswidget.cpp \
+  qt/castle/settings/settingsfaqwidget.cpp \
+  qt/castle/settings/settingsinformationwidget.cpp \
+  qt/castle/settings/settingsmainoptionswidget.cpp \
+  qt/castle/settings/settingsmultisenddialog.cpp \
+  qt/castle/settings/settingsmultisendwidget.cpp \
+  qt/castle/settings/settingssignmessagewidgets.cpp \
+  qt/castle/settings/settingswalletoptionswidget.cpp \
+  qt/castle/settings/settingswalletrepairwidget.cpp \
+  qt/castle/settings/settingswidget.cpp \
+  qt/castle/welcomecontentwidget.cpp \
+  qt/castle/splash.cpp
 
+
+BITCOIN_QT_CPP = $(BITCOIN_QT_BASE_CPP)
+if TARGET_WINDOWS
+BITCOIN_QT_CPP += $(BITCOIN_QT_WINDOWS_CPP)
+endif
+if ENABLE_WALLET
+BITCOIN_QT_CPP += $(BITCOIN_QT_WALLET_CPP)
 endif
 
 RES_IMAGES = \
   qt/res/images/about.png \
   qt/res/images/splash.png \
   qt/res/images/splash_testnet.png \
+  qt/res/images/splash_regtest.png \
   qt/res/images/castle_logo_horizontal.png \
   qt/res/images/downArrow_dark.png \
   qt/res/images/downArrow_small_dark.png \
@@ -354,13 +744,12 @@ RES_IMAGES = \
   qt/res/images/upArrow_small.png \
   qt/res/images/leftArrow_small_dark.png \
   qt/res/images/rightArrow_small_dark.png \
-  qt/res/images/qtreeview_selected.png \
-  qt/res/images/walletFrame.png \
-  qt/res/images/walletFrame_bg.png \
-  qt/res/images/walletFrame_bg.png
+  qt/res/images/qtreeview_selected.png
 
 RES_CSS = \
-  qt/res/css/default.css
+  qt/res/css/default.css \
+  qt/castle/res/css/style_dark.css \
+  qt/castle/res/css/style_light.css
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
@@ -370,7 +759,7 @@ BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
 
 qt_libbitcoinqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
-  $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
+  $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) $(SVG_CFLAGS) $(CHARTS_CFLAGS)
 qt_libbitcoinqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 qt_libbitcoinqt_a_OBJCXXFLAGS = $(AM_OBJCXXFLAGS) $(QT_PIE_FLAGS)
 
@@ -395,9 +784,8 @@ $(QT_MOC_CPP): $(PROTOBUF_H)
 
 # castle-qt binary #
 qt_castle_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
-  $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
+  $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) $(SVG_CFLAGS) $(CHARTS_CFLAGS)
 qt_castle_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
-qt_bitcoin_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 
 qt_castle_qt_SOURCES = qt/castle.cpp
 if TARGET_DARWIN
@@ -408,16 +796,16 @@ if TARGET_WINDOWS
 endif
 qt_castle_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_castle_qt_LDADD += $(LIBBITCOIN_WALLET)
+qt_castle_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
 qt_castle_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-qt_castle_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBMEMENV) \
-  $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
+qt_castle_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
+  $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(SVG_LIBS) $(CHARTS_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
 qt_castle_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_castle_qt_LIBTOOLFLAGS = --tag CXX
+qt_castle_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
@@ -428,7 +816,7 @@ $(srcdir)/qt/castlestrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wall
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) PACKAGE_NAME="$(PACKAGE_NAME)" $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: $(srcdir)/qt/castlestrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: $(srcdir)/qt/castlestrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/castle.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
 	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/castle_en.ts
 

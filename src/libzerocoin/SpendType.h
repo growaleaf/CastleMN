@@ -1,10 +1,9 @@
 // Copyright (c) 2018 The PIVX developers
-// Copyright (c) 2018 The CSTL developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef CSTL_SPENDTYPE_H
-#define CSTL_SPENDTYPE_H
+#ifndef CASTLE_SPENDTYPE_H
+#define CASTLE_SPENDTYPE_H
 
 #include <cstdint>
 
@@ -17,4 +16,4 @@ namespace libzerocoin {
     };
 }
 
-#endif //CSTL_SPENDTYPE_H
+#endif //CASTLE_SPENDTYPE_H

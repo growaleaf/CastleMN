@@ -1,5 +1,73 @@
 <TS language="sv" version="2.1">
 <context>
+    <name>AddNewAddressDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
+    </message>
+    <message>
+        <source>My Address</source>
+        <translation>Min Adress</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adress</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Tryck på knappen</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>cancel</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ok</translation>
+    </message>
+</context>
+<context>
+    <name>AddNewContactDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>cancel</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ok</translation>
+    </message>
+    <message>
+        <source>Edit Contact</source>
+        <translation>ändra kontakt</translation>
+    </message>
+    <message>
+        <source>Set a label for the selected address</source>
+        <translation>Lägg till rubrik för den utvalda adressen</translation>
+    </message>
+    <message>
+        <source>Enter a name for the address (e.g Exchange)</source>
+        <translation>Lägg till ett namn till adressen (exempel: börs)</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>spara</translation>
+    </message>
+    <message>
+        <source>Edit label for the selected address:
+%1</source>
+        <translation>Redigera rubriken till den specifierade adressen:
+%1</translation>
+    </message>
+</context>
+<context>
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
@@ -62,12 +130,12 @@
         <translation>Mottagar adresser</translation>
     </message>
     <message>
-        <source>These are your CSTL addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Det här är dina CSTL adresser för att skicka betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
+        <source>These are your CASTLE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Det här är dina CASTLE adresser för att skicka betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
     </message>
     <message>
-        <source>These are your CSTL addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Det här är dina CSTL adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
+        <source>These are your CASTLE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Det här är dina CASTLE adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -99,6 +167,21 @@
     </message>
 </context>
 <context>
+    <name>AddressLabelRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>Bob Allen</source>
+        <translation>Bob Allen</translation>
+    </message>
+    <message>
+        <source>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</source>
+        <translation>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</translation>
+    </message>
+</context>
+<context>
     <name>AddressTableModel</name>
     <message>
         <source>Label</source>
@@ -109,8 +192,118 @@
         <translation>Adress</translation>
     </message>
     <message>
+        <source>Date</source>
+        <translation>Datum</translation>
+    </message>
+    <message>
         <source>(no label)</source>
         <translation>(Ingen etikett)</translation>
+    </message>
+</context>
+<context>
+    <name>AddressesWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>Skicka</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
+    <message>
+        <source>Contact name</source>
+        <translation>Kontakt Namn</translation>
+    </message>
+    <message>
+        <source>Enter address</source>
+        <translation>Skriv in Adress</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ok</translation>
+    </message>
+    <message>
+        <source>Contacts</source>
+        <translation>Kontakter</translation>
+    </message>
+    <message>
+        <source>You can add a new one in the options menu to the side.</source>
+        <translation>Du kan lägga till en ny på options menyn på sidan</translation>
+    </message>
+    <message>
+        <source>No contacts yet</source>
+        <translation>Inga kontakter ännu</translation>
+    </message>
+    <message>
+        <source>e.g. John Doe</source>
+        <translation>Till Exempel John Doe</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>spara</translation>
+    </message>
+    <message>
+        <source>Invalid Contact Address</source>
+        <translation>Fel Kontakt Adress</translation>
+    </message>
+    <message>
+        <source>Cannot store your own address as contact</source>
+        <translation>Kan inte spara den egna adressen som kontakt</translation>
+    </message>
+    <message>
+        <source>Address already stored, label: %1</source>
+        <translation>Adress finns redan lagrad, etikett: %1</translation>
+    </message>
+    <message>
+        <source>New Contact Stored</source>
+        <translation>Nytt kontrakt lagrat</translation>
+    </message>
+    <message>
+        <source>Error Storing Contact</source>
+        <translation>Gick inte spara kontakt</translation>
+    </message>
+    <message>
+        <source>Contact edited</source>
+        <translation>Kontakt ändrad</translation>
+    </message>
+    <message>
+        <source>Contact edit failed</source>
+        <translation>Försök till att ändra kontakt slog fel</translation>
+    </message>
+    <message>
+        <source>Delete Contact</source>
+        <translation>ta bort kontakt</translation>
+    </message>
+    <message>
+        <source>You are just about to remove the contact:
+
+%1
+
+Are you sure?</source>
+        <translation>Du håller på att ta bort kontakten :
+
+%1
+Är du säker ?</translation>
+    </message>
+    <message>
+        <source>Contact Deleted</source>
+        <translation>Kontakt borttagen</translation>
+    </message>
+    <message>
+        <source>Error deleting a contact</source>
+        <translation>Fel när kontakt skulle tas bort</translation>
+    </message>
+    <message>
+        <source>Address copied</source>
+        <translation>Adress kopierad</translation>
     </message>
 </context>
 <context>
@@ -120,24 +313,12 @@
         <translation>Lösenfras Dialog</translation>
     </message>
     <message>
-        <source>Enter passphrase</source>
-        <translation>Fyll i lösenfras</translation>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
     </message>
     <message>
-        <source>New passphrase</source>
-        <translation>Ny lösenfras</translation>
-    </message>
-    <message>
-        <source>Repeat new passphrase</source>
-        <translation>Repetera ny lösenfras</translation>
-    </message>
-    <message>
-        <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
-        <translation>Ser till att inaktivera obetydliga skickade pengar när OS kontot är i risk. Förser ingen riktig säkerhet.</translation>
-    </message>
-    <message>
-        <source>For anonymization, automint, and staking only</source>
-        <translation>Endast för anonymisering, automint, och staking</translation>
+        <source>PushButton</source>
+        <translation>Tryck på knappen</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
@@ -150,6 +331,11 @@
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>Den här processen kräver din plånboks lösenfras för att låsa upp plånboken</translation>
+    </message>
+    <message>
+        <source>Unlock wallet
+for staking</source>
+        <translation>Lås upp börsen till staking</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
@@ -176,8 +362,16 @@
         <translation>Bekräfta plånboks krypering</translation>
     </message>
     <message>
-        <source>CSTL will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CSTLs from being stolen by malware infecting your computer.</source>
-        <translation>CSTL kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina CSTLs från att bli stulna av skadeprogram som infekterat din dator.</translation>
+        <source>ENCRYPT</source>
+        <translation>ENKRYPTERA</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>cancel</translation>
+    </message>
+    <message>
+        <source>CASTLE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CSTLs from being stolen by malware infecting your computer.</source>
+        <translation>CASTLE kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina CSTLs från att bli stulna av skadeprogram som infekterat din dator.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -198,6 +392,10 @@
     <message>
         <source>Wallet encryption failed</source>
         <translation>Plånboks kryptering misslyckades</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ok</translation>
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
@@ -232,637 +430,11 @@
     <name>BanTableModel</name>
     <message>
         <source>IP/Netmask</source>
-        <translation>IP/Nätmask</translation>
+        <translation>IP/Netmask</translation>
     </message>
     <message>
         <source>Banned Until</source>
         <translation>Portad fram tills</translation>
-    </message>
-</context>
-<context>
-    <name>Bip38ToolDialog</name>
-    <message>
-        <source>BIP 38 Tool</source>
-        <translation>BIP 38 Verktyg</translation>
-    </message>
-    <message>
-        <source>&amp;BIP 38 Encrypt</source>
-        <translation>BIP 38 Kryptering</translation>
-    </message>
-    <message>
-        <source>Address:</source>
-        <translation>Adress:</translation>
-    </message>
-    <message>
-        <source>Enter a CSTL Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Fyll i en CSTL Adress som du skulle vilja cryptera med BIP 38. Skriv in en lösenfras i den mittersta lådan. Tryck kryptera för att beräkna fram den krypterade privata nyckeln.</translation>
-    </message>
-    <message>
-        <source>The CSTL address to encrypt</source>
-        <translation>CSTL adressen som ska krypteras</translation>
-    </message>
-    <message>
-        <source>Choose previously used address</source>
-        <translation>Använd den föregående använda adressen</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>Limma in adress från urklipp</translation>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <source>Passphrase: </source>
-        <translation>Lösenfras:</translation>
-    </message>
-    <message>
-        <source>Encrypted Key:</source>
-        <translation>Krypterad Nyckel:</translation>
-    </message>
-    <message>
-        <source>Copy the current signature to the system clipboard</source>
-        <translation>Kopiera den nuvarande signaturen till systemets urklipp</translation>
-    </message>
-    <message>
-        <source>Encrypt the private key for this CSTL address</source>
-        <translation>Kryptera den privata nyckeln för denna CSTL adressen</translation>
-    </message>
-    <message>
-        <source>Reset all fields</source>
-        <translation>Återställ alla fält</translation>
-    </message>
-    <message>
-        <source>The encrypted private key</source>
-        <translation>Den krypterade privata nyckeln</translation>
-    </message>
-    <message>
-        <source>Decrypt the entered key using the passphrase</source>
-        <translation>Dekryptera den inmatade nyckeln med lösenordsfrasen</translation>
-    </message>
-    <message>
-        <source>Encrypt &amp;Key</source>
-        <translation>Kryptera &amp;Nyckel</translation>
-    </message>
-    <message>
-        <source>Clear &amp;All</source>
-        <translation>Rensa &amp;allt</translation>
-    </message>
-    <message>
-        <source>&amp;BIP 38 Decrypt</source>
-        <translation>&amp;BIP 38 Dekryptera</translation>
-    </message>
-    <message>
-        <source>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
-        <translation>Ange BIP 38 krypterade privata nyckeln. Ange lösenfrasen i med mittersta boxen. Tryck på krypetra nyckel för att beräkna den privata nyckeln. Efter att nyckeln är avkrypterad, tryck på 'Importera Adress' kommer att lägga till denna privata nyckel till plånboken.</translation>
-    </message>
-    <message>
-        <source>Decrypt &amp;Key</source>
-        <translation>Dekryptera &amp;Nyckel</translation>
-    </message>
-    <message>
-        <source>Decrypted Key:</source>
-        <translation>Dekrypterad Nyckel:</translation>
-    </message>
-    <message>
-        <source>Import Address</source>
-        <translation>Importera Adress</translation>
-    </message>
-    <message>
-        <source>Click "Decrypt Key" to compute key</source>
-        <translation>Tryck "Dekryptera Nyckel" för att beräkna nyckeln</translation>
-    </message>
-    <message>
-        <source>The entered passphrase is invalid. </source>
-        <translation>Den angivna lösenfrasen är felaktig.</translation>
-    </message>
-    <message>
-        <source>Allowed: 0-9,a-z,A-Z,</source>
-        <translation>Tillåtna: 0-9,a-z.A-Z.</translation>
-    </message>
-    <message>
-        <source>The entered address is invalid.</source>
-        <translation>Den angivna adressen är felaktig.</translation>
-    </message>
-    <message>
-        <source>Please check the address and try again.</source>
-        <translation>Var vänlig kontrollera adressen och försök igen.</translation>
-    </message>
-    <message>
-        <source>The entered address does not refer to a key.</source>
-        <translation>Den angivna adressen visar inte till en nyckel.</translation>
-    </message>
-    <message>
-        <source>Wallet unlock was cancelled.</source>
-        <translation>Upplåsningen av plånboken blev avbruten.</translation>
-    </message>
-    <message>
-        <source>Private key for the entered address is not available.</source>
-        <translation>Den privata nyckel som angivits till adressen är inte tillgänglig.</translation>
-    </message>
-    <message>
-        <source>Failed to decrypt.</source>
-        <translation>Dekryptering misslyckades.</translation>
-    </message>
-    <message>
-        <source>Please check the key and passphrase and try again.</source>
-        <translation>Var vänlig och kontrollera nyckeln och lösenfrasen och försök igen.</translation>
-    </message>
-    <message>
-        <source>Data Not Valid.</source>
-        <translation>Data ogiltig.</translation>
-    </message>
-    <message>
-        <source>Please try again.</source>
-        <translation>Var vänlig försök igen.</translation>
-    </message>
-    <message>
-        <source>Please wait while key is imported</source>
-        <translation>Var god vänta medans nyckeln importeras</translation>
-    </message>
-    <message>
-        <source>Key Already Held By Wallet</source>
-        <translation>Nyckeln är redan bunden till plånboken</translation>
-    </message>
-    <message>
-        <source>Error Adding Key To Wallet</source>
-        <translation>Fel när nyckel skulle läggas till plånbok</translation>
-    </message>
-    <message>
-        <source>Successfully Added Private Key To Wallet</source>
-        <translation>privat nyckel framgångsrikt tillagd till plånbok</translation>
-    </message>
-</context>
-<context>
-    <name>BitcoinGUI</name>
-    <message>
-        <source>Wallet</source>
-        <translation>Plånbok</translation>
-    </message>
-    <message>
-        <source>Node</source>
-        <translation>Nod</translation>
-    </message>
-    <message>
-        <source>&amp;Overview</source>
-        <translation>&amp;Översikt</translation>
-    </message>
-    <message>
-        <source>Show general overview of wallet</source>
-        <translation>Visa generell översikt av plånbok</translation>
-    </message>
-    <message>
-        <source>&amp;Send</source>
-        <translation>&amp;Skicka</translation>
-    </message>
-    <message>
-        <source>&amp;Receive</source>
-        <translation>&amp;Mottaga</translation>
-    </message>
-    <message>
-        <source>&amp;Transactions</source>
-        <translation>&amp;Transaktioner</translation>
-    </message>
-    <message>
-        <source>Browse transaction history</source>
-        <translation>Bläddra i transaktions historiken</translation>
-    </message>
-    <message>
-        <source>Privacy Actions for zCSTL</source>
-        <translation>Integritets funktioner för zCSTL</translation>
-    </message>
-    <message>
-        <source>E&amp;xit</source>
-        <translation>gå ur</translation>
-    </message>
-    <message>
-        <source>Quit application</source>
-        <translation>Avsluta applikationen</translation>
-    </message>
-    <message>
-        <source>About &amp;Qt</source>
-        <translation>Om &amp;Qt</translation>
-    </message>
-    <message>
-        <source>Show information about Qt</source>
-        <translation>Visa information om Qt</translation>
-    </message>
-    <message>
-        <source>&amp;Options...</source>
-        <translation>&amp;Alternativ...</translation>
-    </message>
-    <message>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;Visa / Dölj</translation>
-    </message>
-    <message>
-        <source>Show or hide the main Window</source>
-        <translation>Visa eller Dölj huvudfönstret</translation>
-    </message>
-    <message>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;Kryptera Plånbok...</translation>
-    </message>
-    <message>
-        <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Kryptera privata nycklar som tillhör din plånbok</translation>
-    </message>
-    <message>
-        <source>&amp;Backup Wallet...</source>
-        <translation>&amp;Säkerhetskopiera Plånbok...</translation>
-    </message>
-    <message>
-        <source>Backup wallet to another location</source>
-        <translation>Säkerhetskopiera din plånbok till en annan plats</translation>
-    </message>
-    <message>
-        <source>&amp;Change Passphrase...</source>
-        <translation>Ändra lösenfras</translation>
-    </message>
-    <message>
-        <source>Change the passphrase used for wallet encryption</source>
-        <translation>Ändra lösenfrasen som används för kryptering av plånbok</translation>
-    </message>
-    <message>
-        <source>&amp;Unlock Wallet...</source>
-        <translation>lås upp plånbok</translation>
-    </message>
-    <message>
-        <source>Unlock wallet</source>
-        <translation>lås upp plånbok</translation>
-    </message>
-    <message>
-        <source>&amp;Lock Wallet</source>
-        <translation>lås plånbok</translation>
-    </message>
-    <message>
-        <source>Sign &amp;message...</source>
-        <translation>signera &amp;meddelande...</translation>
-    </message>
-    <message>
-        <source>&amp;Verify message...</source>
-        <translation>&amp;Verifiera meddelande</translation>
-    </message>
-    <message>
-        <source>&amp;Information</source>
-        <translation>&amp;Information</translation>
-    </message>
-    <message>
-        <source>Show diagnostic information</source>
-        <translation>Visa diagnostisk information</translation>
-    </message>
-    <message>
-        <source>&amp;Debug console</source>
-        <translation>Felsökningskonsol</translation>
-    </message>
-    <message>
-        <source>Open debugging console</source>
-        <translation>Öppna felsökningskonsol</translation>
-    </message>
-    <message>
-        <source>&amp;Network Monitor</source>
-        <translation>&amp;Nätverks Övervakare</translation>
-    </message>
-    <message>
-        <source>Show network monitor</source>
-        <translation>Visa nätverksövervakare</translation>
-    </message>
-    <message>
-        <source>&amp;Peers list</source>
-        <translation>enhets lista</translation>
-    </message>
-    <message>
-        <source>Show peers info</source>
-        <translation>Visa enhetslista</translation>
-    </message>
-    <message>
-        <source>Wallet &amp;Repair</source>
-        <translation>Plånbok &amp;Reparera</translation>
-    </message>
-    <message>
-        <source>Show wallet repair options</source>
-        <translation>Visa val av reparation av plånbok</translation>
-    </message>
-    <message>
-        <source>Open configuration file</source>
-        <translation>Öppna konfigurations fil</translation>
-    </message>
-    <message>
-        <source>Show Automatic &amp;Backups</source>
-        <translation>Visa Automatiskt &amp;Säkerthetskopior</translation>
-    </message>
-    <message>
-        <source>Show automatically created wallet backups</source>
-        <translation>Visa automatiskt skapade säkerhetskopior av plånbok</translation>
-    </message>
-    <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>Sändnings adresser</translation>
-    </message>
-    <message>
-        <source>Show the list of used sending addresses and labels</source>
-        <translation>Visa listan över använda sändningsadresser och etiketter</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>Mottagar adresser</translation>
-    </message>
-    <message>
-        <source>Show the list of used receiving addresses and labels</source>
-        <translation>Visa listan över använda mottagar adresser och etiketter</translation>
-    </message>
-    <message>
-        <source>&amp;Multisignature creation...</source>
-        <translation>&amp;Multisignaturskapande...</translation>
-    </message>
-    <message>
-        <source>Create a new multisignature address and add it to this wallet</source>
-        <translation>Skapa en ny multisignaturadress och lägg till den till denna plånbok</translation>
-    </message>
-    <message>
-        <source>&amp;Multisignature spending...</source>
-        <translation>&amp;Multisignatur spendering...</translation>
-    </message>
-    <message>
-        <source>Spend from a multisignature address</source>
-        <translation>Spendera från en multisignaturadress</translation>
-    </message>
-    <message>
-        <source>&amp;Multisignature signing...</source>
-        <translation>&amp;Multisignatur signerar...</translation>
-    </message>
-    <message>
-        <source>Sign with a multisignature address</source>
-        <translation>Signera med en multisignaturadress</translation>
-    </message>
-    <message>
-        <source>Open &amp;URI...</source>
-        <translation>Öppna &amp; URl</translation>
-    </message>
-    <message>
-        <source>&amp;Command-line options</source>
-        <translation>komanndo linje val</translation>
-    </message>
-    <message numerus="yes">
-        <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>Bearbetar %n block av transaktionshistoriken.</numerusform><numerusform>Bearbetar %n block av transaktionshistoriken.</numerusform></translation>
-    </message>
-    <message>
-        <source>Synchronizing additional data: %p%</source>
-        <translation>synchroniserar ytterligare data %p%</translation>
-    </message>
-    <message>
-        <source>%1 behind. Scanning block %2</source>
-        <translation>%1 efter. Skannar block %2</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonymization and staking only</source>
-        <translation>Plånboken är &lt;b&gt;krypterad&lt;/b&gt; och för tillfället &lt;b&gt;olåst&lt;/b&gt; för anonymisering och staking enbart</translation>
-    </message>
-    <message>
-        <source>&amp;File</source>
-        <translation>Fil</translation>
-    </message>
-    <message>
-        <source>&amp;Settings</source>
-        <translation>Inställningar</translation>
-    </message>
-    <message>
-        <source>&amp;Tools</source>
-        <translation>Verktyg</translation>
-    </message>
-    <message>
-        <source>&amp;Help</source>
-        <translation>Hjälp</translation>
-    </message>
-    <message>
-        <source>Tabs toolbar</source>
-        <translation>flik vertygsrad</translation>
-    </message>
-    <message>
-        <source>Castle Core</source>
-        <translation>CSTL Kärna</translation>
-    </message>
-    <message>
-        <source>Send coins to a CSTL address</source>
-        <translation>Skicka mynt till en CSTL adress</translation>
-    </message>
-    <message>
-        <source>Request payments (generates QR codes and castle: URIs)</source>
-        <translation>Begär betalning (genererar QR kod och castle: URls)</translation>
-    </message>
-    <message>
-        <source>&amp;Privacy</source>
-        <translation>&amp;Sekretess</translation>
-    </message>
-    <message>
-        <source>&amp;Masternodes</source>
-        <translation>Masternoder</translation>
-    </message>
-    <message>
-        <source>Browse masternodes</source>
-        <translation>Utforska masternoder</translation>
-    </message>
-    <message>
-        <source>&amp;About Castle Core</source>
-        <translation>Om CSTL Kärnan</translation>
-    </message>
-    <message>
-        <source>Show information about Castle Core</source>
-        <translation>Visa information om CSTL Kärnan</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for CSTL</source>
-        <translation>Ändra konfigurationsval för CSTL</translation>
-    </message>
-    <message>
-        <source>Sign messages with your CSTL addresses to prove you own them</source>
-        <translation>Signera meddelanden med din CSTL adress för att visa att du äger dem</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified CSTL addresses</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika CSTL adressen.</translation>
-    </message>
-    <message>
-        <source>&amp;BIP38 tool</source>
-        <translation>BIP38 Verktyg</translation>
-    </message>
-    <message>
-        <source>Encrypt and decrypt private keys using a passphrase</source>
-        <translation>Kryptera och dekryptera privata nycklar genom användning av lösenfras</translation>
-    </message>
-    <message>
-        <source>&amp;MultiSend</source>
-        <translation>&amp;MultiSend</translation>
-    </message>
-    <message>
-        <source>MultiSend Settings</source>
-        <translation>MultiSend Inställningar</translation>
-    </message>
-    <message>
-        <source>Open Wallet &amp;Configuration File</source>
-        <translation>Öppna Plånbok &amp;Konfigurations Fil</translation>
-    </message>
-    <message>
-        <source>Open &amp;Masternode Configuration File</source>
-        <translation>Öppna &amp;Huvudnod Konfigurations Fil</translation>
-    </message>
-    <message>
-        <source>Open Masternode configuration file</source>
-        <translation>Öppna Huvudnodens konfigurations fil </translation>
-    </message>
-    <message>
-        <source>Open a CSTL: URI or payment request</source>
-        <translation>Öppna en CSTL: URI eller betalningsförfrågan</translation>
-    </message>
-    <message>
-        <source>&amp;Blockchain explorer</source>
-        <translation>&amp;Blockchain Utforskare</translation>
-    </message>
-    <message>
-        <source>Block explorer window</source>
-        <translation>Blockera utforskarfönstret</translation>
-    </message>
-    <message>
-        <source>Show the Castle Core help message to get a list with possible CSTL command-line options</source>
-        <translation>Visa Castle Core hjälp meddelande för att få en lista med möjliga CSTL kommandorad alternativ</translation>
-    </message>
-    <message>
-        <source>Castle Core client</source>
-        <translation>CSTL kärn klient</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to CSTL network</source>
-        <translation><numerusform>%n aktiv(a) annslutning(ar) till CSTL nätverket</numerusform><numerusform>%n aktiv(a) annslutning(ar) till CSTL nätverket</numerusform></translation>
-    </message>
-    <message>
-        <source>Synchronizing with network...</source>
-        <translation>Synkroniserar med nätverket...</translation>
-    </message>
-    <message>
-        <source>Importing blocks from disk...</source>
-        <translation>Importerar block från disk...</translation>
-    </message>
-    <message>
-        <source>Reindexing blocks on disk...</source>
-        <translation>Omindexering av block på disk...</translation>
-    </message>
-    <message>
-        <source>No block source available...</source>
-        <translation>Ingen block källa tillgänglig...</translation>
-    </message>
-    <message>
-        <source>Up to date</source>
-        <translation>Aktuell</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n timme</numerusform><numerusform>%n timmar</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n dag</numerusform><numerusform>%n dagar</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n vecka</numerusform><numerusform>%n veckor</numerusform></translation>
-    </message>
-    <message>
-        <source>%1 and %2</source>
-        <translation>%1 och %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n år</numerusform><numerusform>%n år</numerusform></translation>
-    </message>
-    <message>
-        <source>Catching up...</source>
-        <translation>Inhämtar...</translation>
-    </message>
-    <message>
-        <source>Last received block was generated %1 ago.</source>
-        <translation>Senaste block som togs emot genererades för %1 sen.</translation>
-    </message>
-    <message>
-        <source>Transactions after this will not yet be visible.</source>
-        <translation>Transaktioner efter detta kommer ännu inte synas.</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Fel</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Varning</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Information</translation>
-    </message>
-    <message>
-        <source>Sent transaction</source>
-        <translation>Skickad transaktion</translation>
-    </message>
-    <message>
-        <source>Incoming transaction</source>
-        <translation>Inkommande transaktion</translation>
-    </message>
-    <message>
-        <source>Sent MultiSend transaction</source>
-        <translation>Skickad MultiSend transaktion</translation>
-    </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Datum: %1
-Mängd: %2
-Typ: %3
-Adress: %4
-</translation>
-    </message>
-    <message>
-        <source>Staking is active
- MultiSend: %1</source>
-        <translation>Staking aktivt
-MultiSend: %1</translation>
-    </message>
-    <message>
-        <source>Active</source>
-        <translation>Aktiv</translation>
-    </message>
-    <message>
-        <source>Not Active</source>
-        <translation>Inte aktiv</translation>
-    </message>
-    <message>
-        <source>Staking is not active
- MultiSend: %1</source>
-        <translation>Staking inaktivt
-MultiSend: %1</translation>
-    </message>
-    <message>
-        <source>AutoMint is currently enabled and set to </source>
-        <translation>AutoMint är för tillfället aktiverat och inställd på</translation>
-    </message>
-    <message>
-        <source>AutoMint is disabled</source>
-        <translation>AutoMint är inaktiverat</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Plånbok är &lt;b&gt;krypterad&lt;/b&gt; och tillfälligt &lt;b&gt;olåst&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Plånbok är &lt;b&gt;krypterad&lt;/b&gt; och tillfälligt &lt;b&gt;låst&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -897,6 +469,17 @@ MultiSend: %1</translation>
     </message>
 </context>
 <context>
+    <name>CSRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>Savings</source>
+        <translation>Sparande</translation>
+    </message>
+    </context>
+<context>
     <name>ClientModel</name>
     <message>
         <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
@@ -918,14 +501,6 @@ MultiSend: %1</translation>
         <translation>Bytes:</translation>
     </message>
     <message>
-        <source>Amount:</source>
-        <translation>Antal:</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>Prioritet:</translation>
-    </message>
-    <message>
         <source>Fee:</source>
         <translation>Avgift:</translation>
     </message>
@@ -938,20 +513,8 @@ MultiSend: %1</translation>
         <translation>Dust:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Efter Avgift:</translation>
-    </message>
-    <message>
         <source>Change:</source>
         <translation>Växel:</translation>
-    </message>
-    <message>
-        <source>(un)select all</source>
-        <translation>(av)markera alla</translation>
-    </message>
-    <message>
-        <source>toggle lock state</source>
-        <translation>toggla låst läge</translation>
     </message>
     <message>
         <source>Tree mode</source>
@@ -970,6 +533,30 @@ MultiSend: %1</translation>
         <translation>Mängd</translation>
     </message>
     <message>
+        <source>Transaction Details</source>
+        <translation>Transaktions detaljer</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Tryck på knappen</translation>
+    </message>
+    <message>
+        <source>0.00 CSTL</source>
+        <translation>0.00 CSTL</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Select all</source>
+        <translation>Markera allt</translation>
+    </message>
+    <message>
+        <source>Toggle lock state</source>
+        <translation>Växla mellan lås tillstånd</translation>
+    </message>
+    <message>
         <source>Received with label</source>
         <translation>Mottag med etikett</translation>
     </message>
@@ -978,8 +565,12 @@ MultiSend: %1</translation>
         <translation>Mottag med adress</translation>
     </message>
     <message>
-        <source>Type</source>
-        <translation>Typ</translation>
+        <source>After Fee: </source>
+        <translation>Efter avgift:</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ok</translation>
     </message>
     <message>
         <source>Date</source>
@@ -992,10 +583,6 @@ MultiSend: %1</translation>
     <message>
         <source>Confirmed</source>
         <translation>bekräftad</translation>
-    </message>
-    <message>
-        <source>Priority</source>
-        <translation>Prioritet</translation>
     </message>
     <message>
         <source>Copy address</source>
@@ -1048,6 +635,10 @@ MultiSend: %1</translation>
     <message>
         <source>Copy change</source>
         <translation>kopiera ändringar</translation>
+    </message>
+    <message>
+        <source>Unselect all</source>
+        <translation>avmarkera alla</translation>
     </message>
     <message>
         <source>Please switch to "List mode" to use this function.</source>
@@ -1130,8 +721,8 @@ MultiSend: %1</translation>
         <translation>Den här etiketten blir röd, ifall någon mottagare får en mängd som är mindre än %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Kan variera med +/- %1 upiv per inmatning.</translation>
+        <source>Can vary +/- %1 ucstl per input.</source>
+        <translation>Kan variera med +/- %1 ucstl per inmatning.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1144,6 +735,346 @@ MultiSend: %1</translation>
     <message>
         <source>(change)</source>
         <translation>(ändra)</translation>
+    </message>
+</context>
+<context>
+    <name>CoinControlCstlWidget</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Transaktions detaljer</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Tryck på knappen</translation>
+    </message>
+    <message>
+        <source>CSTL:</source>
+        <translation>CSTL:</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Kvantitet:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Avgift:</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Mängd</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Etikett</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adress</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Typ</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Datum</translation>
+    </message>
+    <message>
+        <source>Confirmations</source>
+        <translation>Bekräftelser</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>CheckBox</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Bytes:</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>Dust:</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Växel:</translation>
+    </message>
+    <message>
+        <source>After Fee: </source>
+        <translation>Efter avgift:</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>cancel</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ok</translation>
+    </message>
+</context>
+<context>
+    <name>ColdStakingWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation>Titel</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
+    </message>
+    <message>
+        <source>Address copied</source>
+        <translation>Adress kopierad</translation>
+    </message>
+    </context>
+<context>
+    <name>ContactDropdownRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>Bob Allen</source>
+        <translation>Bob Allen</translation>
+    </message>
+    <message>
+        <source>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</source>
+        <translation>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</translation>
+    </message>
+</context>
+<context>
+    <name>DashboardWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>Transactions</source>
+        <translation>Transaktioner</translation>
+    </message>
+    <message>
+        <source>You can see here the history of your account</source>
+        <translation>Du kan se konto historiken här</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Varning</translation>
+    </message>
+    <message>
+        <source>No transactions</source>
+        <translation>Inga transaktioner</translation>
+    </message>
+    <message>
+        <source>Staking Rewards</source>
+        <translation>Staking belöning</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
+    </message>
+    <message>
+        <source>Staking statistics</source>
+        <translation>Staking statistik</translation>
+    </message>
+    <message>
+        <source>CSTL</source>
+        <translation>CSTL</translation>
+    </message>
+    <message>
+        <source>zCSTL</source>
+        <translation>zCSTL</translation>
+    </message>
+    <message>
+        <source>Sort by</source>
+        <translation>Sortera med</translation>
+    </message>
+    <message>
+        <source>Days</source>
+        <translation>Dagar</translation>
+    </message>
+    <message>
+        <source>Months</source>
+        <translation>Månader</translation>
+    </message>
+    <message>
+        <source>Years</source>
+        <translation>År</translation>
+    </message>
+    <message>
+        <source>Filter by</source>
+        <translation>Filtrera med</translation>
+    </message>
+    <message>
+        <source>LabelText</source>
+        <translation>Etikett text</translation>
+    </message>
+    <message>
+        <source>You can view your account's history</source>
+        <translation>Du kan se ditt kontos historik</translation>
+    </message>
+    <message>
+        <source>Amount of CSTL and zCSTL staked.</source>
+        <translation>Mängden CSTL och zCSTL som präglats.</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>All</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Mottaget</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>Skickat</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>Mined</translation>
+    </message>
+    <message>
+        <source>Minted</source>
+        <translation>Mintad</translation>
+    </message>
+    <message>
+        <source>MN reward</source>
+        <translation>MN belöning</translation>
+    </message>
+    <message>
+        <source>To yourself</source>
+        <translation>Dig själv</translation>
+    </message>
+    <message>
+        <source>Please wait until the wallet is fully synced to see your correct balance</source>
+        <translation>Vänta tills plånboken är synkroniserad för att se rätt saldo.</translation>
+    </message>
+    <message>
+        <source>No transactions yet</source>
+        <translation>Inga transaktioner ännu.</translation>
+    </message>
+    <message>
+        <source>How to get CSTL or zCSTL</source>
+        <translation>Hur man får CSTL eller zCSTL.</translation>
+    </message>
+    <message>
+        <source>You can verify the staking activity in the status bar at the top right of the wallet.
+It will start automatically as soon as the wallet has enough confirmations on any unspent balances, and the wallet has synced.</source>
+        <translation>Du kan verifiera staking aktiviteten i statusfältet längst upp till höger i plånboken.
+Den startar automatiskt så snart plånboken har tillräckligt många bekräftelser på eventuella outnyttjade saldon och när plånboken har synkroniserats.</translation>
+    </message>
+    <message>
+        <source>You have no staking rewards</source>
+        <translation>Du har inga staking belöningar</translation>
+    </message>
+    <message>
+        <source>No charts library</source>
+        <translation>Inget diagram bibliotek</translation>
+    </message>
+    <message>
+        <source>Loading chart..</source>
+        <translation>Laddar chart</translation>
+    </message>
+    <message>
+        <source>Error loading chart, invalid show option</source>
+        <translation>Fel vid laddning av diagram, ogiltigt visningsalternativ.</translation>
+    </message>
+    <message>
+        <source>Error loading chart: %1</source>
+        <translation>Fel vid laddning av diagram: %1</translation>
+    </message>
+</context>
+<context>
+    <name>DefaultDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Transaktions detaljer</translation>
+    </message>
+    <message>
+        <source>Text Label</source>
+        <translation>text adress</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>cancel</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>spara</translation>
+    </message>
+</context>
+<context>
+    <name>DenomGenerationDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Transaktions detaljer</translation>
+    </message>
+    <message>
+        <source>This will unlock your wallet fully, so that anyone with access to it can spend until the wallet is closed or locked again.</source>
+        <translation>Detta låser upp din plånbok helt, så att alla som har tillgång till den kan spendera tills plånboken är stängd eller låst igen.</translation>
+    </message>
+    <message>
+        <source>5000</source>
+        <translation>5000</translation>
+    </message>
+    <message>
+        <source>100</source>
+        <translation>100</translation>
+    </message>
+    <message>
+        <source>10</source>
+        <translation>10</translation>
+    </message>
+    <message>
+        <source>1000</source>
+        <translation>1000</translation>
+    </message>
+    <message>
+        <source>50</source>
+        <translation>50</translation>
+    </message>
+    <message>
+        <source>500</source>
+        <translation>500</translation>
+    </message>
+    <message>
+        <source>5</source>
+        <translation>5</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation>välj alla</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>cancel</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>spara</translation>
     </message>
 </context>
 <context>
@@ -1185,8 +1116,8 @@ MultiSend: %1</translation>
         <translation>Redigera skickande adress</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid CSTL address.</source>
-        <translation>Den inmatade adressen "%1" är ej en giltig CSTL adress.</translation>
+        <source>The entered address "%1" is not a valid CASTLE address.</source>
+        <translation>Den inmatade adressen "%1" är ej en giltig CASTLE adress.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1199,6 +1130,13 @@ MultiSend: %1</translation>
     <message>
         <source>New key generation failed.</source>
         <translation>Generering av ny nyckel misslyckades.</translation>
+    </message>
+</context>
+<context>
+    <name>ExpandableButton</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
     </message>
 </context>
 <context>
@@ -1225,22 +1163,65 @@ MultiSend: %1</translation>
     </message>
 </context>
 <context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>GOVERNANCE</source>
+        <translation>MANAGEMENT</translation>
+    </message>
+    <message>
+        <source>Update Proposals</source>
+        <translation>Uppdatera förslag</translation>
+    </message>
+    <message>
+        <source>Next super block:</source>
+        <translation>Nästa Superblock</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Blocks to next super block:</source>
+        <translation>Block till nästa superblock:</translation>
+    </message>
+    <message>
+        <source>Days to budget payout (estimate):</source>
+        <translation>Dagar till budget utbetalning (estimerad):</translation>
+    </message>
+    <message>
+        <source>Allotted budget:</source>
+        <translation>Utvald budget:</translation>
+    </message>
+    <message>
+        <source>Budget left:</source>
+        <translation>Kvar av budget:</translation>
+    </message>
+    <message>
+        <source>Masternodes count:</source>
+        <translation>Masternode beräkning:</translation>
+    </message>
+</context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
         <translation>version</translation>
     </message>
     <message>
-        <source>Castle Core</source>
-        <translation>CSTL Kärna</translation>
+        <source>CASTLE Core</source>
+        <translation>CASTLE Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Castle Core</source>
-        <translation>Om CSTL Kärna</translation>
+        <source>About CASTLE Core</source>
+        <translation>Om CASTLE Kärna</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1278,6 +1259,10 @@ MultiSend: %1</translation>
         <source>Set SSL root certificates for payment request (default: -system-)</source>
         <translation>Ställ in SSL root certificates för betalningsbegäran (standard: -system-)</translation>
     </message>
+    <message>
+        <source>OK</source>
+        <translation>ok</translation>
+    </message>
 </context>
 <context>
     <name>Intro</name>
@@ -1286,28 +1271,36 @@ MultiSend: %1</translation>
         <translation>Välkommen</translation>
     </message>
     <message>
-        <source>Welcome to Castle Core.</source>
-        <translation>Välkommen till Castle Core.</translation>
+        <source>Welcome to CASTLE Core.</source>
+        <translation>Välkommen till CASTLE Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Castle Core will store its data.</source>
-        <translation>Eftersom detta är första gången programmet körs så kan du välja var Castle Core ska spara sin data.</translation>
+        <source>As this is the first time the program is launched, you can choose where CASTLE Core will store its data.</source>
+        <translation>Eftersom detta är första gången programmet körs så kan du välja var CASTLE Core ska spara sin data.</translation>
     </message>
     <message>
-        <source>Castle Core will download and store a copy of the CSTL block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>CSTL Kärnan kommer ladda ner och spara en kopia av CSTL block chain. Minst %1GB data kommer sparas i denna katalog och den kommer växa med tiden. Plånboken kommer också sparas i denna katalog.</translation>
+        <source>CASTLE Core will download and store a copy of the CASTLE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>CASTLE Kärnan kommer ladda ner och spara en kopia av CASTLE block chain. Minst %1GB data kommer sparas i denna katalog och den kommer växa med tiden. Plånboken kommer också sparas i denna katalog.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Använd standard data katalogen</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Använd en skräddarsydd data katalog</translation>
+        <source>Use a custom data directory</source>
+        <translation>Använd en anpassad datakatalog</translation>
     </message>
     <message>
-        <source>Castle Core</source>
-        <translation>Castle Core</translation>
+        <source>CANCEL</source>
+        <translation>cancel</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ok</translation>
+    </message>
+    <message>
+        <source>CASTLE Core</source>
+        <translation>CASTLE Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1327,500 +1320,378 @@ MultiSend: %1</translation>
     </message>
 </context>
 <context>
-    <name>MasternodeList</name>
+    <name>LoadingDialog</name>
     <message>
         <source>Form</source>
         <translation>Formulär</translation>
     </message>
     <message>
-        <source>MASTERNODES</source>
-        <translation>HUVUDNODER</translation>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
     </message>
     <message>
-        <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your node should be running but you still see "MISSING" in "Status" field.</source>
-        <translation>Observera: Dina huvudnodernas status i local plånbok kan potentiellt vara något inkorrekta. &lt;br /&gt;Vänta alltid på att plånboken ska synkronisera ytterligare data och sedan dubbelkolla med en annan nod&lt;br /&gt; om din nod skulle fortfarande köras men du ser fortfarande "FATTAS" i "Status" fältet.</translation>
+        <source>Loading</source>
+        <translation>Laddar</translation>
+    </message>
+    </context>
+<context>
+    <name>LockUnlock</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
     </message>
     <message>
-        <source>Alias</source>
-        <translation>Alias</translation>
+        <source>Unlock Wallet</source>
+        <translation>lås upp plånboken</translation>
+    </message>
+    <message>
+        <source>Lock Wallet</source>
+        <translation>lås börsen</translation>
+    </message>
+    <message>
+        <source>Staking Only</source>
+        <translation>Bara staking</translation>
+    </message>
+</context>
+<context>
+    <name>MNRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>user_masternode</source>
+        <translation>användare_masternode</translation>
+    </message>
+    <message>
+        <source>Address: 88.26.164.88:51474</source>
+        <translation>Address: 88.26.164.88:51474</translation>
+    </message>
+    <message>
+        <source>Jan. 19, 2019</source>
+        <translation>Jan. 19, 2019</translation>
+    </message>
+</context>
+<context>
+    <name>MasterNodeWizardDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>2</source>
+        <translation>2</translation>
+    </message>
+    <message>
+        <source>3</source>
+        <translation>3</translation>
+    </message>
+    <message>
+        <source>Intro</source>
+        <translation>intro</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Namn</translation>
     </message>
     <message>
         <source>Address</source>
         <translation>Adress</translation>
     </message>
     <message>
-        <source>Protocol</source>
-        <translation>Protokoll</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a CASTLE Masternode you must dedicate 10.000 CSTL (the unit of CASTLE) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>För att skapa en CASTLE Masternode måste du avsätta 10.000 CSTL (enheten till CASTLE) till nätverket (dessa mynt är dock fortfarande dina och kommer aldrig att lämna ditt innehav). Du kan stänga av noden och låsa upp mynt när som helst.</translation>
     </message>
     <message>
-        <source>Status</source>
-        <translation>Status</translation>
+        <source>Make sure you have this amount of coins.</source>
+        <translation>Se till att du har denna mängd mynt.</translation>
     </message>
     <message>
-        <source>Active</source>
-        <translation>Aktiv</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 CSTL will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>En transaktion på 10 000 CSTL kommer göras till en ny tom adress i din plånbok. Adressen är märkt under huvudnodens namn.</translation>
     </message>
     <message>
-        <source>Last Seen (UTC)</source>
-        <translation>Senast Sedd (UTC)</translation>
+        <source>Address of the node that must always be online running the actual master node.</source>
+        <translation>Adress till den nod som alltid måste vara online som kör den verkliga huvudnoden.</translation>
     </message>
     <message>
-        <source>Pubkey</source>
-        <translation>Pubkey</translation>
+        <source>Enter IP address</source>
+        <translation>Skriv in IP adressen</translation>
     </message>
     <message>
-        <source>S&amp;tart alias</source>
-        <translation>Start &amp;alias</translation>
+        <source>CANCEL</source>
+        <translation>cancel</translation>
     </message>
     <message>
-        <source>Start &amp;all</source>
-        <translation>Start &amp;allt</translation>
+        <source>OK</source>
+        <translation>ok</translation>
     </message>
     <message>
-        <source>Start &amp;MISSING</source>
-        <translation>Start &amp;FATTAS</translation>
+        <source>e.g user_masternode</source>
+        <translation>användare_masternode</translation>
     </message>
     <message>
-        <source>&amp;Update status</source>
-        <translation>&amp;Uppdatera status</translation>
+        <source>NEXT</source>
+        <translation>NÄSTA</translation>
     </message>
     <message>
-        <source>Status will be updated automatically in (sec):</source>
-        <translation>Status kommer automatiskt att uppdateras om (sec):</translation>
+        <source>BACK</source>
+        <translation>TILLBAKA</translation>
     </message>
     <message>
-        <source>0</source>
-        <translation>0</translation>
+        <source>address label cannot be empty</source>
+        <translation> adressetiketten kan inte vara tom
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </translation>
     </message>
     <message>
-        <source>Start alias</source>
-        <translation>Starta alias</translation>
+        <source>IP or port cannot be empty</source>
+        <translation>IP eller port kan inte vara tom</translation>
     </message>
     <message>
-        <source>Confirm masternode start</source>
-        <translation>Bekräfta huvudnod start</translation>
+        <source>Invalid port number</source>
+        <translation>Fel nummer till port</translation>
     </message>
     <message>
-        <source>Are you sure you want to start masternode %1?</source>
-        <translation>Är du säker på att du vill starta huvudnod %1?</translation>
+        <source>Invalid masternode.conf file</source>
+        <translation>Ogiltig masternode.conf-fil</translation>
     </message>
     <message>
-        <source>Confirm all masternodes start</source>
-        <translation>Konfirmera att alla huvudnoder startar</translation>
+        <source>Error parsing masternode.conf file</source>
+        <translation>Fel vid analys av masternode.conf-fil</translation>
     </message>
     <message>
-        <source>Are you sure you want to start ALL masternodes?</source>
-        <translation>Är du säker på att du vill starta ALLA huvudnoder?</translation>
+        <source>Master node created!</source>
+        <translation>Masternode skapad !</translation>
     </message>
     <message>
-        <source>Command is not available right now</source>
-        <translation>Kommandot är inte tillgängligt just nu</translation>
-    </message>
-    <message>
-        <source>You can't use this command until masternode list is synced</source>
-        <translation>Du kan inte använda detta kommando fram tills huvudnodlistan (masternode) är synkad</translation>
-    </message>
-    <message>
-        <source>Confirm missing masternodes start</source>
-        <translation>Konfirmera att försvunnen huvudnod startas</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to start MISSING masternodes?</source>
-        <translation>Är du säker på att du vill starta SAKNADE huvudnoder (masternodes) ?</translation>
+        <source>masternode.conf file doesn't exists</source>
+        <translation>Masternode conf file existerar inte</translation>
     </message>
 </context>
 <context>
-    <name>MultiSendDialog</name>
+    <name>MasterNodesWidget</name>
     <message>
-        <source>MultiSend</source>
-        <translation>MultiSend</translation>
+        <source>Form</source>
+        <translation>Formulär</translation>
     </message>
     <message>
-        <source>Enter whole numbers 1 - 100</source>
-        <translation>Mata in heltal 1 - 100</translation>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
     </message>
     <message>
-        <source>Enter % to Give (1-100)</source>
-        <translation>Slå in % för att Ge (1-100)</translation>
+        <source>N/A</source>
+        <translation>N/A</translation>
     </message>
     <message>
-        <source>Enter Address to Send to</source>
-        <translation>Mata in Adress att Skicka till</translation>
+        <source>Masternodes</source>
+        <translation>Masternoder</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other CSTL addresses after it matures.
-To Add: enter percentage to give and CSTL address to add to the MultiSend vector.
-To Delete: Enter address to delete and press delete.
-MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend tillåter dig att automatiskt skicka upp till 100% av dina staking eller huvudnod belöningar till en lista av andra CSTL adresser efter att belöningarna har mognat.
-För att Lägga till: Ange procent att ge och CSTL adress för att lägga till i MultiSend vektorn.
-För att Ta Bort: Ange adressen som ska tas bort och tryck ta bort.
-MultiSend kommer inte aktiveras om du inte tryckt på Aktivera</translation>
+        <source>Full nodes that incentivize node operators to perform the core consensus functions
+and vote on the treasury system receiving a periodic reward.</source>
+        <translation>Noder som erbjuder nod operatörer att utföra grundläggande konsensus funktioner och rösta på treasury systemet och tar emot en återkommande belöning.</translation>
     </message>
     <message>
-        <source>Add to MultiSend Vector</source>
-        <translation>Lägg till MultiSend Vektor</translation>
+        <source>No active Masternode yet</source>
+        <translation>Ingen aktiv masternode</translation>
     </message>
     <message>
-        <source>Add</source>
-        <translation>Lägg till</translation>
-    </message>
-    <message>
-        <source>Deactivate MultiSend</source>
-        <translation>Avaktivera MultiSend</translation>
-    </message>
-    <message>
-        <source>Deactivate</source>
-        <translation>Avaktivera</translation>
-    </message>
-    <message>
-        <source>Choose an address from the address book</source>
-        <translation>Välj en adress från adressboken</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Percentage of stake to send</source>
-        <translation>Procent av staking att skicka</translation>
-    </message>
-    <message>
-        <source>Percentage:</source>
-        <translation>Procent:</translation>
-    </message>
-    <message>
-        <source>Address to send portion of stake to</source>
-        <translation>Adress till att skicka del av staking till</translation>
-    </message>
-    <message>
-        <source>Address:</source>
-        <translation>Adress:</translation>
-    </message>
-    <message>
-        <source>Label:</source>
-        <translation>Etikett:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>Mata in en etikett till denna adress för att lägga till den till din adressbok</translation>
-    </message>
-    <message>
-        <source>Delete Address From MultiSend Vector</source>
-        <translation>Ta Bort Adresser Från MultiSend Vektorn</translation>
+        <source>Start</source>
+        <translation>Start</translation>
     </message>
     <message>
         <source>Delete</source>
         <translation>Radera</translation>
     </message>
     <message>
-        <source>Activate MultiSend</source>
-        <translation>Aktivera MultiSend</translation>
+        <source>Info</source>
+        <translation>Info</translation>
     </message>
     <message>
-        <source>Activate</source>
-        <translation>Aktivera</translation>
+        <source>Start Masternode</source>
+        <translation>Starta Masternode</translation>
     </message>
     <message>
-        <source>View MultiSend Vector</source>
-        <translation>Visa MultiSend Vektor</translation>
-    </message>
-    <message>
-        <source>View MultiSend</source>
-        <translation>Visa MultiSend</translation>
-    </message>
-    <message>
-        <source>Send For Stakes</source>
-        <translation>Skicka För Stakes</translation>
-    </message>
-    <message>
-        <source>Send For Masternode Rewards</source>
-        <translation>Skicka för masternode belöningar</translation>
-    </message>
-    <message>
-        <source>(no label)</source>
-        <translation>(Ingen etikett)</translation>
-    </message>
-    <message>
-        <source>The entered address:
+        <source>Are you sure you want to start masternode %1?
 </source>
-        <translation>Den inmatade adressen:
+        <translation>Vill du starta masternoden %1 ?
 </translation>
     </message>
     <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>är ogiltig.
-Var vänlig kontrollera adressen och försök igen.</translation>
+        <source>Cannot start masternode, the collateral transaction has not been accepted by the network.
+Please wait few more minutes.</source>
+        <translation>Kan inte starta masternoden, transaktionen har inte accepterats av nätverket ännu. Var vänlig vänta några minuter till.</translation>
     </message>
     <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
+        <source>Remote Masternode Data</source>
+        <translation>Remote Masternode Data</translation>
+    </message>
+    <message>
+        <source>You are just about to export the required data to run a Masternode
+on a remote server to your clipboard.
+
+
+You will only have to paste the data in the castle.conf file
+of your remote server and start it, then start the Masternode using
+this controller wallet (select the Masternode in the list and press "start").
 </source>
-        <translation>Din totala MultiSend vektor mängd överstiger 100% av din staking belöning
-</translation>
+        <translation>Du är precis på väg att exportera nödvändig data för att köra en Masternode
+på en server.
+
+Du behöver bara infoga data i filen castle.conf
+på din server och starta den och starta sedan Masternode med
+denna plånbok (välj Masternode i listan och tryck på "start").</translation>
     </message>
     <message>
-        <source>Please Enter 1 - 100 for percent.</source>
-        <translation>Var vänlig mata in 1 - 100 i procent.</translation>
+        <source>Masternode exported!, check your clipboard</source>
+        <translation>Masternode exporterad, kolla under urklipp.</translation>
     </message>
     <message>
-        <source>Saved the MultiSend to memory, but failed saving properties to the database.
-</source>
-        <translation>Sparade MultiSend till minne, men misslyckades spara egenskaperna till databasen.
-</translation>
+        <source>Delete Masternode</source>
+        <translation>Ta bort Masternode</translation>
     </message>
     <message>
-        <source>MultiSend Vector
-</source>
-        <translation>MultiSend Vektor</translation>
+        <source>You are just about to delete Masternode:
+%1
+
+Are you sure?</source>
+        <translation>Du håller på att ta bort Masternoden %1, är du säker ?</translation>
     </message>
     <message>
-        <source>Removed </source>
-        <translation>Borttagen</translation>
+        <source>Invalid masternode.conf file</source>
+        <translation>Ogiltig masternode.conf-fil</translation>
     </message>
     <message>
-        <source>Could not locate address
-</source>
-        <translation>Kunde inte lokalisera adress
-</translation>
+        <source>Error parsing masternode.conf file</source>
+        <translation>Fel vid analys av masternode.conf-fil</translation>
+    </message>
+    <message>
+        <source>masternode.conf file doesn't exists</source>
+        <translation>Masternode conf file existerar inte</translation>
+    </message>
+    <message>
+        <source>Not enough balance to create a masternode, 10,000 CSTL required.</source>
+        <translation>Inte nog på saldot för att skapa en Masternode, 10000 CSTL behövs.</translation>
+    </message>
+    <message>
+        <source>Error creating masternode</source>
+        <translation>Fel vid Masternode setup</translation>
     </message>
 </context>
 <context>
-    <name>MultisigDialog</name>
+    <name>MnInfoDialog</name>
     <message>
-        <source>Multisignature Address Interactions</source>
-        <translation>Multisignatur Adress Interaktioner</translation>
+        <source>Form</source>
+        <translation>Formulär</translation>
     </message>
     <message>
-        <source>Create MultiSignature &amp;Address</source>
-        <translation>Skapa MultiSignatur &amp;Adress</translation>
+        <source>Public Key:</source>
+        <translation>Allmän Nyckel</translation>
     </message>
     <message>
-        <source>How many people must sign to verify a transaction</source>
-        <translation>Hur många måste skriva på för att verifiera en transaktion</translation>
+        <source>Address: </source>
+        <translation>Adress</translation>
     </message>
     <message>
-        <source>Enter the minimum number of signatures required to sign transactions</source>
-        <translation>Slå in den minsta nödvändiga mängden signaturer till att skriva under transaktioner</translation>
+        <source>Collaterall tx id:</source>
+        <translation>Kollateral tx id:</translation>
     </message>
     <message>
-        <source>Address Label:</source>
-        <translation>Adress Etikett:</translation>
+        <source>Output index:</source>
+        <translation>output index</translation>
     </message>
     <message>
-        <source>Add another address that could sign to verify a transaction from the multisig address.</source>
-        <translation>Lägg till en annan adress som kan skriva under för att verifiera en transaktion från multisig adressen.</translation>
-    </message>
-    <message>
-        <source>&amp;Add Address / Key</source>
-        <translation>&amp;Lägg till Adress / Nyckel</translation>
-    </message>
-    <message>
-        <source>Local addresses or public keys that can sign:</source>
-        <translation>Lokala adresser eller offentliga nycklar som kan skriva under:</translation>
-    </message>
-    <message>
-        <source>Create a new multisig address</source>
-        <translation>Skapa en ny multisig adress</translation>
-    </message>
-    <message>
-        <source>C&amp;reate</source>
-        <translation>C&amp;reate</translation>
+        <source>1 Inputs</source>
+        <translation>1 input</translation>
     </message>
     <message>
         <source>Status:</source>
         <translation>Status:</translation>
     </message>
     <message>
-        <source>Use below to quickly import an address by its redeem. Don't forget to add a label before clicking import!
-Keep in mind, the wallet will rescan the blockchain to find transactions containing the new address.
-Please be patient after clicking import.</source>
-        <translation>Använd nedan för att snabbt importera en adress genom dess inlösning. Glöm inte att lägga till en etikett innan du trycker på importera!
-Kom ihåg att plånboken kommer scanna om the blockchain för att hitta transaktioner som innehåller den nya adressen.
-Var god vänta efter att du trycker på importera.</translation>
+        <source>MISSING</source>
+        <translation>Saknas</translation>
+    </message>
+    </context>
+<context>
+    <name>MyAddressRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
     </message>
     <message>
-        <source>&amp;Import Redeem</source>
-        <translation>&amp;Importera Inlösning</translation>
+        <source>Savings</source>
+        <translation>Sparande</translation>
     </message>
     <message>
-        <source>&amp;Create MultiSignature Tx</source>
-        <translation>&amp;Skapa MultiSignatur Tx</translation>
+        <source>Jan. 19, 2019</source>
+        <translation>Jan. 19, 2019</translation>
     </message>
     <message>
-        <source>Inputs:</source>
-        <translation>Inmatningar:</translation>
-    </message>
-    <message>
-        <source>Coin Control</source>
-        <translation>Mynt Kontroll</translation>
-    </message>
-    <message>
-        <source>Quantity Selected:</source>
-        <translation>Kvantitet Vald:</translation>
-    </message>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Antal:</translation>
-    </message>
-    <message>
-        <source>Add an input to fund the outputs</source>
-        <translation>Lägg till en inmatning för att få outputs</translation>
-    </message>
-    <message>
-        <source>Add a Raw Input</source>
-        <translation>Lägg till en "rå" Inmatning</translation>
-    </message>
-    <message>
-        <source>Address / Amount:</source>
-        <translation>Adress / Mängd:</translation>
-    </message>
-    <message>
-        <source>Add destinations to send CSTL to</source>
-        <translation>Lägg till destination att skicka CSTL till</translation>
-    </message>
-    <message>
-        <source>Add &amp;Destination</source>
-        <translation>Lägg till &amp;Destination</translation>
-    </message>
-    <message>
-        <source>Create a transaction object using the given inputs to the given outputs</source>
-        <translation>Skapa ett transaktionsobjekt genom att använda de givna inmatningarna till de givna utmatningarna</translation>
-    </message>
-    <message>
-        <source>Cr&amp;eate</source>
-        <translation>Cr&amp;eate</translation>
-    </message>
-    <message>
-        <source>&amp;Sign MultiSignature Tx</source>
-        <translation>&amp;Skriv under MultiSignatur Tx</translation>
-    </message>
-    <message>
-        <source>Transaction Hex:</source>
-        <translation>Transaktions Hex:</translation>
-    </message>
-    <message>
-        <source>Sign the transaction from this wallet or from provided private keys</source>
-        <translation>Skriv under från denna plånbok eller från försedd privat nyckel</translation>
-    </message>
-    <message>
-        <source>S&amp;ign</source>
-        <translation>S&amp;ignera</translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;DISABLED until transaction has been signed enough times.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;IINAKTIVERAD tills transaktion har blivit signerad tillräckligt många gånger.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>Co&amp;mmit</source>
-        <translation>Co&amp;mmit</translation>
-    </message>
-    <message>
-        <source>Add private keys to sign the transaction with</source>
-        <translation>Lägg till privata nycklar att skriva under transaktionen med</translation>
-    </message>
-    <message>
-        <source>Add Private &amp;Key</source>
-        <translation>Lägg till Privat &amp;Nyckel</translation>
-    </message>
-    <message>
-        <source>Sign with only private keys (Not Recommened)</source>
-        <translation>Signera endast med privata nycklar (Inte Rekomenderat)</translation>
-    </message>
-    <message>
-        <source>Invalid Tx Hash.</source>
-        <translation>Ogiltig Tx Hash.</translation>
-    </message>
-    <message>
-        <source>Vout position must be positive.</source>
-        <translation>Vout position måste vara positiv.</translation>
-    </message>
-    <message>
-        <source>Maximum possible addresses reached. (15)</source>
-        <translation>Högst antal möjliga adresser nådda. (15)</translation>
-    </message>
-    <message>
-        <source>Vout Position: </source>
-        <translation>Vout Position:</translation>
-    </message>
-    <message>
-        <source>Amount: </source>
-        <translation>Mängd:</translation>
-    </message>
-    <message>
-        <source>Maximum (15)</source>
-        <translation>Max antal (15)</translation>
+        <source>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</source>
+        <translation>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</translation>
     </message>
 </context>
 <context>
-    <name>ObfuscationConfig</name>
+    <name>NavMenuWidget</name>
     <message>
-        <source>Configure Obfuscation</source>
-        <translation>Konfigurera Fördunkling</translation>
+        <source>Form</source>
+        <translation>Formulär</translation>
     </message>
     <message>
-        <source>Basic Privacy</source>
-        <translation>Grundläggande sekretess</translation>
+        <source>V 1.0.0</source>
+        <translation>V 1.0.0</translation>
     </message>
     <message>
-        <source>High Privacy</source>
-        <translation>Hög Sekretess</translation>
-    </message>
-    <message>
-        <source>Maximum Privacy</source>
-        <translation>Maximal Sekretess</translation>
-    </message>
-    <message>
-        <source>Please select a privacy level.</source>
-        <translation>Var vänlig och välj en sekretess nivå.</translation>
-    </message>
-    <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 CSTL</source>
-        <translation>Använd 2 separata huvudnoder för att blanda tillgångar upp till 10000 CSTL</translation>
-    </message>
-    <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 CSTL</source>
-        <translation>Använd 8 separata huvudnoderför att blanda tillgångar upp till 10000 CSTL</translation>
-    </message>
-    <message>
-        <source>Use 16 separate masternodes</source>
-        <translation>Använd 16 separata huvudnoder</translation>
-    </message>
-    <message>
-        <source>This option is the quickest and will cost about ~0.025 CSTL to anonymize 10000 CSTL</source>
-        <translation>Det här alternativet är det snabbaste och kommer kostar ungefär ~0.025 CSTL för att anonymisera 10000 CSTL</translation>
-    </message>
-    <message>
-        <source>This option is moderately fast and will cost about 0.05 CSTL to anonymize 10000 CSTL</source>
-        <translation>Det här alternativet är måttligt snabb och kommer kostar ungefär 0.05 CSTL för att anonymisera 10000 CSTL</translation>
-    </message>
-    <message>
-        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Det här är det långsammaste och säkraste alternativet. Använda maximal anonymitet kommer kosta</translation>
-    </message>
-    <message>
-        <source>0.1 CSTL per 10000 CSTL you anonymize.</source>
-        <translation>0.1 CSTL per 10000 CSTL du anonymiserar.</translation>
-    </message>
-    <message>
-        <source>Obfuscation Configuration</source>
-        <translation>Fördunkling Konfiguration</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening CSTL's configuration screen.</source>
-        <translation>Fördunkling sattes framgångsrikt till grundläggande (%1 och 2 rundor). Du kan ändra det här när du vill genom att öppna CSTL's konfigurationsskärm.</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening CSTL's configuration screen.</source>
-        <translation>Fördunkling sattes framgångsrikt till hög (%1 och 8 rundor). Du kan ändra det här när du vill genom att öppna CSTL's konfigurationsskärm.</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening CSTL's configuration screen.</source>
-        <translation>Fördunkling sattes framgångsrikt till maximal (%1 och 16 rundor). Du kan ändra det här när du vill genom att öppna CSTL's konfigurationsskärm.</translation>
+        <source>v%1</source>
+        <translation>v%1</translation>
     </message>
 </context>
 <context>
@@ -1834,8 +1705,16 @@ Var god vänta efter att du trycker på importera.</translation>
         <translation>Öppna betalningsförfrågan från URI eller fil</translation>
     </message>
     <message>
-        <source>URI:</source>
-        <translation>URI:</translation>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>cancel</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ok</translation>
     </message>
     <message>
         <source>Select payment request file</source>
@@ -1844,6 +1723,17 @@ Var god vänta efter att du trycker på importera.</translation>
     <message>
         <source>Select payment request file to open</source>
         <translation>Välj betalningsförfråganfil till att öppna</translation>
+    </message>
+    </context>
+<context>
+    <name>OptionButton</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
     </message>
 </context>
 <context>
@@ -1865,6 +1755,10 @@ Var god vänta efter att du trycker på importera.</translation>
         <translation>MB</translation>
     </message>
     <message>
+        <source>Number of script &amp;verification threads</source>
+        <translation>Antal script &amp;verifications trådar</translation>
+    </message>
+    <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
         <translation>(0 = auto, &lt;0 = lämna så många "kärnor" fria)</translation>
     </message>
@@ -1877,8 +1771,8 @@ Var god vänta efter att du trycker på importera.</translation>
         <translation>Om du avaktiverar spenderandet av okonfirmerad växel så kommer växeln från en transaktion &lt;br/&gt;ej kunna användas föräns transaktionen har minst en bekräftelse. &lt;br/&gt; Detta påverkar även hur ditt saldo beräknas.</translation>
     </message>
     <message>
-        <source>Automatically open the CSTL client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Öppna automatiskt CSTL klient porten på denna router. Detta funkar endast om din router stödjer UPnP och är påslaget.</translation>
+        <source>Automatically open the CASTLE client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Öppna automatiskt CASTLE klient porten på denna router. Detta funkar endast om din router stödjer UPnP och är påslaget.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1889,20 +1783,28 @@ Var god vänta efter att du trycker på importera.</translation>
         <translation>Tillåt inkommande anslutningar</translation>
     </message>
     <message>
+        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>&amp;Koppla upp genom SOCKS5 proxy (standard proxy):</translation>
+    </message>
+    <message>
         <source>Expert</source>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start CSTL after logging in to the system.</source>
-        <translation>Starta CSTL automatiskt efter inloggning på systemet.</translation>
+        <source>Automatically start CASTLE after logging in to the system.</source>
+        <translation>Starta CASTLE automatiskt efter inloggning på systemet.</translation>
     </message>
     <message>
-        <source>&amp;Start CSTL on system login</source>
-        <translation>&amp;Starta CSTL vid systeminloggning</translation>
+        <source>&amp;Start CASTLE on system login</source>
+        <translation>&amp;Starta CASTLE vid systeminloggning</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
         <translation>Huruvida mynt kontroll funktioner ska visas eller inte.</translation>
+    </message>
+    <message>
+        <source>Enable coin &amp;control features</source>
+        <translation>Tillåt mynt &amp;kontroll funktioner</translation>
     </message>
     <message>
         <source>Show additional tab listing all your masternodes in first sub-tab&lt;br/&gt;and all masternodes on the network in second sub-tab.</source>
@@ -1921,8 +1823,8 @@ Var god vänta efter att du trycker på importera.</translation>
         <translation>&amp;Nätverk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting CSTL.</source>
-        <translation>Användargränssnittets språk kan väljas här. Denna inställning börjar gälla efter att man startat om CSTL.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting CASTLE.</source>
+        <translation>Användargränssnittets språk kan väljas här. Denna inställning börjar gälla efter att man startat om CASTLE.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1941,6 +1843,14 @@ https://www.transifex.com/castle-project/castle-project-translations</translatio
     <message>
         <source>Enable zCSTL Automint</source>
         <translation>Tillåt zCSTL Autoprägling</translation>
+    </message>
+    <message>
+        <source>Enable automatic zCSTL minting from specific addresses</source>
+        <translation>Aktivera automatisk zCSTL prägling från specifika adresser</translation>
+    </message>
+    <message>
+        <source>Enable Automint Addresses</source>
+        <translation>Aktivera autopräglingsadresser</translation>
     </message>
     <message>
         <source>Percentage of incoming CSTL which get automatically converted to zCSTL via Zerocoin Protocol (min: 10%)</source>
@@ -1963,8 +1873,8 @@ https://www.transifex.com/castle-project/castle-project-translations</translatio
         <translation>Staking delnings tröskel:</translation>
     </message>
     <message>
-        <source>Connect to the CSTL network through a SOCKS5 proxy.</source>
-        <translation>Anslut till CSTL nätverket via en SOCKS5 proxy.</translation>
+        <source>Connect to the CASTLE network through a SOCKS5 proxy.</source>
+        <translation>Anslut till CASTLE nätverket via en SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2007,8 +1917,16 @@ https://www.transifex.com/castle-project/castle-project-translations</translatio
         <translation>&amp;Display</translation>
     </message>
     <message>
+        <source>User Interface &amp;language:</source>
+        <translation>Användargränssnitt och &amp;språk:</translation>
+    </message>
+    <message>
         <source>User Interface Theme:</source>
         <translation>Användargränssnitts Tema:</translation>
+    </message>
+    <message>
+        <source>Unit to show amounts in:</source>
+        <translation>Enhet som summan visas på.</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -2021,6 +1939,14 @@ https://www.transifex.com/castle-project/castle-project-translations</translatio
     <message>
         <source>Hide empty balances</source>
         <translation>Dölj tomma saldon</translation>
+    </message>
+    <message>
+        <source>Hide orphan stakes in transaction lists</source>
+        <translation>Göm föräldralösa stakes i transaktionslistan</translation>
+    </message>
+    <message>
+        <source>Hide orphan stakes</source>
+        <translation>Göm föräldralösa stakes</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -2037,6 +1963,10 @@ https://www.transifex.com/castle-project/castle-project-translations</translatio
     <message>
         <source>Reset all client options to default.</source>
         <translation>Starta om alla klient alternativ till standard.</translation>
+    </message>
+    <message>
+        <source>&amp;Reset Options</source>
+        <translation>&amp;Återställnings Inställningar</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -2088,156 +2018,89 @@ https://www.transifex.com/castle-project/castle-project-translations</translatio
     </message>
 </context>
 <context>
-    <name>OverviewPage</name>
+    <name>CASTLEGUI</name>
     <message>
-        <source>Form</source>
-        <translation>Formulär</translation>
+        <source>CASTLE Core</source>
+        <translation>CASTLE Core</translation>
     </message>
     <message>
-        <source>Available:</source>
-        <translation>Tillgänglig:</translation>
+        <source>Wallet</source>
+        <translation>Plånbok</translation>
     </message>
     <message>
-        <source>Your current spendable balance</source>
-        <translation>Ditt nuvarande förbrukningsbara saldo</translation>
+        <source>Node</source>
+        <translation>Nod</translation>
     </message>
     <message>
-        <source>Total Balance, including all unavailable coins.</source>
-        <translation>Totalt saldo, inkluderar alla otillgängliga mynt.</translation>
+        <source>&amp;Show / Hide</source>
+        <translation>&amp;Visa / Dölj</translation>
     </message>
     <message>
-        <source>CSTL Balance</source>
-        <translation>CSTL Saldo</translation>
+        <source>Show or hide the main Window</source>
+        <translation>Visa eller Dölj huvudfönstret</translation>
     </message>
     <message>
-        <source>Pending:</source>
-        <translation>I avvaktan på:</translation>
+        <source>E&amp;xit</source>
+        <translation>Exit</translation>
     </message>
     <message>
-        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
-        <translation>Totala transaktioner som fortfarande behöver bekräftas och som inte ännu  ingår i det förbrukningsbara saldot</translation>
+        <source>Quit application</source>
+        <translation>Avsluta applikationen</translation>
     </message>
     <message>
-        <source>Immature:</source>
-        <translation>Omogen:</translation>
+        <source>CASTLE Core client</source>
+        <translation>CASTLE kärn klient</translation>
     </message>
     <message>
-        <source>Staked or masternode rewards that has not yet matured</source>
-        <translation>Staking eller masternodes belöning som ännu inte mognat</translation>
+        <source>Error</source>
+        <translation>Fel</translation>
     </message>
     <message>
-        <source>Current locked balance in watch-only addresses</source>
-        <translation>Nuvarande låst saldo endast i "watch only" adresser</translation>
+        <source>Warning</source>
+        <translation>Varning</translation>
     </message>
     <message>
-        <source>Your current CSTL balance, unconfirmed and immature transactions included</source>
-        <translation>Ditt nuvarande CSTL saldo, obekräftade och omogna transaktioner är inkluderade</translation>
+        <source>Information</source>
+        <translation>Information</translation>
     </message>
     <message>
-        <source>zCSTL Balance</source>
-        <translation>zCSTL Saldo</translation>
+        <source>System Message</source>
+        <translation>System Meddelande.</translation>
     </message>
     <message>
-        <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zCSTL are spendable.</source>
-        <translation>Mogna: över 20 bekräftelser och över 1 prägling av samma valör efter den blev myntad.
-Dessa zCSTL kan spenderas.</translation>
+        <source>Sent MultiSend transaction</source>
+        <translation>Skickad MultiSend transaktion</translation>
     </message>
     <message>
-        <source>Unconfirmed: less than 20 confirmations
-Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
-        <translation>Obekräftade: Under 20 bekräftelser
-Omogna: bekräftade men under 1 myntning av samma valör efter den blev präglad</translation>
+        <source>Sent transaction</source>
+        <translation>Skickad transaktion</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CSTL network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informationen kan vara föråldrad. Din plånbok synkroniserar automatiskt med CSTL nätverket efter att en anslutning är etablerad, men denna process har inte blivit klar än.</translation>
+        <source>Incoming transaction</source>
+        <translation>Inkommande transaktion</translation>
     </message>
     <message>
-        <source>OVERVIEW</source>
-        <translation>ÖVERBLICK</translation>
-    </message>
-    <message>
-        <source>Combined Balance (including unconfirmed and immature coins)</source>
-        <translation>Kombinerat Saldo (inkluderar obekräftade och omogna mynt)</translation>
-    </message>
-    <message>
-        <source>Combined Balance</source>
-        <translation>Kombinerat Saldo</translation>
-    </message>
-    <message>
-        <source>Unconfirmed transactions to watch-only addresses</source>
-        <translation>Obekräftade transaktioner till "watch only" adresser</translation>
-    </message>
-    <message>
-        <source>Staked or masternode rewards in watch-only addresses that has not yet matured</source>
-        <translation>Staking eller masternode belöningar i "watch only" adresser som ännu inte har mognat</translation>
-    </message>
-    <message>
-        <source>Total:</source>
-        <translation>Totalt:</translation>
-    </message>
-    <message>
-        <source>Current total balance in watch-only addresses</source>
-        <translation>Nuvarande totalt saldo i "watch only" adresser</translation>
-    </message>
-    <message>
-        <source>Watch-only:</source>
-        <translation>"Watch only":</translation>
-    </message>
-    <message>
-        <source>Your current balance in watch-only addresses</source>
-        <translation>Ditt nuvarande saldo i "watch only" adresser</translation>
-    </message>
-    <message>
-        <source>Spendable:</source>
-        <translation>Spenderbar:</translation>
-    </message>
-    <message>
-        <source>Locked CSTL or Masternode collaterals. These are excluded from zCSTL minting.</source>
-        <translation>Låsta CSTL eller masternode som säkerhet. Dessa är uteslutna från zCSTL minting.</translation>
-    </message>
-    <message>
-        <source>Locked:</source>
-        <translation>Låsta:</translation>
-    </message>
-    <message>
-        <source>Unconfirmed:</source>
-        <translation>Obekräftade:</translation>
-    </message>
-    <message>
-        <source>Your current zCSTL balance, unconfirmed and immature zCSTL included.</source>
-        <translation>Ditt nuvarande zCSTL saldo, obekräftade och omogna zCSTL inräknade.</translation>
-    </message>
-    <message>
-        <source>Recent transactions</source>
-        <translation>Senaste transaktioner</translation>
-    </message>
-    <message>
-        <source>out of sync</source>
-        <translation>osynkroniserad</translation>
-    </message>
-    <message>
-        <source>Current percentage of zCSTL.
-If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
+        <source>Date: %1
+Amount: %2
+Type: %3
+Address: %4
 </source>
-        <translation>Nuvarande procent zCSTL.
-Om AutoMint är tillåten så kommer denna procent att vara som den konfigurerade AutoMint procenten (standard = 10%).
+        <translation>Datum: %1
+Mängd: %2
+Typ: %3
+Adress: %4
 </translation>
     </message>
     <message>
-        <source>AutoMint is currently enabled and set to </source>
-        <translation>AutoMint är för tillfället aktiverat och inställt på</translation>
+        <source>A fatal error occurred. CASTLE can no longer continue safely and will quit.</source>
+        <translation>Ett fel inträffade. CASTLE kan inte längre köras säkert och kommer att stängas ned för tillfället.</translation>
     </message>
+</context>
+<context>
+    <name>PWidget</name>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in castle.conf.</source>
-        <translation>För att inaktivera AutoMint, lägg till 'enablezeromint=0' i castle.conf.</translation>
-    </message>
-    <message>
-        <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in castle.conf</source>
-        <translation>AutoMint är för närvarande inaktiverat.
-För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i castle.conf</translation>
+        <source>Wallet locked, you need to unlock it to perform this action</source>
+        <translation>Plånboken är låst, du måste låsa upp den för att utföra den här åtgärden.</translation>
     </message>
 </context>
 <context>
@@ -2267,8 +2130,8 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i c
         <translation>Kan ej starta castle: klicka-för-att-betala hanterare</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid CSTL address or malformed URI parameters.</source>
-        <translation>URI kunde ej analyseras! Detta kan orsakas av en ogiltig CSTL adress eller felproducerade URI parametrar.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid CASTLE address or malformed URI parameters.</source>
+        <translation>URI kunde ej analyseras! Detta kan orsakas av en ogiltig CASTLE adress eller felproducerade URI parametrar.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2347,657 +2210,147 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i c
     </message>
 </context>
 <context>
-    <name>PrivacyDialog</name>
+    <name>PrivacyWidget</name>
     <message>
-        <source>Zerocoin Actions:</source>
-        <translation>Zerocoin Handlingar:</translation>
+        <source>Form</source>
+        <translation>Formulär</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CSTL network after a connection is established, but this process has not completed yet.</source>
-        <translation>nformationen kan vara föråldrad. Din plånbok synkroniserar automatiskt med CSTL nätverket efter att en anslutning är etablerad, men denna process har inte blivit klar än.</translation>
-    </message>
-    <message>
-        <source>Mint Zerocoin</source>
-        <translation>Prägla Zerocoin</translation>
-    </message>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>zCSTL</source>
-        <translation>zCSTL</translation>
-    </message>
-    <message>
-        <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
-        <translation>Tillgänglig att prägla med mynt som är bekräftade och ej låsta eller som är en masternod säkerhet.</translation>
-    </message>
-    <message>
-        <source>Available for Minting:</source>
-        <translation>Tillgängligt att prägla:</translation>
-    </message>
-    <message>
-        <source>0.000 000 00 CSTL</source>
-        <translation>0.000 000 00 CSTL</translation>
-    </message>
-    <message>
-        <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
-        <translation>Starta om Zerocoin Wallet DB. Raderar transaktioner som ej kom med i blockchain.</translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation>Starta om</translation>
-    </message>
-    <message>
-        <source>Coin Control...</source>
-        <translation>Mynt Kontroll</translation>
-    </message>
-    <message>
-        <source>Quantity:</source>
-        <translation>Kvantitet:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Antal:</translation>
-    </message>
-    <message>
-        <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
-        <translation>Skanna om hela blockchain för att hitta Zerocoin präglingar och deras meta-data.</translation>
-    </message>
-    <message>
-        <source>ReScan</source>
-        <translation>Skanna om</translation>
-    </message>
-    <message>
-        <source>Status and/or Mesages from the last Mint Action.</source>
-        <translation>Status och/eller Meddelande från den senaste präglingen.</translation>
-    </message>
-    <message>
-        <source>PRIVACY</source>
-        <translation>SEKRETESS</translation>
-    </message>
-    <message>
-        <source>Enter an amount of Castle to convert to zCSTL</source>
-        <translation>Mata in en mängd CSTL att konvertera till zCSTL</translation>
-    </message>
-    <message>
-        <source>zCSTL Control</source>
-        <translation>zCSTL Kontroll</translation>
-    </message>
-    <message>
-        <source>zCSTL Selected:</source>
-        <translation>Valda zCSTL:</translation>
-    </message>
-    <message>
-        <source>Quantity Selected:</source>
-        <translation>Vald Kvantitet:</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin. Without 'Pay To:' address creates payments to yourself.</source>
-        <translation>Spendera Zerocoin. Utan 'Betala Till:' adress skapar betalningar till dig själv.</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin</source>
-        <translation>Spendera Zerocoin</translation>
-    </message>
-    <message>
-        <source>Available (mature and spendable) zCSTL for spending</source>
-        <translation>Tillgängliga (mogna och spenderbara) zCSTL att spendera</translation>
-    </message>
-    <message>
-        <source>Available Balance:</source>
-        <translation>Tillgängligt Saldo:</translation>
-    </message>
-    <message>
-        <source>Available (mature and spendable) zCSTL for spending
-
-zCSTL are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Tillgängliga (mogna och spenderbara) zCSTL att spendera
-
-zCSTL är mogna när de har över 20 bekräftelser OCH över 2 präglingar av samma valör efter de är myntade.</translation>
-    </message>
-    <message>
-        <source>0 zCSTL</source>
-        <translation>0 zCSTL</translation>
-    </message>
-    <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>Säkerhetsnivå på Zerocoin Transaktioner. Mer är bättre, men behöver mer tid och resurser.</translation>
-    </message>
-    <message>
-        <source>Security Level:</source>
-        <translation>Säkerhetsnivå:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>Säkerhetsnivå 1- 100 (standard: 42)</translation>
-    </message>
-    <message>
-        <source>Pay &amp;To:</source>
-        <translation>Betala &amp;Till:</translation>
-    </message>
-    <message>
-        <source>The CSTL address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>CSTL adress att skicka betalningen till. Skapar betalning till dig själv när den är tom.</translation>
-    </message>
-    <message>
-        <source>Choose previously used address</source>
-        <translation>Använd den föregående använda adressen</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>Infoga adress från urklipp</translation>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <source>&amp;Label:</source>
-        <translation>Etikett:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Mata in en etikett till denna adress för att lägga till den till listan med använda adresser</translation>
-    </message>
-    <message>
-        <source>A&amp;mount:</source>
-        <translation>&amp;Mängd:</translation>
-    </message>
-    <message>
-        <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>Konvertera växel till Zerocoin (extra avgifter kan tillkomma)</translation>
-    </message>
-    <message>
-        <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
-        <translation>Om markerad, försöker plånboken minimera mängden växel istället för att minimera mängden spenderade valörer.</translation>
-    </message>
-    <message>
-        <source>Minimize Change</source>
-        <translation>Minimera Växel</translation>
-    </message>
-    <message>
-        <source>Information about the available Zerocoin funds.</source>
-        <translation>Information angående de tillgängliga Zerocoin tillgångar.</translation>
-    </message>
-    <message>
-        <source>Zerocoin Stats:</source>
-        <translation>Zerocoin Stats:</translation>
-    </message>
-    <message>
-        <source>Total Balance including unconfirmed and immature zCSTL</source>
-        <translation>Totalt Saldo, obekräftade och omogna zCSTL inkluderade</translation>
-    </message>
-    <message>
-        <source>Total Zerocoin  Balance:</source>
-        <translation>Totalt Zerocoinsaldo:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 1:</source>
-        <translation>Valörer med värde 1:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 1:</source>
-        <translation>Valörer med värde 1:</translation>
-    </message>
-    <message>
-        <source>Unconfirmed: less than 20 confirmations
-Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
-        <translation>Obekräftade: Under 20 bekräftelser
-Omogna: bekräftade men under 1 mint av samma valör efter den blev mintad</translation>
-    </message>
-    <message>
-        <source>Show the current status of automatic zCSTL minting.
-
-To change the status (restart required):
-- enable: add 'enablezeromint=1' to castle.conf
-- disable: add 'enablezeromint=0' to castle.conf
-
-To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zCSTL
-
-</source>
-        <translation>Visa den nuvarande statusen av automatisk zCSTL minting.
-
-För att ändra statusen (omstart krävs):
--aktivera: lägg till 'enablezeromint=1' i castle.conf
--inaktivera: lägg till 'enablezeromint=0' i castle.conf
-
-För att ändra procenten (ingen omstart krävs):
--meny Inställningar-&gt;Alternativ-&gt;Procent på autominted zCSTL
-
-</translation>
-    </message>
-    <message>
-        <source>AutoMint Status</source>
-        <translation>AutoPräglings Status</translation>
-    </message>
-    <message>
-        <source>Global Supply:</source>
-        <translation>Global Tillgång:</translation>
-    </message>
-    <message>
-        <source>Denom. 1:</source>
-        <translation>Valör 1:</translation>
-    </message>
-    <message>
-        <source>Denom. 5:</source>
-        <translation>Valör 5:</translation>
-    </message>
-    <message>
-        <source>Denom. 10:</source>
-        <translation>Valör 10:</translation>
-    </message>
-    <message>
-        <source>Denom. 50:</source>
-        <translation>Valör 50:</translation>
-    </message>
-    <message>
-        <source>Denom. 100:</source>
-        <translation>Valör 100:</translation>
-    </message>
-    <message>
-        <source>Denom. 500:</source>
-        <translation>Valör 500:</translation>
-    </message>
-    <message>
-        <source>Denom. 1000:</source>
-        <translation>Valör 1000:</translation>
-    </message>
-    <message>
-        <source>Denom. 5000:</source>
-        <translation>Valör 5000:</translation>
-    </message>
-    <message>
-        <source>0 x</source>
-        <translation>0 x</translation>
-    </message>
-    <message>
-        <source>Denominations with value 5:</source>
-        <translation>Valörer med värde 5:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 5:</source>
-        <translation>Valörer med värde 5:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 10:</source>
-        <translation>Valörer med värde 10:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 10:</source>
-        <translation>Valörer med värde 10:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 50:</source>
-        <translation>Valörer med värde 50:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 50:</source>
-        <translation>Valörer med värde 50:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 100:</source>
-        <translation>Valörer med värde 100:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 100:</source>
-        <translation>Valörer med värde 100:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 500:</source>
-        <translation>Valörer med värde 500:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 500:</source>
-        <translation>Valörer med värde 500:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 1000:</source>
-        <translation>Valörer med värde 1000:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 1000:</source>
-        <translation>Valörer med värde 1000:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 5000:</source>
-        <translation>Valörer med värde 5000:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 5000:</source>
-        <translation>Valörer med värde 5000:</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>Prioritet:</translation>
+        <source>Title</source>
+        <translation>Titel</translation>
     </message>
     <message>
         <source>TextLabel</source>
         <translation>text etikett</translation>
     </message>
     <message>
-        <source>Fee:</source>
-        <translation>Avgift:</translation>
+        <source>PushButton</source>
+        <translation>Tryck på knappen</translation>
     </message>
     <message>
-        <source>Dust:</source>
-        <translation>Dust:</translation>
+        <source>N/A</source>
+        <translation>N/A</translation>
     </message>
     <message>
-        <source>no</source>
-        <translation>nej</translation>
+        <source>Privacy</source>
+        <translation>Privat</translation>
     </message>
     <message>
-        <source>Bytes:</source>
-        <translation>Bytes:</translation>
+        <source>Convert</source>
+        <translation>Konvertera</translation>
     </message>
     <message>
-        <source>Insufficient funds!</source>
-        <translation>Otillräckliga medel !</translation>
+        <source>Mint</source>
+        <translation>Prägla</translation>
     </message>
     <message>
-        <source>Coins automatically selected</source>
-        <translation>Mynt automatiskt valda</translation>
+        <source>Minting zCSTL anonymizes your CSTL by removing any
+transaction history, making transactions untraceable </source>
+        <translation>Prägling av zCSTL anonymiserar dina CSTL genom att ta bort
+transaktionshistorik, vilket gör transaktioner ospårbara</translation>
     </message>
     <message>
-        <source>medium</source>
-        <translation>medel</translation>
+        <source>Mint new zCSTL or convert back to CSTL</source>
+        <translation>Prägla nya zCSTL eller konvertera tillbaka till CSTL</translation>
     </message>
     <message>
-        <source>Coin Control Features</source>
-        <translation>Mynt Kontroll Funktioner</translation>
+        <source>No transactions yet</source>
+        <translation>Inga transaktioner ännu.</translation>
     </message>
     <message>
-        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Om detta är aktiverat, men växeladressen är tom eller ogiltig så kommer växeln att skickas till en nybildad adress.</translation>
+        <source>Mint zCSTL</source>
+        <translation>Prägla zCSTL</translation>
     </message>
     <message>
-        <source>Custom change address</source>
-        <translation>Skräddarsydd växel adress</translation>
+        <source>Enter amount of CSTL to mint into zCSTL</source>
+        <translation>Ange CSTL beloppet att prägla till zCSTL</translation>
     </message>
     <message>
-        <source>Amount After Fee:</source>
-        <translation>Mängd Efter Avgift:</translation>
+        <source>Convert back to CSTL</source>
+        <translation>Konvertera tillbaka till CSTL</translation>
     </message>
     <message>
-        <source>Change:</source>
-        <translation>Växel:</translation>
+        <source>Enter amount of zCSTL to convert back into CSTL</source>
+        <translation>Ange mängden zCSTL som ska konverteras tillbaka till CSTL</translation>
     </message>
     <message>
-        <source>out of sync</source>
-        <translation>osynkroniserad</translation>
+        <source>Zerocoin</source>
+        <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>Mint Status: Okay</source>
-        <translation>Myntnings Status: Okej</translation>
+        <source>zCSTL is currently undergoing maintenance</source>
+        <translation>zCSTL genomgår underhåll</translation>
     </message>
     <message>
-        <source>Copy quantity</source>
-        <translation>Kopiera kvantitet</translation>
+        <source>convert</source>
+        <translation>konvertera</translation>
     </message>
     <message>
-        <source>Copy amount</source>
-        <translation>Kopiera antal</translation>
+        <source>mint</source>
+        <translation>prägla</translation>
     </message>
+    </context>
+<context>
+    <name>ProposalFrame</name>
     <message>
-        <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware.
-Please be patient...</source>
-        <translation>Startar ResetMintZerocoin: skannar om hela blockchain, detta kan ta upp till 30 minuter beroende på din hårdvara.
-Ha lite tålamod...</translation>
+        <source>Open proposal page in browser</source>
+        <translation>Öppna förslagssida i webbläsare</translation>
     </message>
     <message>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware.
-Please be patient...</source>
-        <translation>Spendera Zerocoin.
-Beräkningsmässigt krävande, kan behöva flera minuter beroende på den valda säkerhetsnivån och din hårdvara.
-Var god dröj...</translation>
+        <source> remaining payment(s).</source>
+        <translation>återstående betalningar</translation>
     </message>
     <message>
-        <source>) needed.
-Maximum allowed: </source>
-        <translation>) behövda.
-Högsta tillåtna:</translation>
+        <source>Yes:</source>
+        <translation>Ja:</translation>
     </message>
     <message>
-        <source>zCSTL Spend #: </source>
-        <translation>zCSTL spendering #:</translation>
+        <source>Abstain:</source>
+        <translation>Avstå:</translation>
     </message>
     <message>
-        <source>zCSTL Mint</source>
-        <translation>zCSTL Prägling</translation>
+        <source>No:</source>
+        <translation>Nej:</translation>
     </message>
     <message>
-        <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
-        <translation>&lt;b&gt;aktiverad&lt;/b&gt;.</translation>
+        <source>Open link</source>
+        <translation>Öppna länk:</translation>
     </message>
     <message>
-        <source> &lt;b&gt;disabled&lt;/b&gt;.</source>
-        <translation>&lt;b&gt;inaktiverad&lt;/b&gt;.</translation>
+        <source>Copy link</source>
+        <translation>Kopiera länk:</translation>
     </message>
     <message>
-        <source> Configured target percentage: &lt;b&gt;</source>
-        <translation>Konfigurerat procent mål: &lt;b&gt;</translation>
+        <source>Wallet Locked</source>
+        <translation>Plånbok låst:</translation>
     </message>
     <message>
-        <source>zCSTL is currently disabled due to maintenance.</source>
-        <translation>zCSTL är för nuvarande inaktiverat p.g.a. underhåll.</translation>
+        <source>You must unlock your wallet to vote.</source>
+        <translation>Du måste låsa upp din plånbok för att rösta.</translation>
     </message>
     <message>
-        <source>zCSTL is currently undergoing maintenance.</source>
-        <translation>zCSTL genomgår för tillfället underhåll.</translation>
+        <source>Do you want to vote %1 on</source>
+        <translation>Vill du rösta %1 på</translation>
     </message>
     <message>
-        <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
-        <translation>Valör med värde &lt;b&gt;1&lt;/b&gt;:</translation>
+        <source>using all your masternodes?</source>
+        <translation>använda alla dina masternodes ?</translation>
     </message>
     <message>
-        <source>Denom. with value &lt;b&gt;5&lt;/b&gt;:</source>
-        <translation>Valör med värde &lt;b&gt;5&lt;/b&gt;:</translation>
+        <source>Proposal Hash:</source>
+        <translation>Föreslags hash:</translation>
     </message>
     <message>
-        <source>Denom. with value &lt;b&gt;10&lt;/b&gt;:</source>
-        <translation>Valör med värde &lt;b&gt;10&lt;/b&gt;:</translation>
+        <source>Proposal URL:</source>
+        <translation>Föreslags URL:</translation>
     </message>
     <message>
-        <source>Denom. with value &lt;b&gt;50&lt;/b&gt;:</source>
-        <translation>Valör med värde &lt;b&gt;50&lt;/b&gt;:</translation>
+        <source>Confirm Vote</source>
+        <translation>Bekräfta Röst:</translation>
     </message>
     <message>
-        <source>Denom. with value &lt;b&gt;100&lt;/b&gt;:</source>
-        <translation>Valör med värde &lt;b&gt;100&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;500&lt;/b&gt;:</source>
-        <translation>Valör med värde &lt;b&gt;500&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;1000&lt;/b&gt;:</source>
-        <translation>Valör med värde &lt;b&gt;1000&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;5000&lt;/b&gt;:</source>
-        <translation>Valör med värde &lt;b&gt;5000&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>AutoMint Status:</source>
-        <translation>AutoMyntnings Status:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;1&lt;/b&gt;:</source>
-        <translation>Valör &lt;b&gt;1&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;5&lt;/b&gt;:</source>
-        <translation>Valör &lt;b&gt;5&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;10&lt;/b&gt;:</source>
-        <translation>Valör &lt;b&gt;10&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;50&lt;/b&gt;:</source>
-        <translation>Valör &lt;b&gt;50&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;100&lt;/b&gt;:</source>
-        <translation>Valör &lt;b&gt;100&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;500&lt;/b&gt;:</source>
-        <translation>Valör &lt;b&gt;500&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;1000&lt;/b&gt;:</source>
-        <translation>Valör &lt;b&gt;1000&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;5000&lt;/b&gt;:</source>
-        <translation>Valör &lt;b&gt;5000&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
-        <translation>Fel: Din plånbok är låst. Var vänlig och mata in plånbokens lösenfras först.</translation>
-    </message>
-    <message>
-        <source>Message: Enter an amount &gt; 0.</source>
-        <translation>Message: Mata in en mängd &gt; 0.</translation>
-    </message>
-    <message>
-        <source>Minting </source>
-        <translation>Myntade</translation>
-    </message>
-    <message>
-        <source>Successfully minted </source>
-        <translation>Framgångsrikt Myntade</translation>
-    </message>
-    <message>
-        <source> zCSTL in </source>
-        <translation>zCSTL i</translation>
-    </message>
-    <message>
-        <source> sec. Used denominations:
-</source>
-        <translation>sek. Använda valörer:
-</translation>
-    </message>
-    <message>
-        <source>Duration: </source>
-        <translation>Varaktighet:</translation>
-    </message>
-    <message>
-        <source> sec.
-</source>
-        <translation>sec.
-</translation>
-    </message>
-    <message>
-        <source>Starting ResetSpentZerocoin: </source>
-        <translation>Startar ResetSpentZerocoin:</translation>
-    </message>
-    <message>
-        <source>No 'Pay To' address provided, creating local payment</source>
-        <translation>Ingen 'Betala Till' adress inmatad, skapar lokal betalning</translation>
-    </message>
-    <message>
-        <source>Invalid Castle Address</source>
-        <translation>Ogiltig Castle Adress</translation>
-    </message>
-    <message>
-        <source>Invalid Send Amount</source>
-        <translation>Ogiltig Mängd att Skicka</translation>
-    </message>
-    <message>
-        <source>Confirm additional Fees</source>
-        <translation>Bekräfta Tilläggsavgifter</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to send?&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Är du säker på att du vill skicka?&lt;br /&gt;&lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source> to address </source>
-        <translation>till adress</translation>
-    </message>
-    <message>
-        <source> to a newly generated (unused and therefore anonymous) local address &lt;br /&gt;</source>
-        <translation>till en nygjord (oanvänd och därför anonym) lokal adress&lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source>with Security Level </source>
-        <translation>med Säkerhetsnivå</translation>
-    </message>
-    <message>
-        <source>Confirm send coins</source>
-        <translation>Bekräfta att skicka mynt</translation>
-    </message>
-    <message>
-        <source>Version 1 zCSTL require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zCSTL kräver en säkerhetsnivå på 100 för att kunna spenderas med framgång.</translation>
-    </message>
-    <message>
-        <source>Failed to spend zCSTL</source>
-        <translation>Misslyckades med att spendera zCSTL</translation>
-    </message>
-    <message>
-        <source>Failed to fetch mint associated with serial hash</source>
-        <translation>Misslyckades med att hämta myntning associerat med serie hashen</translation>
-    </message>
-    <message>
-        <source>Too much inputs (</source>
-        <translation>För många input (</translation>
-    </message>
-    <message>
-        <source>
-Either mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
-        <translation>
-Minta antingen högre valörer (så att färre inputs behövs) eller spendera mindre.</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin failed with status = </source>
-        <translation>Spendering av Zerocoin misslyckades med status =</translation>
-    </message>
-    <message numerus="yes">
-        <source>PrivacyDialog</source>
-        <comment>Enter an amount of CSTL to convert to zCSTL</comment>
-        <translation><numerusform>SekretessRuta</numerusform><numerusform>SekretessDialog</numerusform></translation>
-    </message>
-    <message>
-        <source>denomination: </source>
-        <translation>valör:</translation>
-    </message>
-    <message>
-        <source>serial: </source>
-        <translation>serie:</translation>
-    </message>
-    <message>
-        <source>Spend is 1 of : </source>
-        <translation>Spendering är 1 av :</translation>
-    </message>
-    <message>
-        <source>value out: </source>
-        <translation>utgångsvärde:</translation>
-    </message>
-    <message>
-        <source>address: </source>
-        <translation>adress:</translation>
-    </message>
-    <message>
-        <source>Sending successful, return code: </source>
-        <translation>Sändning lyckat, returkod:</translation>
-    </message>
-    <message>
-        <source>txid: </source>
-        <translation>txid:</translation>
-    </message>
-    <message>
-        <source>fee: </source>
-        <translation>avgift:</translation>
+        <source>Vote Results</source>
+        <translation>Röst resultat:</translation>
     </message>
 </context>
 <context>
@@ -3005,10 +2358,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     <message>
         <source>Amount</source>
         <translation>Mängd</translation>
-    </message>
-    <message>
-        <source>Enter a CSTL address (e.g. %1)</source>
-        <translation>Mata in en CSTL adress (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -3035,6 +2384,10 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>"BLOOM"</translation>
     </message>
     <message>
+        <source>ZK_BLOOM</source>
+        <translation>ZK_BLOOM</translation>
+    </message>
+    <message>
         <source>UNKNOWN</source>
         <translation>OKÄND</translation>
     </message>
@@ -3050,20 +2403,21 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
-<context>
-    <name>QRImageWidget</name>
     <message>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Spara Bild...</translation>
+        <source>CASTLE Core</source>
+        <translation>CASTLE Core</translation>
     </message>
     <message>
-        <source>Save QR Code</source>
-        <translation>Spara QR Kod</translation>
+        <source>Error: Specified data directory "%1" does not exist.</source>
+        <translation>Fel: Den angivna datakatalogen "%1" existerar inte.</translation>
     </message>
     <message>
-        <source>PNG Image (*.png)</source>
-        <translation>PNG Bild (*.png)</translation>
+        <source>Error reading masternode configuration file: %1</source>
+        <translation>Fel vid inläsning av masternodens konfigurationsfil: %1</translation>
+    </message>
+    <message>
+        <source>CASTLE Core didn't yet exit safely...</source>
+        <translation>CASTLE Core avslutades ännu inte säkert...</translation>
     </message>
 </context>
 <context>
@@ -3074,7 +2428,7 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     </message>
     <message>
         <source>&amp;Information</source>
-        <translation>information</translation>
+        <translation>&amp;Information</translation>
     </message>
     <message>
         <source>General</source>
@@ -3097,6 +2451,10 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Antal anslutningar</translation>
     </message>
     <message>
+        <source>&amp;Open</source>
+        <translation>&amp;Öppna</translation>
+    </message>
+    <message>
         <source>Startup time</source>
         <translation>Starttid</translation>
     </message>
@@ -3111,10 +2469,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     <message>
         <source>Debug log file</source>
         <translation>Felsökningslogg</translation>
-    </message>
-    <message>
-        <source>Using OpenSSL version</source>
-        <translation>Använder OpenSSL version</translation>
     </message>
     <message>
         <source>Build date</source>
@@ -3137,12 +2491,16 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Blockchain</translation>
     </message>
     <message>
-        <source>Open the CSTL debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öppna CSTL felsökningslogg från den nuvarande data katalogen. Detta kan ta några sekunder för stora logg filer.</translation>
+        <source>Open the CASTLE debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öppna CASTLE felsökningslogg från den nuvarande data katalogen. Detta kan ta några sekunder för stora logg filer.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
         <translation>Antal Huvudnoder "masternodes"</translation>
+    </message>
+    <message>
+        <source>&amp;Console</source>
+        <translation>&amp;Konsoll</translation>
     </message>
     <message>
         <source>Clear console</source>
@@ -3151,6 +2509,10 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     <message>
         <source>&amp;Network Traffic</source>
         <translation>&amp;Nätverkstrafik</translation>
+    </message>
+    <message>
+        <source>&amp;Clear</source>
+        <translation>&amp;Rensa</translation>
     </message>
     <message>
         <source>Totals</source>
@@ -3223,6 +2585,10 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     <message>
         <source>Ping Time</source>
         <translation>Ping Tid</translation>
+    </message>
+    <message>
+        <source>&amp;Wallet Repair</source>
+        <translation>&amp;Plånboks Reparation</translation>
     </message>
     <message>
         <source>Delete local Blockchain Folders</source>
@@ -3341,8 +2707,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Ut:</translation>
     </message>
     <message>
-        <source>Welcome to the CSTL RPC console.</source>
-        <translation>Välkommen till CSTL RPC konsol.</translation>
+        <source>Welcome to the CASTLE RPC console.</source>
+        <translation>Välkommen till CASTLE RPC konsol.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3351,6 +2717,26 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     <message>
         <source>Ban Node for</source>
         <translation>förbjud Nod för att</translation>
+    </message>
+    <message>
+        <source>1 &amp;hour</source>
+        <translation>1 &amp;timme</translation>
+    </message>
+    <message>
+        <source>1 &amp;day</source>
+        <translation>1 &amp;dag</translation>
+    </message>
+    <message>
+        <source>1 &amp;week</source>
+        <translation>1 &amp;vecka</translation>
+    </message>
+    <message>
+        <source>1 &amp;year</source>
+        <translation>1 &amp;år</translation>
+    </message>
+    <message>
+        <source>&amp;Unban Node</source>
+        <translation>&amp;Ta bort bann från Nod</translation>
     </message>
     <message>
         <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
@@ -3373,12 +2759,16 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Godkänn omsynkronisering av Blockchain</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Använd upp- och ner-pilarna för att navigera historiken, och &lt;b&gt;Ctrl-L&lt;/b&gt; för att rensa skärm.</translation>
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation>Använd upp- och ner-pilarna för att navigera historiken, och %1 för att rensa skärm.</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Skriv &lt;b&gt;help&lt;/b&gt; för en överblick av tillgängliga kommandon.</translation>
+    </message>
+    <message>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+        <translation>VARNING: Bedrägare har varit aktiva, säger åt användare att skriva kommandon här, stjäl deras innehåll i plånboken. Använd inte denna konsoll utan att fullt förstå vad ett kommando kan leda till.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -3430,143 +2820,43 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     </message>
 </context>
 <context>
-    <name>ReceiveCoinsDialog</name>
+    <name>ReceiveDialog</name>
     <message>
-        <source>Reuse one of the previously used receiving addresses.&lt;br&gt;Reusing addresses has security and privacy issues.&lt;br&gt;Do not use this unless re-generating a payment request made before.</source>
-        <translation>Återanvänd en av de föregående använda adresserna.&lt;br&gt;Återanvända adresser har säkerhets och sekretess problem.&lt;br&gt;Använd inte detta utöver att generera om en tidigare betalningsförfrågan.</translation>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
     </message>
     <message>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>Återanvänd en befintlig mottagande adress (inte att rekommendera)</translation>
+        <source>Transaction Details</source>
+        <translation>Transaktions detaljer</translation>
     </message>
     <message>
-        <source>&amp;Message:</source>
-        <translation>&amp;Meddelande:</translation>
+        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </translation>
     </message>
     <message>
-        <source>An optional label to associate with the new receiving address.</source>
-        <translation>En valfri etikett att associera med den nya mottagaradressen.</translation>
+        <source>CANCEL</source>
+        <translation>cancel</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the CSTL network.</source>
-        <translation>Ett frivilligt meddelande att bifoga till betalningsförfrågan, som kommer visas när förfrågan öppnas. Observera: Medelandet kommer inte skickas med betalningen över CSTL nätverket.</translation>
-    </message>
-    <message>
-        <source>RECEIVE</source>
-        <translation>ERHÅLLA</translation>
-    </message>
-    <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the CSTL network.</source>
-        <translation>Ett frivilligt meddelande att bifoga till betalningsförfrågan, vilket kommer visas när förfrågan öppnas.&lt;br&gt;Observera: Medelandet kommer inte skickas med betalningen över CSTL nätverket.</translation>
-    </message>
-    <message>
-        <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
-        <translation>Använd detta formulär till betalningsförfrågningar. Alla fält är &lt;b&gt;frivilliga&lt;/b&gt;.</translation>
-    </message>
-    <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Etikett:</translation>
-    </message>
-    <message>
-        <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
-        <translation>En frivillig mängd att anhålla om. Lämna den tom eller på noll för att inte fråga efter en specifik mängd.</translation>
-    </message>
-    <message>
-        <source>Clear all fields of the form.</source>
-        <translation>Rensa alla fält i formuläret.</translation>
-    </message>
-    <message>
-        <source>Clear</source>
-        <translation>Rensa</translation>
-    </message>
-    <message>
-        <source>Requested payments history</source>
-        <translation>Förfrågade betalningshistorik</translation>
-    </message>
-    <message>
-        <source>Show the selected request (does the same as double clicking an entry)</source>
-        <translation>Visa förfrågan (gör samma sak som att dubbelklicka)</translation>
-    </message>
-    <message>
-        <source>Show</source>
-        <translation>Visa</translation>
-    </message>
-    <message>
-        <source>Remove the selected entries from the list</source>
-        <translation>Tar bort de valda posterna från listan</translation>
-    </message>
-    <message>
-        <source>Remove</source>
-        <translation>Ta bort</translation>
-    </message>
-    <message>
-        <source>Copy label</source>
-        <translation>Kopiera etikett</translation>
-    </message>
-    <message>
-        <source>Copy message</source>
-        <translation>Kopiera meddelande</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Kopiera antal</translation>
+        <source>OK</source>
+        <translation>ok</translation>
     </message>
 </context>
 <context>
-    <name>ReceiveRequestDialog</name>
+    <name>ReceiveWidget</name>
     <message>
-        <source>QR Code</source>
-        <translation>QR Kod</translation>
+        <source>Form</source>
+        <translation>Formulär</translation>
     </message>
     <message>
-        <source>Copy &amp;URI</source>
-        <translation>Kopiera &amp;URI</translation>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
     </message>
     <message>
-        <source>Copy &amp;Address</source>
-        <translation>Kopiera &amp;Adress</translation>
+        <source>Address copied</source>
+        <translation>Adress kopierad</translation>
     </message>
-    <message>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Spara Bild...</translation>
-    </message>
-    <message>
-        <source>Request payment to %1</source>
-        <translation>Fråga om betalning till %1</translation>
-    </message>
-    <message>
-        <source>Payment information</source>
-        <translation>Betalningsinformation</translation>
-    </message>
-    <message>
-        <source>URI</source>
-        <translation>URI</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Adress</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Mängd</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Etikett</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Meddelande</translation>
-    </message>
-    <message>
-        <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>Resulterande URI för långt, försök att minska etikettens / meddelandets text.</translation>
-    </message>
-    <message>
-        <source>Error encoding URI into QR Code.</source>
-        <translation>Kunde inte omvandla URI till QR Kod.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
@@ -3579,7 +2869,11 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     </message>
     <message>
         <source>Message</source>
-        <translation>Medelande</translation>
+        <translation>Meddelande</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adress</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3599,499 +2893,208 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     </message>
 </context>
 <context>
-    <name>SendCoinsDialog</name>
+    <name>RequestDialog</name>
     <message>
-        <source>Send Coins</source>
-        <translation>Skicka Mynt</translation>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
     </message>
     <message>
-        <source>SEND</source>
-        <translation>SKICKA</translation>
+        <source>Amount</source>
+        <translation>Mängd</translation>
     </message>
     <message>
-        <source>Coin Control Features</source>
-        <translation>Mynt Kontroll Funktioner</translation>
+        <source>CSTL</source>
+        <translation>CSTL</translation>
     </message>
     <message>
-        <source>Insufficient funds!</source>
-        <translation>Otillräckliga pengar!</translation>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
     </message>
     <message>
-        <source>Quantity:</source>
-        <translation>Kvantitet:</translation>
+        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </translation>
     </message>
     <message>
-        <source>Bytes:</source>
-        <translation>Bytes:</translation>
+        <source>CANCEL</source>
+        <translation>cancel</translation>
     </message>
     <message>
-        <source>Amount:</source>
-        <translation>Antal:</translation>
+        <source>Label</source>
+        <translation>Etikett</translation>
     </message>
     <message>
-        <source>Priority:</source>
-        <translation>Prioritet:</translation>
+        <source>Error</source>
+        <translation>Fel</translation>
     </message>
+    </context>
+<context>
+    <name>SendChangeAddressDialog</name>
     <message>
-        <source>medium</source>
-        <translation>medel</translation>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
     </message>
     <message>
-        <source>Fee:</source>
-        <translation>Avgift:</translation>
+        <source>Transaction Details</source>
+        <translation>Transaktions detaljer</translation>
     </message>
     <message>
-        <source>Dust:</source>
-        <translation>Dust:</translation>
+        <source>CANCEL</source>
+        <translation>cancel</translation>
     </message>
     <message>
-        <source>no</source>
-        <translation>nej</translation>
+        <source>OK</source>
+        <translation>ok</translation>
     </message>
+    </context>
+<context>
+    <name>SendCustomFeeDialog</name>
     <message>
-        <source>After Fee:</source>
-        <translation>Efter Avgift:</translation>
+        <source>Form</source>
+        <translation>Formulär</translation>
     </message>
     <message>
-        <source>Change:</source>
-        <translation>Växel:</translation>
+        <source>Transaction Details</source>
+        <translation>Transaktions detaljer</translation>
     </message>
     <message>
-        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Om detta är aktiverat, men växeladressen är tom eller ogiltig så kommer växel skickas till en nybildad adress.</translation>
+        <source>CANCEL</source>
+        <translation>cancel</translation>
     </message>
     <message>
-        <source>Custom change address</source>
-        <translation>Skräddarsydd växel adress</translation>
+        <source>OK</source>
+        <translation>ok</translation>
     </message>
     <message>
-        <source>Split UTXO</source>
-        <translation>Dela upp UTXO</translation>
-    </message>
-    <message>
-        <source># of outputs</source>
-        <translation># utgångar</translation>
-    </message>
-    <message>
-        <source>UTXO Size:</source>
-        <translation>UTXO Storlek:</translation>
-    </message>
-    <message>
-        <source>0 CSTL</source>
-        <translation>0 CSTL</translation>
-    </message>
-    <message>
-        <source>Transaction Fee:</source>
-        <translation>Transaktionsavgift:</translation>
-    </message>
-    <message>
-        <source>Choose...</source>
-        <translation>Välj...</translation>
-    </message>
-    <message>
-        <source>Minimize</source>
-        <translation>Minimera</translation>
-    </message>
-    <message>
-        <source>per kilobyte</source>
-        <translation>per kilobyte</translation>
-    </message>
-    <message>
-        <source>total at least</source>
-        <translation>totalt minst</translation>
-    </message>
-    <message>
-        <source>(read the tooltip)</source>
-        <translation>(läs verktygstipset)</translation>
-    </message>
-    <message>
-        <source>Custom:</source>
-        <translation>Skräddarsy:</translation>
-    </message>
-    <message>
-        <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
-        <translation>(Smart fee inte initierad än. Detta tar vanligtvis några block...)</translation>
-    </message>
-    <message>
-        <source>SwiftX</source>
-        <translation>SwiftX</translation>
-    </message>
-    <message>
-        <source>Confirmation time:</source>
-        <translation>Bekräftelsetid:</translation>
-    </message>
-    <message>
-        <source>Open Coin Control...</source>
-        <translation>Öppna Mynt Kontroll...</translation>
-    </message>
-    <message>
-        <source>Coins automatically selected</source>
-        <translation>Mynt automatiskt valda</translation>
-    </message>
-    <message>
-        <source>If the custom fee is set to 1000 uCSTLs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCSTLs in fee,&lt;br /&gt;while "at least" pays 1000 uCSTLs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Om 1000 uCSTLs är den valda skräddarsydda avgiften och transaktionen är bara 250 bytes så kommer "per kilobyte" bara betala 250 uCSTLs i avgift,&lt;br /&gt;medans "minst" betalar 1000 uCSTLs. För transaktioner större än en kilobyte så betalar båda per kilobyte.</translation>
-    </message>
-    <message>
-        <source>If the custom fee is set to 1000 uCSTLs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCSTLs in fee,&lt;br /&gt;while "total at least" pays 1000 uCSTLs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Om 1000 uCSTLs är den valda skräddarsydda avgiften och transaktionen är bara 250 bytes så kommer "per kilobyte" bara betala 250 uCSTLs i avgift,&lt;br /&gt;medans "minst totalt" betalar 1000 uCSTLs. För transaktioner större än en kilobyte så betalar båda per kilobyte.</translation>
-    </message>
-    <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for CSTL transactions than the network can process.</source>
-        <translation>Att endast betala minimum avgift är okej så länge som transaktionsvolymen är mindre än rummet i blocken.&lt;br /&gt;Men var medveten om att detta kan sluta som en transaktion som aldrig blir bekräftad när det finns ett större behov av CSTL transaktioner än nätverket kan bearbeta.</translation>
-    </message>
-    <message>
-        <source>normal</source>
-        <translation>normal</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>snabb</translation>
-    </message>
-    <message>
-        <source>Recommended</source>
-        <translation>Rekommenderad</translation>
-    </message>
-    <message>
-        <source>Send as zero-fee transaction if possible</source>
-        <translation>Skicka som noll-avgifts transaktion om möjligt</translation>
-    </message>
-    <message>
-        <source>(confirmation may take longer)</source>
-        <translation>(bekräftelse kan ta längre tid)</translation>
-    </message>
-    <message>
-        <source>Confirm the send action</source>
-        <translation>Bekräfta skickandet</translation>
-    </message>
-    <message>
-        <source>Clear all fields of the form.</source>
-        <translation>Rensa alla fält i formuläret.</translation>
-    </message>
-    <message>
-        <source>Clear &amp;All</source>
-        <translation>Rensa &amp;allt</translation>
-    </message>
-    <message>
-        <source>Send to multiple recipients at once</source>
-        <translation>Skicka till flera mottagare på en gång</translation>
-    </message>
-    <message>
-        <source>Anonymized CSTL</source>
-        <translation>Anonymiserade CSTL</translation>
-    </message>
-    <message>
-        <source>Balance:</source>
-        <translation>Saldo:</translation>
-    </message>
-    <message>
-        <source>Copy quantity</source>
-        <translation>Kopiera kvantitet</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Kopiera antal</translation>
-    </message>
-    <message>
-        <source>Copy fee</source>
-        <translation>Kopiera avgift</translation>
-    </message>
-    <message>
-        <source>Copy after fee</source>
-        <translation>Kopiera efter avgift</translation>
-    </message>
-    <message>
-        <source>Copy bytes</source>
-        <translation>Kopiera bytes</translation>
-    </message>
-    <message>
-        <source>Copy priority</source>
-        <translation>Kopierings prioritet</translation>
-    </message>
-    <message>
-        <source>Copy dust</source>
-        <translation>Kopiera dust</translation>
-    </message>
-    <message>
-        <source>Copy change</source>
-        <translation>kopiera ändringar</translation>
-    </message>
-    <message>
-        <source>The split block tool does not work when sending to outside addresses. Try again.</source>
-        <translation>Split block verktyget fungerar inte när man ska skicka till adresser utanför. Försök igen.</translation>
-    </message>
-    <message>
-        <source>The split block tool does not work with multiple addresses. Try again.</source>
-        <translation>Split block verktyget fungerar inte med flera adresser. Försök igen.</translation>
-    </message>
-    <message>
-        <source>Warning: Invalid CSTL address</source>
-        <translation>Varning: Ogiltig CSTL adress</translation>
-    </message>
-    <message>
-        <source>%1 to %2</source>
-        <translation>%1 till %2</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to send?</source>
-        <translation>Är du säker att du vill skicka?</translation>
-    </message>
-    <message>
-        <source>are added as transaction fee</source>
-        <translation>är tillagda som transaktionsavgift</translation>
-    </message>
-    <message>
-        <source>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</source>
-        <translation>Totala Mängd = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</translation>
-    </message>
-    <message>
-        <source>Confirm send coins</source>
-        <translation>Bekräfta att skicka mynt</translation>
-    </message>
-    <message>
-        <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
-        <translation>En avgift %1 gånger större än %2 per kB anses vara en galet hög avgift.</translation>
-    </message>
-    <message numerus="yes">
-        <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation><numerusform>Bekräftelse börjar om uppskattningsvis %n block.</numerusform><numerusform>Bekräftelse börjar om uppskattningsvis %n block.</numerusform></translation>
-    </message>
-    <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>Mottagaradressen är ej giltig, var vänlig kontrollera den.</translation>
-    </message>
-    <message>
-        <source>using SwiftX</source>
-        <translation>använder SwiftX</translation>
-    </message>
-    <message>
-        <source> split into %1 outputs using the UTXO splitter.</source>
-        <translation>dela upp i %1 utgångar med användning av UTXO fördelare.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</source>
-        <translation>&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>The amount to pay must be larger than 0.</source>
-        <translation>Mängden som betalas måste överstiga 0.</translation>
-    </message>
-    <message>
-        <source>The amount exceeds your balance.</source>
-        <translation>Mängden överstiger ditt saldo.</translation>
-    </message>
-    <message>
-        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>Det totala överstiger ditt saldo när %1 transaktionsavgiften lägg på.</translation>
-    </message>
-    <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>En adress har använts två gånger, kan endast skicka till en adress en gång per skickad transaktion.</translation>
-    </message>
-    <message>
-        <source>Transaction creation failed!</source>
-        <translation>Misslyckades att skapa transaktion!</translation>
-    </message>
-    <message>
-        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Transaktionen nekades! Detta kan hända om några mynt i din plånbok redan har spenderats, möjligen att du använt en kopia av wallet.dat och spenderade mynt från kopian men de inte blivit markerade som spenderade här.</translation>
-    </message>
-    <message>
-        <source>Error: The wallet was unlocked only to anonymize coins.</source>
-        <translation>Felmeddelande: Plånboken låstes upp endast för att anonymisera mynt.</translation>
-    </message>
-    <message>
-        <source>Error: The wallet was unlocked only to anonymize coins. Unlock canceled.</source>
-        <translation>Felmeddelande: Plånboken låstes upp endast för att anonymisera mynt. Upplåsning avbrutet.</translation>
-    </message>
-    <message>
-        <source>Pay only the minimum fee of %1</source>
-        <translation>Betala endast minsta avgift på %1</translation>
-    </message>
-    <message>
-        <source>Warning: Unknown change address</source>
-        <translation>Varning: Okänd växeladress</translation>
-    </message>
-    <message>
-        <source>(no label)</source>
-        <translation>(Ingen etikett)</translation>
+        <source>SAVE</source>
+        <translation>spara</translation>
     </message>
 </context>
 <context>
-    <name>SendCoinsEntry</name>
+    <name>SendMultiRow</name>
     <message>
-        <source>This is a normal payment.</source>
-        <translation>Detta är en normal betalning.</translation>
+        <source>Form</source>
+        <translation>Formulär</translation>
     </message>
     <message>
-        <source>Pay &amp;To:</source>
-        <translation>Betala &amp;Till:</translation>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
     </message>
     <message>
-        <source>The CSTL address to send the payment to</source>
-        <translation>CSTL adressen att skicka betalningen till</translation>
+        <source>Enter address</source>
+        <translation>Skriv in Adress</translation>
+    </message>
+    </context>
+<context>
+    <name>SendWidget</name>
+    <message>
+        <source>Send</source>
+        <translation>Skicka</translation>
     </message>
     <message>
-        <source>Choose previously used address</source>
-        <translation>Använd den föregående använda adressen</translation>
+        <source>Amount</source>
+        <translation>Mängd</translation>
     </message>
     <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
+        <source>Spend Zerocoin</source>
+        <translation>Spendera Zerocoin</translation>
     </message>
     <message>
-        <source>Paste address from clipboard</source>
-        <translation>Infoga adress från urklipp</translation>
+        <source>zCSTL is currently undergoing maintenance.</source>
+        <translation>zCSTL genomgår för tillfället underhåll.</translation>
     </message>
     <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
+        <source>Version 1 zCSTL require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zCSTL kräver en säkerhetsnivå på 100 för att kunna spenderas med framgång.</translation>
     </message>
     <message>
-        <source>Remove this entry</source>
-        <translation>Ta bort den här artikeln</translation>
+        <source>Too much inputs (</source>
+        <translation>För många input (</translation>
     </message>
     <message>
-        <source>&amp;Label:</source>
-        <translation>Etikett:</translation>
+        <source>) needed.
+Maximum allowed: </source>
+        <translation>) behövda.
+Högsta tillåtna:</translation>
     </message>
     <message>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Mata in en etikett till denna adress för att lägga till den till listan med använda adresser</translation>
+        <source>
+Either mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
+        <translation>
+Minta antingen högre valörer (så att färre inputs behövs) eller spendera mindre.</translation>
     </message>
     <message>
-        <source>A&amp;mount:</source>
-        <translation>&amp;mängd:</translation>
+        <source>Cannot store your own address as contact</source>
+        <translation>Kan inte spara den egna adressen som kontakt</translation>
     </message>
     <message>
-        <source>Message:</source>
-        <translation>Medelande:</translation>
+        <source>New Contact Stored</source>
+        <translation>Nytt kontrakt lagrat</translation>
     </message>
     <message>
-        <source>A message that was attached to the CSTL: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the CSTL network.</source>
-        <translation>Ett medelande som var bifogat till CSTL: URI som kommer sparas med transaktionen som din referens. Lägg märke till: Detta meddelande kommer inte skickas genom CSTL nätverket.</translation>
-    </message>
-    <message>
-        <source>This is an unverified payment request.</source>
-        <translation>Detta är en overifierad betalningsförfrågan.</translation>
-    </message>
-    <message>
-        <source>Pay To:</source>
-        <translation>Betala till:</translation>
-    </message>
-    <message>
-        <source>Memo:</source>
-        <translation>Memo:</translation>
-    </message>
-    <message>
-        <source>This is a verified payment request.</source>
-        <translation>Det här är en verifierad betalningsförfrågan.</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>Mata in en etikett till denna adress för att lägga till den till din adressbok</translation>
+        <source>Error Storing Contact</source>
+        <translation>Gick inte spara kontakt</translation>
     </message>
 </context>
 <context>
-    <name>ShutdownWindow</name>
+    <name>SettingsBackupWallet</name>
     <message>
-        <source>Castle Core is shutting down...</source>
-        <translation>Castle Core stängs ner...</translation>
+        <source>Form</source>
+        <translation>Formulär</translation>
     </message>
     <message>
-        <source>Do not shut down the computer until this window disappears.</source>
-        <translation>Stäng inte av datorn förrän detta fönster försvinner.</translation>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
     </message>
-</context>
+    <message>
+        <source>Backup Wallet</source>
+        <translation>Gör en backup på plånboken</translation>
+    </message>
+    <message>
+        <source>Wallet Data (*.dat)</source>
+        <translation>Plånboksdata (*.dat)</translation>
+    </message>
+    </context>
 <context>
-    <name>SignVerifyMessageDialog</name>
+    <name>SettingsBitToolWidget</name>
     <message>
-        <source>Signatures - Sign / Verify a Message</source>
-        <translation>Signaturer - Signera / Verifiera ett Meddelande</translation>
+        <source>Form</source>
+        <translation>Formulär</translation>
     </message>
     <message>
-        <source>&amp;Sign Message</source>
-        <translation>&amp;Signera Meddelande</translation>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
     </message>
     <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Du kan signera meddelanden med din egna adress för att bevisa att du äger dem. Se upp för att signera något vagt, då phishing-attacker kan försöka lura dig att signera din identitet åt dom. Signera endast fullt detaljerade påståenden du går med på.</translation>
+        <source>PushButton</source>
+        <translation>Tryck på knappen</translation>
     </message>
     <message>
-        <source>The CSTL address to sign the message with</source>
-        <translation>CSTL adressen för signera meddelandet med</translation>
+        <source>Import Address</source>
+        <translation>Importera Adress</translation>
     </message>
     <message>
-        <source>Choose previously used address</source>
-        <translation>Använd den föregående använda adressen</translation>
+        <source>Clear</source>
+        <translation>Rensa</translation>
     </message>
     <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
+        <source>Enter address</source>
+        <translation>Skriv in Adress</translation>
     </message>
     <message>
-        <source>Paste address from clipboard</source>
-        <translation>Infoga adress från urklipp</translation>
+        <source>Enter passphrase</source>
+        <translation>Fyll i lösenfras</translation>
     </message>
     <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
+        <source>ENCRYPT</source>
+        <translation>ENKRYPTERA</translation>
     </message>
     <message>
-        <source>Enter the message you want to sign here</source>
-        <translation>Skriv in meddelandet du vill skriva under här</translation>
+        <source>The entered passphrase is invalid. </source>
+        <translation>Den angivna lösenfrasen är felaktig.</translation>
     </message>
     <message>
-        <source>Signature</source>
-        <translation>Signatur</translation>
-    </message>
-    <message>
-        <source>Copy the current signature to the system clipboard</source>
-        <translation>Kopiera den nuvarande signaturen till systemets urklipp</translation>
-    </message>
-    <message>
-        <source>Sign the message to prove you own this CSTL address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna CSTL adress</translation>
-    </message>
-    <message>
-        <source>The CSTL address the message was signed with</source>
-        <translation>CSTL adressen meddelandet blev signerat med</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified CSTL address</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika CSTL adressen.</translation>
-    </message>
-    <message>
-        <source>Sign &amp;Message</source>
-        <translation>Signera &amp;Meddelande</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>Återställ alla signatur meddelande fält</translation>
-    </message>
-    <message>
-        <source>Clear &amp;All</source>
-        <translation>Rensa &amp;allt</translation>
-    </message>
-    <message>
-        <source>&amp;Verify Message</source>
-        <translation>&amp;Verifiera Meddelande</translation>
-    </message>
-    <message>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Skriv in den signerande adressen, meddelande (var säker på att du kopierar radbrytningar, mellanslag, tabs, etc. exakt) och signera under för att verifiera meddelandet. Var försiktig med att inte läsa in mer i signaturen än själva signerade meddelandet, för att undvika att bli lurad av en "man i mitten" attack.</translation>
-    </message>
-    <message>
-        <source>Verify &amp;Message</source>
-        <translation>Verifiera &amp;Meddelande</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>Återställ alla verifierande fält</translation>
-    </message>
-    <message>
-        <source>Click "Sign Message" to generate signature</source>
-        <translation>Klicka på "Signera Meddelande" för att generera signatur</translation>
+        <source>Allowed: 0-9,a-z,A-Z,</source>
+        <translation>Tillåtna: 0-9,a-z.A-Z.</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -4103,15 +3106,301 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     </message>
     <message>
         <source>The entered address does not refer to a key.</source>
-        <translation>Den angivna adressen refererar inte till en nyckel.</translation>
+        <translation>Den angivna adressen visar inte till en nyckel.</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
-        <translation>Upplåsningen av plånboken var avbruten.</translation>
+        <translation>Upplåsningen av plånboken blev avbruten.</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
-        <translation>Den privata nyckel som angivits flr adressen är inte tillgänglig.</translation>
+        <translation>Den privata nyckel som angivits till adressen är inte tillgänglig.</translation>
+    </message>
+    <message>
+        <source>Failed to decrypt.</source>
+        <translation>Dekryptering misslyckades.</translation>
+    </message>
+    <message>
+        <source>Please check the key and passphrase and try again.</source>
+        <translation>Var vänlig och kontrollera nyckeln och lösenfrasen och försök igen.</translation>
+    </message>
+    <message>
+        <source>Data Not Valid.</source>
+        <translation>Data ogiltig.</translation>
+    </message>
+    <message>
+        <source>Please try again.</source>
+        <translation>Var vänlig försök igen.</translation>
+    </message>
+    <message>
+        <source>Please wait while key is imported</source>
+        <translation>Var god vänta medans nyckeln importeras</translation>
+    </message>
+    </context>
+<context>
+    <name>SettingsConsoleWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
+    </message>
+    <message>
+        <source>Welcome to the CASTLE RPC console.</source>
+        <translation>Välkommen till CASTLE RPC konsol.</translation>
+    </message>
+    <message>
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation>Använd upp- och ner-pilarna för att navigera historiken, och %1 för att rensa skärm.</translation>
+    </message>
+    <message>
+        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation>Skriv &lt;b&gt;help&lt;/b&gt; för en överblick av tillgängliga kommandon.</translation>
+    </message>
+    <message>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+        <translation>VARNING: Bedrägare har varit aktiva, säger åt användare att skriva kommandon här, stjäl deras innehåll i plånboken. Använd inte denna konsoll utan att fullt förstå vad ett kommando kan leda till.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsDisplayOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
+    </message>
+    <message>
+        <source>Decimal digits</source>
+        <translation>Decimal platser</translation>
+    </message>
+    <message>
+        <source>Hide empty balances</source>
+        <translation>Dölj tomma saldon</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>spara</translation>
+    </message>
+    <message>
+        <source>default</source>
+        <translation>standard</translation>
+    </message>
+    </context>
+<context>
+    <name>SettingsFaqWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Tryck på knappen</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>2</source>
+        <translation>2</translation>
+    </message>
+    <message>
+        <source>3</source>
+        <translation>3</translation>
+    </message>
+    <message>
+        <source>5</source>
+        <translation>5</translation>
+    </message>
+    <message>
+        <source>10</source>
+        <translation>10</translation>
+    </message>
+    </context>
+<context>
+    <name>SettingsInformationWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Information</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Allmänt</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Nätverk</translation>
+    </message>
+    <message>
+        <source>In:</source>
+        <translation>In:</translation>
+    </message>
+    <message>
+        <source>Out:</source>
+        <translation>Ut:</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMainOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>CheckBox</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>spara</translation>
+    </message>
+    </context>
+<context>
+    <name>SettingsMultisendDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Transaktions detaljer</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>cancel</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>spara</translation>
+    </message>
+    </context>
+<context>
+    <name>SettingsMultisendWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>CheckBox</translation>
+    </message>
+    <message>
+        <source>Active</source>
+        <translation>Aktiv</translation>
+    </message>
+    <message>
+        <source>The entered address: %1 is invalid.
+Please check the address and try again.</source>
+        <translation>Den angivna adressen: %1 är ej giltig.
+Var vänlig kontrollera adressen och försök igen.</translation>
+    </message>
+    <message>
+        <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
+        <translation>Den totala mängden av din MultiSend vektor är över 100% av din stake belöning</translation>
+    </message>
+    <message>
+        <source>MultiSend activated but writing settings to DB failed</source>
+        <translation>MultiSend aktiverat men misslyckades att skriva inställningar till DB</translation>
+    </message>
+    <message>
+        <source>MultiSend activated</source>
+        <translation>MultiSend aktiverat</translation>
+    </message>
+    <message>
+        <source>MultiSend deactivated but writing settings to DB failed</source>
+        <translation>MultiSend avaktiverat men misslyckades skriva inställningar till DB</translation>
+    </message>
+    <message>
+        <source>MultiSend deactivated</source>
+        <translation>MultiSend avaktiverat</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsSignMessageWidgets</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Rensa</translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation>Meddelande</translation>
+    </message>
+    <message>
+        <source>Enter address</source>
+        <translation>Skriv in Adress</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation>Signatur</translation>
+    </message>
+    <message>
+        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Du kan signera meddelanden med din egna adress för att bevisa att du äger dem. Se upp för att signera något vagt, då phishing-attacker kan försöka lura dig att signera din identitet åt dom. Signera endast fullt detaljerade påståenden du går med på.</translation>
+    </message>
+    <message>
+        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
+        <translation>Skriv in den signerande adressen, meddelande (var säker på att du kopierar radbrytningar, mellanslag, tabs, etc. exakt) och signera under för att verifiera meddelandet. Var försiktig med att inte läsa in mer i signaturen än själva signerade meddelandet, för att undvika att bli lurad av en "man i mitten" attack.</translation>
+    </message>
+    <message>
+        <source>The entered address is invalid.</source>
+        <translation>Den angivna adressen är felaktig.</translation>
+    </message>
+    <message>
+        <source>Please check the address and try again.</source>
+        <translation>Var vänlig kontrollera adressen och försök igen.</translation>
+    </message>
+    <message>
+        <source>The entered address does not refer to a key.</source>
+        <translation>Den angivna adressen visar inte till en nyckel.</translation>
+    </message>
+    <message>
+        <source>Wallet unlock was cancelled.</source>
+        <translation>Upplåsningen av plånboken blev avbruten.</translation>
+    </message>
+    <message>
+        <source>Private key for the entered address is not available.</source>
+        <translation>Den privata nyckel som angivits till adressen är inte tillgänglig.</translation>
     </message>
     <message>
         <source>Message signing failed.</source>
@@ -4141,12 +3430,174 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <source>Message verified.</source>
         <translation>Medelande verifierat.</translation>
     </message>
+    </context>
+<context>
+    <name>SettingsWalletOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>CheckBox</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Plånbok</translation>
+    </message>
+    <message>
+        <source>Stake split threshold:</source>
+        <translation>Staking delnings tröskel:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Nätverk</translation>
+    </message>
+    <message>
+        <source>Allow incoming connections</source>
+        <translation>Tillåt inkommande anslutningar</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>spara</translation>
+    </message>
+    </context>
+<context>
+    <name>SettingsWalletRepairWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
+    </message>
+    <message>
+        <source>Attempt to recover private keys from a corrupt wallet.dat.</source>
+        <translation>Försök återställa privata nycklar från en korrupt wallet.dat.</translation>
+    </message>
+    <message>
+        <source>Recover transactions from blockchain (drop meta-data).</source>
+        <translation>Hämta åter transaktioner från blockchain (släpp meta-data).</translation>
+    </message>
+    <message>
+        <source>Deletes all local blockchain folders so the wallet synchronizes from scratch.</source>
+        <translation>Raderar alla lokala blockchain mappar så att plånboken synkroniseras från start.</translation>
+    </message>
+    <message>
+        <source>Salvage wallet</source>
+        <translation>Spara plånboken</translation>
+    </message>
+    <message>
+        <source>Recover transactions 1</source>
+        <translation>Hämta åter transaktion 1</translation>
+    </message>
+    <message>
+        <source>Recover transactions 2</source>
+        <translation>Hämta åter transaktion 2</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet format</source>
+        <translation>Uppgradera plånboksformat</translation>
+    </message>
+    <message>
+        <source>Rebuild index</source>
+        <translation>Bygg om index</translation>
+    </message>
+    <message>
+        <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Detta kommer radera dina lokala blockchain mappar och plånboken kommer synkronisera den kompletta Blockchainen från början.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Detta behöver tid och laddar ner en massa data.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Dina transaktioner och tillgångar kommer bli synliga igen efter att nedladdningen är slutförd.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Do you want to continue?.&lt;br /&gt;</source>
+        <translation>Vill du fortsätta?.&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Confirm resync Blockchain</source>
+        <translation>Godkänn omsynkronisering av Blockchain</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Plånbok</translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation>Alternativ</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Information</translation>
+    </message>
+    <message>
+        <source>Confirm options reset</source>
+        <translation>Bekräfta omstart av alternativ</translation>
+    </message>
+    <message>
+        <source>Client restart required to activate changes.</source>
+        <translation>Omstart av applikationen krävs för att aktivera ändringarna.</translation>
+    </message>
+    <message>
+        <source>Client will be shutdown, do you want to proceed?</source>
+        <translation>Applikationen kommer stängas av, vill du fortsätta.</translation>
+    </message>
+    </context>
+<context>
+    <name>ShutdownWindow</name>
+    <message>
+        <source>CASTLE Core is shutting down...</source>
+        <translation>CASTLE Core stängs ner...</translation>
+    </message>
+    <message>
+        <source>Do not shut down the computer until this window disappears.</source>
+        <translation>Stäng inte av datorn förrän detta fönster försvinner.</translation>
+    </message>
+</context>
+<context>
+    <name>SnackBar</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    </context>
+<context>
+    <name>Splash</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>CASTLE Core</source>
+        <translation>CASTLE Core</translation>
+    </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Castle Core</source>
-        <translation>Castle Core</translation>
+        <source>CASTLE Core</source>
+        <translation>CASTLE Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -4161,18 +3612,36 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Dash Core utvecklarna</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>PIVX Core utvecklarna</translation>
-    </message>
-    <message>
-        <source>The Castle Core developers</source>
-        <translation>Castle Core utvecklarna</translation>
+        <source>The CASTLE Core developers</source>
+        <translation>CASTLE Core utvecklarna</translation>
     </message>
     <message>
         <source>[testnet]</source>
         <translation>[testnet]</translation>
     </message>
 </context>
+<context>
+    <name>TooltipMenu</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>Radera</translation>
+    </message>
+    </context>
+<context>
+    <name>TopBar</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>%1 and %2</source>
+        <translation>%1 och %2</translation>
+    </message>
+    </context>
 <context>
     <name>TrafficGraphWidget</name>
     <message>
@@ -4182,10 +3651,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
 </context>
 <context>
     <name>TransactionDesc</name>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Öppen för %n fler block</numerusform><numerusform>Öppen för %n fler block</numerusform></translation>
-    </message>
     <message>
         <source>Open until %1</source>
         <translation>Öppna tills %1</translation>
@@ -4246,10 +3711,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <source>, has not been successfully broadcast yet</source>
         <translation>, har ännu inte lyckats sändas ut</translation>
     </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, sänder via %n nod</numerusform><numerusform>, sänder via %n noder</numerusform></translation>
-    </message>
     <message>
         <source>Date</source>
         <translation>Datum</translation>
@@ -4289,10 +3750,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     <message>
         <source>Credit</source>
         <translation>Kredit</translation>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>mognar om %n fler block</numerusform><numerusform>mognar om %n fler block</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -4339,10 +3796,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Handlare</translation>
     </message>
     <message>
-        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Genererade mynt måste mogna %1 block innan de kan spenderas. När du genererar detta block, sänds den ut till nätverket för att läggas till i block chain. Om den misslyckas att komma med i blockchain så kommer dess status att ändras till "ej accepterad" och kommer ej kunna spenderas. Detta kan ibland hända om en annan nod genererar ett block inom några sekunder av ditt.</translation>
-    </message>
-    <message>
         <source>Debug information</source>
         <translation>Felsökningsinformation</translation>
     </message>
@@ -4368,17 +3821,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     </message>
 </context>
 <context>
-    <name>TransactionDescDialog</name>
-    <message>
-        <source>Transaction details</source>
-        <translation>Transaktionsdetaljer</translation>
-    </message>
-    <message>
-        <source>This pane shows a detailed description of the transaction</source>
-        <translation>Denna panel visar en detaljerad beskrivning av transaktionerna</translation>
-    </message>
-</context>
-<context>
     <name>TransactionTableModel</name>
     <message>
         <source>Date</source>
@@ -4391,10 +3833,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     <message>
         <source>Address</source>
         <translation>Adress</translation>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Öppen för %n fler block</numerusform><numerusform>Öppen för %n fler block</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -4489,14 +3927,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Konverterad zCSTL till CSTL</translation>
     </message>
     <message>
-        <source>Anonymous (zCSTL Transaction)</source>
-        <translation>Anonym (zCSTL Transaktion)</translation>
-    </message>
-    <message>
-        <source>Anonymous (zCSTL Stake)</source>
-        <translation>Anonym (zCSTL Stake)</translation>
-    </message>
-    <message>
         <source>Sent to</source>
         <translation>Skicka till</translation>
     </message>
@@ -4550,194 +3980,59 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     </message>
 </context>
 <context>
-    <name>TransactionView</name>
+    <name>TxDetailDialog</name>
     <message>
-        <source>All</source>
-        <translation>All</translation>
+        <source>Form</source>
+        <translation>Formulär</translation>
     </message>
     <message>
-        <source>Today</source>
-        <translation>Idag</translation>
+        <source>Transaction Details</source>
+        <translation>Transaktions detaljer</translation>
     </message>
     <message>
-        <source>This week</source>
-        <translation>Denna vecka</translation>
+        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </translation>
     </message>
     <message>
-        <source>This month</source>
-        <translation>Denna månad</translation>
+        <source>1 Inputs</source>
+        <translation>1 input</translation>
     </message>
     <message>
-        <source>Last month</source>
-        <translation>Förra månaden</translation>
+        <source>Fee:</source>
+        <translation>Avgift:</translation>
     </message>
     <message>
-        <source>This year</source>
-        <translation>Detta år</translation>
+        <source>Status:</source>
+        <translation>Status:</translation>
     </message>
     <message>
-        <source>Range...</source>
-        <translation>Räckvid...</translation>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
     </message>
     <message>
-        <source>Most Common</source>
-        <translation>Vanligast</translation>
+        <source>CANCEL</source>
+        <translation>cancel</translation>
     </message>
     <message>
-        <source>Received with</source>
-        <translation>Mottaget med</translation>
+        <source>OK</source>
+        <translation>ok</translation>
     </message>
     <message>
-        <source>Sent to</source>
-        <translation>Skicka till</translation>
+        <source>SEND</source>
+        <translation>SKICKA</translation>
     </message>
     <message>
-        <source>To yourself</source>
-        <translation>Dig själv</translation>
-    </message>
-    <message>
-        <source>Mined</source>
-        <translation>Mined</translation>
-    </message>
-    <message>
-        <source>Minted</source>
-        <translation>Mintad</translation>
-    </message>
-    <message>
-        <source>Masternode Reward</source>
-        <translation>Huvudnods Belöning</translation>
-    </message>
-    <message>
-        <source>Zerocoin Mint</source>
-        <translation>Zerocoin Mint</translation>
-    </message>
-    <message>
-        <source>Zerocoin Spend</source>
-        <translation>Zerocoin Spendera</translation>
-    </message>
-    <message>
-        <source>Zerocoin Spend to Self</source>
-        <translation>Zerocoin Spendera till Själv</translation>
-    </message>
-    <message>
-        <source>Other</source>
-        <translation>Annan</translation>
-    </message>
-    <message>
-        <source>Enter address or label to search</source>
-        <translation>Mata in adress eller etikett att söka</translation>
-    </message>
-    <message>
-        <source>Min amount</source>
-        <translation>Min. mängd</translation>
-    </message>
-    <message>
-        <source>Copy address</source>
-        <translation>Kopiera Adress</translation>
-    </message>
-    <message>
-        <source>Copy label</source>
-        <translation>Kopiera etikett</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Kopiera antal</translation>
-    </message>
-    <message>
-        <source>Copy transaction ID</source>
-        <translation>Kopiera transactions ID</translation>
-    </message>
-    <message>
-        <source>Edit label</source>
-        <translation>Redigera etikett</translation>
-    </message>
-    <message>
-        <source>Show transaction details</source>
-        <translation>Visa Transaktionsdetaljer</translation>
-    </message>
-    <message>
-        <source>Export Transaction History</source>
-        <translation>Exportera Transaktionshistorik</translation>
-    </message>
-    <message>
-        <source>Comma separated file (*.csv)</source>
-        <translation>Kommaseparerad fil (*.csv)</translation>
-    </message>
-    <message>
-        <source>Confirmed</source>
-        <translation>bekräftad</translation>
-    </message>
-    <message>
-        <source>Watch-only</source>
-        <translation>Se-bara</translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>Datum</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>Typ</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Etikett</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Adress</translation>
-    </message>
-    <message>
-        <source>ID</source>
-        <translation>ID</translation>
-    </message>
-    <message>
-        <source>Exporting Failed</source>
-        <translation>Exportering Misslyckad</translation>
-    </message>
-    <message>
-        <source>There was an error trying to save the transaction history to %1.</source>
-        <translation>Det uppstod ett fel med att försöka spara transaktionshistoriken till %1.</translation>
-    </message>
-    <message>
-        <source>Exporting Successful</source>
-        <translation>Exportering Lyckat</translation>
-    </message>
-    <message>
-        <source>Received CSTL from zCSTL</source>
-        <translation>Mottog CSTL från zCSTL</translation>
-    </message>
-    <message>
-        <source>Zerocoin Spend, Change in zCSTL</source>
-        <translation>Zerocoin spendera, Växel i zCSTL</translation>
-    </message>
-    <message>
-        <source>The transaction history was successfully saved to %1.</source>
-        <translation>Transaktionhistoriken lyckades sparas till %1.</translation>
-    </message>
-    <message>
-        <source>Range:</source>
-        <translation>Räckvid:</translation>
-    </message>
-    <message>
-        <source>to</source>
-        <translation>till</translation>
+        <source>Unknown</source>
+        <translation>Okänd</translation>
     </message>
 </context>
 <context>
-    <name>UnitDisplayStatusBarControl</name>
+    <name>TxRow</name>
     <message>
-        <source>Unit to show amounts in. Click to select another unit.</source>
-        <translation>Enhet att visa mängd i. Klicka för att välja en annan enhet.</translation>
+        <source>Form</source>
+        <translation>Formulär</translation>
     </message>
-</context>
-<context>
-    <name>WalletFrame</name>
-    <message>
-        <source>No wallet has been loaded.</source>
-        <translation>Ingen plånbok har laddats.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>WalletModel</name>
     <message>
@@ -4750,30 +4045,53 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     </message>
 </context>
 <context>
-    <name>WalletView</name>
+    <name>WalletPasswordDialog</name>
     <message>
-        <source>HISTORY</source>
-        <translation>HISTORIK</translation>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
     </message>
     <message>
-        <source>&amp;Export</source>
-        <translation>&amp;Exportera</translation>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
     </message>
     <message>
-        <source>Export the data in the current tab to a file</source>
-        <translation>Exportera data in den nuvarande fliken till en fil</translation>
+        <source>CANCEL</source>
+        <translation>cancel</translation>
     </message>
     <message>
-        <source>Selected amount:</source>
-        <translation>Vald mängd:</translation>
+        <source>OK</source>
+        <translation>ok</translation>
+    </message>
+</context>
+<context>
+    <name>WelcomeContentWidget</name>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
     </message>
     <message>
-        <source>Backup Wallet</source>
-        <translation>Gör en backup på plånboken</translation>
+        <source>2</source>
+        <translation>2</translation>
     </message>
     <message>
-        <source>Wallet Data (*.dat)</source>
-        <translation>Plånboksdata (*.dat)</translation>
+        <source>3</source>
+        <translation>3</translation>
+    </message>
+    <message>
+        <source>Welcome</source>
+        <translation>Välkommen</translation>
+    </message>
+    <message>
+        <source>Privacy</source>
+        <translation>Privat</translation>
+    </message>
+    <message>
+        <source>Masternodes</source>
+        <translation>Masternoder</translation>
+    </message>
+    <message>
+        <source>default</source>
+        <translation>standard</translation>
     </message>
 </context>
 <context>
@@ -4783,26 +4101,30 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Välj zCSTL att Spendera</translation>
     </message>
     <message>
-        <source>Quantity</source>
-        <translation>Mängd</translation>
+        <source>Coin Control</source>
+        <translation>Mynt Kontroll</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Tryck på knappen</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Kvantitet:</translation>
+    </message>
+    <message>
+        <source>Is Spendable</source>
+        <translation>Är Spenderbar</translation>
     </message>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zCSTL</source>
-        <translation>zCSTL</translation>
-    </message>
-    <message>
         <source>Select/Deselect All</source>
         <translation>Markera/Avmarkera alla</translation>
     </message>
-    <message>
-        <source>Is Spendable</source>
-        <translation>Är Spenderbar</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>castle-core</name>
     <message>
@@ -4830,8 +4152,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Beräknade ackumulator kontrollstation är inte vad som sparats av block index</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Castle Core is probably already running.</source>
-        <translation>Kan ej låsa in på data katalog %s. CSTL Kärna körs förmodligen redan.</translation>
+        <source>Cannot obtain a lock on data directory %s. CASTLE Core is probably already running.</source>
+        <translation>Kan ej låsa in på data katalog %s. CASTLE Kärna körs förmodligen redan.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4912,10 +4234,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
         <translation>Spola databasaktivitet från minnes pool till disk log varje &lt;n&gt;megabytes (default: %u)</translation>
-    </message>
-    <message>
-        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
-        <translation>Obekräftade betecknade utmatningar hittade, kommer vänta tills de bekräftar för att fortsätta.</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
@@ -5006,8 +4324,12 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Denna produkt inkluderar mjukvara utvecklad av OpenSSL Projektet för användning i OpenSSL Toolkit &lt;https://www.openssl.org/&gt; och kryptografisk mjukvara skriven av Eric Young och UPnP mjukvara skriven av Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Castle Core is probably already running.</source>
-        <translation>Kan inte binda till %s på denna dator. Castle Core körs förmodligen redan.</translation>
+        <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
+        <translation>Totala längden av nätverks verisionens sträng (%i) överskrider maximala längd (%i). Minska mängden eller storleken av uakommentarer.</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer. CASTLE Core is probably already running.</source>
+        <translation>Kan inte binda till %s på denna dator. CASTLE Core körs förmodligen redan.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
@@ -5034,8 +4356,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Varning: -maxtxfee är sätt väldigt högt! Detta är transaktionsavgiften du kommer betala om du skickar en transaktion.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Castle Core will not work properly.</source>
-        <translation>Varning: Var vänlig kontrollera att din dators tid och datum är korrekt! Om din klocka är fel så kommer Castle Core inte att fungera korrekt.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong CASTLE Core will not work properly.</source>
+        <translation>Varning: Var vänlig kontrollera att din dators tid och datum är korrekt! Om din klocka är fel så kommer CASTLE Core inte att fungera korrekt.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5102,12 +4424,12 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Tillåt DNS lookups för -addnode, -seednode och -connect</translation>
     </message>
     <message>
-        <source>Already have that input.</source>
-        <translation>Har redan den inmatningen.</translation>
-    </message>
-    <message>
         <source>Always query for peer addresses via DNS lookup (default: %u)</source>
         <translation>Fråga alltid efter peer adresser via DNS lookup (standard: %u)</translation>
+    </message>
+    <message>
+        <source>Append comment to the user agent string</source>
+        <translation>Bifoga kommentar till användaragent strängen</translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
@@ -5126,18 +4448,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Beräknar fattandes ackumulatorer...</translation>
     </message>
     <message>
-        <source>Can't denominate: no compatible inputs left.</source>
-        <translation>Kan ej kalla: inga kompatibla inmatningar kvar.</translation>
-    </message>
-    <message>
-        <source>Can't find random Masternode.</source>
-        <translation>Kan ej hitta slumpmässig Huvudnod.</translation>
-    </message>
-    <message>
-        <source>Can't mix while sync in progress.</source>
-        <translation>Kan ej blanda när synkronisering håller på.</translation>
-    </message>
-    <message>
         <source>Cannot downgrade wallet</source>
         <translation>Kan ej nergradera plånbok</translation>
     </message>
@@ -5152,14 +4462,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     <message>
         <source>Cannot resolve -whitebind address: '%s'</source>
         <translation>Kan ej lösa -whitebind adress: '%s'</translation>
-    </message>
-    <message>
-        <source>Cannot write default address</source>
-        <translation>Kan ej skriva standard adress</translation>
-    </message>
-    <message>
-        <source>Collateral not valid.</source>
-        <translation>Kollateral ej giltig.</translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -5188,10 +4490,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     <message>
         <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
         <translation>Copyright (C) 2015-%i The PIVX Core Developers</translation>
-    </message>
-    <message>
-        <source>Copyright (C) %i The Castle Core Developers</source>
-        <translation>Copyright (C) %i The Castle Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5250,14 +4548,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Tillåt klinten att bete sig som en huvudnod (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Entries are full.</source>
-        <translation>Poster är fulla.</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Fel vid anslutning till Huvudnoder.</translation>
-    </message>
-    <message>
         <source>Error initializing block database</source>
         <translation>Fel vid initialisering av blockdatabas</translation>
     </message>
@@ -5278,8 +4568,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Fel vid laddning av wallet.dat: Plånbok korrupterad</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Castle Core</source>
-        <translation>Fel vid laddning av wallet.dat: Plånbok  kräver nyare CSTL Kärna version</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of CASTLE Core</source>
+        <translation>Fel vid laddning av wallet.dat: Plånbok  kräver nyare CASTLE Kärna version</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5290,8 +4580,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Fel vid läsning från databas, stänger ner.</translation>
     </message>
     <message>
-        <source>Error recovering public key.</source>
-        <translation>Fel vid återhämtning av offentlig nyckel.</translation>
+        <source>Error writing zerocoinDB to disk</source>
+        <translation>Fel vid skrivning av zerocoinDB till disk</translation>
     </message>
     <message>
         <source>Error</source>
@@ -5300,10 +4590,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
         <translation>Fel: Ett fatalt internt fel inträffade, se debug.log för detaljer</translation>
-    </message>
-    <message>
-        <source>Error: Can't select current denominated inputs</source>
-        <translation>Fel: Kan ej välja nuvarande benämnda inmatningar</translation>
     </message>
     <message>
         <source>Error: Disk space is low!</source>
@@ -5318,16 +4604,16 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Fel: Plånbok låst, kan ej genomföra transaktion!</translation>
     </message>
     <message>
-        <source>Error: You already have pending entries in the Obfuscation pool</source>
-        <translation>Fel: Du har redan avvaktande poster i Fördunklingspoolen</translation>
-    </message>
-    <message>
         <source>Failed to calculate accumulator checkpoint</source>
         <translation>Misslyckades att beräkna ackumulator kontrollstation</translation>
     </message>
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Misslyckades att lyssna på någon port. Använd -listen=0 om du vill detta.</translation>
+    </message>
+    <message>
+        <source>Failed to parse host:port string</source>
+        <translation>Misslyckades ta ut satsdelarna i host:port sträng</translation>
     </message>
     <message>
         <source>Failed to read block</source>
@@ -5338,20 +4624,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Avgift (i CSTL/kB) för att lägga till transaktioner you skicka (standard: %s)</translation>
     </message>
     <message>
-        <source>Finalizing transaction.</source>
-        <translation>Slutgiltiggör transaktion.</translation>
-    </message>
-    <message>
         <source>Force safe mode (default: %u)</source>
         <translation>Tvinga säkert läga (standard: %u)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ( waiting %s )</source>
-        <translation>Hittat tillräckligt många användare, signerar (väntar %s)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ...</source>
-        <translation>Hittade tillräckligt många användare, signerar ...</translation>
     </message>
     <message>
         <source>Generate coins (default: %u)</source>
@@ -5378,14 +4652,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Inkludera IP adress i felsökningens utmatning (standard: %u)</translation>
     </message>
     <message>
-        <source>Incompatible mode.</source>
-        <translation>Okompatibel sätt.</translation>
-    </message>
-    <message>
-        <source>Incompatible version.</source>
-        <translation>Okompatibel version.</translation>
-    </message>
-    <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
         <translation>Ogiltig eller ingen tillblivelse block hittat. Fel datadir för nätverk?</translation>
     </message>
@@ -5394,12 +4660,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Information</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Castle Core is shutting down.</source>
-        <translation>Initierings renlighetscheck misslyckades. CSTL Kärna stängs ner.</translation>
-    </message>
-    <message>
-        <source>Input is not valid.</source>
-        <translation>inmatning är inte giltig.</translation>
+        <source>Initialization sanity check failed. CASTLE Core is shutting down.</source>
+        <translation>Initierings renlighetscheck misslyckades. CASTLE Kärna stängs ner.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -5454,14 +4716,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Ogiltig port upptäckt i masternode.conf</translation>
     </message>
     <message>
-        <source>Invalid private key.</source>
-        <translation>Fel privat nyckel.</translation>
-    </message>
-    <message>
-        <source>Invalid script detected.</source>
-        <translation>Ogiltigt script upptäckt.</translation>
-    </message>
-    <message>
         <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
         <translation>Procent automatiskt mintad Zerocoin (1-100, default: %u)</translation>
     </message>
@@ -5480,6 +4734,10 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     <message>
         <source>Selected coins value is less than payment target</source>
         <translation>Valda mynts värde är under betalningsmål</translation>
+    </message>
+    <message>
+        <source>Support the zerocoin light node protocol (default: %u)</source>
+        <translation>Stöd zerocoin protokollet för light node (standard: %u)</translation>
     </message>
     <message>
         <source>SwiftX options:</source>
@@ -5506,8 +4764,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
 </translation>
     </message>
     <message>
-        <source>Disable all CSTL specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Avaktivera all CSTL funktionalitet (Huvudnoder, Zerocoin, SwiftX, Budgeting) (0-1, standard: %u)</translation>
+        <source>Disable all CASTLE specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Avaktivera all CASTLE funktionalitet (Huvudnoder, Zerocoin, SwiftX, Budgeting) (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -5606,10 +4864,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Misslyckades skapa mint</translation>
     </message>
     <message>
-        <source>Failed to deserialize</source>
-        <translation>Misslyckades att deserialize</translation>
-    </message>
-    <message>
         <source>Failed to find Zerocoins in wallet.dat</source>
         <translation>Misslyckades hitta Zerocoins i wallet.dat</translation>
     </message>
@@ -5630,14 +4884,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Behåll som mest &lt;n&gt; oanslutningsbara transaktioner i minne (standard: %u)</translation>
     </message>
     <message>
-        <source>Last Obfuscation was too recent.</source>
-        <translation>Senaste obfuscation var för ny.</translation>
-    </message>
-    <message>
-        <source>Last successful Obfuscation action was too recent.</source>
-        <translation>Den senaste framgångsrika Obfuscation-åtgärden var för ny.</translation>
-    </message>
-    <message>
         <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
         <translation>Begränsa storlek av signatur cache till &lt;n&gt; poster (standard: %u)</translation>
     </message>
@@ -5647,7 +4893,7 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     </message>
     <message>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Lystna efter JSON-RPC anslutningar på &lt;port&gt; (standard: %u eller testnet: %u)</translation>
+        <translation>Leta efter JSON-RPC anslutningar på &lt;port&gt; (standard: %u eller testnet: %u)</translation>
     </message>
     <message>
         <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
@@ -5671,7 +4917,7 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     </message>
     <message>
         <source>Loading masternode payment cache...</source>
-        <translation>Laddar huvudnod betalnings cache...</translation>
+        <translation>Laddar huvudnodens betalnings cache...</translation>
     </message>
     <message>
         <source>Loading sporks...</source>
@@ -5690,10 +4936,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Lokation av auth cookie (standard: data dir)</translation>
     </message>
     <message>
-        <source>Lock is already in place.</source>
-        <translation>Lås är redan på plats.</translation>
-    </message>
-    <message>
         <source>Lock masternodes from masternode configuration file (default: %u)</source>
         <translation>Lås huvudnoder från huvudnod konfigurations fil (standard: %u)</translation>
     </message>
@@ -5710,14 +4952,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Masternod val:</translation>
     </message>
     <message>
-        <source>Masternode queue is full.</source>
-        <translation>Masternodens kö är full.</translation>
-    </message>
-    <message>
-        <source>Masternode:</source>
-        <translation>Masternod:</translation>
-    </message>
-    <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
         <translation>Maximala mottagna per-anslutning buffer, &lt;n&gt;*1000 bytes (standard: %u)</translation>
     </message>
@@ -5730,56 +4964,16 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Mint kom inte med i blockchain</translation>
     </message>
     <message>
-        <source>Missing input transaction information.</source>
-        <translation>Inmatad transaktions information fattas.</translation>
-    </message>
-    <message>
-        <source>Mixing in progress...</source>
-        <translation>Blandning pågår...</translation>
-    </message>
-    <message>
-        <source>Need address because change is not exact</source>
-        <translation>Adress behövs för att växel ej är exakt</translation>
-    </message>
-    <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation>Port behöver specifieras med -whitebind: '%s'</translation>
-    </message>
-    <message>
-        <source>No Masternodes detected.</source>
-        <translation>Inga Huvudnoder upptäckta.</translation>
-    </message>
-    <message>
-        <source>No compatible Masternode found.</source>
-        <translation>Inga kompatibla Huvudnoder hittade.</translation>
-    </message>
-    <message>
-        <source>No funds detected in need of denominating.</source>
-        <translation>Inga pengar o behov av benämnelse upptäckta.</translation>
-    </message>
-    <message>
-        <source>No matching denominations found for mixing.</source>
-        <translation>Inga matchande valörer hittade till blandning.</translation>
     </message>
     <message>
         <source>Node relay options:</source>
         <translation>Nod relä val:</translation>
     </message>
     <message>
-        <source>Non-standard public key detected.</source>
-        <translation>Ej-standard offentlig nyckel upptäckt.</translation>
-    </message>
-    <message>
-        <source>Not compatible with existing transactions.</source>
-        <translation>Ej kompatibel med existerande transaktioner.</translation>
-    </message>
-    <message>
         <source>Not enough file descriptors available.</source>
         <translation>Ej tillräckliga fil deskriptorer tillgängliga.</translation>
-    </message>
-    <message>
-        <source>Not in the Masternode list.</source>
-        <translation>Inte i Huvudnod listan.</translation>
     </message>
     <message>
         <source>Number of automatic wallet backups (default: 10)</source>
@@ -5788,18 +4982,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     <message>
         <source>Number of custom location backups to retain (default: %d)</source>
         <translation>Antal skräddarsydda platser för backup att behålla (standard: %d)</translation>
-    </message>
-    <message>
-        <source>Obfuscation is idle.</source>
-        <translation>Fördunkling är overksam.</translation>
-    </message>
-    <message>
-        <source>Obfuscation request complete:</source>
-        <translation>Fördunkling förfrågan avslutad:</translation>
-    </message>
-    <message>
-        <source>Obfuscation request incomplete:</source>
-        <translation>Fördunkling förfrågan ej avslutad:</translation>
     </message>
     <message>
         <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
@@ -5816,6 +4998,10 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     <message>
         <source>Password for JSON-RPC connections</source>
         <translation>Lösenord för JSON-RPC anslutningar</translation>
+    </message>
+    <message>
+        <source>Unable to find transaction containing mint %s</source>
+        <translation>Det gick inte att hitta transaktionen som innehöll prägling %s</translation>
     </message>
     <message>
         <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
@@ -5894,10 +5080,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Skicka transaktioner som avgiftsfria transaktioner om möjligt (standard: %u)</translation>
     </message>
     <message>
-        <source>Session not complete!</source>
-        <translation>Sessionen är inte klar</translation>
-    </message>
-    <message>
         <source>Session timed out.</source>
         <translation>Sessionens tidsgräns överskriden</translation>
     </message>
@@ -5944,10 +5126,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
         <translation>Minska debug.log fil vid klient start (standard: 1 när ingen -debug)</translation>
-    </message>
-    <message>
-        <source>Signing failed.</source>
-        <translation>Signering misslyckades.</translation>
     </message>
     <message>
         <source>Signing timed out.</source>
@@ -6002,18 +5180,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Sluta kör efter block har importerats från disk (standard: %u)</translation>
     </message>
     <message>
-        <source>Submitted following entries to masternode: %u / %d</source>
-        <translation>Skickade in följande poster till huvudnod: %u / %d</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
-        <translation>Inskickat till huvudnod, väntar på fler poster ( %u / %d ) %s</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting in queue %s</source>
-        <translation>Inskickat till huvudnod, väntar i kö %s</translation>
-    </message>
-    <message>
         <source>Synchronization failed</source>
         <translation>Synchronisering misslyckad</translation>
     </message>
@@ -6050,14 +5216,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Mynt spenderingen har redan använts</translation>
     </message>
     <message>
-        <source>The new spend coin transaction did not verify</source>
-        <translation>Den nya spendera mynt transaktionen kunde inte verifieras</translation>
-    </message>
-    <message>
-        <source>The selected mint coin is an invalid coin</source>
-        <translation>Den valda mint myntet är ett ogiltigt mynt</translation>
-    </message>
-    <message>
         <source>The transaction did not verify</source>
         <translation>Transaktionen verifierades inte</translation>
     </message>
@@ -6072,10 +5230,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     <message>
         <source>This is intended for regression testing tools and app development.</source>
         <translation>Det här är menat för regression testverktyg och app utveckling.</translation>
-    </message>
-    <message>
-        <source>This is not a Masternode.</source>
-        <translation>Dehär är ingen Masternod</translation>
     </message>
     <message>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
@@ -6110,18 +5264,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Transaktionens värde måste vara possitivt</translation>
     </message>
     <message>
-        <source>Transaction created successfully.</source>
-        <translation>Transaktion skapad framgångsrikt</translation>
-    </message>
-    <message>
-        <source>Transaction fees are too high.</source>
-        <translation>Transaktionsavgifter är för stora.</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>Transaktionen inte giltig.</translation>
-    </message>
-    <message>
         <source>Transaction too large for fee policy</source>
         <translation>Transaktionen för stor för avgifts policy</translation>
     </message>
@@ -6130,24 +5272,12 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Transaktion för stor</translation>
     </message>
     <message>
-        <source>Transmitting final transaction.</source>
-        <translation>Sänder ut slutgiltig transaktion.</translation>
-    </message>
-    <message>
-        <source>Try to spend with a higher security level to include more coins</source>
-        <translation>Försök att spendera med en högre säkerhetsnivå för att inkludera fler mynt</translation>
-    </message>
-    <message>
         <source>Trying to spend an already spent serial #, try again.</source>
         <translation>Försöker spendera en redan spendera serie #, försök igen.</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
         <translation>Kan ej binda till %s på denna dator (bind återgav fel %s)</translation>
-    </message>
-    <message>
-        <source>Unable to find transaction containing mint</source>
-        <translation>Kan ej hitta transaktion innehållandes mint</translation>
     </message>
     <message>
         <source>Unable to sign spork message, wrong key?</source>
@@ -6160,10 +5290,6 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Okänt nätverk specifierat i -onlynet: '%s'</translation>
-    </message>
-    <message>
-        <source>Unknown state: id = %u</source>
-        <translation>Okänt tillstånd: id = %u</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format</source>
@@ -6186,16 +5312,16 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Använd test nätverket</translation>
     </message>
     <message>
+        <source>User Agent comment (%s) contains unsafe characters.</source>
+        <translation>Användaragent kommentar (%s) innehåller osäkra tecken.</translation>
+    </message>
+    <message>
         <source>Username for JSON-RPC connections</source>
         <translation>Användarnamn för JSON-RPC anslutningar</translation>
     </message>
     <message>
         <source>Value is below the smallest available denomination (= 1) of zCSTL</source>
         <translation>Värde är under den minsta tillgängliga valören (=1) av zCSTL</translation>
-    </message>
-    <message>
-        <source>Value more than Obfuscation pool maximum allows.</source>
-        <translation>Värde högre än fördunklingspoolen maximalt tillåter.</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -6206,20 +5332,12 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Verifierar plånbok</translation>
     </message>
     <message>
-        <source>Version 1 zCSTL require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zCSTL kräver en säkerhetsnivå på 100 för att kunna spenderas med framgång.</translation>
-    </message>
-    <message>
         <source>Wallet %s resides outside data directory %s</source>
         <translation>Plånbok %s finns utanför data katalog %s</translation>
     </message>
     <message>
-        <source>Wallet is locked.</source>
-        <translation>Plånboken är låst.</translation>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart Castle Core to complete</source>
-        <translation>Plånbok behöver skrivas om: starta om CSTL Kärna för att göra klart</translation>
+        <source>Wallet needed to be rewritten: restart CASTLE Core to complete</source>
+        <translation>Plånbok behöver skrivas om: starta om CASTLE Kärna för att göra klart</translation>
     </message>
     <message>
         <source>Wallet options:</source>
@@ -6246,24 +5364,12 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Varning: Argument -debugnet stödjes ej, ignoreras. Använd -debug=net.</translation>
     </message>
     <message>
-        <source>Will retry...</source>
-        <translation>Kommer försöka igen...</translation>
-    </message>
-    <message>
         <source>You don't have enough Zerocoins in your wallet</source>
         <translation>Du har inte tillräckligt med Zerocoins i din plånbok</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>Du behöver bygga om databasen genom att använda -reindex för att ändra -txindex</translation>
-    </message>
-    <message>
-        <source>Your entries added successfully.</source>
-        <translation>Dina poster lyckades läggas till.</translation>
-    </message>
-    <message>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation>Din transaktion accepterades in i poolen!</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>
@@ -6284,6 +5390,25 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat korrupt, räddning misslyckades</translation>
+    </message>
+</context>
+<context>
+    <name>send</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulär</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>Skicka</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>text etikett</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Tryck på knappen</translation>
     </message>
 </context>
 </TS>

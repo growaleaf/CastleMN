@@ -1,12 +1,11 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018 The CSTL developers
+// Copyright (c) 2015-2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef CSTL_SERIALIZE_H
-#define CSTL_SERIALIZE_H
+#ifndef CASTLE_SERIALIZE_H
+#define CASTLE_SERIALIZE_H
 
 #include <algorithm>
 #include <assert.h>
@@ -21,6 +20,7 @@
 #include <vector>
 #include "libzerocoin/Denominations.h"
 #include "libzerocoin/SpendType.h"
+#include "sporkid.h"
 
 class CScript;
 
@@ -46,35 +46,6 @@ inline T* NCONST_PTR(const T* val)
     return const_cast<T*>(val);
 }
 
-/** 
- * Get begin pointer of vector (non-const version).
- * @note These functions avoid the undefined case of indexing into an empty
- * vector, as well as that of indexing after the end of the vector.
- */
-template <class T, class TAl>
-inline T* begin_ptr(std::vector<T, TAl>& v)
-{
-    return v.empty() ? NULL : &v[0];
-}
-/** Get begin pointer of vector (const version) */
-template <class T, class TAl>
-inline const T* begin_ptr(const std::vector<T, TAl>& v)
-{
-    return v.empty() ? NULL : &v[0];
-}
-/** Get end pointer of vector (non-const version) */
-template <class T, class TAl>
-inline T* end_ptr(std::vector<T, TAl>& v)
-{
-    return v.empty() ? NULL : (&v[0] + v.size());
-}
-/** Get end pointer of vector (const version) */
-template <class T, class TAl>
-inline const T* end_ptr(const std::vector<T, TAl>& v)
-{
-    return v.empty() ? NULL : (&v[0] + v.size());
-}
-
 /////////////////////////////////////////////////////////////////
 //
 // Templates for serializing to anything that looks like a stream,
@@ -90,11 +61,11 @@ enum {
 
 #define READWRITE(obj) (::SerReadWrite(s, (obj), nType, nVersion, ser_action))
 
-/** 
+/**
  * Implement three methods for serializable objects. These are actually wrappers over
  * "SerializationOp" template, which implements the body of each class' serialization
  * code. Adding "ADD_SERIALIZE_METHODS" in the body of the class causes these wrappers to be
- * added as members. 
+ * added as members.
  */
 #define ADD_SERIALIZE_METHODS                                                         \
     size_t GetSerializeSize(int nType, int nVersion) const                            \
@@ -320,6 +291,23 @@ inline void Unserialize(Stream& s, libzerocoin::SpendType & a, int, int = 0)
     a = static_cast<libzerocoin::SpendType>(f);
 }
 
+// Serialization for SporkId
+inline unsigned int GetSerializeSize(SporkId sporkID, int, int = 0) { return sizeof(SporkId); }
+template <typename Stream>
+inline void Serialize(Stream& s, SporkId sporkID, int, int = 0)
+{
+    int32_t f = static_cast<int32_t>(sporkID);
+    WRITEDATA(s, f);
+}
+
+template <typename Stream>
+inline void Unserialize(Stream& s, SporkId& sporkID, int, int = 0)
+{
+    int32_t f=0;
+    READDATA(s, f);
+    sporkID = (SporkId) f;
+}
+
 
 /**
  * Compact Size
@@ -403,16 +391,16 @@ uint64_t ReadCompactSize(Stream& is)
  * sure the encoding is one-to-one, one is subtracted from all but the last digit.
  * Thus, the byte sequence a[] with length len, where all but the last byte
  * has bit 128 set, encodes the number:
- * 
+ *
  *  (a[len-1] & 0x7F) + sum(i=1..len-1, 128^i*((a[len-i-1] & 0x7F)+1))
- * 
+ *
  * Properties:
  * * Very small (0-127: 1 byte, 128-16511: 2 bytes, 16512-2113663: 3 bytes)
  * * Every integer has exactly one encoding
  * * Encoding does not depend on size of original integer type
  * * No redundancy: every (infinite) byte sequence corresponds to a list
  *   of encoded integers.
- * 
+ *
  * 0:         [0x00]  256:        [0x81 0x00]
  * 1:         [0x01]  16383:      [0xFE 0x7F]
  * 127:       [0x7F]  16384:      [0xFF 0x00]
@@ -470,7 +458,7 @@ I ReadVarInt(Stream& is)
 #define VARINT(obj) REF(WrapVarInt(REF(obj)))
 #define LIMITED_STRING(obj, n) REF(LimitedString<n>(REF(obj)))
 
-/** 
+/**
  * Wrapper for serializing arrays and POD.
  */
 class CFlatData
@@ -484,8 +472,8 @@ public:
     template <class T, class TAl>
     explicit CFlatData(std::vector<T, TAl>& v)
     {
-        pbegin = (char*)begin_ptr(v);
-        pend = (char*)end_ptr(v);
+        pbegin = (char*)v.data();
+        pend = (char*)(v.data() + v.size());
     }
     char* begin() { return pbegin; }
     const char* begin() const { return pbegin; }
@@ -583,7 +571,7 @@ CVarInt<I> WrapVarInt(I& n)
  */
 
 /**
- *  string
+ *  std::string
  */
 template <typename C>
 unsigned int GetSerializeSize(const std::basic_string<C>& str, int, int = 0);
@@ -966,4 +954,4 @@ public:
     }
 };
 
-#endif // CSTL_SERIALIZE_H
+#endif // CASTLE_SERIALIZE_H

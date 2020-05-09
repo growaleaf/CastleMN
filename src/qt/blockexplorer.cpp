@@ -1,5 +1,4 @@
-// Copyright (c) 2017-2018 The PIVX developers
-// Copyright (c) 2018 The CSTL developers
+// Copyright (c) 2017-2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -13,7 +12,7 @@
 #include "net.h"
 #include "txdb.h"
 #include "ui_blockexplorer.h"
-#include "ui_interface.h"
+#include "guiinterface.h"
 #include "util.h"
 #include "utilstrencodings.h"
 #include <QDateTime>
@@ -406,7 +405,7 @@ std::string AddressToString(const CBitcoinAddress& Address)
     {
         std::vector<CDiskTxPos> Txs;
         paddressmap->GetTxs(Txs, AddressScript.GetID());
-        BOOST_FOREACH (const CDiskTxPos& pos, Txs)
+        for (const CDiskTxPos& pos : Txs)
         {
             CTransaction tx;
             CBlock block;
@@ -479,7 +478,7 @@ void BlockExplorer::showEvent(QShowEvent*)
 
         if (!GetBoolArg("-txindex", true)) {
             QString Warning = tr("Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (castle.conf).");
-            QMessageBox::warning(this, "Castle Core Blockchain Explorer", Warning, QMessageBox::Ok);
+            QMessageBox::warning(this, "CASTLE Core Blockchain Explorer", Warning, QMessageBox::Ok);
         }
     }
 }

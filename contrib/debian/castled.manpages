@@ -1,2 +1,2 @@
-debian/manpages/castled.1
-debian/manpages/castle.conf.5
+doc/man/castled.1
+doc/man/castle-cli.1

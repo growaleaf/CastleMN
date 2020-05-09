@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="30px"
+   height="22px"
+   viewBox="0 0 30 22"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="ic-clear-purple.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1843"
+     inkscape:window-height="1003"
+     id="namedview12"
+     showgrid="false"
+     inkscape:zoom="10.727273"
+     inkscape:cx="15"
+     inkscape:cy="11"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg10" />
+  <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title2">Clear Purple</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <g
+     id="Clear-Purple"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd">
+    <g
+       id="ic-clear-purple"
+       transform="translate(5.000000, 3.000000)">
+      <polygon
+         id="Path_18950"
+         fill="#5C4B7D"
+         points="13.707 3.707 12.293 2.293 8 6.586 3.707 2.293 2.293 3.707 6.586 8 2.293 12.293 3.707 13.707 8 9.414 12.293 13.707 13.707 12.293 9.414 8" />
+      <polygon
+         id="Rectangle_4602"
+         points="0 0 16 0 16 16 0 16" />
+    </g>
+  </g>
+  <path
+     style="fill:#445500;stroke-width:0.09322034"
+     d="M 7.9842391,15.964779 7.3557976,15.336337 9.522494,13.168169 11.68919,11 9.5216723,8.8310091 7.3541544,6.6620182 7.9866201,6.0343989 C 8.3344762,5.6892083 8.6596473,5.4067797 8.7092226,5.4067797 c 0.049575,0 1.0448148,0.9540012 2.2116434,2.1200026 L 13.042373,9.646785 15.186419,7.5042591 17.330465,5.3617331 18.005552,6.0368206 18.68064,6.711908 16.538114,8.855954 14.395588,11 l 2.142526,2.144046 2.142526,2.144046 -0.675088,0.675087 -0.675087,0.675088 -2.144046,-2.142526 -2.144046,-2.142526 -2.121507,2.120003 c -1.1668286,1.166001 -2.1635094,2.120002 -2.2148461,2.120002 -0.051337,0 -0.3761381,-0.282798 -0.7217808,-0.628441 z"
+     id="path823"
+     inkscape:connector-curvature="0" />
+</svg>

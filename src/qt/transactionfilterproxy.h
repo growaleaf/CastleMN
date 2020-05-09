@@ -1,6 +1,5 @@
 // Copyright (c) 2011-2013 The Bitcoin developers
-// Copyright (c) 2017-2018 The PIVX developers
-// Copyright (c) 2018 The CSTL developers
+// Copyright (c) 2017-2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -38,6 +37,11 @@ public:
     };
 
     void setDateRange(const QDateTime& from, const QDateTime& to);
+    void clearDateRange() {
+        if (dateFrom != MIN_DATE || dateTo == MAX_DATE)
+            setDateRange(MIN_DATE, MAX_DATE);
+    }
+
     void setAddressPrefix(const QString& addrPrefix);
     /**
       @note Type filter takes a bit field created with TYPE() or ALL_TYPES
@@ -52,7 +56,22 @@ public:
     /** Set whether to show conflicted transactions. */
     void setShowInactive(bool showInactive);
 
+    /** Set whether to hide orphan stakes. */
+    void setHideOrphans(bool fHide);
+
+    /** Only zc txes **/
+    void setShowZcTxes(bool fOnlyZc);
+
+    /** Only stakes txes **/
+    void setOnlyStakesandMNTxes(bool fOnlyStakesandMN);
+
+    /** Shows only p2cs-p2cs && xxx-p2cs **/
+    void setOnlyColdStakes(bool fOnlyColdStakes);
+
     int rowCount(const QModelIndex& parent = QModelIndex()) const;
+    static bool isOrphan(const int status, const int type);
+
+    //QVariant dataFromSourcePos(int sourceRow, int role) const;
 
 protected:
     bool filterAcceptsRow(int source_row, const QModelIndex& source_parent) const;
@@ -66,6 +85,15 @@ private:
     CAmount minAmount;
     int limitRows;
     bool showInactive;
+    bool fHideOrphans = true;
+    bool fOnlyZc = false;
+    bool fOnlyStakesandMN = false;
+    bool fOnlyColdStaking = false;
+
+    bool isZcTx(int type) const;
+    bool isStakeTx(int type) const;
+    bool isMasternodeRewardTx(int type) const;
+    bool isColdStake(int type) const;
 };
 
 #endif // BITCOIN_QT_TRANSACTIONFILTERPROXY_H

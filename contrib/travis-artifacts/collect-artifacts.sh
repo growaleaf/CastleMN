@@ -13,19 +13,24 @@ HOST=$5
 
 RELEASEDIR=$BASEDIR/$RELEASEBASE/$COMMIT/$HOST
 
-cd $BASEDIR/castle-$HOST
-
 mkdir -p $RELEASEDIR
-ZIPFILES=$(ls $OUTDIR/bin/* || true)
 
-# Linux artifacts
-[ -z "$ZIPFILES" ] || \
-       zip -uj $RELEASEDIR/castle-$COMMIT-$HOST.zip ${ZIPFILES}
+if [ -d "$OUTDIR" ]; then
+  cp $OUTDIR/bin/* $RELEASEDIR/
+fi
 
+count=`ls -1 *.dmg 2>/dev/null | wc -l`
+if [ $count != 0 ]
+then 
 # MaxOSX artifacts
 cp -a *.dmg $RELEASEDIR || true
+fi
 
+count=`ls -1 *.exe 2>/dev/null | wc -l`
+if [ $count != 0 ]
+then 
 # Windows artifacts
 cp -a *.exe $RELEASEDIR || true
+fi 
 
-find $RELEASEDIR
+tar -cvzf package-$HOST.tgz $RELEASEDIR

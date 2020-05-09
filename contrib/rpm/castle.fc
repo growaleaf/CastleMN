@@ -1,0 +1,8 @@
+/usr/bin/castle-cli		--	gen_context(system_u:object_r:castle_exec_t,s0)
+/usr/sbin/castled		--	gen_context(system_u:object_r:castle_exec_t,s0)
+/usr/lib(64)?/castle/castled		--	gen_context(system_u:object_r:castle_exec_t,s0)
+
+/etc/castle(/.*)?		gen_context(system_u:object_r:castle_conf_t,s0)
+/var/lib/castle(/.*)?		gen_context(system_u:object_r:castle_var_lib_t,s0)
+
+(/var)?/run/castled(/.*)?   gen_context(system_u:object_r:castle_var_run_t,s0)

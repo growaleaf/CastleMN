@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="40"
+   height="26"
+   viewBox="0 0 40 26"
+   version="1.1"
+   id="svg22"
+   sodipodi:docname="ic-switch-on.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata26">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1829"
+     inkscape:window-height="1004"
+     id="namedview24"
+     showgrid="false"
+     inkscape:zoom="9.0769231"
+     inkscape:cx="20"
+     inkscape:cy="13"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg22" />
+  <defs
+     id="defs15">
+    <style
+       type="text/css"
+       id="style2">
+            .cls-1,.cls-2{fill:#5c4b7d}.cls-1{fill-rule:evenodd;opacity:.5}.cls-3{filter:url(#switch_button)}
+        </style>
+    <filter
+       id="switch_button"
+       width="26"
+       height="26"
+       x="14"
+       y="0"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dy="2"
+         id="feOffset4" />
+      <feGaussianBlur
+         result="blur"
+         stdDeviation="1"
+         id="feGaussianBlur6" />
+      <feFlood
+         flood-opacity=".239"
+         id="feFlood8" />
+      <feComposite
+         in2="blur"
+         operator="in"
+         id="feComposite10"
+         result="result1" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result1"
+         id="feComposite12" />
+    </filter>
+  </defs>
+  <g
+     id="switch_on"
+     transform="translate(0 1)">
+    <path
+       id="switch_path"
+       d="M37 10a6.957 6.957 0 0 1-7 7H10a6.957 6.957 0 0 1-7-7 6.957 6.957 0 0 1 7-7h20a6.957 6.957 0 0 1 7 7z"
+       class="cls-1"
+       transform="translate(-3 .223)"
+       style="fill:#668000" />
+    <g
+       class="cls-3"
+       transform="translate(0 -1)"
+       id="g19">
+      <path
+         id="switch_button-2"
+         d="M10 0A10 10 0 1 1 0 10 10 10 0 0 1 10 0z"
+         class="cls-2"
+         data-name="switch_button"
+         transform="translate(17 1)" />
+    </g>
+  </g>
+  <path
+     style="fill:#445500;stroke-width:0.11016949"
+     d="M 25.255085,20.793345 C 21.429029,20.093769 18.3422,17.244664 17.372483,13.517797 17.238997,13.004778 17.118361,12.106956 17.083824,11.369492 16.947741,8.463715 18.022226,5.8294526 20.166762,3.8112048 c 1.950255,-1.8354074 4.128718,-2.7076037 6.79595,-2.7209105 3.565047,-0.017786 6.737352,1.7621849 8.577203,4.8126419 0.915759,1.5183226 1.354635,3.1331232 1.365948,5.0258778 0.01008,1.685856 -0.250732,2.878085 -0.950515,4.345078 -1.919655,4.024276 -6.357615,6.313483 -10.700263,5.519453 z"
+     id="path833"
+     inkscape:connector-curvature="0" />
+</svg>

@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "CSTL"
-            VALUE "FileDescription",    "castled (OSS daemon/client for CSTL)"
+            VALUE "CompanyName",        "CASTLE"
+            VALUE "FileDescription",    "castled (OSS daemon/client for CASTLE)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "castled"
             VALUE "LegalCopyright",     COPYRIGHT_STR

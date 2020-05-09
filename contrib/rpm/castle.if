@@ -1,0 +1,157 @@
+
+## <summary>policy for castle</summary>
+
+
+########################################
+## <summary>
+##	Transition to castle.
+## </summary>
+## <param name="domain">
+## <summary>
+##	Domain allowed to transition.
+## </summary>
+## </param>
+#
+interface(`castle_domtrans',`
+	gen_require(`
+		type castle_t, castle_exec_t;
+	')
+
+	corecmd_search_bin($1)
+	domtrans_pattern($1, castle_exec_t, castle_t)
+')
+
+
+########################################
+## <summary>
+##	Execute castle server in the castle domain.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`castle_initrc_domtrans',`
+	gen_require(`
+		type castle_initrc_exec_t;
+	')
+
+	init_labeled_script_domtrans($1, castle_initrc_exec_t)
+')
+
+
+########################################
+## <summary>
+##	Search castle lib directories.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`castle_search_lib',`
+	gen_require(`
+		type castle_var_lib_t;
+	')
+
+	allow $1 castle_var_lib_t:dir search_dir_perms;
+	files_search_var_lib($1)
+')
+
+########################################
+## <summary>
+##	Read castle lib files.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`castle_read_lib_files',`
+	gen_require(`
+		type castle_var_lib_t;
+	')
+
+	files_search_var_lib($1)
+	read_files_pattern($1, castle_var_lib_t, castle_var_lib_t)
+')
+
+########################################
+## <summary>
+##	Manage castle lib files.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`castle_manage_lib_files',`
+	gen_require(`
+		type castle_var_lib_t;
+	')
+
+	files_search_var_lib($1)
+	manage_files_pattern($1, castle_var_lib_t, castle_var_lib_t)
+')
+
+########################################
+## <summary>
+##	Manage castle lib directories.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`castle_manage_lib_dirs',`
+	gen_require(`
+		type castle_var_lib_t;
+	')
+
+	files_search_var_lib($1)
+	manage_dirs_pattern($1, castle_var_lib_t, castle_var_lib_t)
+')
+
+
+########################################
+## <summary>
+##	All of the rules required to administrate
+##	a castle environment
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+## <param name="role">
+##	<summary>
+##	Role allowed access.
+##	</summary>
+## </param>
+## <rolecap/>
+#
+interface(`castle_admin',`
+	gen_require(`
+		type castle_t;
+		type castle_initrc_exec_t;
+		type castle_var_lib_t;
+	')
+
+	allow $1 castle_t:process { ptrace signal_perms };
+	ps_process_pattern($1, castle_t)
+
+	castle_initrc_domtrans($1)
+	domain_system_change_exemption($1)
+	role_transition $2 castle_initrc_exec_t system_r;
+	allow $2 system_r;
+
+	files_search_var_lib($1)
+	admin_pattern($1, castle_var_lib_t)
+
+')
+

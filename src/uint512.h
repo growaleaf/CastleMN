@@ -1,10 +1,9 @@
 // Copyright (c) 2017-2018 The PIVX developers
-// Copyright (c) 2018 The CSTL developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef CSTL_UINT512_H
-#define CSTL_UINT512_H
+#ifndef CASTLE_UINT512_H
+#define CASTLE_UINT512_H
 
 #include "arith_uint256.h"
 #include "uint256.h"
@@ -43,4 +42,4 @@ inline uint512 uint512S(const char* str)
     return rv;
 }
 
-#endif // CSTL_UINT512_H
+#endif // CASTLE_UINT512_H

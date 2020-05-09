@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "CSTL"
-            VALUE "FileDescription",    "castle-tx (CLI CSTL transaction editor utility)"
+            VALUE "CompanyName",        "CASTLE"
+            VALUE "FileDescription",    "castle-tx (CLI CASTLE transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "castle-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
