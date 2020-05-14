@@ -13,7 +13,7 @@
    version="1.1"
    id="svg985"
    sodipodi:docname="ic-add-liliac.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata991">
     <rdf:RDF>
@@ -42,10 +42,10 @@
      id="namedview987"
      showgrid="false"
      inkscape:zoom="9.4666667"
-     inkscape:cx="15"
+     inkscape:cx="-1.6901408"
      inkscape:cy="11"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg985" />
   <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
@@ -75,5 +75,10 @@
      style="fill:#88aa00;fill-opacity:1;stroke-width:0.1056338"
      d="M 12.042254,14.454225 V 11.971831 H 9.5598592 7.0774648 V 11.021127 10.070423 H 9.5598592 12.042254 V 7.5352113 5 h 0.950704 0.950704 v 2.5352113 2.5352117 h 2.535211 2.535212 v 0.950704 0.950704 h -2.535212 -2.535211 v 2.482394 2.482395 h -0.950704 -0.950704 z"
      id="path993"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:#000000;stroke-width:0.1056338"
+     d="M 12.042254,14.369718 V 11.887324 H 9.5598592 7.0774648 V 10.989437 10.091549 H 9.5598592 12.042254 V 7.556338 5.0211268 h 0.950704 0.950704 v 2.5352112 2.535211 h 2.535211 2.535211 v 0.897888 0.897887 h -2.535211 -2.535211 v 2.482394 2.482395 h -0.950704 -0.950704 z"
+     id="path818"
      inkscape:connector-curvature="0" />
 </svg>

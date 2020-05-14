@@ -93,11 +93,11 @@ TopBar::TopBar(CASTLEGUI* _mainWindow, QWidget *parent) :
     ui->pushButtonLock->setButtonClassStyle("cssClass", "btn-check-lock");
 
     if(isLightTheme()){
-        ui->pushButtonTheme->setButtonClassStyle("cssClass", "btn-check-theme-light");
-        ui->pushButtonTheme->setButtonText("Light Theme");
+        //ui->pushButtonTheme->setButtonClassStyle("cssClass", "btn-check-theme-light");
+        //ui->pushButtonTheme->setButtonText("Light Theme");
     }else{
-        ui->pushButtonTheme->setButtonClassStyle("cssClass", "btn-check-theme-dark");
-        ui->pushButtonTheme->setButtonText("Dark Theme");
+        //ui->pushButtonTheme->setButtonClassStyle("cssClass", "btn-check-theme-dark");
+        //ui->pushButtonTheme->setButtonText("Dark Theme");
     }
 
     setCssProperty(ui->qrContainer, "container-qr");
@@ -119,7 +119,7 @@ TopBar::TopBar(CASTLEGUI* _mainWindow, QWidget *parent) :
     connect(ui->pushButtonQR, SIGNAL(clicked()), this, SLOT(onBtnReceiveClicked()));
     connect(ui->btnQr, SIGNAL(clicked()), this, SLOT(onBtnReceiveClicked()));
     connect(ui->pushButtonLock, SIGNAL(Mouse_Pressed()), this, SLOT(onBtnLockClicked()));
-    connect(ui->pushButtonTheme, SIGNAL(Mouse_Pressed()), this, SLOT(onThemeClicked()));
+   // connect(ui->pushButtonTheme, SIGNAL(Mouse_Pressed()), this, SLOT(onThemeClicked()));
     connect(ui->pushButtonFAQ, SIGNAL(Mouse_Pressed()), _mainWindow, SLOT(openFAQ()));
     connect(ui->pushButtonColdStaking, SIGNAL(Mouse_Pressed()), this, SLOT(onColdStakingClicked()));
     connect(ui->pushButtonSync, &ExpandableButton::Mouse_HoverLeave, this, &TopBar::refreshProgressBarSize);
@@ -133,11 +133,11 @@ void TopBar::onThemeClicked(){
     setTheme(lightTheme);
 
     if(lightTheme){
-        ui->pushButtonTheme->setButtonClassStyle("cssClass", "btn-check-theme-light",  true);
-        ui->pushButtonTheme->setButtonText("Light Theme");
+        //ui->pushButtonTheme->setButtonClassStyle("cssClass", "btn-check-theme-light",  true);
+      //  ui->pushButtonTheme->setButtonText("Light Theme");
     }else{
-        ui->pushButtonTheme->setButtonClassStyle("cssClass", "btn-check-theme-dark", true);
-        ui->pushButtonTheme->setButtonText("Dark Theme");
+      //  ui->pushButtonTheme->setButtonClassStyle("cssClass", "btn-check-theme-dark", true);
+     //   ui->pushButtonTheme->setButtonText("Dark Theme");
     }
     updateStyle(ui->pushButtonTheme);
 

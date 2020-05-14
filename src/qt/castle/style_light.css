@@ -1065,7 +1065,7 @@ QPushButton[cssClass="btn-faq-options"] {
 }
 
 QPushButton[cssClass="btn-faq-options"]:checked {
-    background-color: rgba(112, 112, 112, 0.2); /* Slightly desaturated green. https://www.colorhexa.com/a2cc75 */
+    background-color: rgba(162, 204, 117, 0.2); /* Slightly desaturated green. https://www.colorhexa.com/a2cc75 */
     border:none;
     font-size:18px;
     color:#ffffff; /* White. https://www.colorhexa.com/ffffff */
@@ -2435,7 +2435,7 @@ QPushButton[cssClass="btn-check-stack-inactive"] {
     qproperty-icon: url("://ic-check-staking-off");
     qproperty-iconSize: 24px 24px;
     color:#B3FFFFFF; /* White. https://www.colorhexa.com/ffffff */
-    background-color:#40707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#40a2cc75; /* Slightly desaturated green. https://www.colorhexa.com/a2cc75 */
     border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
     border-radius:2px;
 }
@@ -2750,8 +2750,8 @@ QPushButton[cssClass="btn-check-cold-staking"] {
     qproperty-icon: url("://ic-check-cold-staking");
     qproperty-iconSize: 24px 24px;
     color:#ffffff; /* White. https://www.colorhexa.com/ffffff */
-    background-color:#50707070; /* Very dark gray. https://www.colorhexa.com/707070 */
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#50558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     border-radius:2px;
 }
 
@@ -2759,34 +2759,34 @@ QPushButton[cssClass="btn-check-cold-staking-inactive"] {
     qproperty-icon: url("://ic-check-cold-staking-off");
     qproperty-iconSize: 24px 24px;
     color:#B3FFFFFF; /* White. https://www.colorhexa.com/ffffff */
-    background-color:#40707070; /* Very dark gray. https://www.colorhexa.com/707070 */
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#40558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     border-radius:2px;
 }
 
 QPushButton[cssClass="btn-check-cold-staking-checked"] {
     qproperty-icon: url("://ic-check-cold-staking-enabled");
     qproperty-iconSize: 24px 24px;
-    background-color:#50707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#50558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     color:#ffffff; /* White. https://www.colorhexa.com/ffffff */
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
 }
 
 QPushButton[cssClass="btn-check-cold-staking-unchecked"] {
     qproperty-icon: url("://ic-check-cold-staking-enabled");
     qproperty-iconSize: 24px 24px;
     color:#B3FFFFFF; /* White. https://www.colorhexa.com/ffffff */
-    background-color:#40707070; /* Very dark gray. https://www.colorhexa.com/707070 */
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#40558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     border-radius:2px;
 }
 
 QPushButton[cssClass="btn-check-cold-staking"]:checked {
     qproperty-icon: url("://ic-check-cold-staking-enabled");
     qproperty-iconSize: 24px 24px;
-    background-color:#50707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#50558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     color:#ffffff; /* White. https://www.colorhexa.com/ffffff */
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
 }
 
 /****************************************
@@ -2796,8 +2796,8 @@ QPushButton[cssClass="btn-check-connect"] {
     qproperty-icon: url("://ic-check-connect") ;
     qproperty-iconSize: 24px 24px;
     color:#ffffff; /* White. https://www.colorhexa.com/ffffff */
-    background-color:#50707070; /* Very dark gray. https://www.colorhexa.com/707070 */
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#50558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     border-radius:2px;
 }
 
@@ -2805,20 +2805,20 @@ QPushButton[cssClass="btn-check-connect-inactive"] {
     qproperty-icon: url("://ic-check-connect-off");
     qproperty-iconSize: 24px 24px;
     color:#B3FFFFFF; /* White. https://www.colorhexa.com/ffffff */
-    background-color:#40707070; /* Very dark gray. https://www.colorhexa.com/707070 */
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#40558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     border-radius:2px;
 }
 
 QPushButton[cssClass="btn-check-connect"]:checked {
-    background-color:#50707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#50558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     color:#ffffff; /* White. https://www.colorhexa.com/ffffff */
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
 }
 
 QPushButton[cssClass="btn-check-status-lock"] {
-    background-color:#50707070; /* Very dark gray. https://www.colorhexa.com/707070 */
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#50558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     qproperty-icon: url("://ic-wallet-status-locked") off,
     url("://ic-wallet-status-locked") on ;
     qproperty-iconSize: 24px 24px;
@@ -2827,8 +2827,8 @@ QPushButton[cssClass="btn-check-status-lock"] {
 }
 
 QPushButton[cssClass="btn-check-status-unlock"] {
-    background-color:#40707070; /* Very dark gray. https://www.colorhexa.com/707070 */
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#40558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     qproperty-icon: url("://ic-wallet-status-unlocked") off,
     url("://ic-wallet-status-unlocked") on ;
     qproperty-iconSize: 24px 24px;
@@ -2837,8 +2837,8 @@ QPushButton[cssClass="btn-check-status-unlock"] {
 }
 
 QPushButton[cssClass="btn-check-status-staking"] {
-    background-color:#50707070; /* Very dark gray. https://www.colorhexa.com/707070 */
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#50558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     qproperty-icon: url("://ic-wallet-status-staking") off,
     url("://ic-wallet-status-staking") on ;
     qproperty-iconSize: 24px 24px;
@@ -2848,33 +2848,33 @@ QPushButton[cssClass="btn-check-status-staking"] {
 
 QPushButton[cssClass="btn-check-text"] {
     color:#7f7c87; /* Dark grayish violet. https://www.colorhexa.com/7f7c87 */
-    background-color:#707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#558b2f; /* Dark grayish violet. https://www.colorhexa.com/558b2f */
     font-size:18px;
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
 }
 
 QPushButton[cssClass="btn-check-text"]:checked {
     color:#FFFFFF; /* White. https://www.colorhexa.com/ffffff */
-    background-color:#707070; /* Very dark gray. https://www.colorhexa.com/707070 */
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
 }
 
 QPushButton[cssClass="btn-check-text-theme"] {
     color:#FFFFFF; /* White. https://www.colorhexa.com/ffffff */
-    background-color:#40707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#40558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     font-size:18px;
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
 }
 
 QPushButton[cssClass="btn-check-text-theme"]:checked {
     color:#FFFFFF; /* White. https://www.colorhexa.com/ffffff */
-    background-color:#50707070; /* Very dark gray. https://www.colorhexa.com/707070 */
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#50558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
 }
 
 QPushButton[cssClass="btn-check-theme"] {
-    background-color:#50707070; /* Very dark gray. https://www.colorhexa.com/707070 */
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#50558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     qproperty-icon: url("://ic-check-theme-dark") off,
     url("://ic-check-theme-light") on ;
     qproperty-iconSize: 24px 24px;
@@ -2883,8 +2883,8 @@ QPushButton[cssClass="btn-check-theme"] {
 }
 
 QPushButton[cssClass="btn-check-theme-dark"] {
-    background-color:#50707070; /* Very dark gray. https://www.colorhexa.com/707070 */
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#50558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     qproperty-icon: url("://ic-check-theme-dark") off,
     url("://ic-check-theme-dark") on ;
     qproperty-iconSize: 24px 24px;
@@ -2893,8 +2893,8 @@ QPushButton[cssClass="btn-check-theme-dark"] {
 }
 
 QPushButton[cssClass="btn-check-theme-light"] {
-    background-color:#50707070; /* Very dark gray. https://www.colorhexa.com/707070 */
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#50558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     qproperty-icon: url("://ic-check-theme-light") off,
     url("://ic-check-theme-light") on ;
     qproperty-iconSize: 24px 24px;
@@ -2903,31 +2903,31 @@ QPushButton[cssClass="btn-check-theme-light"] {
 }
 
 QPushButton[cssClass="btn-check-theme"]:checked {
-    background-color:#50707070; /* Very dark gray. https://www.colorhexa.com/707070 */
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#50558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
 }
 
 QPushButton[cssClass="btn-check-peers"] {
     qproperty-icon: url("://ic-check-peers") ;
     qproperty-iconSize: 24px 24px;
     color:#FFFFFF; /* White. https://www.colorhexa.com/ffffff */
-    background-color:#50707070; /* Very dark gray. https://www.colorhexa.com/707070 */
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#50558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     border-radius:2px;
 }
 
 QPushButton[cssClass="btn-check-peers"]:checked {
-    background-color:#50707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#50558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     color:#FFFFFF; /* White. https://www.colorhexa.com/ffffff */
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
 }
 
 QPushButton[cssClass="btn-check-peers-inactive"] {
     qproperty-icon: url("://ic-check-peers-off");
     qproperty-iconSize: 24px 24px;
     color:#B3FFFFFF; /* White. https://www.colorhexa.com/ffffff */
-    background-color:#405707070; /* Very dark gray. https://www.colorhexa.com/707070 */
-    border-bottom:2px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#40558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
+    border-bottom:2px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     border-radius:2px;
 }
 
@@ -2944,7 +2944,7 @@ QPushButton[cssClass="btn-check-lock-sub-menu-unlocked"] {
 }
 
 QPushButton[cssClass="btn-check-lock-sub-menu-unlocked"]:checked {
-    background-color:#50707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#50558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
 }
 
 QPushButton[cssClass="btn-check-lock-sub-menu-unlocked"]:hover {
@@ -2964,7 +2964,7 @@ QPushButton[cssClass="btn-check-lock-sub-menu-locked"] {
 }
 
 QPushButton[cssClass="btn-check-lock-sub-menu-locked"]:checked {
-    background-color:#50707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#50558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
 }
 
 QPushButton[cssClass="btn-check-lock-sub-menu-locked"]:hover {
@@ -2984,7 +2984,7 @@ QPushButton[cssClass="btn-check-lock-sub-menu-staking"] {
 }
 
 QPushButton[cssClass="btn-check-lock-sub-menu-staking"]:checked {
-    background-color:#50707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#50558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
 }
 
 QPushButton[cssClass="btn-check-lock-sub-menu-staking"]:hover {
@@ -2993,7 +2993,7 @@ QPushButton[cssClass="btn-check-lock-sub-menu-staking"]:hover {
 
 
 *[cssClass="top-sub-menu"] {
-    background-color:#707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
 }
 
 *[cssClass="top-sub-menu-text"] {
@@ -3010,9 +3010,9 @@ QProgressBar[cssClass="progress-sync"]::chunk:horizontal {
     y1: 0.5,
     x2: 1,
     y2: 0.5,
-    stop: 0 #707070,
-    stop: 1 #707070,
-    stop: 2 #707070,);
+    stop: 0 #558b2f,
+    stop: 1 #558b2f,
+    stop: 2 #558b2f,);
 }
 
 /****************************************
@@ -3029,20 +3029,20 @@ QProgressBar[cssClass="progress-sync"]::chunk:horizontal {
 				Masternode Dialog
 ****************************************/
 *[cssClass="line-purple"] {
-    background-color:#707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
 }
 
 QPushButton[cssClass="btn-number-check"] {
-    border:  1px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    border:  1px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     background-color:#FFFFFF; /* White. https://www.colorhexa.com/ffffff */
     font-size:14px;
     border-radius:11px;
-    color: #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    color: #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
 }
 
 QPushButton[cssClass="btn-number-check"]:checked {
-    border:  1px solid #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
-    background-color:#707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    border:  1px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
+    background-color:#558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     font-size:14px;
     border-radius:11px;
     color: #FFFFFF; /* White. https://www.colorhexa.com/ffffff */
@@ -3052,14 +3052,14 @@ QPushButton[cssClass="btn-name-check"] {
     background-color: #FFFFFF; /* White. https://www.colorhexa.com/ffffff */
     border:none;
     font-size:20px;
-    color: rgba(112, 112, 112 , 0.5);
+    color: rgba(85, 139, 47, 0.5);
 }
 
 QPushButton[cssClass="btn-name-check"]:checked {
     background-color:#FFFFFF; /* White. https://www.colorhexa.com/ffffff */
     border:none;
     font-size:20px;
-    color: #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    color: #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
 }
 
 QPushButton[cssClass="ic-step-confirm"] {
@@ -3128,7 +3128,7 @@ QPushButton[cssClass="btn-settings-check"]:checked {
 }
 
 QPushButton[cssClass="btn-settings-options"] {
-    background-color: rgba(112, 112, 112 , 0.1);
+    background-color: rgba(85, 139, 47, 0.1);
     border:none;
     font-size:20px;
     color: #707070; /* Very dark gray. https://www.colorhexa.com/707070 */
@@ -3137,7 +3137,7 @@ QPushButton[cssClass="btn-settings-options"] {
 }
 
 QPushButton[cssClass="btn-settings-options"]:checked {
-    background-color:#707070; /* Very dark gray. https://www.colorhexa.com/707070 */
+    background-color:#558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     border:none;
     font-size:20px;
     color: #FFFFFF; /* White. https://www.colorhexa.com/ffffff */
@@ -3146,7 +3146,7 @@ QPushButton[cssClass="btn-settings-options"]:checked {
 }
 
 QPushButton[cssClass="btn-settings-options"]:hover {
-    background-color: rgba(112, 112, 112 , 0.7);
+    background-color: rgba(85, 139, 47, 0.7);
     border:none;
     font-size:20px;
     color: #FFFFFF; /* White. https://www.colorhexa.com/ffffff */

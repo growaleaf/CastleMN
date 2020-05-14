@@ -41,7 +41,7 @@
      id="namedview16"
      showgrid="false"
      inkscape:zoom="5.9"
-     inkscape:cx="12"
+     inkscape:cx="-14.610169"
      inkscape:cy="20"
      inkscape:window-x="67"
      inkscape:window-y="27"
@@ -99,5 +99,20 @@
      style="fill:#88aa00;stroke-width:0.16949153"
      d="m 1.0169492,14.983051 v -3.898305 h 5 4.9999998 v 3.898305 3.898305 h -4.9999998 -5 z m 7.9661016,0 V 12.949153 H 5.9322034 2.8813559 v 2.033898 2.033898 h 3.0508475 3.0508474 z"
      id="path831"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:#ffffff;stroke-width:0.16949153"
+     d="m 1.0169492,27.016949 v -5.932203 h 5 4.9999998 v 5.932203 5.932204 h -4.9999998 -5 z m 7.9661016,0 V 22.949153 H 5.9322034 2.8813559 v 4.067796 4.067797 h 3.0508475 3.0508474 z"
+     id="path824"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:#ffffff;stroke-width:0.16949153"
+     d="m 1.0169492,14.983051 v -3.898305 h 5 4.9999998 v 3.898305 3.898305 h -4.9999998 -5 z m 7.9661016,0 V 12.949153 H 5.9322034 2.8813559 v 2.033898 2.033898 h 3.0508475 3.0508474 z"
+     id="path826"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:#ffffff;stroke-width:0.16949153"
+     d="M 13.050847,22.016949 V 11.084746 h 4.915255 4.915254 v 10.932203 10.932204 h -4.915254 -4.915255 z m 7.966102,0 v -9.067796 h -3.050847 -3.050848 v 9.067796 9.067797 h 3.050848 3.050847 z"
+     id="path828"
      inkscape:connector-curvature="0" />
 </svg>
