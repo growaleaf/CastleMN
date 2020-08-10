@@ -4,8 +4,8 @@
 
 
 
-#ifndef CASTLE_INVALID_SERIALS_JSON_H
-#define CASTLE_INVALID_SERIALS_JSON_H
+#ifndef PIVX_INVALID_SERIALS_JSON_H
+#define PIVX_INVALID_SERIALS_JSON_H
 
 #include <string>
 
@@ -1189,4 +1189,4 @@ std::string LoadInvalidSerials()
     return str;
 }
 
-#endif //CASTLE_INVALID_SERIALS_JSON_H
+#endif //PIVX_INVALID_SERIALS_JSON_H

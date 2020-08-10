@@ -1,9 +1,9 @@
 [Desktop Entry]
 Version=1.0
-Name=CASTLE Core
-Comment=CASTLE P2P Cryptocurrency
-Comment[fr]=CASTLE, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=CASTLE, eşten eşe kriptografik sanal para birimi
+Name=CASTLEE Core
+Comment=CASTLEE P2P Cryptocurrency
+Comment[fr]=CASTLEE, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=CASTLEE, eşten eşe kriptografik sanal para birimi
 Exec=castle-qt %u
 Terminal=false
 Type=Application

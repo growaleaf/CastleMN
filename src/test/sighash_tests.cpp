@@ -1,9 +1,11 @@
 // Copyright (c) 2013 The Bitcoin Core developers
-// Copyright (c) 2017-2019 The PIVX developers
+// Copyright (c) 2017-2020 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "data/sighash.json.h"
+
+#include "consensus/tx_verify.h"
 #include "main.h"
 #include "serialize.h"
 #include "script/script.h"
@@ -26,7 +28,7 @@ uint256 static SignatureHashOld(CScript scriptCode, const CTransaction& txTo, un
     if (nIn >= txTo.vin.size())
     {
         printf("ERROR: SignatureHash() : nIn=%d out of range\n", nIn);
-        return 1;
+        return UINT256_ONE;
     }
     CMutableTransaction txTmp(txTo);
 
@@ -57,7 +59,7 @@ uint256 static SignatureHashOld(CScript scriptCode, const CTransaction& txTo, un
         if (nOut >= txTmp.vout.size())
         {
             printf("ERROR: SignatureHash() : nOut=%d out of range\n", nOut);
-            return 1;
+            return UINT256_ONE;
         }
         txTmp.vout.resize(nOut+1);
         for (unsigned int i = 0; i < nOut; i++)

@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2018 The Dash Core developers
-// Copyright (c) 2018-35801 The PIVX developers
+// Copyright (c) 2018-2020 The CASTLE developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -67,8 +67,8 @@ public:
     virtual ~CSignedMessage() {};
 
     // Sign-Verify message
-    bool Sign(const CKey& key, const CPubKey& pubKey, const bool fNewSigs);
-    bool Sign(const std::string strSignKey, const bool fNewSigs);
+    bool Sign(const CKey& key, const CPubKey& pubKey);
+    bool Sign(const std::string strSignKey);
     bool CheckSignature(const CPubKey& pubKey) const;
     bool CheckSignature() const;
 

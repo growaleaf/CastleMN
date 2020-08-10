@@ -1,83 +1,59 @@
-Castle Core integration/staging repository
+CASTLE Core integration/staging repository
 =====================================
 
-[![Build Status](https://travis-ci.org/growaleaf/CastleMN.svg?branch=master)](https://travis-ci.org/growaleaf/CastleMN) [![GitHub version](https://badge.fury.io/gh/castle%2Fcastle.svg)](https://badge.fury.io/gh/castle%2Fcastle) [![Snap Status](https://build.snapcraft.io/badge/castle/castle.svg)](https://build.snapcraft.io/user/castle/castle) [![GitHub issues](https://img.shields.io/github/issues/castle/castle.svg)](https://github.com/growaleaf/CastleMN/issues) [![GitHub forks](https://img.shields.io/github/forks/castle/castle.svg)](https://github.com/growaleaf/CastleMN/network) [![GitHub stars](https://img.shields.io/github/stars/castle/castle.svg)](https://github.com/growaleaf/CastleMN/stargazers) [![GitHub license](https://img.shields.io/github/license/castle/castle.svg)](https://github.com/growaleaf/CastleMN/blob/master/COPYING) [![Twitter](https://img.shields.io/twitter/url/https://github.com/growaleaf/CastleMN.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=http%3A%2F%2Fgithub.com%2Fcastle%2Fcastle)
+[![Build Status](https://travis-ci.org/CASTLE-Project/CASTLE.svg?branch=master)](https://travis-ci.org/CASTLE-Project/CASTLE) [![GitHub version](https://badge.fury.io/gh/CASTLE-Project%2FCASTLE.svg)](https://badge.fury.io/gh/CASTLE-Project%2FCASTLE)
 
-Castle is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.
-- Anonymized transactions using the _Zerocoin Protocol_.
+CASTLE is an open source crypto-currency focused on fast private transactions using the Zerocoin protocol, with low transaction fees & environmental footprint.  It utilizes the first ever anonymous proof of stake protocol, called zPoS, combined with regular PoS and masternodes for securing its network. zPoS incentivises using the privacy features available in CASTLE by granting a higher block reward for zPoS over regular PoS and masternodes. In practice CASTLE has between 4 to 10 times higher use of it's privacy features in comparison to other coins that combine public and private transactions. This is thanks to innovations like zPoS and integrating the Zerocoin protocol into light/mobile wallets, allowing for a complete and lightweight privacy protocol that can be used on the go. As well as security improvements like [deterministic generation of zCSTL for easy backups.](https://www.reddit.com/r/castle/comments/8gbjf7/how_to_use_deterministic_zerocoin_generation/)
+The goal of CASTLE is to achieve a decentralized sustainable crypto currency with near instant full-time private transactions, fair governance and community intelligence.
+- Anonymized transactions & consensus using the [_Zerocoin Protocol_](http://www.castle.org/zcstl) and [zPoS](https://castle.org/zpos/).
+- light/mobile wallet privacy using the [Zerocoin Light Node Protocol](https://castle.org/wp-content/uploads/2018/11/Zerocoin_Light_Node_Protocol.pdf)
 - Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftX_.
-- Decentralized blockchain voting providing for consensus based advancement of the current Masternode
-  technology used to secure the network and provide the above features, each Masternode is secured
-  with a collateral of 40,000 CSTL.
+- Decentralized blockchain voting utilizing Masternode technology to form a DAO. The blockchain will distribute monthly treasury funds based on successful proposals submitted by the community and voted on by the DAO.
 
-  
-<table>
-  <th colspan=2>Official links:</th>
-
-<tr><td>Website:</td><td> https://projectcastle.tech</td></tr>
-<tr><td>Explorer:</td><td> http://explorer.projectcastle.tech</td></tr>
-<tr><td>White Paper:</td><td> https://projectcastle.tech/White_Paper.pdf</td></tr>
-<tr><td>Discord:</td><td> https://discord.gg/pEj3fej</td></tr>
-<tr><td>Twitter:</td><td> https://twitter.com/Castle_CSTL</td></tr>
-<tr><td>Facebook:</td><td> https://www.facebook.com/CastleCSTL</td></tr>
-<tr><td>Telegram:</td><td> https://t.me/castle_cstl</td></tr>
-<tr><td>Bitcointalk ANN:</td><td> https://bitcointalk.org/index.php?topic=2454798</td></tr>
-<tr><td>Github:</td><td> https://github.com/growaleaf/CastleMN</td></tr>
-<tr><td>CoinMarketCap</td><td>https://coinmarketcap.com/currencies/castle/</td></tr>
-<tr><td>CSTL Wallets</td><td>https://github.com/growaleaf/CastleMN/releases</td></tr>
-<tr><td>CSTL Wallet Bootstrap</td><td>https://drive.google.com/file/d/1HgfJ4kiEgVvZF9RFDrS6VuoR7ph_K68o/view?usp=sharing</td></tr>
-</table>
-
-<table>
-  <th colspan=2>Exchanges</th>
-
-<tr><td>Crex24:</td><td>https://crex24.com/exchange/CSTL-BTC</td></tr>
-<tr><td>Crex24:</td><td>https://trade.birake.com/market/BIRAKE.CSTL_BIRAKE.BTC</td></tr>
-</table>
-
+More information at [castle.org](http://www.castle.org) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php?topic=1262920)
 
 ### Coin Specs
 <table>
 <tr><td>Algo</td><td>Quark</td></tr>
-  <tr><td>Masternode Collateral</td><td>40,000 CSTL</td></tr>
+<tr><td>Block Time</td><td>60 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
-<tr><td>Max Coin Supply</td><td>50,000,000</td></tr>
-<tr><td>Premine in block 1</td><td>11,500,000*</td></tr>
-<tr><td>Full Premine</td><td>to handle snapshot to current chain*</td></tr>
-  <tr><td>Block Time</td><td>60 seconds</td></tr>
-  <tr><td>Block Minting</td><td>40 confirmations</td></tr>
-  <tr><td>Block Transactions</td><td>5 confirmations</td></tr>
-  <tr><td>Block Maturity</td><td>8 hours</td></tr>
-  <tr><td>Minimum Stake Age</td><td>12 hours</td></tr>
+<tr><td>Max Coin Supply (PoW Phase)</td><td>43,199,500 CSTL</td></tr>
+<tr><td>Max Coin Supply (PoS Phase)</td><td>Infinite</td></tr>
+<tr><td>Premine</td><td>60,000 CSTL*</td></tr>
 </table>
-*additional coins in premine not for snapshot distributed to promote the project (not to be retained by developers)
+
+*60,000 CSTL Premine was burned in block [279917](http://www.presstab.pw/phpexplorer/CASTLE/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0)
 
 ### Reward Distribution
 
 <table>
-<th colspan=4>PoW Phase</th>
+<th colspan=4>Genesis Block</th>
 <tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
-<tr><td>1</td><td>11,500,000 CSTL</td><td>Initial Premine to Former Chain</td></tr>
-<tr><td>2-1000</td><td>0.1 CSTL</td><td>Closed Mining</td></tr>
-<tr><th colspan=4>PoS Phase</th></tr>
-<tr><th>Block Height</th><th colspan=1>Reward Amount</th></tr>
-<tr><td>1,001-15,000</td><td>1 CSTL</td></tr>
-  <tr><td>15,001-65,000</td><td>4 CSTL</td></tr>
-  <tr><td>65,001-120,000</td><td>12 CSTL</td></tr>
-    <tr><td>120,001-160,000</td><td>10 CSTL</td></tr>
-  <tr><td>160,001-*</td><td>8 CSTL</td></tr>
+<tr><td>1</td><td>60,000 CSTL</td><td>Initial Pre-mine, burnt in block <a href="http://www.presstab.pw/phpexplorer/CASTLE/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0">279917</a></td></tr>
+</table>
+
+### PoW Rewards Breakdown
+
+<table>
+<th>Block Height</th><th>Masternodes</th><th>Miner</th><th>Budget</th>
+<tr><td>2-43200</td><td>20% (50 CSTL)</td><td>80% (200 CSTL)</td><td>N/A</td></tr>
+<tr><td>43201-151200</td><td>20% (50 CSTL)</td><td>70% (200 CSTL)</td><td>10% (25 CSTL)</td></tr>
+<tr><td>151201-259200</td><td>45% (22.5 CSTL)</td><td>45% (22.5 CSTL)</td><td>10% (5 CSTL)</td></tr>
 </table>
 
 ### PoS Rewards Breakdown
 
 <table>
-<th>Block Height</th><th>Masternodes & Stakers</th>
-<tr><td>1,001-*</td><td>70% ( CSTL) & 30% ( CSTL) respectively</td></tr>
-</table>
-
-
-<table>
-  <th colspan=1>Masternode Installation Script:</th>
-  <tr><td>Remote Masternode VPS, Ubuntu 18.04 LTS, 1GB RAM, 1 CPU Core </td></td>  
-<tr><td>sudo curl -L https://raw.githubusercontent.com/growaleaf/CastleMN/master/CastleMN-Install.sh | bash</td></td>
+<th>Phase</th><th>Block Height</th><th>Reward</th><th>Masternodes & Stakers</th><th>Budget</th>
+<tr><td>Phase 0</td><td>259201-302399</td><td>50 CSTL</td><td>90% (45 CSTL)</td><td>10% (5 CSTL)</td></tr>
+<tr><td>Phase 1</td><td>302400-345599</td><td>45 CSTL</td><td>90% (40.5 CSTL)</td><td>10% (4.5 CSTL)</td></tr>
+<tr><td>Phase 2</td><td>345600-388799</td><td>40 CSTL</td><td>90% (36 CSTL)</td><td>10% (4 CSTL)</td></tr>
+<tr><td>Phase 3</td><td>388800-431999</td><td>35 CSTL</td><td>90% (31.5 CSTL)</td><td>10% (3.5 CSTL)</td></tr>
+<tr><td>Phase 4</td><td>432000-475199</td><td>30 CSTL</td><td>90% (27 CSTL)</td><td>10% (3 CSTL)</td></tr>
+<tr><td>Phase 5</td><td>475200-518399</td><td>25 CSTL</td><td>90% (22.5 CSTL)</td><td>10% (2.5 CSTL)</td></tr>
+<tr><td>Phase 6</td><td>518400-561599</td><td>20 CSTL</td><td>90% (18 CSTL)</td><td>10% (2 CSTL)</td></tr>
+<tr><td>Phase 7</td><td>561600-604799</td><td>15 CSTL</td><td>90% (13.5 CSTL)</td><td>10% (1.5 CSTL)</td></tr>
+<tr><td>Phase 8</td><td>604800-647999</td><td>10 CSTL</td><td>90% (9 CSTL)</td><td>10% (1 CSTL)</td></tr>
+<tr><td>Phase 9</td><td>648000-1154203</td><td>5 CSTL</td><td>90% (4.5 CSTL)</td><td>10% (0.5 CSTL)</td></tr>
+<tr><td>Phase X</td><td>1154203-∞</td><td>6 CSTL</td><td>84% (5 CSTL/zCSTL)</td><td>16% (1 CSTL)</td></tr>
 </table>

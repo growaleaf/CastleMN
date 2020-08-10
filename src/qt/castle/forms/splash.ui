@@ -163,7 +163,7 @@
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">color:#35281c; padding-left:50px;</string>
+            <string notr="true">color:white; padding-left:50px;</string>
            </property>
            <property name="text">
             <string>Loading…</string>
@@ -187,7 +187,7 @@
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">color:#35281c; padding-top:1px;</string>
+            <string notr="true">color:white; padding-top:1px;</string>
            </property>
            <property name="text">
             <string notr="true">vX.X.X</string>

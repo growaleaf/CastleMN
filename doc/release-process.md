@@ -229,7 +229,6 @@ Create (and optionally verify) the signed Windows binaries:
     ./bin/gsign --signer "$SIGNER" --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../castle/contrib/gitian-descriptors/gitian-win-signer.yml
     ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../castle/contrib/gitian-descriptors/gitian-win-signer.yml
     mv build/out/castle-*win64-setup.exe ../castle-${VERSION}-win64-setup.exe
-    mv build/out/castle-*win32-setup.exe ../castle-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed macOS/Windows binaries:
@@ -259,8 +258,6 @@ castle-${VERSION}-x86_64-linux-gnu.tar.gz
 castle-${VERSION}-osx64.tar.gz
 castle-${VERSION}-osx.dmg
 castle-${VERSION}.tar.gz
-castle-${VERSION}-win32-setup.exe
-castle-${VERSION}-win32.zip
 castle-${VERSION}-win64-setup.exe
 castle-${VERSION}-win64.zip
 ```

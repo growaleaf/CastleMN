@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The PIVX developers
+// Copyright (c) 2019-2020 The CASTLE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -18,20 +18,22 @@
 #include "qt/castle/defaultdialog.h"
 #include "qt/castle/settings/settingsfaqwidget.h"
 
-#include <QDesktopWidget>
-#include <QHBoxLayout>
-#include <QVBoxLayout>
+#include "init.h"
+#include "util.h"
+
 #include <QApplication>
 #include <QColor>
-#include <QShortcut>
+#include <QHBoxLayout>
 #include <QKeySequence>
+#include <QScreen>
+#include <QShortcut>
 #include <QWindowStateChangeEvent>
 
-#include "util.h"
 
 #define BASE_WINDOW_WIDTH 1200
 #define BASE_WINDOW_HEIGHT 740
 #define BASE_WINDOW_MIN_HEIGHT 620
+#define BASE_WINDOW_MIN_WIDTH 1100
 
 
 const QString CASTLEGUI::DEFAULT_WALLET = "~Default";
@@ -42,15 +44,16 @@ CASTLEGUI::CASTLEGUI(const NetworkStyle* networkStyle, QWidget* parent) :
 
     /* Open CSS when configured */
     this->setStyleSheet(GUIUtil::loadStyleSheet());
-    this->setMinimumSize(BASE_WINDOW_WIDTH, BASE_WINDOW_MIN_HEIGHT);
+    this->setMinimumSize(BASE_WINDOW_MIN_WIDTH, BASE_WINDOW_MIN_HEIGHT);
 
 
     // Adapt screen size
-    QRect rec = QApplication::desktop()->screenGeometry();
+    QRect rec = QGuiApplication::primaryScreen()->geometry();
     int adaptedHeight = (rec.height() < BASE_WINDOW_HEIGHT) ?  BASE_WINDOW_MIN_HEIGHT : BASE_WINDOW_HEIGHT;
+    int adaptedWidth = (rec.width() < BASE_WINDOW_WIDTH) ?  BASE_WINDOW_MIN_WIDTH : BASE_WINDOW_WIDTH;
     GUIUtil::restoreWindowGeometry(
             "nWindow",
-            QSize(BASE_WINDOW_WIDTH, adaptedHeight),
+            QSize(adaptedWidth, adaptedHeight),
             this
     );
 
@@ -60,30 +63,23 @@ CASTLEGUI::CASTLEGUI(const NetworkStyle* networkStyle, QWidget* parent) :
 #else
     enableWallet = false;
 #endif // ENABLE_WALLET
-    
-    
+
     QString windowTitle = QString::fromStdString(GetArg("-windowtitle", ""));
     if (windowTitle.isEmpty()) {
         windowTitle = tr("CASTLE Core") + " - ";
         windowTitle += ((enableWallet) ? tr("Wallet") : tr("Node"));
     }
+    windowTitle += " " + networkStyle->getTitleAddText();
+    setWindowTitle(windowTitle);
 
-#ifndef Q_OS_MAC
     QApplication::setWindowIcon(networkStyle->getAppIcon());
     setWindowIcon(networkStyle->getAppIcon());
-#else
-    MacDockIconHandler::instance()->setIcon(networkStyle->getAppIcon());
-#endif
-
-
-
 
 #ifdef ENABLE_WALLET
     // Create wallet frame
-    if(enableWallet){
-
+    if (enableWallet) {
         QFrame* centralWidget = new QFrame(this);
-        this->setMinimumWidth(BASE_WINDOW_WIDTH);
+        this->setMinimumWidth(BASE_WINDOW_MIN_WIDTH);
         this->setMinimumHeight(BASE_WINDOW_MIN_HEIGHT);
         QHBoxLayout* centralWidgetLayouot = new QHBoxLayout();
         centralWidget->setLayout(centralWidgetLayouot);
@@ -128,7 +124,6 @@ CASTLEGUI::CASTLEGUI(const NetworkStyle* networkStyle, QWidget* parent) :
         sendWidget = new SendWidget(this);
         receiveWidget = new ReceiveWidget(this);
         addressesWidget = new AddressesWidget(this);
-        privacyWidget = new PrivacyWidget(this);
         masterNodesWidget = new MasterNodesWidget(this);
         coldStakingWidget = new ColdStakingWidget(this);
         settingsWidget = new SettingsWidget(this);
@@ -138,7 +133,6 @@ CASTLEGUI::CASTLEGUI(const NetworkStyle* networkStyle, QWidget* parent) :
         stackedContainer->addWidget(sendWidget);
         stackedContainer->addWidget(receiveWidget);
         stackedContainer->addWidget(addressesWidget);
-        stackedContainer->addWidget(privacyWidget);
         stackedContainer->addWidget(masterNodesWidget);
         stackedContainer->addWidget(coldStakingWidget);
         stackedContainer->addWidget(settingsWidget);
@@ -171,7 +165,8 @@ CASTLEGUI::CASTLEGUI(const NetworkStyle* networkStyle, QWidget* parent) :
 
 }
 
-void CASTLEGUI::createActions(const NetworkStyle* networkStyle){
+void CASTLEGUI::createActions(const NetworkStyle* networkStyle)
+{
     toggleHideAction = new QAction(networkStyle->getAppIcon(), tr("&Show / Hide"), this);
     toggleHideAction->setStatusTip(tr("Show or hide the main Window"));
 
@@ -180,14 +175,15 @@ void CASTLEGUI::createActions(const NetworkStyle* networkStyle){
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
 
-    connect(toggleHideAction, SIGNAL(triggered()), this, SLOT(toggleHidden()));
-    connect(quitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
+    connect(toggleHideAction, &QAction::triggered, this, &CASTLEGUI::toggleHidden);
+    connect(quitAction, &QAction::triggered, qApp, &QApplication::quit);
 }
 
 /**
  * Here add every event connection
  */
-void CASTLEGUI::connectActions() {
+void CASTLEGUI::connectActions()
+{
     QShortcut *consoleShort = new QShortcut(this);
     consoleShort->setKey(QKeySequence(SHORT_KEY + Qt::Key_C));
     connect(consoleShort, &QShortcut::activated, [this](){
@@ -202,7 +198,6 @@ void CASTLEGUI::connectActions() {
     connect(sendWidget, &SendWidget::showHide, this, &CASTLEGUI::showHide);
     connect(receiveWidget, &ReceiveWidget::showHide, this, &CASTLEGUI::showHide);
     connect(addressesWidget, &AddressesWidget::showHide, this, &CASTLEGUI::showHide);
-    connect(privacyWidget, &PrivacyWidget::showHide, this, &CASTLEGUI::showHide);
     connect(masterNodesWidget, &MasterNodesWidget::showHide, this, &CASTLEGUI::showHide);
     connect(masterNodesWidget, &MasterNodesWidget::execDialog, this, &CASTLEGUI::execDialog);
     connect(coldStakingWidget, &ColdStakingWidget::showHide, this, &CASTLEGUI::showHide);
@@ -211,7 +206,8 @@ void CASTLEGUI::connectActions() {
 }
 
 
-void CASTLEGUI::createTrayIcon(const NetworkStyle* networkStyle) {
+void CASTLEGUI::createTrayIcon(const NetworkStyle* networkStyle)
+{
 #ifndef Q_OS_MAC
     trayIcon = new QSystemTrayIcon(this);
     QString toolTip = tr("CASTLE Core client") + " " + networkStyle->getTitleAddText();
@@ -222,8 +218,8 @@ void CASTLEGUI::createTrayIcon(const NetworkStyle* networkStyle) {
     notificator = new Notificator(QApplication::applicationName(), trayIcon, this);
 }
 
-//
-CASTLEGUI::~CASTLEGUI() {
+CASTLEGUI::~CASTLEGUI()
+{
     // Unsubscribe from notifications from core
     unsubscribeFromCoreSignals();
 
@@ -237,16 +233,17 @@ CASTLEGUI::~CASTLEGUI() {
 
 
 /** Get restart command-line parameters and request restart */
-void CASTLEGUI::handleRestart(QStringList args){
+void CASTLEGUI::handleRestart(QStringList args)
+{
     if (!ShutdownRequested())
-        emit requestedRestart(args);
+        Q_EMIT requestedRestart(args);
 }
 
 
-void CASTLEGUI::setClientModel(ClientModel* clientModel) {
+void CASTLEGUI::setClientModel(ClientModel* clientModel)
+{
     this->clientModel = clientModel;
-    if(this->clientModel) {
-
+    if (this->clientModel) {
         // Create system tray menu (or setup the dock menu) that late to prevent users from calling actions,
         // while the client has not yet fully loaded
         createTrayIconMenu();
@@ -257,9 +254,9 @@ void CASTLEGUI::setClientModel(ClientModel* clientModel) {
         settingsWidget->setClientModel(clientModel);
 
         // Receive and report messages from client model
-        connect(clientModel, SIGNAL(message(QString, QString, unsigned int)), this, SLOT(message(QString, QString, unsigned int)));
-        connect(topBar, SIGNAL(walletSynced(bool)), dashboard, SLOT(walletSynced(bool)));
-        connect(topBar, SIGNAL(walletSynced(bool)), coldStakingWidget, SLOT(walletSynced(bool)));
+        connect(clientModel, &ClientModel::message, this, &CASTLEGUI::message);
+        connect(topBar, &TopBar::walletSynced, dashboard, &DashboardWidget::walletSynced);
+        connect(topBar, &TopBar::walletSynced, coldStakingWidget, &ColdStakingWidget::walletSynced);
 
         // Get restart command-line parameters and handle restart
         connect(settingsWidget, &SettingsWidget::handleRestart, [this](QStringList arg){handleRestart(arg);});
@@ -281,29 +278,31 @@ void CASTLEGUI::setClientModel(ClientModel* clientModel) {
     }
 }
 
-void CASTLEGUI::createTrayIconMenu() {
+void CASTLEGUI::createTrayIconMenu()
+{
 #ifndef Q_OS_MAC
-    // return if trayIcon is unset (only on non-Mac OSes)
+    // return if trayIcon is unset (only on non-macOSes)
     if (!trayIcon)
         return;
 
     trayIconMenu = new QMenu(this);
     trayIcon->setContextMenu(trayIconMenu);
 
-    connect(trayIcon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)),
-            this, SLOT(trayIconActivated(QSystemTrayIcon::ActivationReason)));
+    connect(trayIcon, &QSystemTrayIcon::activated, this, &CASTLEGUI::trayIconActivated);
 #else
-    // Note: On Mac, the dock icon is used to provide the tray's functionality.
+    // Note: On macOS, the Dock icon is used to provide the tray's functionality.
     MacDockIconHandler* dockIconHandler = MacDockIconHandler::instance();
-    dockIconHandler->setMainWindow((QMainWindow*)this);
-    trayIconMenu = dockIconHandler->dockMenu();
+    connect(dockIconHandler, &MacDockIconHandler::dockIconClicked, this, &CASTLEGUI::macosDockIconActivated);
+
+    trayIconMenu = new QMenu(this);
+    trayIconMenu->setAsDockMenu();
 #endif
 
-    // Configuration of the tray icon (or dock icon) icon menu
+    // Configuration of the tray icon (or Dock icon) icon menu
     trayIconMenu->addAction(toggleHideAction);
     trayIconMenu->addSeparator();
 
-#ifndef Q_OS_MAC // This is built-in on Mac
+#ifndef Q_OS_MAC // This is built-in on macOS
     trayIconMenu->addSeparator();
     trayIconMenu->addAction(quitAction);
 #endif
@@ -317,6 +316,12 @@ void CASTLEGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
         toggleHidden();
     }
 }
+#else
+void CASTLEGUI::macosDockIconActivated()
+ {
+     show();
+     activateWindow();
+ }
 #endif
 
 void CASTLEGUI::changeEvent(QEvent* e)
@@ -327,7 +332,7 @@ void CASTLEGUI::changeEvent(QEvent* e)
         if (clientModel && clientModel->getOptionsModel() && clientModel->getOptionsModel()->getMinimizeToTray()) {
             QWindowStateChangeEvent* wsevt = static_cast<QWindowStateChangeEvent*>(e);
             if (!(wsevt->oldState() & Qt::WindowMinimized) && isMinimized()) {
-                QTimer::singleShot(0, this, SLOT(hide()));
+                QTimer::singleShot(0, this, &CASTLEGUI::hide);
                 e->ignore();
             }
         }
@@ -348,15 +353,17 @@ void CASTLEGUI::closeEvent(QCloseEvent* event)
 }
 
 
-void CASTLEGUI::messageInfo(const QString& text){
-    if(!this->snackBar) this->snackBar = new SnackBar(this, this);
+void CASTLEGUI::messageInfo(const QString& text)
+{
+    if (!this->snackBar) this->snackBar = new SnackBar(this, this);
     this->snackBar->setText(text);
     this->snackBar->resize(this->width(), snackBar->height());
     openDialog(this->snackBar, this);
 }
 
 
-void CASTLEGUI::message(const QString& title, const QString& message, unsigned int style, bool* ret) {
+void CASTLEGUI::message(const QString& title, const QString& message, unsigned int style, bool* ret)
+{
     QString strTitle =  tr("CASTLE Core"); // default title
     // Default to information icon
     int nNotifyIcon = Notificator::Information;
@@ -395,18 +402,18 @@ void CASTLEGUI::message(const QString& title, const QString& message, unsigned i
         // Check for buttons, use OK as default, if none was supplied
         int r = 0;
         showNormalIfMinimized();
-        if(style & CClientUIInterface::BTN_MASK){
+        if (style & CClientUIInterface::BTN_MASK) {
             r = openStandardDialog(
                     (title.isEmpty() ? strTitle : title), message, "OK", "CANCEL"
                 );
-        }else{
+        } else {
             r = openStandardDialog((title.isEmpty() ? strTitle : title), message, "OK");
         }
         if (ret != NULL)
             *ret = r;
-    } else if(style & CClientUIInterface::MSG_INFORMATION_SNACK){
+    } else if (style & CClientUIInterface::MSG_INFORMATION_SNACK) {
         messageInfo(message);
-    }else {
+    } else {
         // Append title to "CASTLE - "
         if (!msgType.isEmpty())
             strTitle += " - " + msgType;
@@ -414,7 +421,8 @@ void CASTLEGUI::message(const QString& title, const QString& message, unsigned i
     }
 }
 
-bool CASTLEGUI::openStandardDialog(QString title, QString body, QString okBtn, QString cancelBtn){
+bool CASTLEGUI::openStandardDialog(QString title, QString body, QString okBtn, QString cancelBtn)
+{
     DefaultDialog *dialog;
     if (isVisible()) {
         showHide(true);
@@ -436,28 +444,24 @@ bool CASTLEGUI::openStandardDialog(QString title, QString body, QString okBtn, Q
 }
 
 
-void CASTLEGUI::showNormalIfMinimized(bool fToggleHidden) {
+void CASTLEGUI::showNormalIfMinimized(bool fToggleHidden)
+{
     if (!clientModel)
         return;
-    // activateWindow() (sometimes) helps with keyboard focus on Windows
-    if (isHidden()) {
-        show();
-        activateWindow();
-    } else if (isMinimized()) {
-        showNormal();
-        activateWindow();
-    } else if (GUIUtil::isObscured(this)) {
-        raise();
-        activateWindow();
-    } else if (fToggleHidden)
+    if (!isHidden() && !isMinimized() && !GUIUtil::isObscured(this) && fToggleHidden) {
         hide();
+    } else {
+        GUIUtil::bringToFront(this);
+    }
 }
 
-void CASTLEGUI::toggleHidden() {
+void CASTLEGUI::toggleHidden()
+{
     showNormalIfMinimized(true);
 }
 
-void CASTLEGUI::detectShutdown() {
+void CASTLEGUI::detectShutdown()
+{
     if (ShutdownRequested()) {
         if (rpcConsole)
             rpcConsole->hide();
@@ -465,30 +469,31 @@ void CASTLEGUI::detectShutdown() {
     }
 }
 
-void CASTLEGUI::goToDashboard(){
-    if(stackedContainer->currentWidget() != dashboard){
+void CASTLEGUI::goToDashboard()
+{
+    if (stackedContainer->currentWidget() != dashboard) {
         stackedContainer->setCurrentWidget(dashboard);
         topBar->showBottom();
     }
 }
 
-void CASTLEGUI::goToSend(){
+void CASTLEGUI::goToSend()
+{
     showTop(sendWidget);
 }
 
-void CASTLEGUI::goToAddresses(){
+void CASTLEGUI::goToAddresses()
+{
     showTop(addressesWidget);
 }
 
-void CASTLEGUI::goToPrivacy(){
-    showTop(privacyWidget);
-}
-
-void CASTLEGUI::goToMasterNodes(){
+void CASTLEGUI::goToMasterNodes()
+{
     showTop(masterNodesWidget);
 }
 
-void CASTLEGUI::goToColdStaking(){
+void CASTLEGUI::goToColdStaking()
+{
     showTop(coldStakingWidget);
 }
 
@@ -496,51 +501,69 @@ void CASTLEGUI::goToSettings(){
     showTop(settingsWidget);
 }
 
-void CASTLEGUI::goToReceive(){
+void CASTLEGUI::goToSettingsInfo()
+{
+    navMenu->selectSettings();
+    settingsWidget->showInformation();
+    goToSettings();
+}
+
+void CASTLEGUI::goToReceive()
+{
     showTop(receiveWidget);
 }
 
-void CASTLEGUI::showTop(QWidget* view){
-    if(stackedContainer->currentWidget() != view){
+void CASTLEGUI::openNetworkMonitor()
+{
+    settingsWidget->openNetworkMonitor();
+}
+
+void CASTLEGUI::showTop(QWidget* view)
+{
+    if (stackedContainer->currentWidget() != view) {
         stackedContainer->setCurrentWidget(view);
         topBar->showTop();
     }
 }
 
-void CASTLEGUI::changeTheme(bool isLightTheme){
+void CASTLEGUI::changeTheme(bool isLightTheme)
+{
 
     QString css = GUIUtil::loadStyleSheet();
     this->setStyleSheet(css);
 
     // Notify
-    emit themeChanged(isLightTheme, css);
+    Q_EMIT themeChanged(isLightTheme, css);
 
     // Update style
     updateStyle(this);
 }
 
-void CASTLEGUI::resizeEvent(QResizeEvent* event){
+void CASTLEGUI::resizeEvent(QResizeEvent* event)
+{
     // Parent..
     QMainWindow::resizeEvent(event);
     // background
     showHide(opEnabled);
     // Notify
-    emit windowResizeEvent(event);
+    Q_EMIT windowResizeEvent(event);
 }
 
-bool CASTLEGUI::execDialog(QDialog *dialog, int xDiv, int yDiv){
+bool CASTLEGUI::execDialog(QDialog *dialog, int xDiv, int yDiv)
+{
     return openDialogWithOpaqueBackgroundY(dialog, this);
 }
 
-void CASTLEGUI::showHide(bool show){
-    if(!op) op = new QLabel(this);
-    if(!show){
+void CASTLEGUI::showHide(bool show)
+{
+    if (!op) op = new QLabel(this);
+    if (!show) {
         op->setVisible(false);
         opEnabled = false;
-    }else{
+    } else {
         QColor bg("#000000");
         bg.setAlpha(200);
-        if(!isLightTheme()){
+        if (!isLightTheme()) {
             bg = QColor("#00000000");
             bg.setAlpha(150);
         }
@@ -559,11 +582,13 @@ void CASTLEGUI::showHide(bool show){
     }
 }
 
-int CASTLEGUI::getNavWidth(){
+int CASTLEGUI::getNavWidth()
+{
     return this->navMenu->width();
 }
 
-void CASTLEGUI::openFAQ(int section){
+void CASTLEGUI::openFAQ(int section)
+{
     showHide(true);
     SettingsFaqWidget* dialog = new SettingsFaqWidget(this);
     if (section > 0) dialog->setSection(section);
@@ -576,7 +601,7 @@ void CASTLEGUI::openFAQ(int section){
 bool CASTLEGUI::addWallet(const QString& name, WalletModel* walletModel)
 {
     // Single wallet supported for now..
-    if(!stackedContainer || !clientModel || !walletModel)
+    if (!stackedContainer || !clientModel || !walletModel)
         return false;
 
     // set the model for every view
@@ -586,15 +611,14 @@ bool CASTLEGUI::addWallet(const QString& name, WalletModel* walletModel)
     receiveWidget->setWalletModel(walletModel);
     sendWidget->setWalletModel(walletModel);
     addressesWidget->setWalletModel(walletModel);
-    privacyWidget->setWalletModel(walletModel);
     masterNodesWidget->setWalletModel(walletModel);
     coldStakingWidget->setWalletModel(walletModel);
     settingsWidget->setWalletModel(walletModel);
 
     // Connect actions..
-    connect(privacyWidget, &PrivacyWidget::message, this, &CASTLEGUI::message);
+    connect(walletModel, &WalletModel::message, this, &CASTLEGUI::message);
     connect(masterNodesWidget, &MasterNodesWidget::message, this, &CASTLEGUI::message);
-    connect(coldStakingWidget, &MasterNodesWidget::message, this, &CASTLEGUI::message);
+    connect(coldStakingWidget, &ColdStakingWidget::message, this, &CASTLEGUI::message);
     connect(topBar, &TopBar::message, this, &CASTLEGUI::message);
     connect(sendWidget, &SendWidget::message,this, &CASTLEGUI::message);
     connect(receiveWidget, &ReceiveWidget::message,this, &CASTLEGUI::message);
@@ -602,23 +626,26 @@ bool CASTLEGUI::addWallet(const QString& name, WalletModel* walletModel)
     connect(settingsWidget, &SettingsWidget::message, this, &CASTLEGUI::message);
 
     // Pass through transaction notifications
-    connect(dashboard, SIGNAL(incomingTransaction(QString, int, CAmount, QString, QString)), this, SLOT(incomingTransaction(QString, int, CAmount, QString, QString)));
+    connect(dashboard, &DashboardWidget::incomingTransaction, this, &CASTLEGUI::incomingTransaction);
 
     return true;
 }
 
-bool CASTLEGUI::setCurrentWallet(const QString& name) {
+bool CASTLEGUI::setCurrentWallet(const QString& name)
+{
     // Single wallet supported.
     return true;
 }
 
-void CASTLEGUI::removeAllWallets() {
+void CASTLEGUI::removeAllWallets()
+{
     // Single wallet supported.
 }
 
-void CASTLEGUI::incomingTransaction(const QString& date, int unit, const CAmount& amount, const QString& type, const QString& address) {
+void CASTLEGUI::incomingTransaction(const QString& date, int unit, const CAmount& amount, const QString& type, const QString& address)
+{
     // Only send notifications when not disabled
-    if(!bdisableSystemnotifications){
+    if (!bdisableSystemnotifications) {
         // On new transaction, make an info balloon
         message((amount) < 0 ? (pwalletMain->fMultiSendNotify == true ? tr("Sent MultiSend transaction") : tr("Sent transaction")) : tr("Incoming transaction"),
             tr("Date: %1\n"

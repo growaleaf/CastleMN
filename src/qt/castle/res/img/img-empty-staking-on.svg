@@ -1,112 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   id="svg2"
-   width="100"
-   height="100"
-   viewBox="0 0 100 100"
-   sodipodi:docname="img-empty-staking-on.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
-  <metadata
-     id="metadata8">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs6" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="691"
-     inkscape:window-height="480"
-     id="namedview4"
-     showgrid="false"
-     inkscape:zoom="2.36"
-     inkscape:cx="50"
-     inkscape:cy="50"
-     inkscape:window-x="67"
-     inkscape:window-y="27"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg2" />
-  <image
-     width="100"
-     height="100"
-     preserveAspectRatio="none"
-     style="image-rendering:optimizeQuality"
-     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
-bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
-bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
-eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
-NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
-dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
-dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv
-IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS
-ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
-cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNl
-SUQ9InhtcC5paWQ6RkEwMTI2OTQ5NTg4MTFFQUI4NDFBQjk5MTY3OUNGOEMiIHhtcE1NOkRvY3Vt
-ZW50SUQ9InhtcC5kaWQ6RkEwMTI2OTU5NTg4MTFFQUI4NDFBQjk5MTY3OUNGOEMiPiA8eG1wTU06
-RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGQTAxMjY5Mjk1ODgxMUVBQjg0
-MUFCOTkxNjc5Q0Y4QyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGQTAxMjY5Mzk1ODgxMUVB
-Qjg0MUFCOTkxNjc5Q0Y4QyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1w
-bWV0YT4gPD94cGFja2V0IGVuZD0iciI/PhCd9FoAAAc6SURBVHja7F1JSBttGDZRq9Hfve5a6xIX
-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
-BgA14uAn9I8udwAAAABJRU5ErkJggg==
-"
-     id="image10"
-     x="0"
-     y="0" />
+<svg xmlns="http://www.w3.org/2000/svg" id="ic_staking_on" width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+        <style type="text/css">
+            .cls-1{fill:#d6d6d6}.cls-2{fill:#666}.cls-3{fill:none}
+        </style>
+    </defs>
+    <g id="Group_9018" data-name="Group 9018">
+        <g id="Group_9016" data-name="Group 9016">
+            <ellipse id="Ellipse_613" cx="12" cy="4" class="cls-1" data-name="Ellipse 613" rx="12" ry="4" transform="translate(68 52)"/>
+            <ellipse id="Ellipse_614" cx="12" cy="4" class="cls-1" data-name="Ellipse 614" rx="12" ry="4" transform="translate(52 64)"/>
+            <path id="Rectangle_4669" d="M0 0h14v14H0z" class="cls-1" data-name="Rectangle 4669" transform="translate(32 24)"/>
+        </g>
+        <g id="Group_9017" data-name="Group 9017">
+            <path id="Rectangle_4670" d="M0 0h2v4H0z" class="cls-2" data-name="Rectangle 4670" transform="translate(12 60)"/>
+            <path id="Rectangle_4671" d="M0 0h10.558v2.196H0z" class="cls-2" data-name="Rectangle 4671" transform="translate(28.706 50.422)"/>
+            <path id="Path_18974" d="M40.3 57.538h-9.312V71h2.744V60.02h6.936c5.005 0 8.626-3.361 8.626-8.565 0-5.205-3.622-8.455-8.648-8.455H30.5v2.5l6.937-.022h2.9c3.687 0 6.124 2.2 6.124 5.974.003 3.824-2.434 6.086-6.161 6.086z" class="cls-2" data-name="Path 18974"/>
+            <path id="Path_18975" d="M92.046 57.994A2.767 2.767 0 0 0 93 56c0-3.283-6.54-5-13-5s-13 1.717-13 5a2.767 2.767 0 0 0 .954 1.994 2.573 2.573 0 0 0 0 4 3.171 3.171 0 0 0-.774 1.151q-.58-.052-1.18-.085V39h5V23H52.644A8.993 8.993 0 1 0 39 11.9 8.994 8.994 0 1 0 25.356 23H7v16h5v17h2V39h50v24c-6.46 0-13 1.717-13 5a2.767 2.767 0 0 0 .954 1.994 2.573 2.573 0 0 0 0 4A3.325 3.325 0 0 0 51.226 75H14v-7h-2v9h39.23a3.369 3.369 0 0 0 .724.994 2.573 2.573 0 0 0 0 4 2.573 2.573 0 0 0 0 4A2.768 2.768 0 0 0 51 88c0 3.283 6.54 5 13 5 5.874 0 11.8-1.424 12.826-4.15 1.042.093 2.106.15 3.174.15 6.46 0 13-1.717 13-5a2.768 2.768 0 0 0-.954-2.006 2.573 2.573 0 0 0 0-4 2.573 2.573 0 0 0 0-4 2.573 2.573 0 0 0 0-4 2.573 2.573 0 0 0 0-4 2.573 2.573 0 0 0 0-4 2.573 2.573 0 0 0 0-4zM31 37H9V25h22zm-7-21a7 7 0 0 1 14 0v7h-7a7.008 7.008 0 0 1-7-7zm21 21H33V25h12zm-5-14v-7a7 7 0 1 1 7 7zm7 14V25h22v12H47zm4 39a2.311 2.311 0 0 0 .061.515A2.2 2.2 0 0 1 51 76zm13 15c-7.117 0-11-1.982-11-3 0-.241.247-.539.678-.849C56.179 88.37 60.1 89 64 89s7.821-.63 10.322-1.849c.431.31.678.608.678.849 0 1.018-3.883 3-11 3zm0-4c-7.117 0-11-1.982-11-3 0-.241.247-.539.678-.849C56.179 84.37 60.1 85 64 85s7.821-.63 10.322-1.849c.431.31.678.608.678.849 0 1.018-3.883 3-11 3zm0-4c-7.117 0-11-1.982-11-3 0-.241.247-.539.678-.849C56.179 80.37 60.1 81 64 81s7.821-.63 10.322-1.849c.431.31.678.608.678.849 0 1.018-3.883 3-11 3zm0-4c-7.117 0-11-1.982-11-3 0-.241.247-.539.678-.849C56.179 76.37 60.1 77 64 77s7.821-.63 10.322-1.849c.431.31.678.608.678.849 0 1.018-3.883 3-11 3zm0-4c-7.117 0-11-1.982-11-3 0-.241.247-.539.678-.849C56.179 72.37 60.1 73 64 73s7.821-.63 10.322-1.849c.431.31.678.608.678.849 0 1.018-3.883 3-11 3zm0-4c-7.117 0-11-1.982-11-3s3.883-3 11-3 11 1.982 11 3-3.883 3-11 3zm16 16c-1.207 0-2.3-.068-3.313-.168a3.446 3.446 0 0 0-.641-.838 3.219 3.219 0 0 0 .781-1.151c1.041.1 2.1.157 3.173.157 3.9 0 7.821-.63 10.322-1.849.431.31.678.608.678.849 0 1.018-3.883 3-11 3zm0-4c-1.207 0-2.3-.068-3.313-.168a3.446 3.446 0 0 0-.641-.838 3.219 3.219 0 0 0 .781-1.151c1.041.1 2.1.157 3.173.157 3.9 0 7.821-.63 10.322-1.849.431.31.678.608.678.849 0 1.018-3.883 3-11 3zm0-4c-1.207 0-2.3-.068-3.313-.168a3.446 3.446 0 0 0-.641-.838 3.219 3.219 0 0 0 .781-1.151c1.041.1 2.1.157 3.173.157 3.9 0 7.821-.63 10.322-1.849.431.31.678.608.678.849 0 1.018-3.883 3-11 3zm0-4c-1.207 0-2.3-.068-3.313-.168a3.446 3.446 0 0 0-.641-.838 3.219 3.219 0 0 0 .781-1.151c1.041.1 2.1.157 3.173.157 3.9 0 7.821-.63 10.322-1.849.431.31.678.608.678.849 0 1.018-3.883 3-11 3zm0-4c-1.207 0-2.3-.068-3.313-.168a3.446 3.446 0 0 0-.641-.838 3.219 3.219 0 0 0 .781-1.151c1.041.1 2.1.157 3.173.157 3.9 0 7.821-.63 10.322-1.849.431.31.678.608.678.849 0 1.018-3.883 3-11 3zm0-4c-1.2 0-2.287-.067-3.3-.166-.621-1.162-2.175-2.062-4.213-2.7A31.139 31.139 0 0 0 80 65c3.9 0 7.821-.63 10.322-1.849.431.31.678.608.678.849 0 1.018-3.883 3-11 3zm-10.632-3.583a2.722 2.722 0 0 1 .31-.266 13.563 13.563 0 0 0 1.826.7 26.483 26.483 0 0 0-2.136-.434zM80 63c-7.117 0-11-1.982-11-3 0-.241.247-.539.678-.849C72.179 60.37 76.1 61 80 61s7.821-.63 10.322-1.849c.431.31.678.608.678.849 0 1.018-3.883 3-11 3zm0-4c-7.117 0-11-1.982-11-3s3.883-3 11-3 11 1.982 11 3-3.883 3-11 3z" class="cls-2" data-name="Path 18975"/>
+        </g>
+    </g>
+    <path id="Rectangle_4672" d="M0 0h100v100H0z" class="cls-3" data-name="Rectangle 4672"/>
 </svg>

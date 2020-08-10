@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The PIVX developers
+// Copyright (c) 2019-2020 The CASTLE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,7 +20,6 @@
 #include "qt/castle/send.h"
 #include "qt/castle/receivewidget.h"
 #include "qt/castle/addresseswidget.h"
-#include "qt/castle/privacywidget.h"
 #include "qt/castle/coldstakingwidget.h"
 #include "qt/castle/masternodeswidget.h"
 #include "qt/castle/snackbar.h"
@@ -57,19 +56,20 @@ public:
     void resizeEvent(QResizeEvent *event) override;
     void showHide(bool show);
     int getNavWidth();
-signals:
+Q_SIGNALS:
     void themeChanged(bool isLightTheme, QString& theme);
     void windowResizeEvent(QResizeEvent* event);
-public slots:
+public Q_SLOTS:
     void changeTheme(bool isLightTheme);
     void goToDashboard();
     void goToSend();
     void goToReceive();
     void goToAddresses();
-    void goToPrivacy();
     void goToMasterNodes();
     void goToColdStaking();
     void goToSettings();
+    void goToSettingsInfo();
+    void openNetworkMonitor();
 
     void connectActions();
 
@@ -130,7 +130,6 @@ private:
     SendWidget *sendWidget = nullptr;
     ReceiveWidget *receiveWidget = nullptr;
     AddressesWidget *addressesWidget = nullptr;
-    PrivacyWidget *privacyWidget = nullptr;
     MasterNodesWidget *masterNodesWidget = nullptr;
     ColdStakingWidget *coldStakingWidget = nullptr;
     SettingsWidget* settingsWidget = nullptr;
@@ -162,22 +161,26 @@ private:
     /** Disconnect core signals from GUI client */
     void unsubscribeFromCoreSignals();
 
-private slots:
+public Q_SLOTS:
+    /** called by a timer to check if fRequestShutdown has been set **/
+    void detectShutdown();
+
+private Q_SLOTS:
     /** Show window if hidden, unminimize when minimized, rise when obscured or show if hidden and fToggleHidden is true */
     void showNormalIfMinimized(bool fToggleHidden = false);
 
     /** Simply calls showNormalIfMinimized(true) for use in SLOT() macro */
     void toggleHidden();
 
-    /** called by a timer to check if fRequestShutdown has been set **/
-    void detectShutdown();
-
 #ifndef Q_OS_MAC
     /** Handle tray icon clicked */
     void trayIconActivated(QSystemTrayIcon::ActivationReason reason);
+#else
+    /** Handle macOS Dock icon clicked */
+     void macosDockIconActivated();
 #endif
 
-signals:
+Q_SIGNALS:
     /** Signal raised when a URI was entered or dragged to the GUI */
     void receivedURI(const QString& uri);
     /** Restart handling */

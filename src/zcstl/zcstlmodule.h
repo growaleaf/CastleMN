@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The PIVX developers
+// Copyright (c) 2019-2020 The CASTLE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 //
@@ -33,9 +33,8 @@ public:
 
     const uint256 signatureHash() const override;
     void setVchSig(std::vector<unsigned char> vchSig) { this->vchSig = vchSig; };
-    bool Verify(const libzerocoin::Accumulator& a, bool verifyParams = true) const override;
     bool HasValidSignature() const;
-    bool validate() const;
+    bool Verify() const;
     static bool isAllowed(const bool fUseV1Params, const int spendVersion) { return !fUseV1Params || spendVersion >= PUBSPEND_SCHNORR; }
     bool isAllowed() const {
         const bool fUseV1Params = getCoinVersion() < libzerocoin::PrivateCoin::PUBKEY_VERSION;
@@ -48,14 +47,15 @@ public:
     CBigNum randomness;
     libzerocoin::CoinRandomnessSchnorrSignature schnorrSig;
     // prev out values
-    uint256 txHash = 0;
+    uint256 txHash;
     unsigned int outputIndex = -1;
     libzerocoin::PublicCoin pubCoin;
 
     ADD_SERIALIZE_METHODS;
 
     template <typename Stream, typename Operation>
-    inline void SerializationOp(Stream& s, Operation ser_action, int nType, int nVersion) {
+    inline void SerializationOp(Stream& s, Operation ser_action) {
+
         READWRITE(version);
 
         if (version < PUBSPEND_SCHNORR) {
@@ -82,6 +82,7 @@ public:
 class CValidationState;
 
 namespace ZCSTLModule {
+    CDataStream ScriptSigToSerializedSpend(const CScript& scriptSig);
     bool createInput(CTxIn &in, CZerocoinMint& mint, uint256 hashTxOut, const int spendVersion);
     PublicCoinSpend parseCoinSpend(const CTxIn &in);
     bool parseCoinSpend(const CTxIn &in, const CTransaction& tx, const CTxOut &prevOut, PublicCoinSpend& publicCoinSpend);

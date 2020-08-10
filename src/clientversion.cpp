@@ -1,5 +1,5 @@
 // Copyright (c) 2012-2017 The Bitcoin Core developers
-// Copyright (c) 2016-2019 The PIVX developers
+// Copyright (c) 2016-2019 The CASTLE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -42,7 +42,7 @@ const std::string CLIENT_NAME("CASTLE Core");
 #include "obj/build.h"
 #endif
 
-//! git will put "#define GIT_ARCHIVE 1" on the next line inside archives. 
+//! git will put "#define GIT_ARCHIVE 1" on the next line inside archives. $Format:%n#define GIT_ARCHIVE 1$
 #ifdef GIT_ARCHIVE
 #define GIT_COMMIT_ID "$Format:%H$"
 #define GIT_COMMIT_DATE "$Format:%cD$"

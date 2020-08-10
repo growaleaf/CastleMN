@@ -1,18 +1,18 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin developers
 // Copyright (c) 2009-2015 The Dash developers
-// Copyright (c) 2015-2019 The PIVX developers
+// Copyright (c) 2015-2019 The CASTLE developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "chainparamsbase.h"
 #include "clientversion.h"
+#include "fs.h"
 #include "rpc/client.h"
 #include "rpc/protocol.h"
 #include "util.h"
 #include "utilstrencodings.h"
 
-#include <boost/filesystem/operations.hpp>
 #include <stdio.h>
 
 #include <event2/event.h>
@@ -38,7 +38,7 @@ std::string HelpMessageCli()
     strUsage += HelpMessageOpt("-regtest", _("Enter regression test mode, which uses a special chain in which blocks can be "
                                              "solved instantly. This is intended for regression testing tools and app development."));
     strUsage += HelpMessageOpt("-rpcconnect=<ip>", strprintf(_("Send commands to node running on <ip> (default: %s)"), "127.0.0.1"));
-    strUsage += HelpMessageOpt("-rpcport=<port>", strprintf(_("Connect to JSON-RPC on <port> (default: %u or testnet: %u)"), 35802, 51475));
+    strUsage += HelpMessageOpt("-rpcport=<port>", strprintf(_("Connect to JSON-RPC on <port> (default: %u or testnet: %u)"), 51473, 51475));
     strUsage += HelpMessageOpt("-rpcwait", _("Wait for RPC server to start"));
     strUsage += HelpMessageOpt("-rpcuser=<user>", _("Username for JSON-RPC connections"));
     strUsage += HelpMessageOpt("-rpcpassword=<pw>", _("Password for JSON-RPC connections"));
@@ -84,7 +84,7 @@ static bool AppInitRPC(int argc, char* argv[])
         fprintf(stdout, "%s", strUsage.c_str());
         return false;
     }
-    if (!boost::filesystem::is_directory(GetDataDir(false))) {
+    if (!fs::is_directory(GetDataDir(false))) {
         fprintf(stderr, "Error: Specified data directory \"%s\" does not exist.\n", mapArgs["-datadir"].c_str());
         return false;
     }
@@ -182,7 +182,7 @@ UniValue CallRPC(const std::string& strMethod, const UniValue& params)
     evhttp_add_header(output_headers, "Authorization", (std::string("Basic ") + EncodeBase64(strRPCUserColonPass)).c_str());
 
     // Attach request data
-    std::string strRequest = JSONRPCRequest(strMethod, params, 1);
+    std::string strRequest = JSONRPCRequestObj(strMethod, params, 1).write() + "\n";
     struct evbuffer * output_buffer = evhttp_request_get_output_buffer(req);
     assert(output_buffer);
     evbuffer_add(output_buffer, strRequest.data(), strRequest.size());

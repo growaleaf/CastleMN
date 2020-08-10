@@ -1,0 +1,7 @@
+[main]
+host = https://www.transifex.com
+
+[castle-project-translations.qt-translation-42x]
+file_filter = src/qt/locale/castle_<lang>.ts
+source_file = src/qt/locale/castle_en.ts
+source_lang = en

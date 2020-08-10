@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The PIVX developers
+// Copyright (c) 2019 The CASTLE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -25,15 +25,15 @@ public:
     bool isOk = false;
 
     void setModel(OptionsModel *model);
-    void checkLanguage();
 
-signals:
+Q_SIGNALS:
     void onLanguageSelected();
 
-public slots:
+public Q_SLOTS:
     void onNextClicked();
     void onBackClicked();
     void onSkipClicked();
+    void checkLanguage();
 
 private:
     Ui::WelcomeContentWidget *ui;

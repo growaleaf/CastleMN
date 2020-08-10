@@ -1,0 +1,15 @@
+QT_TS = \
+  qt/locale/castle_de.ts \
+  qt/locale/castle_en.ts \
+  qt/locale/castle_en_US.ts \
+  qt/locale/castle_es.ts \
+  qt/locale/castle_es_ES.ts \
+  qt/locale/castle_fr_FR.ts \
+  qt/locale/castle_hr_HR.ts \
+  qt/locale/castle_it.ts \
+  qt/locale/castle_ko_KR.ts \
+  qt/locale/castle_nl.ts \
+  qt/locale/castle_pl.ts \
+  qt/locale/castle_ru.ts \
+  qt/locale/castle_tr.ts \
+  qt/locale/castle_zh_CN.ts

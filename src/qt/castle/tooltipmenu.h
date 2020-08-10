@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The PIVX developers
+// Copyright (c) 2019 The CASTLE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -40,13 +40,13 @@ public:
     void setEditBtnVisible(bool visible);
     void setLastBtnVisible(bool visible);
 
-signals:
+Q_SIGNALS:
     void onDeleteClicked();
     void onCopyClicked();
     void onEditClicked();
     void onLastClicked();
 
-private slots:
+private Q_SLOTS:
     void deleteClicked();
     void copyClicked();
     void editClicked();

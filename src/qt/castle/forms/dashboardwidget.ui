@@ -97,7 +97,7 @@
              <item>
               <widget class="QLabel" name="labelSubtitle">
                <property name="text">
-                <string>You can see here the history of your account</string>
+                <string>View your account's history</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -258,7 +258,7 @@
                   <string notr="true"/>
                  </property>
                  <property name="text">
-                  <string>Warning</string>
+                  <string notr="true">N/A</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
@@ -419,7 +419,7 @@
                <string notr="true"/>
               </property>
               <property name="text">
-               <string>No transactions</string>
+               <string>No transactions yet</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
@@ -454,7 +454,7 @@
             <enum>Qt::NoFocus</enum>
            </property>
            <property name="text">
-            <string/>
+            <string>How to get CSTL</string>
            </property>
           </widget>
          </item>
@@ -519,7 +519,7 @@
             <item>
              <widget class="QLabel" name="labelMessage">
               <property name="text">
-               <string>TextLabel</string>
+               <string>Amount of CSTL and zCSTL staked.</string>
               </property>
              </widget>
             </item>
@@ -567,7 +567,7 @@
           <item>
            <widget class="QLabel" name="labelAmountCstl">
             <property name="text">
-             <string>TextLabel</string>
+             <string notr="true">0 CSTL</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -575,9 +575,9 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="labelAmountMNRewards">
+           <widget class="QLabel" name="labelAmountZcstl">
             <property name="text">
-             <string>TextLabel</string>
+             <string notr="true">0 zCSTL</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -655,7 +655,7 @@
                 <item>
                  <widget class="QLabel" name="labelChart">
                   <property name="text">
-                   <string>Staking and MNR statistics</string>
+                   <string>Staking statistics</string>
                   </property>
                  </widget>
                 </item>
@@ -694,7 +694,7 @@
                 <item>
                  <widget class="QLabel" name="labelCstl">
                   <property name="text">
-                   <string>CSTL</string>
+                   <string notr="true">CSTL</string>
                   </property>
                  </widget>
                 </item>
@@ -715,7 +715,7 @@
                  </spacer>
                 </item>
                 <item>
-                 <widget class="QLabel" name="labelSquareMNRewards">
+                 <widget class="QLabel" name="labelSquarezCstl">
                   <property name="minimumSize">
                    <size>
                     <width>14</width>
@@ -734,9 +734,9 @@
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="labelMNRewards">
+                 <widget class="QLabel" name="labelZcstl">
                   <property name="text">
-                   <string>CSTL MNR</string>
+                   <string notr="true">zCSTL</string>
                   </property>
                  </widget>
                 </item>
@@ -751,7 +751,7 @@
                  </size>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">#chartContainer{background-color:white;padding:0px; margin:0px;}</string>
+                 <string notr="true">#chartContainer{padding:0px; margin:0px;}</string>
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_11">
                  <property name="spacing">
@@ -923,7 +923,7 @@ margin:0px;</string>
            </item>
            <item alignment="Qt::AlignVCenter">
             <widget class="QWidget" name="containerSort" native="true">
-             <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="3,2">
+             <layout class="QHBoxLayout" name="horizontalLayout_61" stretch="3,2">
               <property name="spacing">
                <number>28</number>
               </property>
@@ -1291,7 +1291,7 @@ margin:0px;</string>
                  <string notr="true"/>
                 </property>
                 <property name="text">
-                 <string>LabelText</string>
+                 <string notr="true">N/A</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -1323,7 +1323,8 @@ margin:0px;</string>
 }</string>
              </property>
              <property name="text">
-              <string>TextLabel</string>
+              <string>You can verify the staking activity in the status bar at the top right of the wallet.
+It will start automatically as soon as the wallet has enough confirmations on any unspent balances, and the wallet has synced.</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>

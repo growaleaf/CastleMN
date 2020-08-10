@@ -7,10 +7,12 @@
 #include "data/tx_valid.json.h"
 #include "test/test_castle.h"
 
+#include "consensus/tx_verify.h"
 #include "clientversion.h"
 #include "key.h"
 #include "keystore.h"
 #include "main.h"
+#include "policy/policy.h"
 #include "script/script.h"
 #include "script/script_error.h"
 #include "core_io.h"

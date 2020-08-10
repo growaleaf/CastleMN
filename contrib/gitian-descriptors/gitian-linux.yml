@@ -1,5 +1,5 @@
 ---
-name: "castle-linux-3.0.0"
+name: "castle-linux-4.2"
 enable_cache: true
 distro: "ubuntu"
 suites:

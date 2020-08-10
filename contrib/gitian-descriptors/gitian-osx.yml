@@ -1,5 +1,5 @@
 ---
-name: "castle-osx-3.0.0"
+name: "castle-osx-4.2"
 enable_cache: true
 distro: "ubuntu"
 suites:

@@ -1,17 +1,20 @@
-// Copyright (c) 2019-35801 The PIVX developers
+// Copyright (c) 2019-2020 The CASTLE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef MASTERNODESWIDGET_H
 #define MASTERNODESWIDGET_H
 
-#include <QWidget>
 #include "qt/castle/pwidget.h"
 #include "qt/castle/furabstractlistitemdelegate.h"
 #include "qt/castle/mnmodel.h"
 #include "qt/castle/tooltipmenu.h"
-#include <QTimer>
+#include "walletmodel.h"
+
 #include <atomic>
+
+#include <QTimer>
+#include <QWidget>
 
 class CASTLEGUI;
 
@@ -40,7 +43,7 @@ public:
     void showEvent(QShowEvent *event) override;
     void hideEvent(QHideEvent *event) override;
 
-private slots:
+private Q_SLOTS:
     void onCreateMNClicked();
     void onStartAllClicked(int type);
     void changeTheme(bool isLightTheme, QString &theme) override;

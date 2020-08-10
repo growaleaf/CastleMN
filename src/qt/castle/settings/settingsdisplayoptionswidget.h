@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The PIVX developers
+// Copyright (c) 2019 The CASTLE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -25,8 +25,12 @@ public:
     void initLanguages();
     void loadClientModel() override;
 
-public slots:
+public Q_SLOTS:
     void onResetClicked();
+
+Q_SIGNALS:
+    void saveSettings();
+    void discardSettings();
 
 private:
     Ui::SettingsDisplayOptionsWidget *ui;

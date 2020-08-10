@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The PIVX developers
+// Copyright (c) 2019-2020 The CASTLE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,14 +20,12 @@ public:
     explicit SettingsBackupWallet(CASTLEGUI* _window, QWidget *parent = nullptr);
     ~SettingsBackupWallet();
 
-private slots:
-    void backupWallet();
+private Q_SLOTS:
     void selectFileOutput();
     void changePassphrase();
 
 private:
     Ui::SettingsBackupWallet *ui;
-    QString filename;
 };
 
 #endif // SETTINGSBACKUPWALLET_H

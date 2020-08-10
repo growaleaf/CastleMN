@@ -1,4 +1,4 @@
-// Copyright (c) 2019-35801 The PIVX developers
+// Copyright (c) 2019-2020 The CASTLE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -25,14 +25,13 @@ public:
     void loadWalletModel() override;
     virtual void showEvent(QShowEvent *event) override;
 
-public slots:
+public Q_SLOTS:
     void selectSettings();
     void onShowHideColdStakingChanged(bool show);
 
-private slots:
+private Q_SLOTS:
     void onSendClicked();
     void onDashboardClicked();
-    void onPrivacyClicked();
     void onAddressClicked();
     void onMasterNodesClicked();
     void onColdStakingClicked();

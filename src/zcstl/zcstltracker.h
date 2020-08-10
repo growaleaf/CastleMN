@@ -1,4 +1,4 @@
-// Copyright (c) 2018-35801 The PIVX developers
+// Copyright (c) 2018-2020 The CASTLE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,23 +6,24 @@
 #define CASTLE_ZCSTLTRACKER_H
 
 #include "zerocoin.h"
-#include "witness.h"
 #include "sync.h"
 #include <list>
 
 class CDeterministicMint;
 class CzCSTLWallet;
+class CWallet;
 
 class CzCSTLTracker
 {
 private:
     bool fInitialized;
-    std::string strWalletFile;
+    /* Parent wallet */
+    CWallet* wallet{nullptr};
     std::map<uint256, CMintMeta> mapSerialHashes;
     std::map<uint256, uint256> mapPendingSpends; //serialhash, txid of spend
     bool UpdateStatusInternal(const std::set<uint256>& setMempool, CMintMeta& mint);
 public:
-    CzCSTLTracker(std::string strWalletFile);
+    CzCSTLTracker(CWallet* parent);
     ~CzCSTLTracker();
     void Add(const CDeterministicMint& dMint, bool isNew = false, bool isArchived = false, CzCSTLWallet* zCSTLWallet = NULL);
     void Add(const CZerocoinMint& mint, bool isNew = false, bool isArchived = false);

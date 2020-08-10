@@ -1,84 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   id="svg2"
-   width="24"
-   height="24"
-   viewBox="0 0 24 24"
-   sodipodi:docname="ic-coin-zcstl.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
-  <metadata
-     id="metadata8">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs6" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="691"
-     inkscape:window-height="480"
-     id="namedview4"
-     showgrid="false"
-     inkscape:zoom="9.8333333"
-     inkscape:cx="12"
-     inkscape:cy="12"
-     inkscape:window-x="67"
-     inkscape:window-y="27"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg2" />
-  <image
-     width="24"
-     height="24"
-     preserveAspectRatio="none"
-     style="image-rendering:optimizeQuality"
-     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
-bWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
-bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
-eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0
-NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
-dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
-dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv
-IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS
-ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
-cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNl
-SUQ9InhtcC5paWQ6MDE5ODBERDI5NDlDMTFFQTgyM0ZBM0I2MjQ1MjIxODEiIHhtcE1NOkRvY3Vt
-ZW50SUQ9InhtcC5kaWQ6MDE5ODBERDM5NDlDMTFFQTgyM0ZBM0I2MjQ1MjIxODEiPiA8eG1wTU06
-RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowMTk4MEREMDk0OUMxMUVBODIz
-RkEzQjYyNDUyMjE4MSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowMTk4MEREMTk0OUMxMUVB
-ODIzRkEzQjYyNDUyMjE4MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1w
-bWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlRVkr0AAAEbSURBVHjaYvj//z8DMsYDOIB4PRA34lOE
-bh4TA/HgGBAHADEbCXrwWiAJxKuBWAvK58aipg6INwMxF9FeAgJbqFQBSBqIlaH8m1B+J5QvDuV/
-hPKFgTiXmCA6BMQqQPwKKew1gVgKTd1bID4JxF+g/DwgnoRuGAs2TwGxHBArIIU9HxZ1f4DYAoj5
-ofyXxAbRW6gluHAnnnjjIiaIGBnIB99ISUVUAdSwQB4aFzSzgBmIjwCxI60suAdN0uG0sgAEfkMz
-HgMtI5mR1hYwDBkLmChVzEhrH8ymVgTjsqAMWjSvIMGCBiBeR2xpigxkgXgTWmnaTc06+TEQ+wGx
-KhDvwlOH4A47dFczMuKN40hoDTcfnw/wWkBtABBgABa8lnUxmvCwAAAAAElFTkSuQmCC
-"
-     id="image10"
-     x="0"
-     y="0" />
+<svg xmlns="http://www.w3.org/2000/svg" id="ic_zcstl" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style type="text/css">
+            .cls-1{fill:#5c4b7d}.cls-2{fill:none}
+        </style>
+    </defs>
+    <g id="Group_8933" data-name="Group 8933">
+        <g id="Group_8932" data-name="Group 8932">
+            <path id="Path_18926" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 19.25A9.25 9.25 0 1 1 21.25 12 9.25 9.25 0 0 1 12 21.25z" class="cls-1" data-name="Path 18926"/>
+            <path id="Path_18927" d="M12 3.5a8.5 8.5 0 1 0 8.5 8.5A8.5 8.5 0 0 0 12 3.5zm-4.41 8.964l4.737-5.618H7.739V6h5.922v.811L9.015 12.3l4.712.019v.849H7.59zm8.876 2.524a1.15 1.15 0 0 1-.142.1c-.013.01-.029.019-.041.029s-.045.028-.067.041a1.941 1.941 0 0 1-.19.1.824.824 0 0 1-.085.041.858.858 0 0 1-.092.042c-.041.019-.082.031-.124.047a3.062 3.062 0 0 1-1.026.168h-2.172V19h-.861v-4.218h2.923a1.868 1.868 0 0 0 1.58-.706 1.515 1.515 0 0 0 .142-.232 1.921 1.921 0 0 0 .133-.351 2.246 2.246 0 0 0 .079-.621 2.743 2.743 0 0 0-.018-.32 2.027 2.027 0 0 0-.118-.472.762.762 0 0 0-.035-.085 1.535 1.535 0 0 0-.418-.561 1.526 1.526 0 0 0-.212-.152.831.831 0 0 0-.076-.044 1.432 1.432 0 0 0-.164-.076l-.082-.032a1.909 1.909 0 0 0-.275-.076l-.1-.019a2.288 2.288 0 0 0-.307-.028h-.107l-2.98.012.7-.788h2.382a3.149 3.149 0 0 1 1.026.164c.041.013.082.029.123.045.06.025.121.05.178.079.076.038.148.079.221.123.035.023.07.045.1.07a2.523 2.523 0 0 1 1.051 2.166 2.6 2.6 0 0 1-.946 2.11z" class="cls-1" data-name="Path 18927"/>
+        </g>
+    </g>
+    <path id="Rectangle_4542" d="M0 0h24v24H0z" class="cls-2" data-name="Rectangle 4542"/>
 </svg>

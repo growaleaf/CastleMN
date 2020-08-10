@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The PIVX developers
+// Copyright (c) 2019-2020 The CASTLE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -14,7 +14,6 @@
 #include "qt/castle/sendcustomfeedialog.h"
 #include "walletmodel.h"
 #include "coincontroldialog.h"
-#include "zcstlcontroldialog.h"
 #include "qt/castle/tooltipmenu.h"
 
 static const int MAX_SEND_POPUP_ENTRIES = 8;
@@ -42,11 +41,11 @@ public:
     void loadClientModel() override;
     void loadWalletModel() override;
 
-signals:
+Q_SIGNALS:
     /** Signal raised when a URI was entered or dragged to the GUI */
     void receivedURI(const QString& uri);
 
-public slots:
+public Q_SLOTS:
     void onChangeAddressClicked();
     void onChangeCustomFeeClicked();
     void onCoinControlClicked();
@@ -57,19 +56,21 @@ public slots:
 
 protected:
     void resizeEvent(QResizeEvent *event) override;
+    void showEvent(QShowEvent *event) override;
 
-private slots:
-    void onCSTLSelected(bool _isCSTL);
+private Q_SLOTS:
     void onSendClicked();
     void onContactsClicked(SendMultiRow* entry);
     void onMenuClicked(SendMultiRow* entry);
     void onAddEntryClicked();
     void clearEntries();
-    void clearAll();
-    void refreshView();
+    void clearAll(bool fClearSettings = true);
+    void onCheckBoxChanged();
     void onContactMultiClicked();
     void onDeleteClicked();
     void onResetCustomOptions(bool fRefreshAmounts);
+    void onResetSettings();
+
 private:
     Ui::send *ui;
     QPushButton *coinIcon;
@@ -77,6 +78,8 @@ private:
 
     SendCustomFeeDialog* customFeeDialog = nullptr;
     bool isCustomFeeSelected = false;
+    bool fDelegationsChecked = false;
+    CAmount cachedDelegatedBalance{0};
 
     int nDisplayUnit;
     QList<SendMultiRow*> entries;
@@ -87,14 +90,15 @@ private:
     // Current focus entry
     SendMultiRow* focusedEntry = nullptr;
 
-    bool isCSTL = true;
     void resizeMenu();
     QString recipientsToString(QList<SendCoinsRecipient> recipients);
     SendMultiRow* createEntry();
     bool send(QList<SendCoinsRecipient> recipients);
-    bool sendZcstl(QList<SendCoinsRecipient> recipients);
+    void setFocusOnLastEntry();
+    void showHideCheckBoxDelegations();
     void updateEntryLabels(QList<SendCoinsRecipient> recipients);
-
+    void setCustomFeeSelected(bool isSelected, const CAmount& customFee = DEFAULT_TRANSACTION_FEE);
+    void setCoinControlPayAmounts();
 };
 
 #endif // SEND_H
