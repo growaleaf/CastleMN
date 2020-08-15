@@ -1,14 +1,87 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
-    <title>ic-check-active</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="ic-check-active" transform="translate(-1.000000, -1.000000)">
-            <g id="Group_8199" transform="translate(1.000000, 1.000000)" fill="#B088FF">
-                <path d="M19.556,0 L2.444,0 C1.09603898,0.0043907874 0.0043907874,1.09603898 4.4408921e-16,2.444 L4.4408921e-16,19.556 C0.0043907874,20.903961 1.09603898,21.9956092 2.444,22 L19.556,22 C20.903961,21.9956092 21.9956092,20.903961 22,19.556 L22,2.444 C21.9956092,1.09603898 20.903961,0.0043907874 19.556,0 Z M3,10 L19,10 L19,13 L3,13 L3,10 Z" id="check_on_light"></path>
-            </g>
-            <polygon id="Rectangle_4538" points="0 0 24 0 24 24 0 24"></polygon>
-        </g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="22px"
+   height="22px"
+   viewBox="0 0 22 22"
+   version="1.1"
+   id="svg11"
+   sodipodi:docname="ic-check-liliac-indeterminate.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata17">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs15" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1824"
+     inkscape:window-height="1044"
+     id="namedview13"
+     showgrid="false"
+     inkscape:zoom="10.727273"
+     inkscape:cx="-3.6355929"
+     inkscape:cy="11"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg11" />
+  <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+  <title
+     id="title2">ic-check-active</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <g
+     id="Page-1"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd">
+    <g
+       id="ic-check-active"
+       transform="translate(-1.000000, -1.000000)">
+      <g
+         id="Group_8199"
+         transform="translate(1.000000, 1.000000)"
+         fill="#B088FF">
+        <path
+           d="M19.556,0 L2.444,0 C1.09603898,0.0043907874 0.0043907874,1.09603898 4.4408921e-16,2.444 L4.4408921e-16,19.556 C0.0043907874,20.903961 1.09603898,21.9956092 2.444,22 L19.556,22 C20.903961,21.9956092 21.9956092,20.903961 22,19.556 L22,2.444 C21.9956092,1.09603898 20.903961,0.0043907874 19.556,0 Z M3,10 L19,10 L19,13 L3,13 L3,10 Z"
+           id="check_on_light" />
+      </g>
+      <polygon
+         id="Rectangle_4538"
+         points="0 0 24 0 24 24 0 24" />
     </g>
+  </g>
+  <path
+     style="fill:#88aa00;stroke-width:0.09322034"
+     d="M 1.5327617,21.786145 C 1.012182,21.559897 0.61847961,21.199317 0.33664524,20.690658 L 0.06525424,20.200847 0.04012585,11.211908 C 0.01146773,0.96031631 -0.02907668,1.5490121 0.75996772,0.75996772 1.5490121,-0.02907669 0.96031631,0.01146773 11.211908,0.04012585 l 8.988939,0.02512839 0.489811,0.271391 c 0.269395,0.14926505 0.596649,0.41146372 0.727229,0.58266373 0.533113,0.69894593 0.507537,0.19423823 0.507537,10.01561003 0,6.839201 -0.02777,9.151841 -0.113367,9.441554 -0.151289,0.512044 -0.92354,1.284295 -1.435584,1.435584 -0.607702,0.179551 -18.4273377,0.155047 -18.8437113,-0.02591 z M 19.035593,11.531356 V 9.9932203 H 11.018644 3.0016949 v 1.5381357 1.538136 h 8.0169491 8.016949 z"
+     id="path824"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:#000000;stroke-width:0.09322034"
+     d="M 4.3379338,21.844622 1.5258673,21.785593 1.1218321,21.502302 C 0.89961272,21.346492 0.58032229,20.989924 0.41229779,20.709929 L 0.10679867,20.200847 0.13263677,10.972034 C 0.15323549,3.6146094 0.18322895,1.6865113 0.28055041,1.463559 0.34769196,1.3097455 0.55743772,1.0217065 0.74665211,0.82347236 1.4270107,0.11068148 0.67535505,0.16146402 10.972034,0.13263621 l 9.228814,-0.0258381 0.509082,0.30549911 c 0.279994,0.1680245 0.633781,0.48343924 0.786192,0.70092158 l 0.27711,0.3954226 0.08364,2.3545774 c 0.046,1.2950176 0.05954,5.4974332 0.0301,9.3387012 -0.05228,6.820606 -0.05806,6.993478 -0.246922,7.383616 -0.220307,0.455092 -0.719066,0.928803 -1.181229,1.121907 -0.258257,0.107906 -1.483744,0.137391 -6.811864,0.163893 -3.573325,0.01777 -7.7623847,0.0058 -9.3090212,-0.02671 z M 19.035593,11.531356 V 9.9932201 H 11.018644 3.0016952 v 1.5381359 1.538135 h 8.0169488 8.016949 z"
+     id="path822"
+     inkscape:connector-curvature="0" />
 </svg>
